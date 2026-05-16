@@ -13,8 +13,11 @@ small fetch-based include loader.
 
 ```
 .
-├── index.html                 ← Home page (fully populated)
-├── about.html, gst.html, …    ← One file per route (stubbed; see below)
+├── index.html                 ← Tiny redirect → pages/index.html
+├── pages/
+│   ├── index.html             ← Home page (fully populated)
+│   ├── about.html, gst.html,  ← One file per route (44 stubs)
+│   │   contact.html, career.html, …
 ├── components/
 │   ├── nav.html               ← Shared top navigation
 │   └── footer.html            ← Shared footer (with contact details)
@@ -32,6 +35,10 @@ small fetch-based include loader.
 │       └── lock.js            ← Right-click / DevTools / copy deterrents
 └── README.md
 ```
+
+Files inside `pages/` reference assets and components with `../assets/…`
+and `../components/…`. Links between pages stay simple (`href="gst.html"`
+because every page is a sibling of every other in `pages/`).
 
 ---
 
