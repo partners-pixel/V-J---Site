@@ -1,0 +1,200 @@
+<!--
+  =================================================================
+  SHARED NAVIGATION COMPONENT  —  V J Desai & Co. LLP
+  Include via fetch() in every page (see assets/js/main.js loader).
+  Depends on: assets/css/nav.css   +   assets/js/nav.js (mobile + dropdowns)
+
+  Active-state highlight is handled by the small <script> at the end
+  of this file — it reads location.pathname and adds .active to the
+  matching .nl (top-level nav link). This works for both top-level
+  pages and sub-pages reached via the dropdown menus.
+  =================================================================
+-->
+<nav>
+  <div class="navi">
+
+    <!--
+      LOGO — text-based, matches the CSS comment in nav.css:
+      "Exact match to uploaded image: V J Desai & Co. LLP serif bold,
+      CHARTERED ACCOUNTANTS small caps".
+      If you'd rather use the original base64 image: replace this block
+      with an <img src="assets/img/logo.jpg"> and drop the file in.
+    -->
+    <a class="logo" href="index.html" aria-label="V J Desai & Co. LLP — Home">
+      <div class="logo-name">V J Desai <span class="amp">&amp;</span> Co. LLP</div>
+      <div class="logo-sub">Chartered Accountants</div>
+    </a>
+
+    <!-- PRIMARY MENU -->
+    <ul class="navl" id="navl">
+
+      <li class="ni" data-page="index">
+        <a class="nl" href="index.html">Home</a>
+      </li>
+
+      <!-- 2. ABOUT US -->
+      <li class="ni" data-page="about">
+        <a class="nl" href="why-choose-us.html">About Us
+          <svg class="ar" viewBox="0 0 10 6" fill="currentColor"><path d="M0 0l5 6 5-6z"/></svg>
+        </a>
+        <div class="dd">
+          <div class="dds">
+            <a class="dda" href="why-choose-us.html" data-page="why-choose-us">Why Choose Us</a>
+            <a class="dda" href="team.html"          data-page="team">Team</a>
+          </div>
+        </div>
+      </li>
+
+      <!-- 3. GST / INDIRECT TAX -->
+      <li class="ni" data-page="gst">
+        <a class="nl" href="gst.html">GST / Indirect Tax
+          <svg class="ar" viewBox="0 0 10 6" fill="currentColor"><path d="M0 0l5 6 5-6z"/></svg>
+        </a>
+        <div class="dd">
+          <div class="dds">
+            <a class="dda" href="gst.html"         data-page="gst">3.1 GST</a>
+            <a class="dda" href="gst-class.html"   data-page="gst-class">3.2 GST Classification</a>
+            <a class="dda" href="gst-audit.html"   data-page="gst-audit">3.3 GST Audit</a>
+            <a class="dda" href="gst-dd.html"      data-page="gst-dd">3.4 GST Due Diligence</a>
+            <a class="dda" href="gst-lit.html"     data-page="gst-lit">3.5 GST Litigation</a>
+            <a class="dda" href="gst-opinion.html" data-page="gst-opinion">3.6 GST Opinion</a>
+            <a class="dda" href="gst-refund.html"  data-page="gst-refund">3.7 GST – Refund</a>
+            <a class="dda" href="gst-search.html"  data-page="gst-search">3.8 GST – Search Inquiry Support</a>
+            <a class="dda" href="gst-ebill.html"   data-page="gst-ebill">3.9 GST E-Bill – Consultancy</a>
+          </div>
+        </div>
+      </li>
+
+      <!-- 4. DIRECT TAX -->
+      <li class="ni" data-page="dtax">
+        <a class="nl" href="corp-tax.html">Direct Tax
+          <svg class="ar" viewBox="0 0 10 6" fill="currentColor"><path d="M0 0l5 6 5-6z"/></svg>
+        </a>
+        <div class="dd">
+          <div class="dds">
+            <a class="dda" href="corp-tax.html"       data-page="corp-tax">4.1 Corporate Tax</a>
+            <a class="dda" href="income-tax-adv.html" data-page="income-tax-adv">4.2 Income Tax – Advisory</a>
+            <a class="dda" href="income-tax.html"     data-page="income-tax">4.3 Income Tax</a>
+            <a class="dda" href="nri-tax.html"        data-page="nri-tax">4.4 NRI – Taxation</a>
+          </div>
+        </div>
+      </li>
+
+      <!-- 5. AUDIT & ADVISORY -->
+      <li class="ni" data-page="audit">
+        <a class="nl" href="stat-audit.html">Audit &amp; Advisory
+          <svg class="ar" viewBox="0 0 10 6" fill="currentColor"><path d="M0 0l5 6 5-6z"/></svg>
+        </a>
+        <div class="dd">
+          <div class="dds">
+            <div class="ddl">Audit</div>
+            <a class="dda" href="stat-audit.html" data-page="stat-audit">Statutory Audit</a>
+            <a class="dda" href="tax-audit.html"  data-page="tax-audit">Tax Audit</a>
+            <a class="dda" href="int-audit.html"  data-page="int-audit">Internal Audit</a>
+            <a class="dda" href="comp-audit.html" data-page="comp-audit">Compliance Audit</a>
+          </div>
+          <div class="dds">
+            <div class="ddl">Corporate Services</div>
+            <a class="dda" href="biz-setup.html"   data-page="biz-setup">Business Setup Services</a>
+            <a class="dda" href="biz-val.html"     data-page="biz-val">Business Valuation &amp; Restructuring</a>
+            <a class="dda" href="company-law.html" data-page="company-law">Company Law</a>
+            <a class="dda" href="exim.html"        data-page="exim">Exim Policy</a>
+            <a class="dda" href="fema.html"        data-page="fema">FEMA</a>
+            <a class="dda" href="mgmt-cfo.html"    data-page="mgmt-cfo">Management Consultancy &amp; CFO Services</a>
+          </div>
+        </div>
+      </li>
+
+      <!-- 6. RERA -->
+      <li class="ni" data-page="rera">
+        <a class="nl" href="rera-reg.html">RERA
+          <svg class="ar" viewBox="0 0 10 6" fill="currentColor"><path d="M0 0l5 6 5-6z"/></svg>
+        </a>
+        <div class="dd">
+          <div class="dds">
+            <a class="dda" href="rera-reg.html"  data-page="rera-reg">Project Registration Compliance</a>
+            <a class="dda" href="rera-qud.html"  data-page="rera-qud">Quarterly Updates Disclosure</a>
+            <a class="dda" href="rera-ext.html"  data-page="rera-ext">Project Extension Regulations</a>
+            <a class="dda" href="rera-disp.html" data-page="rera-disp">RERA Dispute Response Support</a>
+          </div>
+        </div>
+      </li>
+
+      <!-- 7. KNOWLEDGE CENTER -->
+      <li class="ni" data-page="kc">
+        <a class="nl" href="kc.html">Knowledge Center
+          <svg class="ar" viewBox="0 0 10 6" fill="currentColor"><path d="M0 0l5 6 5-6z"/></svg>
+        </a>
+        <div class="dd">
+          <div class="dds">
+            <a class="dda" href="kc-gst.html"       data-page="kc-gst">GST</a>
+            <a class="dda" href="kc-rera.html"      data-page="kc-rera">RERA</a>
+            <a class="dda" href="kc-dtax.html"      data-page="kc-dtax">Direct Tax</a>
+            <a class="dda" href="kc-intl.html"      data-page="kc-intl">International Tax</a>
+            <a class="dda" href="kc-fema.html"      data-page="kc-fema">FEMA &amp; EXIM</a>
+            <a class="dda" href="kc-audit.html"     data-page="kc-audit">Audit</a>
+            <a class="dda" href="kc-glossary.html"  data-page="kc-glossary">Glossary</a>
+            <a class="dda" href="kc-checklist.html" data-page="kc-checklist">Checklists</a>
+          </div>
+        </div>
+      </li>
+
+      <li class="ni" data-page="career">
+        <a class="nl" href="career.html">Career</a>
+      </li>
+
+      <li class="ni" data-page="contact">
+        <a class="nl" href="contact.html">Contact Us</a>
+      </li>
+
+    </ul>
+
+    <!-- RIGHT CLUSTER: CTA + mobile toggle -->
+    <div style="display:flex;align-items:center;gap:.85rem">
+      <a class="ncta" href="contact.html">Book a Consultant</a>
+      <button class="ntog" id="ntog" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+  </div>
+</nav>
+
+<!--
+  Inline init — keeps the nav self-contained.
+  Runs once per page load (or once after fetch include re-executes scripts).
+  Two responsibilities:
+    1. Mark the current page's top-level <a class="nl"> with .active
+    2. If the URL matches a dropdown item, the parent .nl is highlighted
+  Full nav behaviour (mobile toggle, dropdown click/hover) lives in
+  assets/js/nav.js, which is loaded per page.
+-->
+<script>
+(function(){
+  // Map dropdown sub-pages → the data-page slug of their parent <li class="ni">
+  // (covers the "About Us is active when on /team or /why-choose-us" case)
+  var subToParent = {
+    'why-choose-us':'about','team':'about',
+    'gst-class':'gst','gst-audit':'gst','gst-dd':'gst','gst-lit':'gst','gst-opinion':'gst','gst-refund':'gst','gst-search':'gst','gst-ebill':'gst',
+    'corp-tax':'dtax','income-tax-adv':'dtax','income-tax':'dtax','nri-tax':'dtax',
+    'stat-audit':'audit','tax-audit':'audit','int-audit':'audit','comp-audit':'audit',
+    'biz-setup':'audit','biz-val':'audit','company-law':'audit','exim':'audit','fema':'audit','mgmt-cfo':'audit',
+    'rera-reg':'rera','rera-qud':'rera','rera-ext':'rera','rera-disp':'rera',
+    'kc-gst':'kc','kc-rera':'kc','kc-dtax':'kc','kc-intl':'kc','kc-fema':'kc','kc-audit':'kc','kc-glossary':'kc','kc-checklist':'kc'
+  };
+
+  // Current page slug — strip path + .html, treat empty / 'index' as 'index'
+  var file = (location.pathname.split('/').pop() || 'index.html').replace(/\.html?$/i, '');
+  if (!file) file = 'index';
+
+  // Resolve to a top-level nav slug
+  var topSlug = subToParent[file] || file;
+
+  // Find matching top-level <li> and add .active to its <a class="nl">
+  var li = document.querySelector('.ni[data-page="' + topSlug + '"]');
+  if (li) {
+    var nl = li.querySelector('.nl');
+    if (nl) nl.classList.add('active');
+  }
+})();
+</script>

@@ -1,0 +1,196 @@
+<!--
+  =================================================================
+  SHARED FOOTER COMPONENT  —  V J Desai & Co. LLP
+  Include via fetch() in every page (see assets/js/main.js loader).
+  Depends on: assets/css/footer.css
+
+  Includes:
+    • WhatsApp float button (.wa-float)
+    • Footer accent bar (.sft-accent)
+    • Brand / contact card with phone, email, address, hours, socials
+    • Three link columns (Quick Links · Services · Resources)
+    • Trust strip + bottom bar (copyright, terms, privacy)
+
+  Firm contact details (single source of truth — edit here, propagates
+  to every page once included via fetch):
+    • Phone:    098250 62515       (tel: 09825062515 | wa.me: 919825062515)
+    • Email:    info@vjdesai.com
+    • Address:  B-901/902, Ratnaakar Nine Square,
+                132 Feet Ring Rd, Opp. ITC Narmada,
+                Suryapooja Block B, Satellite,
+                Ahmedabad, Gujarat 380015
+  =================================================================
+-->
+
+<!-- ── WHATSAPP FLOAT BUTTON ────────────────────────────────────── -->
+<a class="wa-float"
+   href="https://wa.me/919825062515?text=Hello%20V%20J%20Desai%20%26%20Co.%20LLP%2C%20I%20would%20like%20to%20book%20a%20consultation."
+   target="_blank" rel="noopener"
+   aria-label="Chat on WhatsApp with V J Desai & Co. LLP">
+  <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+    <path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.117 1.528 5.845L.057 23.886l6.188-1.448A11.934 11.934 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.796 9.796 0 01-5.003-1.37l-.358-.213-3.716.869.937-3.63-.234-.373A9.769 9.769 0 012.182 12C2.182 6.575 6.575 2.182 12 2.182S21.818 6.575 21.818 12 17.425 21.818 12 21.818z"/>
+  </svg>
+  <span>Chat on WhatsApp</span>
+</a>
+
+
+<!-- ── SITE FOOTER ──────────────────────────────────────────────── -->
+<footer id="site-footer">
+
+  <!-- Top accent gradient bar -->
+  <div class="sft-accent"></div>
+
+  <!-- Main footer body -->
+  <div class="sft-body">
+    <div class="sft-inner">
+
+      <!-- ── BRAND + CONTACT CARD ─────────────────────────────── -->
+      <div class="sft-card">
+
+        <!--
+          Logo — text-based (mirrors the nav). To use the original
+          base64 image instead, replace this block with:
+            <a class="sft-logo" href="index.html"><img src="assets/img/logo.jpg" height="62"></a>
+        -->
+        <a class="sft-logo logo" href="index.html" aria-label="V J Desai & Co. LLP — Home" style="margin-bottom:.9rem">
+          <div class="logo-name" style="font-size:1.6rem">V J Desai <span class="amp">&amp;</span> Co. LLP</div>
+          <div class="logo-sub" style="font-size:.62rem">Chartered Accountants</div>
+        </a>
+
+        <div class="sft-est">ICAI Registered &nbsp;·&nbsp; Est. 1993</div>
+        <p class="sft-desc">V J Desai &amp; Co. LLP is a distinguished Chartered Accountancy firm providing GST, direct tax, audit, RERA, FEMA, and corporate advisory services across Gujarat and India.</p>
+
+        <!-- Contact rows -->
+        <div class="sft-contacts">
+          <a href="tel:09825062515" class="sft-cl" aria-label="Call us">
+            <span class="sft-ci" aria-hidden="true">📞</span>
+            098250 62515
+          </a>
+          <a href="mailto:info@vjdesai.com" class="sft-cl" aria-label="Email us">
+            <span class="sft-ci" aria-hidden="true">✉️</span>
+            info@vjdesai.com
+          </a>
+          <div class="sft-cl">
+            <span class="sft-ci" aria-hidden="true" style="margin-top:2px">📍</span>
+            <span>
+              B-901/902, Ratnaakar Nine Square,<br/>
+              132 Feet Ring Rd, Opp. ITC Narmada,<br/>
+              Suryapooja Block B, Satellite,<br/>
+              Ahmedabad, Gujarat 380015
+            </span>
+          </div>
+        </div>
+
+        <!-- Office hours -->
+        <div class="sft-hrs">
+          <div class="sft-hrs-h">🕒 &nbsp;Office Hours</div>
+          <div class="sft-hr-row"><b>Mon – Fri</b><span>10:00 AM – 7:00 PM</span></div>
+          <div class="sft-hr-row"><b>Saturday</b><span>10:00 AM – 6:00 PM</span></div>
+          <div class="sft-hr-row"><b>Sunday</b><span class="sft-closed">Closed</span></div>
+        </div>
+
+        <!-- Social icons -->
+        <div class="sft-social">
+          <a class="sft-si" href="https://linkedin.com" target="_blank" rel="noopener"
+             title="LinkedIn" style="font-family:Georgia,serif;font-size:.86rem">in</a>
+          <a class="sft-si" href="https://g.page/vjdesai" target="_blank" rel="noopener"
+             title="Google" style="font-weight:900;color:#4285F4;font-size:.76rem">G</a>
+          <a class="sft-si" href="https://youtube.com" target="_blank" rel="noopener"
+             title="YouTube" style="font-size:.64rem;color:#FF0000">▶</a>
+          <a class="sft-si" href="https://instagram.com" target="_blank" rel="noopener"
+             title="Instagram" style="font-size:.72rem">📸</a>
+          <a class="sft-si" href="https://wa.me/919825062515" target="_blank" rel="noopener"
+             title="WhatsApp" style="font-size:.72rem">💬</a>
+        </div>
+      </div>
+
+      <!-- ── QUICK LINKS ──────────────────────────────────────── -->
+      <div class="sft-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="why-choose-us.html">About Us</a></li>
+          <li><a href="why-choose-us.html">Vision &amp; Mission</a></li>
+          <li><a href="team.html">Our Team</a></li>
+          <li><a href="kc.html">Knowledge Center</a></li>
+          <li><a href="career.html">Career</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- ── OUR SERVICES ─────────────────────────────────────── -->
+      <div class="sft-col">
+        <h4>Our Services</h4>
+        <ul>
+          <li><a href="gst.html">GST &amp; Indirect Tax</a></li>
+          <li><a href="corp-tax.html">Corporate Tax</a></li>
+          <li><a href="income-tax.html">Income Tax Returns</a></li>
+          <li><a href="nri-tax.html">NRI Taxation &amp; DTAA</a></li>
+          <li><a href="stat-audit.html">Statutory Audit</a></li>
+          <li><a href="rera-reg.html">RERA Compliance</a></li>
+          <li><a href="fema.html">FEMA &amp; RBI</a></li>
+          <li><a href="biz-setup.html">Business Setup</a></li>
+          <li><a href="mgmt-cfo.html">CFO Services</a></li>
+        </ul>
+      </div>
+
+      <!-- ── RESOURCES ────────────────────────────────────────── -->
+      <div class="sft-col">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="kc-gst.html">GST Knowledge Center</a></li>
+          <li><a href="kc-dtax.html">Direct Tax Updates</a></li>
+          <li><a href="kc-rera.html">RERA Guidelines</a></li>
+          <li><a href="kc-fema.html">FEMA Resources</a></li>
+          <li><a href="kc-audit.html">Audit Resources</a></li>
+          <li><a href="kc-glossary.html">Tax Glossary</a></li>
+          <li><a href="kc-checklist.html">Compliance Checklist</a></li>
+        </ul>
+      </div>
+
+    </div><!-- /.sft-inner -->
+
+    <!-- Trust strip -->
+    <div class="sft-trust">
+      <div class="sft-badges">
+        <span class="sft-bdg au">ICAI Registered</span>
+        <span class="sft-bdg">Est. 1993</span>
+        <span class="sft-bdg">2500+ Clients</span>
+        <span class="sft-bdg">35+ Industry Sectors</span>
+        <span class="sft-bdg">Ahmedabad, Gujarat</span>
+      </div>
+      <div class="sft-motto">"Integrity &nbsp;·&nbsp; Reliability &nbsp;·&nbsp; Proficiency"</div>
+    </div>
+
+  </div><!-- /.sft-body -->
+
+  <!-- Bottom bar -->
+  <div class="sft-bar">
+    <div class="sft-bar-in">
+      <div class="sft-copy">&copy; <span id="sft-year">2025</span> V J Desai &amp; Co. LLP. All Rights Reserved.</div>
+      <div class="sft-blinks">
+        <a href="terms.html">Terms &amp; Conditions</a>
+        <span class="sft-dot" aria-hidden="true"></span>
+        <a href="privacy.html">Privacy Policy</a>
+        <span class="sft-dot" aria-hidden="true"></span>
+        <a href="sitemap.html">Sitemap</a>
+        <span class="sft-dot" aria-hidden="true"></span>
+        <a href="disclaimer.html">Disclaimer</a>
+      </div>
+      <div class="sft-credit">Designed &amp; Developed by <span>vjdesai.com</span></div>
+    </div>
+  </div>
+
+</footer>
+
+<!--
+  Inline init — keeps the footer self-contained.
+  Auto-updates the copyright year so you never have to edit it manually.
+-->
+<script>
+(function(){
+  var y = document.getElementById('sft-year');
+  if (y) y.textContent = new Date().getFullYear();
+})();
+</script>

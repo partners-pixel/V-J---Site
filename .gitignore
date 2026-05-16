@@ -1,0 +1,37 @@
+# ─── OS / system ─────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ─── Editors / IDEs ──────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ─── Claude Code local state ─────────────────────────────────────
+.claude/
+
+# ─── Logs / temp ─────────────────────────────────────────────────
+*.log
+npm-debug.log*
+yarn-error.log
+*.tmp
+*.bak
+
+# ─── Node / front-end build artefacts (if added later) ───────────
+node_modules/
+dist/
+build/
+.cache/
+.parcel-cache/
+
+# ─── Local dev server pidfiles ───────────────────────────────────
+.serve.pid
+
+# ─── Original source (kept locally, not pushed) ──────────────────
+# Uncomment if you keep your single-file source in the repo and
+# don't want to publish it:
+# _source/
+# *_original.html
