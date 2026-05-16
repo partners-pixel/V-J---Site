@@ -26,27 +26,603 @@
 <!-- PAGE CONTENT -->
 <main>
 
-  <section class="ph">
-    <div class="phi">
-      <div class="bc">
-        <a href="index.html">Home</a><span>/</span>
-        <span>Career</span>
+<div id="page-career">
+<style>
+/* ══════════════════════════════════════
+   CAREER PAGE — FULLY SCOPED STYLES
+══════════════════════════════════════ */
+#page-career .car-hero-stats{display:flex;flex-wrap:wrap;gap:2rem;margin-top:2.4rem;padding-top:2rem;border-top:1px solid rgba(201,168,76,.2)}
+#page-career .chs-num{font-family:'EB Garamond',serif;font-size:2rem;font-weight:700;color:var(--gold);line-height:1}
+#page-career .chs-label{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.45);margin-top:.25rem}
+#page-career .car-hero-badges{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.6rem}
+#page-career .car-hero-badge{display:inline-flex;align-items:center;gap:.4rem;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.13);color:rgba(255,255,255,.75);font-size:.75rem;font-weight:500;padding:.3rem .85rem;border-radius:20px}
+#page-career .car-hero-badge .chbgold{color:var(--gold)}
+#page-career .car-hero-cta{display:flex;flex-wrap:wrap;gap:.85rem;margin-top:2rem}
+#page-career .cbtn-primary{display:inline-flex;align-items:center;gap:.45rem;background:var(--gold);color:var(--navy-deep);font-size:.87rem;font-weight:700;padding:.75rem 1.8rem;border-radius:5px;transition:var(--t);cursor:pointer;border:none;font-family:'Inter',sans-serif}
+#page-career .cbtn-primary:hover{background:var(--gold-lt);transform:translateY(-1px)}
+#page-career .cbtn-outline{display:inline-flex;align-items:center;gap:.45rem;background:transparent;color:rgba(255,255,255,.82);border:1px solid rgba(255,255,255,.25);font-size:.87rem;font-weight:500;padding:.75rem 1.6rem;border-radius:5px;transition:var(--t);cursor:pointer;font-family:'Inter',sans-serif}
+#page-career .cbtn-outline:hover{border-color:var(--gold);color:var(--gold)}
+#page-career .cqcard{background:rgba(255,255,255,.06);border:1px solid rgba(201,168,76,.18);border-radius:10px;padding:1.4rem 1.6rem;margin-bottom:1rem}
+#page-career .cqcard h4{font-family:'EB Garamond',serif;font-size:1.05rem;font-weight:700;color:var(--white);margin-bottom:.5rem}
+#page-career .cqcard p{font-size:.82rem;color:rgba(255,255,255,.55);line-height:1.65}
+#page-career .cqcard-meta{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.8rem}
+#page-career .cqctag{font-size:.68rem;background:rgba(201,168,76,.15);color:var(--gold);border:1px solid rgba(201,168,76,.25);border-radius:3px;padding:.14rem .55rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase}
+#page-career .cqapply{margin-top:.9rem;display:inline-flex;align-items:center;gap:.3rem;font-size:.78rem;font-weight:600;color:var(--gold);cursor:pointer;background:none;border:none;font-family:'Inter',sans-serif;transition:var(--t);padding:0}
+#page-career .cqapply:hover{color:var(--gold-lt)}
+
+/* Sub-nav */
+#page-career .car-subnav{background:var(--white);border-bottom:1.5px solid var(--light);position:sticky;top:88px;z-index:400;box-shadow:0 1px 8px rgba(0,0,0,.04)}
+#page-career .car-subnav-inner{max-width:1440px;margin:0 auto;padding:0 5vw;display:flex;align-items:center;overflow-x:auto;scrollbar-width:none}
+#page-career .car-subnav-inner::-webkit-scrollbar{display:none}
+#page-career .csn{display:inline-flex;align-items:center;padding:.82rem 1.1rem;font-size:.84rem;font-weight:500;color:var(--tmid);cursor:pointer;white-space:nowrap;border-bottom:2.5px solid transparent;margin-bottom:-1.5px;transition:var(--t);text-decoration:none;font-family:'Inter',sans-serif}
+#page-career .csn:hover{color:var(--tdark)}
+#page-career .csn.csn-active{color:var(--gold);border-bottom-color:var(--gold);font-weight:600}
+
+/* Sections */
+#page-career .car-sec{padding:80px 5vw;background:var(--white)}
+#page-career .car-sec-alt{padding:80px 5vw;background:var(--light)}
+#page-career .car-sec-inner{max-width:1440px;margin:0 auto}
+#page-career .car-sec-head{text-align:center;margin-bottom:2.5rem}
+
+/* Why Join Us */
+#page-career .car-why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem;margin-top:2rem}
+#page-career .cwcard{background:var(--white);border:1px solid rgba(0,0,0,.07);border-radius:10px;padding:1.8rem 1.6rem;border-top:3px solid var(--gold);transition:var(--t)}
+#page-career .cwcard:hover{transform:translateY(-3px);box-shadow:0 10px 30px rgba(0,0,0,.09)}
+#page-career .cwicon{width:44px;height:44px;background:var(--gold-bg);border:1px solid var(--bdr);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:1.2rem;margin-bottom:1rem}
+#page-career .cwcard h3{font-family:'EB Garamond',serif;font-size:1.08rem;font-weight:700;color:var(--tdark);margin-bottom:.5rem}
+#page-career .cwcard p{font-size:.85rem;color:var(--tmute);line-height:1.7}
+
+/* Culture */
+#page-career .car-culture-grid{display:grid;grid-template-columns:1fr 1fr;gap:4vw;align-items:start;margin-top:2rem}
+#page-career .ccitem{display:flex;align-items:flex-start;gap:1rem;background:var(--white);border-radius:8px;padding:1.2rem 1.4rem;border:1px solid rgba(0,0,0,.06);border-left:3px solid var(--gold);margin-bottom:1rem}
+#page-career .ccicon{width:36px;height:36px;background:var(--gold-bg);border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:1rem;flex-shrink:0}
+#page-career .ccitem h4{font-size:.88rem;font-weight:600;color:var(--tdark);margin-bottom:.22rem}
+#page-career .ccitem p{font-size:.82rem;color:var(--tmute);line-height:1.6}
+#page-career .car-quote{background:var(--navy);border-radius:10px;padding:2rem 2.2rem;border-left:4px solid var(--gold);margin-bottom:1.2rem}
+#page-career .car-quote blockquote{font-family:'EB Garamond',serif;font-size:1.05rem;font-style:italic;line-height:1.7;color:var(--tlt);margin-bottom:.8rem}
+#page-career .car-quote cite{font-size:.75rem;color:var(--gold);font-style:normal;font-weight:600;letter-spacing:.06em;text-transform:uppercase}
+#page-career .car-metrics{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;margin-bottom:1.2rem}
+#page-career .cmetric{background:var(--white);border-radius:8px;padding:1.2rem;border:1px solid rgba(0,0,0,.07);text-align:center}
+#page-career .cmet-num{font-family:'EB Garamond',serif;font-size:1.7rem;font-weight:700;color:var(--navy);line-height:1}
+#page-career .cmet-label{font-size:.74rem;color:var(--tmute);margin-top:.3rem;letter-spacing:.04em}
+#page-career .car-domains{background:var(--navy);border-radius:10px;padding:1.5rem 1.8rem}
+#page-career .car-domain-title{font-size:.68rem;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:var(--gold);margin-bottom:.9rem}
+#page-career .car-domain-tags{display:flex;flex-wrap:wrap;gap:.45rem}
+#page-career .cdtag{font-size:.76rem;background:rgba(255,255,255,.07);color:rgba(255,255,255,.7);border:1px solid rgba(255,255,255,.1);border-radius:4px;padding:.2rem .65rem}
+
+/* Job Cards */
+#page-career .car-jobs-wrap{display:flex;flex-direction:column;gap:2rem;margin-top:2rem}
+#page-career .jc2{border-radius:12px;border:1px solid rgba(0,0,0,.08);overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,.07)}
+#page-career .jc2-head{padding:2rem 2.4rem 1.6rem;background:var(--white);border-bottom:1px solid var(--light)}
+#page-career .jc2-head-row{display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:1.2rem}
+#page-career .jc2-badge{display:inline-flex;align-items:center;gap:.35rem;font-size:.62rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;border-radius:4px;padding:.2rem .72rem;margin-bottom:.65rem}
+#page-career .jbadge-blue{background:rgba(26,82,118,.1);color:#1A5276;border:1px solid rgba(26,82,118,.2)}
+#page-career .jbadge-teal{background:rgba(0,112,112,.1);color:#007070;border:1px solid rgba(0,112,112,.2)}
+#page-career .jc2-title{font-family:'EB Garamond',serif;font-size:1.5rem;font-weight:700;color:var(--tdark);margin-bottom:.28rem;line-height:1.2}
+#page-career .jc2-sub{font-size:.85rem;color:var(--tmute);margin-bottom:.9rem}
+#page-career .jc2-pills{display:flex;flex-wrap:wrap;gap:.5rem}
+#page-career .jc2-pill{display:inline-flex;align-items:center;gap:.3rem;font-size:.74rem;color:var(--tmid);background:var(--light);border:1px solid rgba(0,0,0,.07);border-radius:20px;padding:.2rem .75rem}
+#page-career .jc2-apply{display:inline-flex;align-items:center;gap:.4rem;font-size:.82rem;font-weight:700;padding:.65rem 1.5rem;border-radius:6px;transition:var(--t);cursor:pointer;white-space:nowrap;font-family:'Inter',sans-serif;border:none}
+#page-career .ja-navy{background:var(--navy);color:var(--white)}
+#page-career .ja-navy:hover{background:var(--navy-hover);transform:translateY(-1px);box-shadow:0 4px 14px rgba(0,0,0,.18)}
+#page-career .ja-gold{background:var(--gold);color:var(--navy-deep)}
+#page-career .ja-gold:hover{background:var(--gold-lt);transform:translateY(-1px)}
+#page-career .jc2-body{padding:2rem 2.4rem;background:var(--off);display:grid;grid-template-columns:1fr 1fr;gap:2rem}
+#page-career .jc2-full{grid-column:1/-1}
+#page-career .jc2-label{font-size:.67rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);border-bottom:1px solid var(--bdr);padding-bottom:.45rem;margin-bottom:.9rem}
+#page-career .jc2-body p{font-size:.86rem;color:var(--tmid);line-height:1.75}
+#page-career .jlist{display:flex;flex-direction:column;gap:.55rem;margin:0;padding:0;list-style:none}
+#page-career .jlist li{display:flex;align-items:flex-start;gap:.6rem;font-size:.85rem;color:var(--tmid);line-height:1.65}
+#page-career .jlist li::before{content:'▸';color:var(--gold);font-size:.75rem;margin-top:.18rem;flex-shrink:0}
+#page-career .jlist li strong{color:var(--tdark);font-weight:600}
+#page-career .jskills{display:flex;flex-wrap:wrap;gap:.45rem;margin-top:.2rem}
+#page-career .jskill{font-size:.75rem;background:var(--white);border:1px solid var(--bdr);color:var(--tmid);border-radius:4px;padding:.18rem .65rem}
+#page-career .jc2-foot{padding:1.1rem 2.4rem;background:var(--light);border-top:1px solid rgba(0,0,0,.06);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.8rem}
+#page-career .jc2-foot-note{font-size:.75rem;color:var(--tmute)}
+
+/* Process Steps */
+#page-career .car-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:1.3rem;margin-top:2rem}
+#page-career .cstep{background:var(--white);border-radius:10px;padding:1.8rem 1.5rem;border:1px solid rgba(0,0,0,.07);border-top:3px solid var(--gold);transition:var(--t)}
+#page-career .cstep:hover{transform:translateY(-3px);box-shadow:0 10px 30px rgba(0,0,0,.09)}
+#page-career .cstep-num{font-family:'EB Garamond',serif;font-size:2.2rem;font-weight:700;color:rgba(201,168,76,.2);line-height:1;margin-bottom:.7rem}
+#page-career .cstep h4{font-family:'EB Garamond',serif;font-size:1.05rem;font-weight:700;color:var(--tdark);margin-bottom:.4rem}
+#page-career .cstep p{font-size:.84rem;color:var(--tmute);line-height:1.68}
+
+/* Benefits */
+#page-career .car-benefits-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem;margin-top:2rem}
+#page-career .cben{background:var(--light);border-radius:10px;padding:2rem 1.6rem;border:1px solid rgba(0,0,0,.06);border-left:4px solid var(--gold);transition:var(--t)}
+#page-career .cben:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,.08)}
+#page-career .cben-icon{font-size:1.6rem;margin-bottom:.8rem}
+#page-career .cben h3{font-family:'EB Garamond',serif;font-size:1.05rem;font-weight:700;color:var(--tdark);margin-bottom:.6rem}
+#page-career .cben ul{display:flex;flex-direction:column;gap:.35rem;list-style:none;padding:0}
+#page-career .cben ul li{display:flex;align-items:flex-start;gap:.45rem;font-size:.82rem;color:var(--tmid);line-height:1.55}
+#page-career .cben ul li::before{content:'✓';color:var(--gold);font-weight:700;flex-shrink:0;font-size:.8rem}
+
+/* CTA */
+#page-career .car-cta-sec{background:var(--navy);padding:80px 5vw}
+#page-career .car-cta-inner{max-width:1440px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:5vw;align-items:start}
+#page-career .car-cta-h2{font-family:'EB Garamond',serif;font-size:clamp(1.7rem,2.5vw,2.5rem);font-weight:700;color:var(--white);line-height:1.2;margin-bottom:.9rem}
+#page-career .car-cta-h2 em{font-style:italic;color:var(--gold)}
+#page-career .car-cta-desc{font-size:.92rem;line-height:1.82;color:var(--tdim);margin-bottom:1.8rem;max-width:440px}
+#page-career .cta-row{display:flex;align-items:center;gap:.9rem;margin-bottom:1rem}
+#page-career .cta-icon{width:40px;height:40px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:.95rem;flex-shrink:0}
+#page-career .cta-row-label{font-size:.67rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.38);margin-bottom:.18rem}
+#page-career .cta-row-val{font-size:.88rem;font-weight:600;color:var(--gold)}
+#page-career .car-cta-box{background:rgba(255,255,255,.05);border:1px solid rgba(201,168,76,.15);border-radius:12px;padding:2.2rem}
+#page-career .car-cta-box h3{font-family:'EB Garamond',serif;font-size:1.3rem;font-weight:700;color:var(--white);margin-bottom:.5rem}
+#page-career .car-cta-box p{font-size:.84rem;color:var(--tdim);line-height:1.7;margin-bottom:1.4rem}
+#page-career .cta-submit{width:100%;padding:1rem;border-radius:6px;background:var(--gold);color:var(--navy-deep);font-size:.9rem;font-weight:700;cursor:pointer;border:none;font-family:'Inter',sans-serif;transition:var(--t);margin-bottom:1rem}
+#page-career .cta-submit:hover{background:var(--gold-lt)}
+#page-career .cta-checklist-hd{font-size:.66rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.35);margin-bottom:.75rem;margin-top:1.2rem;padding-top:1.2rem;border-top:1px solid rgba(255,255,255,.08)}
+#page-career .cta-check{display:flex;align-items:center;gap:.55rem;font-size:.82rem;color:rgba(255,255,255,.58);margin-bottom:.4rem}
+#page-career .cta-check::before{content:'◆';color:var(--gold);font-size:.55rem;flex-shrink:0}
+
+/* Responsive */
+@media(max-width:1024px){
+  #page-career .car-why-grid{grid-template-columns:repeat(2,1fr)}
+  #page-career .car-steps{grid-template-columns:repeat(2,1fr)}
+  #page-career .car-benefits-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:768px){
+  #page-career .car-hero-rhs{display:none}
+  #page-career .car-why-grid,#page-career .car-culture-grid,#page-career .jc2-body,#page-career .car-steps,#page-career .car-benefits-grid,#page-career .car-cta-inner{grid-template-columns:1fr}
+  #page-career .jc2-full{grid-column:1}
+  #page-career .jc2-head,#page-career .jc2-body,#page-career .jc2-foot{padding:1.3rem}
+  #page-career .jc2-head-row{flex-direction:column}
+  #page-career .jc2-foot{flex-direction:column;align-items:flex-start}
+}
+</style>
+
+  <!-- ══ HERO ══ -->
+  <div style="background:var(--navy);padding:88px 5vw 72px;position:relative;overflow:hidden">
+    <div style="position:absolute;inset:0;pointer-events:none;background-image:radial-gradient(circle,rgba(201,168,76,.08) 1px,transparent 1px);background-size:48px 48px;z-index:0"></div>
+    <div style="position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse 60% 70% at 85% 40%,rgba(201,168,76,.07) 0%,transparent 70%);z-index:0"></div>
+    <div style="max-width:1440px;margin:0 auto;position:relative;z-index:1;display:grid;grid-template-columns:1.1fr 0.9fr;gap:5vw;align-items:center">
+
+      <!-- LEFT -->
+      <div>
+        <div style="display:flex;align-items:center;gap:.5rem;margin-bottom:1.4rem;flex-wrap:wrap">
+          <a onclick="go('home')" style="font-size:.7rem;letter-spacing:.09em;text-transform:uppercase;color:var(--gold);cursor:pointer">Home</a>
+          <span style="color:rgba(255,255,255,.2);font-size:.7rem">/</span>
+          <span style="font-size:.7rem;letter-spacing:.09em;text-transform:uppercase;color:rgba(255,255,255,.35)">Career</span>
+        </div>
+        <div style="display:inline-flex;align-items:center;gap:.45rem;background:rgba(201,168,76,.14);border:1px solid rgba(201,168,76,.28);color:var(--gold);padding:.3rem .9rem;border-radius:50px;font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:1.2rem">🏛️ &nbsp;Career at V J Desai &amp; Co. LLP</div>
+        <h1 style="font-family:'EB Garamond',serif;font-size:clamp(2.2rem,3.8vw,3.5rem);font-weight:700;color:var(--white);line-height:1.12;max-width:640px;margin-bottom:1rem">Build a Career You Are <em style="font-style:italic;color:var(--gold)">Proud Of</em></h1>
+        <p style="font-size:.95rem;line-height:1.85;color:rgba(255,255,255,.6);max-width:540px;margin-bottom:1.6rem">Join a distinguished CA firm where learning never stops. Work under experienced partners on real client engagements — GST, Direct Tax, Audit, RERA, FEMA, and Corporate Advisory since 1993.</p>
+        <div class="car-hero-badges">
+          <span class="car-hero-badge"><span class="chbgold">✦</span> ICAI Registered Firm</span>
+          <span class="car-hero-badge"><span class="chbgold">✦</span> Est. 1993 · 33+ Years</span>
+          <span class="car-hero-badge"><span class="chbgold">✦</span> Ahmedabad, Gujarat</span>
+          <span class="car-hero-badge"><span class="chbgold">✦</span> 2 Positions Open</span>
+        </div>
+        <div class="car-hero-cta">
+          <button class="cbtn-primary" onclick="document.getElementById('car-roles').scrollIntoView({behavior:'smooth'})">View Open Positions ↓</button>
+          <button class="cbtn-outline" onclick="go('contact')">Send Your CV →</button>
+        </div>
+        <div class="car-hero-stats">
+          <div><div class="chs-num">1993</div><div class="chs-label">Year Founded</div></div>
+          <div><div class="chs-num">33+</div><div class="chs-label">Years of Practice</div></div>
+          <div><div class="chs-num">2500+</div><div class="chs-label">Clients Served</div></div>
+          <div><div class="chs-num">35+</div><div class="chs-label">Industry Sectors</div></div>
+        </div>
       </div>
-      <div class="pgbadge">Career</div>
-      <h1>Career <em>at V J Desai &amp; Co. LLP</em></h1>
-      <p>This page is a stub. To populate it, copy the markup from
-         <code>&lt;div class="page" id="page-career"&gt;&hellip;&lt;/div&gt;</code>
-         in your original single-file SPA into the &lt;main&gt; below this hero
-         (remove this paragraph once you do).</p>
+
+      <!-- RIGHT: quick job previews -->
+      <div class="car-hero-rhs">
+        <div style="font-size:.67rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.3);margin-bottom:.8rem">Currently Accepting Applications</div>
+        <div class="cqcard">
+          <div style="display:flex;align-items:center;gap:.5rem;margin-bottom:.6rem">
+            <div style="width:30px;height:30px;background:rgba(26,82,118,.6);border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:.85rem">🎓</div>
+            <span style="font-size:.62rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;background:rgba(26,82,118,.2);color:#5dade2;border:1px solid rgba(93,173,226,.25);border-radius:3px;padding:.14rem .55rem">Article Trainee</span>
+          </div>
+          <h4>CA Articleship Training</h4>
+          <p>3-year ICAI practical training across GST, Tax, Audit, RERA, FEMA &amp; Company Law under direct partner mentorship.</p>
+          <div class="cqcard-meta">
+            <span class="cqctag">CA Foundation / Inter</span>
+            <span class="cqctag">ICAI Stipend</span>
+            <span class="cqctag">3 Years</span>
+          </div>
+          <button class="cqapply" onclick="go('contact')">Apply Now →</button>
+        </div>
+        <div class="cqcard">
+          <div style="display:flex;align-items:center;gap:.5rem;margin-bottom:.6rem">
+            <div style="width:30px;height:30px;background:rgba(0,112,112,.5);border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:.85rem">💼</div>
+            <span style="font-size:.62rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;background:rgba(0,128,128,.15);color:#1abc9c;border:1px solid rgba(26,188,156,.25);border-radius:3px;padding:.14rem .55rem">Full-Time</span>
+          </div>
+          <h4>Accounts Executive / Accountant</h4>
+          <p>Permanent role in bookkeeping, GST filing, TDS compliance and accounts finalization for multiple clients.</p>
+          <div class="cqcard-meta">
+            <span class="cqctag">B.Com / M.Com</span>
+            <span class="cqctag">₹18K–₹30K/mo</span>
+            <span class="cqctag">1–3 Yrs Exp</span>
+          </div>
+          <button class="cqapply" onclick="go('contact')">Apply Now →</button>
+        </div>
+        <div style="background:rgba(201,168,76,.08);border:1px dashed rgba(201,168,76,.25);border-radius:8px;padding:1rem 1.2rem">
+          <p style="font-size:.77rem;color:rgba(255,255,255,.45);line-height:1.7">
+            📧 &nbsp;<a href="mailto:info@vjdesai.com" style="color:var(--gold);font-weight:600">info@vjdesai.com</a><br/>
+            📞 &nbsp;<a href="tel:+919825062515" style="color:rgba(255,255,255,.55)">+91 98250 62515</a> &nbsp;·&nbsp; Mon–Sat 10am–6pm
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ SUB-NAV ══ -->
+  <div class="car-subnav">
+    <div class="car-subnav-inner">
+      <a class="csn csn-active" onclick="document.getElementById('car-why').scrollIntoView({behavior:'smooth'})">Why Join Us</a>
+      <a class="csn" onclick="document.getElementById('car-culture').scrollIntoView({behavior:'smooth'})">Our Culture</a>
+      <a class="csn" onclick="document.getElementById('car-roles').scrollIntoView({behavior:'smooth'})">Open Positions</a>
+      <a class="csn" onclick="document.getElementById('car-process').scrollIntoView({behavior:'smooth'})">How to Apply</a>
+      <a class="csn" onclick="document.getElementById('car-benefits').scrollIntoView({behavior:'smooth'})">What We Offer</a>
+      <a class="csn" onclick="document.getElementById('car-contact-cta').scrollIntoView({behavior:'smooth'})">Apply Now</a>
+    </div>
+  </div>
+
+  <!-- ══ SECTION 1: WHY JOIN US ══ -->
+  <section id="car-why" class="car-sec">
+    <div class="car-sec-inner">
+      <div class="car-sec-head">
+        <div class="stag">Why Choose Us</div>
+        <h2 class="ht">Why Build Your Career <em>With Us</em></h2>
+        <p class="ssub" style="max-width:620px;margin:0 auto">We are more than a CA firm — a structured learning environment where professionals grow, take real ownership, and build careers that matter.</p>
+      </div>
+      <div class="car-why-grid">
+        <div class="cwcard"><div class="cwicon">📚</div><h3>Multi-Domain Exposure</h3><p>Work across statutory audit, tax audit, GST, direct tax, RERA, FEMA, company law, and corporate advisory — building a rounded profile from day one.</p></div>
+        <div class="cwcard"><div class="cwicon">🎓</div><h3>Direct Partner Mentorship</h3><p>Work under CA partners with 30+ years of combined expertise. Get personalised guidance, structured feedback, and real client interaction from the start.</p></div>
+        <div class="cwcard"><div class="cwicon">🚀</div><h3>Clear Growth Path</h3><p>We believe in meritocracy. High performers take on client responsibility quickly. A transparent progression framework ensures you always know where you stand.</p></div>
+        <div class="cwcard"><div class="cwicon">🏆</div><h3>Real Client Responsibility</h3><p>From early in your career, you handle real client files — not just supporting work. This hands-on approach accelerates learning and builds confidence fast.</p></div>
+        <div class="cwcard"><div class="cwicon">⚖️</div><h3>Integrity-First Culture</h3><p>Founded on integrity, reliability, and proficiency. Every team member upholds these values — ethical practice is non-negotiable at every level of the firm.</p></div>
+        <div class="cwcard"><div class="cwicon">📍</div><h3>Prime Ahmedabad Office</h3><p>Our office at Ratnaakar Nine Square, Satellite — a modern, well-connected workspace with professional infrastructure and a collaborative, energetic team.</p></div>
+      </div>
     </div>
   </section>
 
-  <!-- TODO: paste original SPA content for #page-career here -->
+  <!-- ══ SECTION 2: OUR CULTURE ══ -->
+  <section id="car-culture" class="car-sec-alt">
+    <div class="car-sec-inner">
+      <div class="stag">Our Culture</div>
+      <h2 class="ht">A Culture Built on <em>Learning &amp; Excellence</em></h2>
+      <div class="car-culture-grid">
+        <div>
+          <p style="font-size:.93rem;line-height:1.88;color:var(--tmid);margin-bottom:.4rem">V J Desai &amp; Co. LLP was established in 1993 by Senior Partner CA Vinod J. Desai. Over three decades, we have built a firm culture where every professional — whether an Article Trainee or a qualified CA — is treated as a valued contributor, not just an executor.</p>
+          <p style="font-size:.93rem;line-height:1.88;color:var(--tmid);margin-bottom:1.2rem">Our team works on live client assignments from day one, gaining practical exposure to GST, income tax, audit, RERA, company law and more across diverse industries.</p>
+          <div class="ccitem"><div class="ccicon">🤝</div><div><h4>Collaborative Team Environment</h4><p>Seniors guide juniors; every team member is encouraged to contribute ideas and take ownership of their work.</p></div></div>
+          <div class="ccitem"><div class="ccicon">📖</div><div><h4>Continuous Professional Development</h4><p>Regular internal sessions, ICAI updates, and exposure to complex multi-law compliance engagements.</p></div></div>
+          <div class="ccitem"><div class="ccicon">⚖️</div><div><h4>Work-Life Balance &amp; Study Support</h4><p>Structured schedules — professional growth without compromising CA exam commitments.</p></div></div>
+          <div class="ccitem"><div class="ccicon">📈</div><div><h4>Performance-Based Recognition</h4><p>High performers advance quickly, take on larger portfolios, and receive clear opportunities for career advancement.</p></div></div>
+        </div>
+        <div>
+          <div class="car-quote">
+            <blockquote>"We do not just hire professionals — we develop them. Every person who joins our firm is given the tools, exposure, and mentorship to build a career they can be proud of."</blockquote>
+            <cite>CA Vinod J. Desai — Founding &amp; Senior Partner</cite>
+          </div>
+          <div class="car-metrics">
+            <div class="cmetric"><div class="cmet-num">1993</div><div class="cmet-label">Year Founded</div></div>
+            <div class="cmetric"><div class="cmet-num">33+</div><div class="cmet-label">Years of Practice</div></div>
+            <div class="cmetric"><div class="cmet-num">2500+</div><div class="cmet-label">Clients Served</div></div>
+            <div class="cmetric"><div class="cmet-num">35+</div><div class="cmet-label">Industry Sectors</div></div>
+          </div>
+          <div class="car-domains">
+            <div class="car-domain-title">Practice Areas You Will Work In</div>
+            <div class="car-domain-tags">
+              <span class="cdtag">GST &amp; Indirect Tax</span>
+              <span class="cdtag">Direct Tax</span>
+              <span class="cdtag">Statutory Audit</span>
+              <span class="cdtag">Tax Audit</span>
+              <span class="cdtag">RERA Compliance</span>
+              <span class="cdtag">FEMA &amp; RBI</span>
+              <span class="cdtag">Company Law</span>
+              <span class="cdtag">CFO Services</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <div class="ctab"><div class="ctabi">
-    <div><h2>Need help with <em>Career?</em></h2><p>Our team will design a tailored engagement for your needs.</p></div>
-    <a class="bgs" href="contact.html">Book a Consultation &rarr;</a>
-  </div></div>
+  <!-- ══ SECTION 3: OPEN POSITIONS ══ -->
+  <section id="car-roles" class="car-sec">
+    <div class="car-sec-inner">
+      <div class="car-sec-head">
+        <div class="stag">Open Positions</div>
+        <h2 class="ht">Current <em>Opportunities</em></h2>
+        <p class="ssub" style="max-width:600px;margin:0 auto">Two positions currently open at V J Desai &amp; Co. LLP, Ahmedabad. Read the full job descriptions and apply directly.</p>
+      </div>
+      <div class="car-jobs-wrap">
+
+        <!-- JOB 1: ARTICLESHIP -->
+        <div class="jc2" style="border-top:4px solid #1A5276">
+          <div class="jc2-head">
+            <div class="jc2-head-row">
+              <div>
+                <div class="jc2-badge jbadge-blue">🎓 Article Trainee &nbsp;·&nbsp; ICAI Registered</div>
+                <div class="jc2-title">CA Articleship Training</div>
+                <div class="jc2-sub">Chartered Accountancy Article Assistant — 3-Year ICAI Practical Training Programme</div>
+                <div class="jc2-pills">
+                  <span class="jc2-pill">📍 Satellite, Ahmedabad</span>
+                  <span class="jc2-pill">🕐 Full-Time · 3 Years</span>
+                  <span class="jc2-pill">🎓 CA Foundation / Intermediate</span>
+                  <span class="jc2-pill">💰 ICAI-Compliant Stipend</span>
+                  <span class="jc2-pill">🟢 Currently Accepting</span>
+                </div>
+              </div>
+              <button class="jc2-apply ja-navy" onclick="go('contact')">Apply Now →</button>
+            </div>
+          </div>
+          <div class="jc2-body">
+            <div class="jc2-full">
+              <div class="jc2-label">📋 Position Overview</div>
+              <p>V J Desai &amp; Co. LLP is an ICAI-registered CA firm established in 1993, offering Articleship to CA students who have cleared CA Foundation or CA Intermediate. Article Trainees gain hands-on exposure across six core practice areas — GST, Income Tax, Statutory Audit, RERA, FEMA, and Company Law — under the direct supervision of our senior partners. This is not just a training contract — it is the foundation of a distinguished professional career in Chartered Accountancy.</p>
+            </div>
+            <div>
+              <div class="jc2-label">💼 Key Responsibilities</div>
+              <ul class="jlist">
+                <li>Prepare and file GST returns (GSTR-1, GSTR-3B, GSTR-9/9C) for clients across diverse industries</li>
+                <li>Support statutory, tax, and internal audit — ledger scrutiny, vouching, working paper preparation</li>
+                <li>Assist in Income Tax Returns (ITR-1 to ITR-6) for individuals, firms, companies, and trusts</li>
+                <li>Conduct TDS reconciliations, prepare Form 16/16A, and support TDS compliance processes</li>
+                <li>Perform Tally ERP data entry, bank reconciliation, and account finalization under supervision</li>
+                <li>Assist in RERA compliance — promoter registrations, quarterly progress reports, project filings</li>
+                <li>Support FEMA advisory and company law filings (ROC compliance, board resolutions)</li>
+                <li>Prepare client MIS reports and draft replies to notices and correspondences</li>
+              </ul>
+            </div>
+            <div>
+              <div class="jc2-label">📚 Training Exposure — All 6 Areas</div>
+              <ul class="jlist">
+                <li><strong>GST &amp; Indirect Tax:</strong> Registration, returns, reconciliation, audit, refund, litigation</li>
+                <li><strong>Direct Tax:</strong> ITR filing, advance tax, TDS compliance, and tax planning</li>
+                <li><strong>Statutory Audit:</strong> Balance sheet verification, vouching, working paper preparation</li>
+                <li><strong>Tax Audit (3CA/3CD):</strong> Clause-wise reporting and Form 3CA/3CB/3CD preparation</li>
+                <li><strong>RERA Compliance:</strong> Project registration, QPR, and compliance monitoring</li>
+                <li><strong>Company Law:</strong> ROC filings, board resolutions, and annual compliance</li>
+                <li><strong>FEMA / RBI:</strong> FC-GPR, FC-TRS filings and FEMA advisory basics</li>
+                <li><strong>Accounts Finalization:</strong> P&amp;L, Balance Sheet, schedules, notes to accounts</li>
+              </ul>
+            </div>
+            <div>
+              <div class="jc2-label">✅ Eligibility &amp; Requirements</div>
+              <ul class="jlist">
+                <li>Cleared CA Foundation or CA Intermediate (Group I or both groups) from ICAI — mandatory</li>
+                <li>Valid ICAI student registration and Articleship eligibility as per current ICAI regulations</li>
+                <li>Basic proficiency in MS Office (Excel, Word); willingness to learn Tally ERP / Tally Prime</li>
+                <li>Strong command of English for client communication, report writing, and notice drafting</li>
+                <li>Ability to manage multiple client files simultaneously with accuracy and attention to detail</li>
+                <li>Ahmedabad-based or willing to relocate; regular in-office attendance is expected</li>
+                <li>Disciplined study approach alongside article work — CA exam support is fully provided</li>
+              </ul>
+            </div>
+            <div>
+              <div class="jc2-label">🌟 What You Will Gain</div>
+              <ul class="jlist">
+                <li>3 years of ICAI-compliant article training with signed Form 102 and 103 from a registered partner</li>
+                <li>Direct mentorship from CA partners with 30+ years of taxation and audit experience</li>
+                <li>Real client files from Day 1 — across 35+ sectors including real estate, manufacturing, and trading</li>
+                <li>Rotation across all service areas — building a well-rounded profile for CA Final exams</li>
+                <li>Study leave as per ICAI norms; CA exam commitments are fully respected and supported</li>
+                <li>ICAI-compliant monthly stipend as per the current prescribed scale</li>
+                <li>Structured performance feedback and clear progression guidance throughout your articleship</li>
+                <li>Reference letter and ICAI completion certificate on successful completion</li>
+              </ul>
+            </div>
+            <div class="jc2-full">
+              <div class="jc2-label">🧠 Skills You Will Develop</div>
+              <div class="jskills">
+                <span class="jskill">GST Return Filing</span><span class="jskill">Income Tax Returns</span><span class="jskill">TDS Compliance</span>
+                <span class="jskill">Statutory Audit</span><span class="jskill">Tax Audit (3CD)</span><span class="jskill">Tally ERP / Prime</span>
+                <span class="jskill">Bank Reconciliation</span><span class="jskill">Accounts Finalization</span><span class="jskill">RERA Filings</span>
+                <span class="jskill">ROC Compliance</span><span class="jskill">FEMA Basics</span><span class="jskill">Client Communication</span>
+                <span class="jskill">Working Paper Prep</span><span class="jskill">MS Excel</span><span class="jskill">Ledger Scrutiny</span><span class="jskill">Notice Drafting</span>
+              </div>
+            </div>
+          </div>
+          <div class="jc2-foot">
+            <span class="jc2-foot-note">📌 ICAI Registered · Est. 1993 · Satellite, Ahmedabad · Stipend as per ICAI norms</span>
+            <button class="jc2-apply ja-navy" onclick="go('contact')">Send Your Application →</button>
+          </div>
+        </div>
+
+        <!-- JOB 2: ACCOUNTANT -->
+        <div class="jc2" style="border-top:4px solid #007070">
+          <div class="jc2-head">
+            <div class="jc2-head-row">
+              <div>
+                <div class="jc2-badge jbadge-teal">💼 Full-Time · Permanent Role</div>
+                <div class="jc2-title">Accounts Executive / Junior Accountant</div>
+                <div class="jc2-sub">Full-Time Accounts &amp; Tax Compliance Professional — CA Firm Support Role</div>
+                <div class="jc2-pills">
+                  <span class="jc2-pill">📍 Satellite, Ahmedabad</span>
+                  <span class="jc2-pill">🕐 Full-Time · Permanent</span>
+                  <span class="jc2-pill">🎓 B.Com / M.Com / CA Inter</span>
+                  <span class="jc2-pill">💼 1–3 Years Experience</span>
+                  <span class="jc2-pill">💰 ₹18,000–₹30,000 / Month</span>
+                  <span class="jc2-pill">🟢 Currently Accepting</span>
+                </div>
+              </div>
+              <button class="jc2-apply ja-gold" onclick="go('contact')">Apply Now →</button>
+            </div>
+          </div>
+          <div class="jc2-body">
+            <div class="jc2-full">
+              <div class="jc2-label">📋 Position Overview</div>
+              <p>We are looking for a detail-oriented and motivated Accounts Executive / Junior Accountant to join our growing team at V J Desai &amp; Co. LLP. The ideal candidate is a B.Com / M.Com graduate or CA Intermediate student with 1–3 years of hands-on accounting or CA firm experience. You will work across client bookkeeping, GST compliance, TDS workings, and accounts finalization — under the direct guidance of our CA partners. This is an excellent opportunity to build deep practical expertise in a high-quality, structured professional environment serving 35+ industry sectors.</p>
+            </div>
+            <div>
+              <div class="jc2-label">💼 Key Responsibilities</div>
+              <ul class="jlist">
+                <li>Maintain and manage day-to-day bookkeeping for multiple clients using Tally ERP / Tally Prime</li>
+                <li>Prepare and file monthly GST returns (GSTR-1, GSTR-3B) and annual returns (GSTR-9 / 9C)</li>
+                <li>Perform bank reconciliation, debtor/creditor reconciliation, and detailed ledger scrutiny</li>
+                <li>Process TDS deductions, prepare quarterly returns (Form 24Q / 26Q), and generate Form 16 / 16A</li>
+                <li>Assist in finalization of accounts — trial balance, profit &amp; loss, balance sheet, and schedules</li>
+                <li>Prepare client MIS reports, cash flow statements, and profitability summaries</li>
+                <li>Support senior CAs in statutory and tax audit — vouching, ledger checking, working papers</li>
+                <li>Handle client correspondence — drafting letters and replying to GST/IT notices under CA supervision</li>
+              </ul>
+            </div>
+            <div>
+              <div class="jc2-label">🧩 Required Skills &amp; Knowledge</div>
+              <ul class="jlist">
+                <li><strong>Tally ERP / Prime:</strong> Data entry, ledger creation, voucher posting, and report generation</li>
+                <li><strong>GST Compliance:</strong> GST returns, ITC reconciliation (GSTR-2A/2B), annual return filing</li>
+                <li><strong>TDS &amp; Income Tax:</strong> TDS sections (194C, 194J, 194I), return filing on TRACES/TIN portal</li>
+                <li><strong>MS Excel:</strong> Pivot tables, VLOOKUP-based reports, and reconciliation sheets</li>
+                <li><strong>Accounts Finalization:</strong> Final accounts with schedule-wise reporting</li>
+                <li><strong>Communication:</strong> Professional email drafting, client coordination in English and Gujarati</li>
+              </ul>
+            </div>
+            <div>
+              <div class="jc2-label">🎓 Qualifications &amp; Experience</div>
+              <ul class="jlist">
+                <li>Bachelor's degree in Commerce (B.Com) from a recognised university — mandatory</li>
+                <li>M.Com, MBA (Finance), or CA Intermediate is an added advantage</li>
+                <li>1–3 years of practical experience in a CA firm, accounting firm, or accounts department</li>
+                <li>Prior experience with GST return filing and Tally ERP is strongly preferred</li>
+                <li>Freshers with strong Tally / Excel skills and excellent academic record may also apply</li>
+                <li>Fluency in Gujarati preferred; English proficiency is mandatory for all candidates</li>
+                <li>Ahmedabad-based candidates preferred; willing-to-relocate candidates welcome</li>
+              </ul>
+            </div>
+            <div>
+              <div class="jc2-label">💰 Compensation &amp; Benefits</div>
+              <ul class="jlist">
+                <li>Monthly salary of ₹18,000–₹30,000 depending on qualification and experience level</li>
+                <li>Annual performance-based increment reviewed directly by senior partners</li>
+                <li>Exposure to 35+ industry sectors — manufacturing, real estate, trading, services, and NGOs</li>
+                <li>Direct access to CA partners — learn from professionals with 30+ years of experience</li>
+                <li>Structured growth path: Accounts Executive → Senior Accountant → Team Lead</li>
+                <li>CA study support — candidates pursuing CA Inter/Final are encouraged and supported</li>
+                <li>Professional reference letter and experience certificate on successful tenure completion</li>
+              </ul>
+            </div>
+            <div class="jc2-full">
+              <div class="jc2-label">🧠 Key Skills Required</div>
+              <div class="jskills">
+                <span class="jskill">Tally ERP / Tally Prime</span><span class="jskill">GST Return Filing</span><span class="jskill">TDS Compliance</span>
+                <span class="jskill">Bank Reconciliation</span><span class="jskill">Accounts Finalization</span><span class="jskill">MS Excel (Advanced)</span>
+                <span class="jskill">Ledger Scrutiny</span><span class="jskill">GSTR-9 / 9C</span><span class="jskill">Form 26Q / 24Q</span>
+                <span class="jskill">MIS Reporting</span><span class="jskill">Audit Support</span><span class="jskill">Client Coordination</span>
+                <span class="jskill">Notice Drafting</span><span class="jskill">Cash Flow Statements</span><span class="jskill">Debtors / Creditors Ageing</span>
+              </div>
+            </div>
+          </div>
+          <div class="jc2-foot">
+            <span class="jc2-foot-note">📌 Full-Time Permanent · Satellite, Ahmedabad · ₹18,000–₹30,000/month · Growth-Oriented</span>
+            <button class="jc2-apply ja-gold" onclick="go('contact')">Send Your Application →</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ SECTION 4: HOW TO APPLY ══ -->
+  <section id="car-process" class="car-sec-alt">
+    <div class="car-sec-inner">
+      <div class="car-sec-head">
+        <div class="stag">Application Process</div>
+        <h2 class="ht">Our <em>Application Process</em></h2>
+        <p class="ssub" style="max-width:580px;margin:0 auto">A simple, transparent, and respectful process — we value your time and respond to every application.</p>
+      </div>
+      <div class="car-steps">
+        <div class="cstep"><div class="cstep-num">01</div><h4>Submit Your Application</h4><p>Email your CV and a brief cover note to <strong>info@vjdesai.com</strong> mentioning the role. Or use the Contact Us page directly.</p></div>
+        <div class="cstep"><div class="cstep-num">02</div><h4>Initial Screening</h4><p>Our team reviews your application within 3–5 working days. Shortlisted candidates are contacted via phone or email for a brief conversation.</p></div>
+        <div class="cstep"><div class="cstep-num">03</div><h4>Partner Interview</h4><p>A structured interview at our Ahmedabad office with a partner — assessing knowledge, attitude, and cultural fit with the firm.</p></div>
+        <div class="cstep"><div class="cstep-num">04</div><h4>Practical Assessment</h4><p>For certain roles, a short practical task (e.g. GST reconciliation or Tally entry exercise) may be shared to assess working knowledge.</p></div>
+        <div class="cstep"><div class="cstep-num">05</div><h4>Offer &amp; Joining</h4><p>Successful candidates receive a formal offer letter with role, compensation, and joining terms. Smooth and structured onboarding provided.</p></div>
+        <div class="cstep"><div class="cstep-num">06</div><h4>Onboarding &amp; Mentorship</h4><p>From day one you are assigned a partner mentor and integrated into live client teams. No bench time — you contribute meaningfully from week one.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ SECTION 5: WHAT WE OFFER ══ -->
+  <section id="car-benefits" class="car-sec">
+    <div class="car-sec-inner">
+      <div class="car-sec-head">
+        <div class="stag">What We Offer</div>
+        <h2 class="ht">Benefits of Working <em>With Us</em></h2>
+        <p class="ssub" style="max-width:580px;margin:0 auto">We are committed to creating an environment where every professional thrives — academically, professionally, and personally.</p>
+      </div>
+      <div class="car-benefits-grid">
+        <div class="cben">
+          <div class="cben-icon">🎓</div>
+          <h3>Article Trainees</h3>
+          <ul>
+            <li>ICAI-compliant monthly stipend as per prescribed scale</li>
+            <li>Study leave for CA Foundation, Intermediate &amp; Final</li>
+            <li>Rotation across 6+ service areas including GST, Audit &amp; RERA</li>
+            <li>Direct partner supervision and mentorship from day one</li>
+            <li>Structured performance reviews every 6 months</li>
+            <li>ICAI Form 102/103, completion certificate on finishing</li>
+          </ul>
+        </div>
+        <div class="cben" style="border-left-color:var(--navy);background:var(--gold-pale)">
+          <div class="cben-icon">💼</div>
+          <h3>Full-Time Professionals</h3>
+          <ul>
+            <li>Competitive salary of ₹18,000–₹30,000 per month</li>
+            <li>Annual performance-based increment</li>
+            <li>Growing client responsibility and portfolio ownership</li>
+            <li>Knowledge-sharing culture with regular internal sessions</li>
+            <li>Clear advancement track to senior and team lead roles</li>
+            <li>35+ industry sector exposure across client portfolio</li>
+          </ul>
+        </div>
+        <div class="cben">
+          <div class="cben-icon">📈</div>
+          <h3>Career Growth</h3>
+          <ul>
+            <li>Meritocracy-based fast-track progression for top performers</li>
+            <li>Partnership track for exceptional long-term performers</li>
+            <li>CA exam study support and flexible scheduling</li>
+            <li>Multi-domain expertise building across all practice areas</li>
+            <li>Professional development training and ICAI CPE support</li>
+            <li>Reference letters and certificates on completion of tenure</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ SECTION 6: APPLY NOW CTA ══ -->
+  <div id="car-contact-cta" class="car-cta-sec">
+    <div class="car-cta-inner">
+      <div>
+        <div class="stag" style="color:var(--gold)">Apply Now</div>
+        <h2 class="car-cta-h2">Ready to Join <em>V J Desai &amp; Co. LLP?</em></h2>
+        <p class="car-cta-desc">Send us your CV and a brief note about yourself and the role you are interested in. We respond to every application within 3–5 working days.</p>
+        <div>
+          <div class="cta-row">
+            <div class="cta-icon" style="background:#1A5276">📍</div>
+            <div><div class="cta-row-label">Office Address</div><div style="font-size:.85rem;color:rgba(255,255,255,.7);line-height:1.65">B-901/902, Ratnaakar Nine Square, 132 Feet Ring Rd,<br/>Satellite, Ahmedabad — 380015</div></div>
+          </div>
+          <div class="cta-row">
+            <div class="cta-icon" style="background:#1E8449">✉️</div>
+            <div><div class="cta-row-label">Send Your CV</div><a href="mailto:info@vjdesai.com" class="cta-row-val">info@vjdesai.com</a></div>
+          </div>
+          <div class="cta-row">
+            <div class="cta-icon" style="background:#6C3483">📞</div>
+            <div><div class="cta-row-label">Call Us</div><a href="tel:+919825062515" class="cta-row-val">+91 98250 62515</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="car-cta-box">
+        <h3>Send Your Application</h3>
+        <p>Use our Contact Us page to send a direct message — mention the role and attach your CV. Our team will respond within 3–5 working days.</p>
+        <button class="cta-submit" onclick="go('contact')">Send Your Application →</button>
+        <p style="font-size:.72rem;color:rgba(255,255,255,.28);text-align:center;margin-bottom:0">V J Desai &amp; Co. LLP is an equal opportunity employer. We welcome all qualified applicants.</p>
+        <div class="cta-checklist-hd">What to Include in Your Email</div>
+        <div class="cta-check">Updated CV / Resume (PDF preferred)</div>
+        <div class="cta-check">Role you are applying for (Articleship or Accountant)</div>
+        <div class="cta-check">Brief note about yourself (3–5 lines)</div>
+        <div class="cta-check">Current qualifications and marks / experience</div>
+        <div class="cta-check">Expected joining date or availability</div>
+      </div>
+    </div>
+  </div>
+</div>
 
 </main>
 

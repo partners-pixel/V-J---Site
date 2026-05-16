@@ -75,6 +75,66 @@
     });
   }
 
+  /* ─── 1b. LEGACY SPA HANDLERS  (window.go / .tab / .snScroll …) ── */
+  // The extracted page content carries inline onclick="go('slug')",
+  // onclick="tab('audit','a1')", onclick="snScroll('gst','svc')", and
+  // onclick="handleForm(this)". We expose minimal global shims so those
+  // attributes keep working in the multi-page world.
+
+  // Navigate between pages. 'home' maps to index.html; everything else
+  // is "<slug>.html" — works from any pages/*.html since they are
+  // siblings of each other.
+  window.go = function (slug) {
+    if (!slug) return;
+    var file = (slug === 'home' ? 'index' : slug) + '.html';
+    location.href = file;
+  };
+
+  // In-page tab switcher (preserved from the original SPA)
+  var TABS = {
+    gst:   ['g1','g2','g3','g4','g5','g6','g7','g8','g9'],
+    dtax:  ['d1','d2','d3','d4'],
+    audit: ['a1','a2','a3','a4','a5','c1','c2','c3','c4','c5','c6','c7'],
+    rera:  ['r1','r2','r3','r4']
+  };
+  window.tab = function (page, id) {
+    (TABS[page] || []).forEach(function (t) {
+      var p = document.getElementById(page + '-' + t);
+      if (p) p.classList.remove('active');
+      var b = document.getElementById(page + '-btn-' + t);
+      if (b) b.classList.remove('active');
+    });
+    var tp = document.getElementById(page + '-' + id);
+    if (tp) tp.classList.add('active');
+    var tb = document.getElementById(page + '-btn-' + id);
+    if (tb) tb.classList.add('active');
+  };
+
+  // Sub-nav anchor scroller
+  window.snScroll = function (page, section) {
+    var keys = Object.keys(window._activeTab || {});
+    var active = (window._activeTab && window._activeTab[page]) ||
+                 (TABS[page] ? TABS[page][0] : '');
+    var anchorId = page + '-' + section + (active ? '-' + active : '');
+    var el = document.getElementById(anchorId) ||
+             document.getElementById(page + '-' + section);
+    if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  };
+
+  // Mobile nav toggle (in case any extracted content calls mob())
+  window.mob = function () {
+    var navl = document.getElementById('navl');
+    if (navl) navl.classList.toggle('open');
+  };
+
+  // Form submission stub used by old onclick="handleForm(this)" buttons
+  window.handleForm = function (btn) {
+    if (!btn) return;
+    btn.textContent = '✓ Enquiry received. We will be in touch shortly';
+    btn.style.background = '#2D6A4F';
+    btn.disabled = true;
+  };
+
   /* ─── 2. FAQ TOGGLE (delegated) ────────────────────────────────── */
   // Original markup: <div class="ct-faq-q" onclick="toggleFaq(this)">…</div>
   // Replace inline handlers with delegation. Also exposes window.toggleFaq

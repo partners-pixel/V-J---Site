@@ -26,27 +26,366 @@
 <!-- PAGE CONTENT -->
 <main>
 
-  <section class="ph">
+<div id="page-company-law">
+<!-- Breadcrumb -->
+  <div class="ph" style="padding:1.4rem 5vw;min-height:auto;background:var(--navy-deep)">
     <div class="phi">
       <div class="bc">
-        <a href="index.html">Home</a><span>/</span>
+        <a onclick="go('home')">Home</a><span>/</span>
+        <a onclick="go('audit')">Advisory</a><span>/</span>
         <span>Company Law</span>
       </div>
-      <div class="pgbadge">Company Law</div>
-      <h1>Company Law <em>at V J Desai &amp; Co. LLP</em></h1>
-      <p>This page is a stub. To populate it, copy the markup from
-         <code>&lt;div class="page" id="page-company-law"&gt;&hellip;&lt;/div&gt;</code>
-         in your original single-file SPA into the &lt;main&gt; below this hero
-         (remove this paragraph once you do).</p>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <section class="gst-hero">
+    <div class="gst-hero-inner" style="grid-template-columns:1fr;max-width:900px">
+      <div>
+        <div class="gst-hero-eyebrow">Company Law Service</div>
+        <h1 style="font-size:clamp(2rem,3.4vw,3rem)">
+          Navigate Corporate Law<br/><em>with Confidence</em>
+        </h1>
+        <p class="gst-hero-lead">
+          Whether you are incorporating a new entity, managing governance, or completing a merger, our experts ensure you comply with regulations and mitigate risks.
+        </p>
+        <p style="font-size:.93rem;line-height:1.88;color:var(--tdim);margin-bottom:.9rem">
+          We provide comprehensive corporate law support so your business operates securely and efficiently. From forming the right company structure to handling complex transactions and compliance, our team ensures you meet all legal requirements.
+        </p>
+        <p style="font-size:.93rem;line-height:1.88;color:var(--tdim);margin-bottom:1.8rem">
+          With our guidance on governance, mergers, filings, and more, you can focus on growing your business without regulatory setbacks. Partner with V J Desai and Co. to keep your business legally sound and strategically aligned.
+        </p>
+        <button class="bgs" onclick="go('contact')">Book a Consultation</button>
+      </div>
     </div>
   </section>
 
-  <!-- TODO: paste original SPA content for #page-company-law here -->
+  <!-- STICKY SUB-NAV -->
+  <div class="gst-subnav">
+    <div class="gst-subnav-inner">
+      <a class="gsn active" href="#cl-services">Our Services</a>
+      <a class="gsn"        href="#cl-process">How It Works</a>
+      <a class="gsn"        href="#cl-engagement">Engagement</a>
+      <a class="gsn"        href="#cl-contact">Contact</a>
+    </div>
+  </div>
 
-  <div class="ctab"><div class="ctabi">
-    <div><h2>Need help with <em>Company Law?</em></h2><p>Our team will design a tailored engagement for your needs.</p></div>
-    <a class="bgs" href="contact.html">Book a Consultation &rarr;</a>
-  </div></div>
+  <!-- OUR SERVICES: 13 services from document -->
+  <section id="cl-services" class="gst-services-wrap gst-scroll">
+    <div style="max-width:1440px;margin:0 auto">
+      <div class="stag">Our Corporate Law Services</div>
+      <h2 class="ht">Company Law <em>Services We Provide</em></h2>
+      <p class="ssub" style="margin-bottom:2.6rem">
+        Each service is designed to make corporate law straightforward, letting you handle business matters without legal hiccups.
+      </p>
+
+      <div class="gst-svc-grid" style="grid-template-columns:repeat(4,1fr)">
+
+        <div class="gst-svc-item">
+          <div class="gst-svc-ico">🏢</div>
+          <h3>Company Formation</h3>
+          <p>Advising on the optimal legal structure (Private Limited, LLP, etc.) and managing registration. We prepare and file incorporation documents to get your business legally established.</p>
+        </div>
+
+        <div class="gst-svc-item">
+          <div class="gst-svc-ico">🏛️</div>
+          <h3>Corporate Governance</h3>
+          <p>Setting up board committees, drafting shareholder agreements, and implementing best practices in transparency. We align your governance with industry standards and regulatory expectations.</p>
+        </div>
+
+        <div class="gst-svc-item">
+          <div class="gst-svc-ico">🤝</div>
+          <h3>Mergers and Acquisitions</h3>
+          <p>Supporting every stage of M&amp;A deals including due diligence, deal structuring, contracts, and regulatory filings. We ensure transactions are efficient, compliant, and meet your strategic goals.</p>
+        </div>
+
+        <div class="gst-svc-item">
+          <div class="gst-svc-ico">🔁</div>
+          <h3>Restructuring and Reorganisation</h3>
+          <p>Planning and executing spin-offs, mergers, share buybacks, or debt restructuring. We navigate approvals and documentation to achieve a smoother, tax-efficient corporate structure.</p>
+        </div>
+
+        <div class="gst-svc-item">
+          <div class="gst-svc-ico">📋</div>
+          <h3>Compliance and Reporting</h3>
+          <p>Managing your statutory obligations including annual returns, financial statements, board resolutions, and ROC filings. We keep track of deadlines under the Companies Act and other regulations.</p>
+        </div>
+
+        <div class="gst-svc-item">
+          <div class="gst-svc-ico">📝</div>
+          <h3>Contracts and Agreements</h3>
+          <p>Drafting, reviewing, and negotiating corporate contracts including JV agreements, vendor contracts, and franchising. We ensure all agreements protect your interests and comply with applicable laws.</p>
+        </div>
+
+        <div class="gst-svc-item">
+          <div class="gst-svc-ico">📁</div>
+          <h3>Secretarial Services</h3>
+          <p>Handling board meeting logistics, minutes, statutory registers, and resolutions. We maintain your company records and filings, reducing administrative burden and risk of non-compliance.</p>
+        </div>
+
+        <div class="gst-svc-item">
+          <div class="gst-svc-ico">👥</div>
+          <h3>Shareholder and Board Matters</h3>
+          <p>Managing share issuances, transfers, and meetings. We advise on shareholder rights, help resolve disputes, and maintain strong stakeholder relations.</p>
+        </div>
+
+        <div class="gst-svc-item">
+          <div class="gst-svc-ico">🔍</div>
+          <h3>Legal Due Diligence</h3>
+          <p>Conducting thorough legal reviews before major transactions. We identify liabilities or compliance gaps so you can address risks before finalising any deal.</p>
+        </div>
+
+        <div class="gst-svc-item">
+          <div class="gst-svc-ico">⚖️</div>
+          <h3>Dispute Resolution</h3>
+          <p>Resolving conflicts between shareholders, directors, or other stakeholders. Through negotiation, arbitration, or litigation support, we protect your interests and resolve issues efficiently.</p>
+        </div>
+
+        <div class="gst-svc-item">
+          <div class="gst-svc-ico">🌐</div>
+          <h3>FDI and Regulatory Compliance</h3>
+          <p>Ensuring foreign investment complies with RBI and FDI rules. We guide you through investment structuring, filings, and approvals for inbound or outbound transactions.</p>
+        </div>
+
+        <div class="gst-svc-item">
+          <div class="gst-svc-ico">💡</div>
+          <h3>IP Rights Protection</h3>
+          <p>Registering and safeguarding trademarks, patents, and copyrights. We help protect your brand and innovations under Indian law.</p>
+        </div>
+
+        
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS: 7 steps from document -->
+  
+  <div id="cl-process" class="gst-process-wrap gst-scroll" style="background:var(--off)">
+    <div class="gst-process-inner">
+      <div class="stag" style="color:var(--gold)">How It Works</div>
+      <h2 class="ht ">Our Company Law <em>Process</em></h2>
+      <p class="ssub" style="margin-bottom:1.2rem">This structured approach keeps you compliant and prepared at every stage of your corporate journey.</p>
+      <div style="width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;padding:1.5rem 0 2.2rem;max-width:1060px;margin:0 auto">
+        <svg viewBox="0 0 952 330" style="width:100%;min-width:700px;display:block;" xmlns="http://www.w3.org/2000/svg">
+
+  <rect x="25" y="63" width="104" height="44" rx="4" fill="rgba(0,0,0,0.1)"/>
+  <rect x="22" y="60" width="104" height="44" rx="4" fill="#1A5276"/>
+  <rect x="22" y="60" width="104" height="14" rx="4" fill="rgba(255,255,255,0.12)"/>
+  <circle cx="77" cy="63" r="46" fill="rgba(0,0,0,0.1)"/>
+  <circle cx="74" cy="60" r="46" fill="white" stroke="#1A5276" stroke-width="3.5"/>
+  <circle cx="74" cy="60" r="34" fill="none" stroke="#1A5276" stroke-width="1.2" stroke-dasharray="4 3" opacity="0.35"/>
+  <circle cx="74" cy="60" r="41" fill="#D6E4F0" opacity="0.55"/>
+  <text x="74" y="68" text-anchor="middle" font-family="Inter,sans-serif" font-size="22" font-weight="800" fill="#1A5276">01</text>
+  <text x="74" y="120" text-anchor="middle" font-family="Inter,sans-serif" font-size="11.5" font-weight="700" fill="#1A5276">Initial</text>
+  <text x="74" y="135" text-anchor="middle" font-family="Inter,sans-serif" font-size="11.5" font-weight="700" fill="#1A5276">Consultation</text>
+  <line x1="26" y1="150" x2="122" y2="150" stroke="#1A5276" stroke-width="0.8" opacity="0.2"/>
+  <text x="74" y="163" text-anchor="middle" font-family="Inter,sans-serif" font-size="8.5" fill="#555">Understand business objectives</text>
+  <text x="74" y="176" text-anchor="middle" font-family="Inter,sans-serif" font-size="8.5" fill="#555">and legal needs, including</text>
+  <text x="74" y="189" text-anchor="middle" font-family="Inter,sans-serif" font-size="8.5" fill="#555">incorporation or restructuring.</text>
+
+  <rect x="159" y="63" width="104" height="44" rx="4" fill="rgba(0,0,0,0.1)"/>
+  <rect x="156" y="60" width="104" height="44" rx="4" fill="#6C3483"/>
+  <rect x="156" y="60" width="104" height="14" rx="4" fill="rgba(255,255,255,0.12)"/>
+  <circle cx="211" cy="63" r="46" fill="rgba(0,0,0,0.1)"/>
+  <circle cx="208" cy="60" r="46" fill="white" stroke="#6C3483" stroke-width="3.5"/>
+  <circle cx="208" cy="60" r="34" fill="none" stroke="#6C3483" stroke-width="1.2" stroke-dasharray="4 3" opacity="0.35"/>
+  <circle cx="208" cy="60" r="41" fill="#EEE0F7" opacity="0.55"/>
+  <text x="208" y="68" text-anchor="middle" font-family="Inter,sans-serif" font-size="22" font-weight="800" fill="#6C3483">02</text>
+  <text x="208" y="120" text-anchor="middle" font-family="Inter,sans-serif" font-size="11.5" font-weight="700" fill="#6C3483">Planning</text>
+  <text x="208" y="135" text-anchor="middle" font-family="Inter,sans-serif" font-size="11.5" font-weight="700" fill="#6C3483">and Advice</text>
+  <line x1="160" y1="150" x2="256" y2="150" stroke="#6C3483" stroke-width="0.8" opacity="0.2"/>
+  <text x="208" y="163" text-anchor="middle" font-family="Inter,sans-serif" font-size="8.5" fill="#555">Recommend best corporate structure</text>
+  <text x="208" y="176" text-anchor="middle" font-family="Inter,sans-serif" font-size="8.5" fill="#555">and compliance strategy for</text>
+  <text x="208" y="189" text-anchor="middle" font-family="Inter,sans-serif" font-size="8.5" fill="#555">your goals.</text>
+
+  <rect x="293" y="63" width="104" height="44" rx="4" fill="rgba(0,0,0,0.1)"/>
+  <rect x="290" y="60" width="104" height="44" rx="4" fill="#1E8449"/>
+  <rect x="290" y="60" width="104" height="14" rx="4" fill="rgba(255,255,255,0.12)"/>
+  <circle cx="345" cy="63" r="46" fill="rgba(0,0,0,0.1)"/>
+  <circle cx="342" cy="60" r="46" fill="white" stroke="#1E8449" stroke-width="3.5"/>
+  <circle cx="342" cy="60" r="34" fill="none" stroke="#1E8449" stroke-width="1.2" stroke-dasharray="4 3" opacity="0.35"/>
+  <circle cx="342" cy="60" r="41" fill="#D5EAD9" opacity="0.55"/>
+  <text x="342" y="68" text-anchor="middle" font-family="Inter,sans-serif" font-size="22" font-weight="800" fill="#1E8449">03</text>
+  <text x="342" y="128" text-anchor="middle" font-family="Inter,sans-serif" font-size="11.5" font-weight="700" fill="#1E8449">Documentation</text>
+  <line x1="294" y1="143" x2="390" y2="143" stroke="#1E8449" stroke-width="0.8" opacity="0.2"/>
+  <text x="342" y="156" text-anchor="middle" font-family="Inter,sans-serif" font-size="8.5" fill="#555">Prepare and file incorporation</text>
+  <text x="342" y="169" text-anchor="middle" font-family="Inter,sans-serif" font-size="8.5" fill="#555">papers, board resolutions</text>
+  <text x="342" y="182" text-anchor="middle" font-family="Inter,sans-serif" font-size="8.5" fill="#555">and statutory documents.</text>
+
+  <rect x="427" y="63" width="104" height="44" rx="4" fill="rgba(0,0,0,0.1)"/>
+  <rect x="424" y="60" width="104" height="44" rx="4" fill="#B7770D"/>
+  <rect x="424" y="60" width="104" height="14" rx="4" fill="rgba(255,255,255,0.12)"/>
+  <circle cx="479" cy="63" r="46" fill="rgba(0,0,0,0.1)"/>
+  <circle cx="476" cy="60" r="46" fill="white" stroke="#B7770D" stroke-width="3.5"/>
+  <circle cx="476" cy="60" r="34" fill="none" stroke="#B7770D" stroke-width="1.2" stroke-dasharray="4 3" opacity="0.35"/>
+  <circle cx="476" cy="60" r="41" fill="#FAE5D3" opacity="0.55"/>
+  <text x="476" y="68" text-anchor="middle" font-family="Inter,sans-serif" font-size="22" font-weight="800" fill="#B7770D">04</text>
+  <text x="476" y="120" text-anchor="middle" font-family="Inter,sans-serif" font-size="11.5" font-weight="700" fill="#B7770D">Registration</text>
+  <text x="476" y="135" text-anchor="middle" font-family="Inter,sans-serif" font-size="11.5" font-weight="700" fill="#B7770D">& Approvals</text>
+  <line x1="428" y1="150" x2="524" y2="150" stroke="#B7770D" stroke-width="0.8" opacity="0.2"/>
+  <text x="476" y="163" text-anchor="middle" font-family="Inter,sans-serif" font-size="8.5" fill="#555">Manage filings with ROC, RBI</text>
+  <text x="476" y="176" text-anchor="middle" font-family="Inter,sans-serif" font-size="8.5" fill="#555">and authorities for timely</text>
+  <text x="476" y="189" text-anchor="middle" font-family="Inter,sans-serif" font-size="8.5" fill="#555">registrations and approvals.</text>
+
+  <rect x="561" y="63" width="104" height="44" rx="4" fill="rgba(0,0,0,0.1)"/>
+  <rect x="558" y="60" width="104" height="44" rx="4" fill="#922B21"/>
+  <rect x="558" y="60" width="104" height="14" rx="4" fill="rgba(255,255,255,0.12)"/>
+  <circle cx="613" cy="63" r="46" fill="rgba(0,0,0,0.1)"/>
+  <circle cx="610" cy="60" r="46" fill="white" stroke="#922B21" stroke-width="3.5"/>
+  <circle cx="610" cy="60" r="34" fill="none" stroke="#922B21" stroke-width="1.2" stroke-dasharray="4 3" opacity="0.35"/>
+  <circle cx="610" cy="60" r="41" fill="#F5CEC8" opacity="0.55"/>
+  <text x="610" y="68" text-anchor="middle" font-family="Inter,sans-serif" font-size="22" font-weight="800" fill="#922B21">05</text>
+  <text x="610" y="120" text-anchor="middle" font-family="Inter,sans-serif" font-size="11.5" font-weight="700" fill="#922B21">Ongoing</text>
+  <text x="610" y="135" text-anchor="middle" font-family="Inter,sans-serif" font-size="11.5" font-weight="700" fill="#922B21">Compliance</text>
+  <line x1="562" y1="150" x2="658" y2="150" stroke="#922B21" stroke-width="0.8" opacity="0.2"/>
+  <text x="610" y="163" text-anchor="middle" font-family="Inter,sans-serif" font-size="8.5" fill="#555">Set up statutory deadline calendar</text>
+  <text x="610" y="176" text-anchor="middle" font-family="Inter,sans-serif" font-size="8.5" fill="#555">for annual returns, meetings</text>
+  <text x="610" y="189" text-anchor="middle" font-family="Inter,sans-serif" font-size="8.5" fill="#555">and filings.</text>
+
+  <rect x="695" y="63" width="104" height="44" rx="4" fill="rgba(0,0,0,0.1)"/>
+  <rect x="692" y="60" width="104" height="44" rx="4" fill="#0E6655"/>
+  <rect x="692" y="60" width="104" height="14" rx="4" fill="rgba(255,255,255,0.12)"/>
+  <circle cx="747" cy="63" r="46" fill="rgba(0,0,0,0.1)"/>
+  <circle cx="744" cy="60" r="46" fill="white" stroke="#0E6655" stroke-width="3.5"/>
+  <circle cx="744" cy="60" r="34" fill="none" stroke="#0E6655" stroke-width="1.2" stroke-dasharray="4 3" opacity="0.35"/>
+  <circle cx="744" cy="60" r="41" fill="#D0EDE8" opacity="0.55"/>
+  <text x="744" y="68" text-anchor="middle" font-family="Inter,sans-serif" font-size="22" font-weight="800" fill="#0E6655">06</text>
+  <text x="744" y="120" text-anchor="middle" font-family="Inter,sans-serif" font-size="11.5" font-weight="700" fill="#0E6655">Support During</text>
+  <text x="744" y="135" text-anchor="middle" font-family="Inter,sans-serif" font-size="11.5" font-weight="700" fill="#0E6655">Changes</text>
+  <line x1="696" y1="150" x2="792" y2="150" stroke="#0E6655" stroke-width="0.8" opacity="0.2"/>
+  <text x="744" y="163" text-anchor="middle" font-family="Inter,sans-serif" font-size="8.5" fill="#555">Provide legal support through</text>
+  <text x="744" y="176" text-anchor="middle" font-family="Inter,sans-serif" font-size="8.5" fill="#555">major transactions or</text>
+  <text x="744" y="189" text-anchor="middle" font-family="Inter,sans-serif" font-size="8.5" fill="#555">restructuring events.</text>
+
+  <rect x="829" y="63" width="104" height="44" rx="4" fill="rgba(0,0,0,0.1)"/>
+  <rect x="826" y="60" width="104" height="44" rx="4" fill="#4A5568"/>
+  <rect x="826" y="60" width="104" height="14" rx="4" fill="rgba(255,255,255,0.12)"/>
+  <circle cx="881" cy="63" r="46" fill="rgba(0,0,0,0.1)"/>
+  <circle cx="878" cy="60" r="46" fill="white" stroke="#4A5568" stroke-width="3.5"/>
+  <circle cx="878" cy="60" r="34" fill="none" stroke="#4A5568" stroke-width="1.2" stroke-dasharray="4 3" opacity="0.35"/>
+  <circle cx="878" cy="60" r="41" fill="#E8EAED" opacity="0.55"/>
+  <text x="878" y="68" text-anchor="middle" font-family="Inter,sans-serif" font-size="22" font-weight="800" fill="#4A5568">07</text>
+  <text x="878" y="120" text-anchor="middle" font-family="Inter,sans-serif" font-size="11.5" font-weight="700" fill="#4A5568">Issue</text>
+  <text x="878" y="135" text-anchor="middle" font-family="Inter,sans-serif" font-size="11.5" font-weight="700" fill="#4A5568">Resolution</text>
+  <line x1="830" y1="150" x2="926" y2="150" stroke="#4A5568" stroke-width="0.8" opacity="0.2"/>
+  <text x="878" y="163" text-anchor="middle" font-family="Inter,sans-serif" font-size="8.5" fill="#555">Guide through corporate disputes</text>
+  <text x="878" y="176" text-anchor="middle" font-family="Inter,sans-serif" font-size="8.5" fill="#555">or investigations for swift</text>
+  <text x="878" y="189" text-anchor="middle" font-family="Inter,sans-serif" font-size="8.5" fill="#555">resolution.</text>
+
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <!-- ENGAGEMENT MODELS: 3 from document -->
+  <div id="cl-engagement" class="gst-eng-wrap gst-scroll">
+    <div class="gst-eng-inner">
+      <div class="stag">Engagement</div>
+      <h2 class="ht">Choose Your <em>Engagement Model</em></h2>
+      <p class="ssub" style="margin-bottom:0">
+        Each model gives you flexible access to our expertise when you need it.
+      </p>
+
+      <div class="gst-eng-grid">
+
+        <div class="gst-eng-card">
+          <div class="gst-eng-top">
+            <div class="gst-eng-letter">A</div>
+            <div class="gst-eng-badge">Project-Based</div>
+            <h3>Project-Based</h3>
+            <p>Focused support for specific needs such as incorporation, drafting a shareholder agreement, or handling a single compliance task.</p>
+          </div>
+          <div class="gst-eng-divider"></div>
+          <div class="gst-eng-body">
+            <ul class="gst-eng-feat">
+              <li>Entity incorporation and registration</li>
+              <li>Shareholder agreement drafting</li>
+              <li>Single compliance task handling</li>
+              <li>Defined scope and deliverables</li>
+            </ul>
+          </div>
+          <button class="bgs" onclick="go('contact')" style="margin:0 1.8rem 1.8rem;width:calc(100% - 3.6rem)">Get a Proposal</button>
+        </div>
+
+        <div class="gst-eng-card" style="border-color:var(--gold);box-shadow:0 0 0 1px var(--gold)">
+          <div class="gst-eng-top" style="background:linear-gradient(135deg,var(--navy),rgba(201,168,76,.18))">
+            <div class="gst-eng-letter">B</div>
+            <div class="gst-eng-badge" style="background:var(--gold);color:var(--white);border-color:var(--gold)">Retainer</div>
+            <h3>Retainer</h3>
+            <p>Ongoing partnership to address all corporate law needs as they arise, ideal for growing businesses needing consistent legal guidance.</p>
+          </div>
+          <div class="gst-eng-divider"></div>
+          <div class="gst-eng-body">
+            <ul class="gst-eng-feat">
+              <li>All corporate law needs covered</li>
+              <li>Consistent legal guidance</li>
+              <li>Compliance calendar management</li>
+              <li>Ongoing governance support</li>
+            </ul>
+          </div>
+          <button class="bgs" onclick="go('contact')" style="margin:0 1.8rem 1.8rem;width:calc(100% - 3.6rem)">Start Retainer</button>
+        </div>
+
+        <div class="gst-eng-card">
+          <div class="gst-eng-top">
+            <div class="gst-eng-letter">C</div>
+            <div class="gst-eng-badge">Consultation</div>
+            <h3>Consultation</h3>
+            <p>On-demand advisory for particular queries or challenges such as navigating a sudden regulatory change or resolving a board-level issue.</p>
+          </div>
+          <div class="gst-eng-divider"></div>
+          <div class="gst-eng-body">
+            <ul class="gst-eng-feat">
+              <li>Regulatory change navigation</li>
+              <li>Board-level issue resolution</li>
+              <li>Targeted and focused advisory</li>
+              <li>On-demand expert access</li>
+            </ul>
+          </div>
+          <button class="bgs" onclick="go('contact')" style="margin:0 1.8rem 1.8rem;width:calc(100% - 3.6rem)">Request Consultation</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTACT / FINAL CTA -->
+  <div id="cl-contact" class="gst-cta-wrap gst-scroll">
+    <div class="gst-cta-inner">
+
+      <div class="gst-cta-left">
+        <div class="stag" style="color:var(--gold)">Contact</div>
+        <h2>Ensure Your Business<br/><em>Thrives within the Law</em></h2>
+        <p style="font-size:.93rem;line-height:1.82;color:var(--tdim);margin-bottom:1.6rem">
+          Contact V J Desai and Co. today for expert company law advice and solutions.
+        </p>
+      </div>
+
+      <div class="gst-cta-right">
+        <h3>Book a Consultation</h3>
+        <p style="font-size:.86rem;line-height:1.8;color:rgba(255,255,255,.55);margin-bottom:1.8rem">
+          Our corporate law team will assess your requirements and provide expert guidance to keep your business legally sound and strategically aligned.
+        </p>
+        <button class="bgs" onclick="go('contact')" style="width:100%;justify-content:center;padding:.95rem;margin-bottom:1.8rem">
+          Book a Consultation
+        </button>
+
+        <!-- Internal links from document -->
+        <div style="padding-top:1.5rem;border-top:1px solid rgba(255,255,255,.08)">
+          <div style="font-size:.68rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.35);margin-bottom:.85rem">Related Services</div>
+          <div style="display:flex;flex-direction:column;gap:.5rem">
+            <a onclick="go('gst')"   style="font-size:.82rem;color:rgba(201,168,76,.8);cursor:pointer">GST Compliance Services</a>
+            <a onclick="go('gst')"   style="font-size:.82rem;color:rgba(201,168,76,.8);cursor:pointer">GST Advisory Services</a>
+            <a onclick="go('gst')"   style="font-size:.82rem;color:rgba(201,168,76,.8);cursor:pointer">GST Registration Support</a>
+            <a onclick="go('audit')" style="font-size:.82rem;color:rgba(201,168,76,.8);cursor:pointer">GST Audit Support</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+</div>
 
 </main>
 

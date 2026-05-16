@@ -26,27 +26,95 @@
 <!-- PAGE CONTENT -->
 <main>
 
-  <section class="ph">
-    <div class="phi">
-      <div class="bc">
-        <a href="index.html">Home</a><span>/</span>
-        <span>Knowledge Center &mdash; Glossary</span>
-      </div>
-      <div class="pgbadge">Knowledge Center &mdash; Glossary</div>
-      <h1>Knowledge Center &mdash; Glossary <em>at V J Desai &amp; Co. LLP</em></h1>
-      <p>This page is a stub. To populate it, copy the markup from
-         <code>&lt;div class="page" id="page-kc-glossary"&gt;&hellip;&lt;/div&gt;</code>
-         in your original single-file SPA into the &lt;main&gt; below this hero
-         (remove this paragraph once you do).</p>
-    </div>
-  </section>
-
-  <!-- TODO: paste original SPA content for #page-kc-glossary here -->
-
-  <div class="ctab"><div class="ctabi">
-    <div><h2>Need help with <em>Knowledge Center &mdash; Glossary?</em></h2><p>Our team will design a tailored engagement for your needs.</p></div>
-    <a class="bgs" href="contact.html">Book a Consultation &rarr;</a>
+<div id="page-kc-glossary">
+<div class="ph"><div class="phi">
+    <div class="bc"><a onclick="go('home')">Home</a><span>/</span><a onclick="go('kc')">Knowledge Center</a><span>/</span><span>Glossary</span></div>
+    <div class="pgbadge">📖 7.7 Glossary</div>
+    <h1>Tax &amp; Finance <em>Glossary</em></h1>
+    <p>Plain-language definitions of key terms across GST, income tax, audit, RERA, FEMA, and company law.</p>
   </div></div>
+  <div class="subnav"><div class="subnav-inner">
+    <a class="sn" href="#kc-gloss-gst">GST Terms</a>
+    <a class="sn" href="#kc-gloss-tax">Tax Terms</a>
+    <a class="sn" href="#kc-gloss-audit">Audit Terms</a>
+    <a class="sn" href="#kc-gloss-fema">FEMA / RERA</a>
+  </div></div>
+
+  <section id="kc-gloss-gst" class="s scroll-sec" style="background:var(--white)"><div class="si">
+    <div class="stag">GST Terminology</div>
+    <h2 class="ht">GST <em>Key Terms</em></h2>
+    <table class="tbl" style="margin-top:1.8rem">
+      <thead><tr><th>Term</th><th>Definition</th></tr></thead>
+      <tbody>
+        <tr><td><strong>CGST</strong></td><td>Central Goods and Services Tax — levied by the Central Government on intra-state supply of goods and services.</td></tr>
+        <tr><td><strong>SGST</strong></td><td>State Goods and Services Tax — levied by the State Government on intra-state supply of goods and services.</td></tr>
+        <tr><td><strong>IGST</strong></td><td>Integrated Goods and Services Tax — levied on inter-state supply of goods/services and imports. Divided between Centre and destination state.</td></tr>
+        <tr><td><strong>ITC</strong></td><td>Input Tax Credit — credit of GST paid on purchases/inputs that can be set off against GST liability on sales/output.</td></tr>
+        <tr><td><strong>HSN Code</strong></td><td>Harmonized System of Nomenclature — 4/6/8 digit code classifying goods for GST rate determination. Mandatory on invoices above threshold.</td></tr>
+        <tr><td><strong>SAC Code</strong></td><td>Services Accounting Code — 6-digit code classifying services for GST purposes under the HSN framework.</td></tr>
+        <tr><td><strong>E-Way Bill</strong></td><td>Electronic Way Bill — mandatory document for movement of goods valued above ₹50,000 generated on the GSTN portal.</td></tr>
+        <tr><td><strong>RCM</strong></td><td>Reverse Charge Mechanism — where the recipient (not supplier) is liable to pay GST. Applies to specified categories of supplies.</td></tr>
+        <tr><td><strong>GSTR-2B</strong></td><td>Auto-generated monthly ITC statement showing supplier-filed invoices available for the recipient to claim as input tax credit.</td></tr>
+        <tr><td><strong>Composition Scheme</strong></td><td>Simplified GST compliance for small businesses with turnover below ₹1.5 crore. Pay flat rate; cannot collect tax from customers or claim ITC.</td></tr>
+      </tbody>
+    </table>
+  </div></section>
+
+  <section id="kc-gloss-tax" class="s scroll-sec" style="background:var(--light)"><div class="si">
+    <div class="stag">Tax Terminology</div>
+    <h2 class="ht">Direct Tax <em>Key Terms</em></h2>
+    <table class="tbl" style="margin-top:1.8rem">
+      <thead><tr><th>Term</th><th>Definition</th></tr></thead>
+      <tbody>
+        <tr><td><strong>AY (Assessment Year)</strong></td><td>The year in which income of the previous financial year is assessed and taxed. AY 2025-26 covers income earned in FY 2024-25.</td></tr>
+        <tr><td><strong>TDS</strong></td><td>Tax Deducted at Source — tax deducted by the payer before making payments above threshold and deposited with the government.</td></tr>
+        <tr><td><strong>TCS</strong></td><td>Tax Collected at Source — tax collected by the seller from the buyer at the time of sale of specified goods/services.</td></tr>
+        <tr><td><strong>MAT</strong></td><td>Minimum Alternate Tax — applicable when a company's normal tax is less than 15% of book profits. Ensures companies with book profits pay minimum tax.</td></tr>
+        <tr><td><strong>Advance Tax</strong></td><td>Tax paid in instalments during the financial year by taxpayers with tax liability &gt; ₹10,000. Due in June, September, December, and March.</td></tr>
+        <tr><td><strong>ITR</strong></td><td>Income Tax Return — form filed annually reporting income, deductions, and taxes paid. Different forms (ITR 1-7) for different taxpayer categories.</td></tr>
+        <tr><td><strong>DTAA</strong></td><td>Double Tax Avoidance Agreement — bilateral treaty between India and another country to prevent the same income from being taxed twice.</td></tr>
+        <tr><td><strong>Section 80C</strong></td><td>Deduction up to ₹1.5 lakh for specified investments/payments like PPF, ELSS, LIC premium, home loan principal. Available only under old tax regime.</td></tr>
+        <tr><td><strong>Capital Gains</strong></td><td>Profit from sale of a capital asset (property, shares, mutual funds). Classified as short-term or long-term based on holding period.</td></tr>
+        <tr><td><strong>Scrutiny Assessment</strong></td><td>Detailed examination of ITR by the Assessing Officer under Section 143(3). Initiated when the department selects returns for detailed scrutiny.</td></tr>
+      </tbody>
+    </table>
+  </div></section>
+
+  <section id="kc-gloss-audit" class="s scroll-sec" style="background:var(--white)"><div class="si">
+    <div class="stag">Audit Terminology</div>
+    <h2 class="ht">Audit <em>Key Terms</em></h2>
+    <table class="tbl" style="margin-top:1.8rem">
+      <thead><tr><th>Term</th><th>Definition</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Audit Opinion</strong></td><td>Formal expression by the auditor on whether financial statements present a true and fair view. Can be unmodified, qualified, adverse, or disclaimer.</td></tr>
+        <tr><td><strong>Materiality</strong></td><td>Threshold above which misstatements, individually or in aggregate, could influence users' decisions. Used to plan and perform audit procedures.</td></tr>
+        <tr><td><strong>Going Concern</strong></td><td>Assumption that an entity will continue to operate for the foreseeable future. Auditors must evaluate and report if there is material uncertainty.</td></tr>
+        <tr><td><strong>Internal Control</strong></td><td>Processes and procedures designed by management to ensure reliability of financial reporting, operational efficiency, and regulatory compliance.</td></tr>
+        <tr><td><strong>CARO</strong></td><td>Companies Auditor's Report Order — mandatory additional reporting by auditors on specific matters like loans, fixed assets, fraud, and CSR.</td></tr>
+        <tr><td><strong>Emphasis of Matter</strong></td><td>Paragraph in auditor's report drawing attention to a matter that is properly disclosed in financials but is fundamental to users' understanding.</td></tr>
+      </tbody>
+    </table>
+  </div></section>
+
+  <section id="kc-gloss-fema" class="s scroll-sec" style="background:var(--light)"><div class="si">
+    <div class="stag">FEMA &amp; RERA Terminology</div>
+    <h2 class="ht">FEMA &amp; RERA <em>Key Terms</em></h2>
+    <table class="tbl" style="margin-top:1.8rem">
+      <thead><tr><th>Term</th><th>Definition</th></tr></thead>
+      <tbody>
+        <tr><td><strong>FDI</strong></td><td>Foreign Direct Investment — investment made by a non-resident entity into a resident Indian company through equity, CCPS, or CCDs.</td></tr>
+        <tr><td><strong>ECB</strong></td><td>External Commercial Borrowings — loans raised by Indian entities from recognised foreign lenders. Governed by RBI's ECB Framework.</td></tr>
+        <tr><td><strong>FC-GPR</strong></td><td>Foreign Currency — Gross Provisional Return. Filed when shares are allotted to a foreign investor after FDI inflow.</td></tr>
+        <tr><td><strong>NRE Account</strong></td><td>Non-Resident External account — maintains foreign earnings in rupees. Freely repatriable; interest exempt from Indian tax.</td></tr>
+        <tr><td><strong>NRO Account</strong></td><td>Non-Resident Ordinary account — maintains Indian-sourced income. Repatriation limited to $1 million per year. Interest is taxable in India.</td></tr>
+        <tr><td><strong>Promoter (RERA)</strong></td><td>Person who constructs a real estate project for sale. Includes developers, builders, and housing boards. Subject to RERA registration obligations.</td></tr>
+        <tr><td><strong>RERA Registration</strong></td><td>Mandatory registration of real estate projects and agents with state RERA authority before advertising, selling, or accepting bookings.</td></tr>
+        <tr><td><strong>IEC</strong></td><td>Importer Exporter Code — 10-digit code issued by DGFT mandatory for all import/export transactions in India.</td></tr>
+      </tbody>
+    </table>
+  </div></section>
+  <div class="ctab scroll-sec"><div class="ctabi"><div><h2>Have a question about <em>any of these terms?</em></h2><p>Our team is happy to explain how any of these apply to your specific situation.</p></div><button class="bgs" onclick="go('contact')">Ask Our Experts →</button></div></div>
+</div>
 
 </main>
 

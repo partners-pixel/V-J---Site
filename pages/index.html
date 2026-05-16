@@ -31,49 +31,49 @@
 <!-- ── PAGE CONTENT ──────────────────────────────────────────────── -->
 <main>
 
-  <!-- ─── HERO ─── -->
-  <section class="hero">
+<div id="page-home">
+<section class="hero">
     <div class="hero-in">
       <div>
         <h1 class="hh">Your Trusted Partner in<br/><span class="gline">Tax &amp; Financial<br/>Advisory</span></h1>
         <p class="hdesc">Navigate complex tax regulations with confidence. We provide comprehensive GST, direct tax, audit, and advisory services tailored to your business needs.</p>
         <div class="hbtns">
-          <a class="bgs" href="contact.html">Book a Consultation →</a>
-          <a class="bdo" href="why-choose-us.html">Learn More</a>
+          <button class="bgs" onclick="go('contact')">Book a Consultation →</button>
+          <button class="bdo" onclick="go('about')">Learn More</button>
         </div>
       </div>
       <div class="hcards">
-        <a class="hcard" href="gst.html"><div class="hcico">🧾</div><div><div class="hctit">GST / Indirect Tax</div><div class="hcdesc">Expert guidance on GST compliance, refunds, and indirect tax matters.</div></div></a>
-        <a class="hcard" href="corp-tax.html"><div class="hcico">📊</div><div><div class="hctit">Direct Tax</div><div class="hcdesc">Comprehensive income tax planning and compliance services.</div></div></a>
-        <a class="hcard" href="stat-audit.html"><div class="hcico">🛡️</div><div><div class="hctit">Audit &amp; Advisory</div><div class="hcdesc">Professional audit services and strategic business advisory.</div></div></a>
-        <a class="hcard" href="rera-reg.html"><div class="hcico">🏗️</div><div><div class="hctit">RERA Compliance</div><div class="hcdesc">Complete RERA registration, disclosures, and dispute support.</div></div></a>
+        <div class="hcard" onclick="go('gst')"><div class="hcico">🧾</div><div><div class="hctit">GST / Indirect Tax</div><div class="hcdesc">Expert guidance on GST compliance, refunds, and indirect tax matters.</div></div></div>
+        <div class="hcard" onclick="go('dtax')"><div class="hcico">📈</div><div><div class="hctit">Direct Tax</div><div class="hcdesc">Comprehensive income tax planning and compliance services.</div></div></div>
+        <div class="hcard" onclick="go('audit')"><div class="hcico">🛡️</div><div><div class="hctit">Audit &amp; Advisory</div><div class="hcdesc">Professional audit services and strategic business advisory.</div></div></div>
+        <div class="hcard" onclick="go('rera')"><div class="hcico">🏘️</div><div><div class="hctit">RERA Compliance</div><div class="hcdesc">Complete RERA registration, disclosures, and dispute support.</div></div></div>
       </div>
     </div>
   </section>
 
-  <!-- ─── TICKER ─── -->
+  <!-- Ticker -->
   <div class="ticker"><div class="tki">
     <span class="ti">Statutory Audit</span><span class="ti">Tax Audit</span><span class="ti">GST Compliance</span><span class="ti">Income Tax</span><span class="ti">FEMA &amp; RBI</span><span class="ti">Internal Audit</span><span class="ti">Due Diligence</span><span class="ti">Business Setup</span><span class="ti">RERA</span><span class="ti">NRI Taxation</span><span class="ti">Transfer Pricing</span><span class="ti">CFO Services</span>
     <span class="ti">Statutory Audit</span><span class="ti">Tax Audit</span><span class="ti">GST Compliance</span><span class="ti">Income Tax</span><span class="ti">FEMA &amp; RBI</span><span class="ti">Internal Audit</span><span class="ti">Due Diligence</span><span class="ti">Business Setup</span><span class="ti">RERA</span><span class="ti">NRI Taxation</span><span class="ti">Transfer Pricing</span><span class="ti">CFO Services</span>
   </div></div>
 
-  <!-- ─── SERVICES ─── -->
+  <!-- Services -->
   <section class="s svcs"><div class="si">
     <div class="svch">
       <div><div class="stag">Our Practice Areas</div><h2 class="ht">Comprehensive <em>Financial Services</em></h2></div>
       <p class="ssub">End-to-end financial solutions delivered by dedicated chartered accountants, from statutory compliance to strategic advisory.</p>
     </div>
     <div class="svcg">
-      <a class="sc" href="gst.html"><div class="scico">🧾</div><h3>GST &amp; Indirect Tax</h3><p>Registration, return filing, audit, litigation, classification, and e-bill consultancy services.</p><span class="sclnk">Explore →</span></a>
-      <a class="sc" href="corp-tax.html"><div class="scico">📊</div><h3>Direct Taxation</h3><p>Corporate tax, income tax, NRI taxation, and strategic tax advisory for all taxpayer categories.</p><span class="sclnk">Explore →</span></a>
-      <a class="sc" href="stat-audit.html"><div class="scico">⚖️</div><h3>Audit &amp; Advisory</h3><p>Statutory, tax, internal, management, and compliance audits with full corporate advisory services.</p><span class="sclnk">Explore →</span></a>
-      <a class="sc" href="rera-reg.html"><div class="scico">🏗️</div><h3>RERA Compliance</h3><p>Project registration, quarterly disclosures, extension regulations, and dispute response.</p><span class="sclnk">Explore →</span></a>
-      <a class="sc" href="kc.html"><div class="scico">📚</div><h3>Knowledge Center</h3><p>Tax circulars, regulatory updates, compliance calendars, and expert insights.</p><span class="sclnk">Explore →</span></a>
-      <a class="sc" href="contact.html"><div class="scico">🤝</div><h3>Book a Consultant</h3><p>Schedule a no-obligation consultation with our expert CA team for your specific needs.</p><span class="sclnk">Book Now →</span></a>
+      <div class="sc" onclick="go('gst')"><div class="scico">🧾</div><h3>GST &amp; Indirect Tax</h3><p>Registration, return filing, audit, litigation, classification, and e-bill consultancy services.</p><span class="sclnk">Explore →</span></div>
+      <div class="sc" onclick="go('dtax')"><div class="scico">📊</div><h3>Direct Taxation</h3><p>Corporate tax, income tax, NRI taxation, and strategic tax advisory for all taxpayer categories.</p><span class="sclnk">Explore →</span></div>
+      <div class="sc" onclick="go('audit')"><div class="scico">⚖️</div><h3>Audit &amp; Advisory</h3><p>Statutory, tax, internal, management, and compliance audits with full corporate advisory services.</p><span class="sclnk">Explore →</span></div>
+      <div class="sc" onclick="go('rera')"><div class="scico">🏘️</div><h3>RERA Compliance</h3><p>Project registration, quarterly disclosures, extension regulations, and dispute response.</p><span class="sclnk">Explore →</span></div>
+      <div class="sc" onclick="go('kc')"><div class="scico">📚</div><h3>Knowledge Center</h3><p>Tax circulars, regulatory updates, compliance calendars, and expert insights.</p><span class="sclnk">Explore →</span></div>
+      <div class="sc" onclick="go('contact')"><div class="scico">🤝</div><h3>Book a Consultant</h3><p>Schedule a no-obligation consultation with our expert CA team for your specific needs.</p><span class="sclnk">Book Now →</span></div>
     </div>
   </div></section>
 
-  <!-- ─── ABOUT STRIP ─── -->
+  <!-- About strip -->
   <div class="abts"><div class="abtg">
     <div style="position:relative">
       <div class="abtq"><p>"We create a unique process for each client to ensure that business objectives are met with integrity, reliability, and proficiency at the heart of every engagement."</p><cite>V J Desai &amp; Co. LLP, Firm Philosophy</cite></div>
@@ -88,16 +88,16 @@
         <li class="vi"><span class="vd"></span><span>Proficiency across audit, tax, law, and advisory</span></li>
         <li class="vi"><span class="vd"></span><span>Client-first approach. Your objectives drive our process.</span></li>
       </ul>
-      <div style="margin-top:1.6rem"><a class="bgs" href="why-choose-us.html">Know Our Firm</a></div>
+      <div style="margin-top:1.6rem"><button class="bgs" onclick="go('about')">Know Our Firm</button></div>
     </div>
   </div></div>
 
-  <!-- ─── INDUSTRIES ─── -->
+  <!-- Industries -->
   <section class="s inds"><div class="si">
     <div class="stag">Sectors We Serve</div><h2 class="ht">Across <em>Industries &amp; Sectors</em></h2>
     <div class="indg">
       <div class="ic"><div class="iico">🏭</div><h4>Manufacturing</h4></div>
-      <div class="ic"><div class="iico">🛍</div><h4>Trading &amp; Retail</h4></div>
+      <div class="ic"><div class="iico">🛒</div><h4>Trading &amp; Retail</h4></div>
       <div class="ic"><div class="iico">🏦</div><h4>Banking &amp; Finance</h4></div>
       <div class="ic"><div class="iico">🏗️</div><h4>Real Estate</h4></div>
       <div class="ic"><div class="iico">💻</div><h4>IT &amp; Technology</h4></div>
@@ -107,7 +107,7 @@
     </div>
   </div></section>
 
-  <!-- ─── STATS ─── -->
+  <!-- Stats -->
   <div class="stats"><div class="stsi">
     <div><div class="sn">33+</div><div class="sl">Years of Experience</div></div>
     <div><div class="sn">2500+</div><div class="sl">Clients Served</div></div>
@@ -115,7 +115,9 @@
     <div><div class="sn">ICAI</div><div class="sl">Registered Firm</div></div>
   </div></div>
 
-  <!-- ─── GALLERY ─── -->
+  <!-- CTA -->
+
+  <!-- ══ OFFICE / TEAM GALLERY ══ -->
   <div class="gallery-sec">
     <div class="gallery-inner">
       <div style="text-align:center;margin-bottom:.5rem">
@@ -127,7 +129,7 @@
         <div class="gal-item" style="min-height:280px">
           <div class="gal-inner-img" style="min-height:280px;background:linear-gradient(135deg,#1C2437 0%,#2E3A52 100%)">
             <div style="text-align:center;padding:1.5rem">
-              <div style="font-size:3.5rem;margin-bottom:.8rem">🏢</div>
+              <div style="font-size:3.5rem;margin-bottom:.8rem">🏛️</div>
               <div style="font-family:'EB Garamond',serif;font-size:1.1rem;font-weight:600;color:var(--gold)">Our Office</div>
               <div style="font-size:.78rem;color:rgba(255,255,255,.5);margin-top:.3rem">B-901/902, Ratnaakar Nine Square<br/>Satellite, Ahmedabad</div>
             </div>
@@ -136,31 +138,46 @@
         </div>
         <div class="gal-item">
           <div class="gal-inner-img" style="background:linear-gradient(135deg,#1A5276 0%,#2471A3 100%)">
-            <div style="text-align:center"><div style="font-size:2.5rem;margin-bottom:.4rem">🤝</div><div style="font-size:.78rem;color:rgba(255,255,255,.7);font-weight:600">Client Meetings</div></div>
+            <div style="text-align:center">
+              <div style="font-size:2.5rem;margin-bottom:.4rem">🤝</div>
+              <div style="font-size:.78rem;color:rgba(255,255,255,.7);font-weight:600">Client Meetings</div>
+            </div>
           </div>
           <div class="gal-overlay"><span>Partner Consultations</span></div>
         </div>
         <div class="gal-item">
           <div class="gal-inner-img" style="background:linear-gradient(135deg,#1E8449 0%,#27AE60 100%)">
-            <div style="text-align:center"><div style="font-size:2.5rem;margin-bottom:.4rem">📊</div><div style="font-size:.78rem;color:rgba(255,255,255,.7);font-weight:600">Tax Advisory Sessions</div></div>
+            <div style="text-align:center">
+              <div style="font-size:2.5rem;margin-bottom:.4rem">📊</div>
+              <div style="font-size:.78rem;color:rgba(255,255,255,.7);font-weight:600">Tax Advisory Sessions</div>
+            </div>
           </div>
           <div class="gal-overlay"><span>Direct Tax Advisory</span></div>
         </div>
         <div class="gal-item">
           <div class="gal-inner-img" style="background:linear-gradient(135deg,#6C3483 0%,#8E44AD 100%)">
-            <div style="text-align:center"><div style="font-size:2.5rem;margin-bottom:.4rem">⚖️</div><div style="font-size:.78rem;color:rgba(255,255,255,.7);font-weight:600">Audit &amp; Assurance</div></div>
+            <div style="text-align:center">
+              <div style="font-size:2.5rem;margin-bottom:.4rem">⚖️</div>
+              <div style="font-size:.78rem;color:rgba(255,255,255,.7);font-weight:600">Audit &amp; Assurance</div>
+            </div>
           </div>
           <div class="gal-overlay"><span>Audit Work</span></div>
         </div>
         <div class="gal-item">
           <div class="gal-inner-img" style="background:linear-gradient(135deg,#B7770D 0%,#D4AC0D 100%)">
-            <div style="text-align:center"><div style="font-size:2.5rem;margin-bottom:.4rem">📚</div><div style="font-size:.78rem;color:rgba(255,255,255,.7);font-weight:600">Training &amp; Mentorship</div></div>
+            <div style="text-align:center">
+              <div style="font-size:2.5rem;margin-bottom:.4rem">🎓</div>
+              <div style="font-size:.78rem;color:rgba(255,255,255,.7);font-weight:600">Training &amp; Mentorship</div>
+            </div>
           </div>
           <div class="gal-overlay"><span>Article Training</span></div>
         </div>
         <div class="gal-item">
           <div class="gal-inner-img" style="background:linear-gradient(135deg,#0E6655 0%,#117A65 100%)">
-            <div style="text-align:center"><div style="font-size:2.5rem;margin-bottom:.4rem">🏗️</div><div style="font-size:.78rem;color:rgba(255,255,255,.7);font-weight:600">RERA Compliance Work</div></div>
+            <div style="text-align:center">
+              <div style="font-size:2.5rem;margin-bottom:.4rem">🏗️</div>
+              <div style="font-size:.78rem;color:rgba(255,255,255,.7);font-weight:600">RERA Compliance Work</div>
+            </div>
           </div>
           <div class="gal-overlay"><span>RERA &amp; Real Estate</span></div>
         </div>
@@ -168,7 +185,8 @@
     </div>
   </div>
 
-  <!-- ─── TESTIMONIALS ─── -->
+
+  <!-- ══ TESTIMONIALS ══ -->
   <div class="testi-sec">
     <div class="testi-inner">
       <div style="text-align:center">
@@ -228,6 +246,7 @@
       </div>
     </div>
   </div>
+</div>
 
 </main>
 

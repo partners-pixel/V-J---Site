@@ -26,27 +26,340 @@
 <!-- PAGE CONTENT -->
 <main>
 
-  <section class="ph">
+<div id="page-nri-tax">
+<!-- Breadcrumb -->
+  <div class="ph" style="padding:1.4rem 5vw;min-height:auto;background:var(--navy-deep)">
     <div class="phi">
       <div class="bc">
-        <a href="index.html">Home</a><span>/</span>
+        <a onclick="go('home')">Home</a><span>/</span>
+        <a onclick="go('dtax')">Direct Tax</a><span>/</span>
         <span>NRI Taxation</span>
       </div>
-      <div class="pgbadge">NRI Taxation</div>
-      <h1>NRI Taxation <em>at V J Desai &amp; Co. LLP</em></h1>
-      <p>This page is a stub. To populate it, copy the markup from
-         <code>&lt;div class="page" id="page-nri-tax"&gt;&hellip;&lt;/div&gt;</code>
-         in your original single-file SPA into the &lt;main&gt; below this hero
-         (remove this paragraph once you do).</p>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <section class="gst-hero">
+    <div class="gst-hero-inner" style="grid-template-columns:1fr;max-width:900px">
+      <div>
+        <div class="gst-hero-eyebrow">NRI Taxation Services</div>
+        <h1 style="font-size:clamp(2.2rem,3.6vw,3.2rem)">
+          NRI Taxation Services<br/><em>Structured and Compliant</em>
+        </h1>
+        <p class="gst-hero-lead">
+          Managing NRI taxation is not just about filing returns. It requires aligning Indian tax obligations with your global financial position.
+        </p>
+        <p style="font-size:.93rem;line-height:1.88;color:var(--tdim);margin-bottom:.9rem">
+          We work with NRIs to structure, report, and manage their India-linked income efficiently. This includes evaluating tax residency, identifying taxable income streams, applying treaty relief where relevant, and ensuring compliance across filings, documentation, and fund movements.
+        </p>
+        <p style="font-size:.93rem;line-height:1.88;color:var(--tdim);margin-bottom:.9rem">
+          NRI taxation requires structured handling of India-sourced income, cross-border tax exposure, and compliance obligations. We manage end-to-end NRI taxation in India covering residential status evaluation, return filing, DTAA claims, capital gains structuring, and repatriation support.
+        </p>
+        <p style="font-size:.93rem;line-height:1.88;color:var(--tdim);margin-bottom:1.8rem">
+          Our approach focuses on execution clarity, so your tax matters are handled correctly, without creating future exposure or compliance gaps.
+        </p>
+        <button class="bgs" onclick="go('contact')">Book a Consultation</button>
+      </div>
     </div>
   </section>
 
-  <!-- TODO: paste original SPA content for #page-nri-tax here -->
+  <!-- STICKY SUB-NAV -->
+  <div class="gst-subnav">
+    <div class="gst-subnav-inner">
+      <a class="gsn active" href="#nri-services">Core Services</a>
+      <a class="gsn"        href="#nri-process">Process</a>
+      <a class="gsn"        href="#nri-engagement">Engagement Models</a>
+      <a class="gsn"        href="#nri-contact">Contact</a>
+    </div>
+  </div>
 
-  <div class="ctab"><div class="ctabi">
-    <div><h2>Need help with <em>NRI Taxation?</em></h2><p>Our team will design a tailored engagement for your needs.</p></div>
-    <a class="bgs" href="contact.html">Book a Consultation &rarr;</a>
-  </div></div>
+  <!-- CORE SERVICES: 8 services from document -->
+  <section id="nri-services" class="gst-services-wrap gst-scroll">
+    <div style="max-width:1440px;margin:0 auto">
+      <div class="stag">Core Services</div>
+      <h2 class="ht">NRI Taxation <em>Services We Provide</em></h2>
+
+      <div class="gst-svc-grid" style="grid-template-columns:repeat(4,1fr);margin-top:2.6rem">
+
+        <div class="gst-svc-item">
+          <div class="gst-svc-ico">🌍</div>
+          <h3>Residential Status and Tax Positioning</h3>
+          <p>Determination of residential status and classification of income streams to establish correct tax treatment in India.</p>
+        </div>
+
+        <div class="gst-svc-item">
+          <div class="gst-svc-ico">📤</div>
+          <h3>NRI Tax Return Filing</h3>
+          <p>Preparation and filing of Indian income tax returns with appropriate disclosures, TDS reconciliation, and supporting documentation.</p>
+        </div>
+
+        <div class="gst-svc-item">
+          <div class="gst-svc-ico">📋</div>
+          <h3>DTAA and Foreign Tax Credit Advisory</h3>
+          <p>Application of treaty provisions to prevent double taxation and ensure proper credit of taxes paid overseas.</p>
+        </div>
+
+        <div class="gst-svc-item">
+          <div class="gst-svc-ico">🏠</div>
+          <h3>Capital Gains Structuring</h3>
+          <p>Advisory on sale of property, securities, and other Indian assets with focus on tax positioning and compliance.</p>
+        </div>
+
+        <div class="gst-svc-item">
+          <div class="gst-svc-ico">💰</div>
+          <h3>Rental and Investment Income Compliance</h3>
+          <p>Handling taxability, deductions, and withholding requirements for income generated from Indian assets.</p>
+        </div>
+
+        <div class="gst-svc-item">
+          <div class="gst-svc-ico">🔁</div>
+          <h3>Repatriation and FEMA Coordination</h3>
+          <p>Support in fund transfers from India, including documentation, certifications, and compliance with applicable regulations.</p>
+        </div>
+
+        <div class="gst-svc-item">
+          <div class="gst-svc-ico">📈</div>
+          <h3>Investment Structuring Advisory</h3>
+          <p>Guidance on tax-efficient structuring of Indian investments aligned with NRI tax exposure.</p>
+        </div>
+
+        <div class="gst-svc-item">
+          <div class="gst-svc-ico">🏛️</div>
+          <h3>Estate and Succession Alignment</h3>
+          <p>Advisory on cross-border inheritance and ownership structures from a tax and compliance perspective.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS: 7 steps from document -->
+  
+  <div id="nri-process" class="gst-process-wrap gst-scroll" style="background:var(--light)">
+    <div class="gst-process-inner">
+      <div class="stag" style="color:var(--gold)">Process</div>
+      <h2 class="ht">Our NRI Taxation <em>Process</em></h2>
+      <p class="ssub on-dark" style="margin-bottom:1.2rem">A seven-step process covering residential status determination through to ongoing advisory.</p>
+      <div style="width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;padding:2rem 0 2.5rem;max-width:1120px;margin:0 auto">
+        <svg viewBox="0 0 1116 468" style="width:100%;min-width:700px;display:block;" xmlns="http://www.w3.org/2000/svg">
+
+  <line x1="124" y1="150" x2="174" y2="345" stroke="rgba(0,0,0,0.09)" stroke-width="8" stroke-linecap="round"/>
+  <line x1="124" y1="150" x2="174" y2="345" stroke="#1A5276" stroke-width="3.5" stroke-linecap="round" opacity="0.55"/>
+  <circle cx="124" cy="150" r="5" fill="#1A5276"/>
+  <circle cx="174" cy="345" r="5" fill="#6C3483"/>
+  <line x1="278" y1="345" x2="328" y2="150" stroke="rgba(0,0,0,0.09)" stroke-width="8" stroke-linecap="round"/>
+  <line x1="278" y1="345" x2="328" y2="150" stroke="#6C3483" stroke-width="3.5" stroke-linecap="round" opacity="0.55"/>
+  <circle cx="278" cy="345" r="5" fill="#6C3483"/>
+  <circle cx="328" cy="150" r="5" fill="#1E8449"/>
+  <line x1="432" y1="150" x2="482" y2="345" stroke="rgba(0,0,0,0.09)" stroke-width="8" stroke-linecap="round"/>
+  <line x1="432" y1="150" x2="482" y2="345" stroke="#1E8449" stroke-width="3.5" stroke-linecap="round" opacity="0.55"/>
+  <circle cx="432" cy="150" r="5" fill="#1E8449"/>
+  <circle cx="482" cy="345" r="5" fill="#B7770D"/>
+  <line x1="586" y1="345" x2="636" y2="150" stroke="rgba(0,0,0,0.09)" stroke-width="8" stroke-linecap="round"/>
+  <line x1="586" y1="345" x2="636" y2="150" stroke="#B7770D" stroke-width="3.5" stroke-linecap="round" opacity="0.55"/>
+  <circle cx="586" cy="345" r="5" fill="#B7770D"/>
+  <circle cx="636" cy="150" r="5" fill="#922B21"/>
+  <line x1="740" y1="150" x2="790" y2="345" stroke="rgba(0,0,0,0.09)" stroke-width="8" stroke-linecap="round"/>
+  <line x1="740" y1="150" x2="790" y2="345" stroke="#922B21" stroke-width="3.5" stroke-linecap="round" opacity="0.55"/>
+  <circle cx="740" cy="150" r="5" fill="#922B21"/>
+  <circle cx="790" cy="345" r="5" fill="#0E6655"/>
+  <line x1="894" y1="345" x2="944" y2="150" stroke="rgba(0,0,0,0.09)" stroke-width="8" stroke-linecap="round"/>
+  <line x1="894" y1="345" x2="944" y2="150" stroke="#0E6655" stroke-width="3.5" stroke-linecap="round" opacity="0.55"/>
+  <circle cx="894" cy="345" r="5" fill="#0E6655"/>
+  <circle cx="944" cy="150" r="5" fill="#4A5568"/>
+
+  <polygon points="127.0,154.0 101.0,199.0 49.0,199.0 23.0,154.0 49.0,109.0 101.0,109.0" fill="rgba(0,0,0,0.1)"/>
+  <polygon points="124.0,150.0 98.0,195.0 46.0,195.0 20.0,150.0 46.0,105.0 98.0,105.0" fill="#1A5276"/>
+  <polygon points="115.0,150.0 93.5,187.2 50.5,187.2 29.0,150.0 50.5,112.8 93.5,112.8" fill="rgba(255,255,255,0.14)" stroke="rgba(255,255,255,0.28)" stroke-width="1.2"/>
+  <circle cx="72" cy="150" r="28" fill="white"/>
+  <text x="72" y="158" text-anchor="middle" font-family="Inter,sans-serif" font-size="19" font-weight="800" fill="#1A5276">01</text>
+  <text x="72" y="217" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#1A5276">Initial</text>
+  <text x="72" y="232" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#1A5276">Assessment</text>
+  <text x="72" y="250" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#5A6478">Review residential status</text>
+  <text x="72" y="264" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#5A6478">and current tax position.</text>
+
+  <polygon points="281.0,349.0 255.0,394.0 203.0,394.0 177.0,349.0 203.0,304.0 255.0,304.0" fill="rgba(0,0,0,0.1)"/>
+  <polygon points="278.0,345.0 252.0,390.0 200.0,390.0 174.0,345.0 200.0,300.0 252.0,300.0" fill="#6C3483"/>
+  <polygon points="269.0,345.0 247.5,382.2 204.5,382.2 183.0,345.0 204.5,307.8 247.5,307.8" fill="rgba(255,255,255,0.14)" stroke="rgba(255,255,255,0.28)" stroke-width="1.2"/>
+  <circle cx="226" cy="345" r="28" fill="white"/>
+  <text x="226" y="353" text-anchor="middle" font-family="Inter,sans-serif" font-size="19" font-weight="800" fill="#6C3483">02</text>
+  <text x="226" y="231" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#6C3483">Data</text>
+  <text x="226" y="246" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#6C3483">Mapping</text>
+  <text x="226" y="264" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#5A6478">Classify Indian and foreign</text>
+  <text x="226" y="278" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#5A6478">financial data.</text>
+
+  <polygon points="435.0,154.0 409.0,199.0 357.0,199.0 331.0,154.0 357.0,109.0 409.0,109.0" fill="rgba(0,0,0,0.1)"/>
+  <polygon points="432.0,150.0 406.0,195.0 354.0,195.0 328.0,150.0 354.0,105.0 406.0,105.0" fill="#1E8449"/>
+  <polygon points="423.0,150.0 401.5,187.2 358.5,187.2 337.0,150.0 358.5,112.8 401.5,112.8" fill="rgba(255,255,255,0.14)" stroke="rgba(255,255,255,0.28)" stroke-width="1.2"/>
+  <circle cx="380" cy="150" r="28" fill="white"/>
+  <text x="380" y="158" text-anchor="middle" font-family="Inter,sans-serif" font-size="19" font-weight="800" fill="#1E8449">03</text>
+  <text x="380" y="217" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#1E8449">Tax Position</text>
+  <text x="380" y="232" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#1E8449">Structuring</text>
+  <text x="380" y="250" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#5A6478">Determine taxable income</text>
+  <text x="380" y="264" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#5A6478">and DTAA applicability.</text>
+
+  <polygon points="589.0,349.0 563.0,394.0 511.0,394.0 485.0,349.0 511.0,304.0 563.0,304.0" fill="rgba(0,0,0,0.1)"/>
+  <polygon points="586.0,345.0 560.0,390.0 508.0,390.0 482.0,345.0 508.0,300.0 560.0,300.0" fill="#B7770D"/>
+  <polygon points="577.0,345.0 555.5,382.2 512.5,382.2 491.0,345.0 512.5,307.8 555.5,307.8" fill="rgba(255,255,255,0.14)" stroke="rgba(255,255,255,0.28)" stroke-width="1.2"/>
+  <circle cx="534" cy="345" r="28" fill="white"/>
+  <text x="534" y="353" text-anchor="middle" font-family="Inter,sans-serif" font-size="19" font-weight="800" fill="#B7770D">04</text>
+  <text x="534" y="231" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#B7770D">Computation</text>
+  <text x="534" y="246" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#B7770D">& Drafting</text>
+  <text x="534" y="264" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#5A6478">Prepare computations and</text>
+  <text x="534" y="278" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#5A6478">draft filings.</text>
+
+  <polygon points="743.0,154.0 717.0,199.0 665.0,199.0 639.0,154.0 665.0,109.0 717.0,109.0" fill="rgba(0,0,0,0.1)"/>
+  <polygon points="740.0,150.0 714.0,195.0 662.0,195.0 636.0,150.0 662.0,105.0 714.0,105.0" fill="#922B21"/>
+  <polygon points="731.0,150.0 709.5,187.2 666.5,187.2 645.0,150.0 666.5,112.8 709.5,112.8" fill="rgba(255,255,255,0.14)" stroke="rgba(255,255,255,0.28)" stroke-width="1.2"/>
+  <circle cx="688" cy="150" r="28" fill="white"/>
+  <text x="688" y="158" text-anchor="middle" font-family="Inter,sans-serif" font-size="19" font-weight="800" fill="#922B21">05</text>
+  <text x="688" y="217" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#922B21">Filing &</text>
+  <text x="688" y="232" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#922B21">Documentation</text>
+  <text x="688" y="250" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#5A6478">Submit returns with forms</text>
+  <text x="688" y="264" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#5A6478">and certifications.</text>
+
+  <polygon points="897.0,349.0 871.0,394.0 819.0,394.0 793.0,349.0 819.0,304.0 871.0,304.0" fill="rgba(0,0,0,0.1)"/>
+  <polygon points="894.0,345.0 868.0,390.0 816.0,390.0 790.0,345.0 816.0,300.0 868.0,300.0" fill="#0E6655"/>
+  <polygon points="885.0,345.0 863.5,382.2 820.5,382.2 799.0,345.0 820.5,307.8 863.5,307.8" fill="rgba(255,255,255,0.14)" stroke="rgba(255,255,255,0.28)" stroke-width="1.2"/>
+  <circle cx="842" cy="345" r="28" fill="white"/>
+  <text x="842" y="353" text-anchor="middle" font-family="Inter,sans-serif" font-size="19" font-weight="800" fill="#0E6655">06</text>
+  <text x="842" y="231" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#0E6655">Post-Filing</text>
+  <text x="842" y="246" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#0E6655">Support</text>
+  <text x="842" y="264" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#5A6478">Handle notices, queries</text>
+  <text x="842" y="278" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#5A6478">and follow-ups.</text>
+
+  <polygon points="1051.0,154.0 1025.0,199.0 973.0,199.0 947.0,154.0 973.0,109.0 1025.0,109.0" fill="rgba(0,0,0,0.1)"/>
+  <polygon points="1048.0,150.0 1022.0,195.0 970.0,195.0 944.0,150.0 970.0,105.0 1022.0,105.0" fill="#4A5568"/>
+  <polygon points="1039.0,150.0 1017.5,187.2 974.5,187.2 953.0,150.0 974.5,112.8 1017.5,112.8" fill="rgba(255,255,255,0.14)" stroke="rgba(255,255,255,0.28)" stroke-width="1.2"/>
+  <circle cx="996" cy="150" r="28" fill="white"/>
+  <text x="996" y="158" text-anchor="middle" font-family="Inter,sans-serif" font-size="19" font-weight="800" fill="#4A5568">07</text>
+  <text x="996" y="217" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#4A5568">Ongoing</text>
+  <text x="996" y="232" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#4A5568">Advisory</text>
+  <text x="996" y="250" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#5A6478">Support future transactions</text>
+  <text x="996" y="264" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#5A6478">and compliance planning.</text>
+
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <!-- ENGAGEMENT MODELS: 3 from document -->
+  <div id="nri-engagement" class="gst-eng-wrap gst-scroll">
+    <div class="gst-eng-inner">
+      <div class="stag">Engagement Models</div>
+      <h2 class="ht">Choose Your <em>Engagement Model</em></h2>
+
+      <div class="gst-eng-grid">
+
+        <div class="gst-eng-card">
+          <div class="gst-eng-top">
+            <div class="gst-eng-letter">A</div>
+            <div class="gst-eng-badge">Transaction-Based</div>
+            <h3>Transaction-Based Engagement</h3>
+            <p>For specific requirements such as return filing, property transactions, or DTAA claims.</p>
+          </div>
+          <div class="gst-eng-divider"></div>
+          <div class="gst-eng-body">
+            <ul class="gst-eng-feat">
+              <li>NRI income tax return filing</li>
+              <li>Property transaction advisory</li>
+              <li>DTAA claims and foreign tax credit</li>
+              <li>Defined scope and deliverables</li>
+            </ul>
+          </div>
+          <button class="bgs" onclick="go('contact')" style="margin:0 1.8rem 1.8rem;width:calc(100% - 3.6rem)">Get a Proposal</button>
+        </div>
+
+        <div class="gst-eng-card" style="border-color:var(--gold);box-shadow:0 0 0 1px var(--gold)">
+          <div class="gst-eng-top" style="background:linear-gradient(135deg,var(--navy),rgba(201,168,76,.18))">
+            <div class="gst-eng-letter">B</div>
+            <div class="gst-eng-badge" style="background:var(--gold);color:var(--white);border-color:var(--gold)">Annual</div>
+            <h3>Annual Compliance Support</h3>
+            <p>Ongoing handling of filings, advisory, and compliance across the financial year.</p>
+          </div>
+          <div class="gst-eng-divider"></div>
+          <div class="gst-eng-body">
+            <ul class="gst-eng-feat">
+              <li>Annual return filing and compliance</li>
+              <li>Year-round advisory access</li>
+              <li>TDS reconciliation and monitoring</li>
+              <li>Ongoing repatriation support</li>
+            </ul>
+          </div>
+          <button class="bgs" onclick="go('contact')" style="margin:0 1.8rem 1.8rem;width:calc(100% - 3.6rem)">Start Annual Support</button>
+        </div>
+
+        <div class="gst-eng-card">
+          <div class="gst-eng-top">
+            <div class="gst-eng-letter">C</div>
+            <div class="gst-eng-badge">Integrated</div>
+            <h3>Integrated Advisory Model</h3>
+            <p>Combined support covering taxation, investments, repatriation, and succession planning.</p>
+          </div>
+          <div class="gst-eng-divider"></div>
+          <div class="gst-eng-body">
+            <ul class="gst-eng-feat">
+              <li>Taxation with investment advisory</li>
+              <li>Repatriation and FEMA coordination</li>
+              <li>Estate and succession alignment</li>
+              <li>Unified advisory team</li>
+            </ul>
+          </div>
+          <button class="bgs" onclick="go('contact')" style="margin:0 1.8rem 1.8rem;width:calc(100% - 3.6rem)">Discuss Integration</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTACT / FINAL CTA -->
+  <div id="nri-contact" class="gst-cta-wrap gst-scroll">
+    <div class="gst-cta-inner">
+
+      <div class="gst-cta-left">
+        <div class="stag" style="color:var(--gold)">Contact</div>
+        <h2>Book a Consultation for<br/><em>NRI Taxation</em></h2>
+        <p style="font-size:.93rem;line-height:1.82;color:var(--tdim);margin-bottom:1.2rem">
+          Work with a structured approach to managing your NRI taxation in India. We assist with:
+        </p>
+        <ul class="gst-cta-list">
+          <li>Residential status determination</li>
+          <li>Tax return preparation and filing</li>
+          <li>DTAA and foreign tax credit claims</li>
+          <li>Property transaction structuring</li>
+          <li>Repatriation documentation and compliance</li>
+        </ul>
+      </div>
+
+      <div class="gst-cta-right">
+        <h3>Book a Consultation</h3>
+        <p style="font-size:.86rem;line-height:1.8;color:rgba(255,255,255,.55);margin-bottom:1.8rem">
+          Schedule a consultation with our NRI taxation team to review your India-linked tax obligations and compliance requirements.
+        </p>
+        <div style="display:flex;flex-direction:column;gap:.75rem;margin-bottom:1.8rem">
+          <button class="bgs" onclick="go('contact')" style="justify-content:center;padding:.95rem">
+            Schedule a Consultation
+          </button>
+          <button class="bdo" onclick="go('contact')" style="justify-content:center;padding:.95rem;border-color:rgba(255,255,255,.2)">
+            Download NRI Tax Compliance Checklist
+          </button>
+        </div>
+
+        <!-- Internal links from document -->
+        <div style="padding-top:1.5rem;border-top:1px solid rgba(255,255,255,.08)">
+          <div style="font-size:.68rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.35);margin-bottom:.85rem">Related Services</div>
+          <div style="display:flex;flex-direction:column;gap:.5rem">
+            <a onclick="go('income-tax-adv')" style="font-size:.82rem;color:rgba(201,168,76,.8);cursor:pointer">International Tax and DTAA Advisory</a>
+            <a onclick="go('audit')"           style="font-size:.82rem;color:rgba(201,168,76,.8);cursor:pointer">FEMA and RBI Compliance Services</a>
+            <a onclick="go('income-tax')"      style="font-size:.82rem;color:rgba(201,168,76,.8);cursor:pointer">Capital Gains Advisory</a>
+            <a onclick="go('audit')"           style="font-size:.82rem;color:rgba(201,168,76,.8);cursor:pointer">Tax Notice and Litigation Support</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
 
 </main>
 
