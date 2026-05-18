@@ -13,16 +13,11 @@
 <nav>
   <div class="navi">
 
-    <!--
-      LOGO — text-based, matches the CSS comment in nav.css:
-      "Exact match to uploaded image: V J Desai & Co. LLP serif bold,
-      CHARTERED ACCOUNTANTS small caps".
-      If you'd rather use the original base64 image: replace this block
-      with an <img src="assets/img/logo.jpg"> and drop the file in.
-    -->
-    <a class="logo" href="index.html" aria-label="V J Desai & Co. LLP — Home">
-      <div class="logo-name">V J Desai <span class="amp">&amp;</span> Co. LLP</div>
-      <div class="logo-sub">Chartered Accountants</div>
+    <!-- LOGO (image) — sourced from assets/img/logo.jpg via the page's relative path -->
+    <a class="logo" href="index.html" aria-label="V J Desai & Co. LLP — Home" style="line-height:0">
+      <img src="../assets/img/logo.jpg"
+           alt="V J Desai & Co. LLP — Chartered Accountants"
+           style="height:48px;width:auto;display:block;object-fit:contain"/>
     </a>
 
     <!-- PRIMARY MENU -->
