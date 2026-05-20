@@ -1,24 +1,18 @@
 <!--
   =================================================================
   SHARED FOOTER COMPONENT  —  V J Desai & Co. LLP
-  Include via fetch() in every page (see assets/js/main.js loader).
-  Depends on: assets/css/footer.css
+  Layout modelled on the CrownGlobe reference (two-tier):
+    TIER 1  brand card + Quick Links / Industries / Knowledge Center
+    TIER 2  full-width "Our Services" block (4 columns)
+    BOTTOM  copyright · legal links · credit
+  Content + branding are V J Desai's own.
 
-  Includes:
-    • WhatsApp float button (.wa-float)
-    • Footer accent bar (.sft-accent)
-    • Brand / contact card with phone, email, address, hours, socials
-    • Three link columns (Quick Links · Services · Resources)
-    • Trust strip + bottom bar (copyright, terms, privacy)
-
-  Firm contact details (single source of truth — edit here, propagates
-  to every page once included via fetch):
-    • Phone:    098250 62515       (tel: 09825062515 | wa.me: 919825062515)
-    • Email:    info@vjdesai.com
-    • Address:  B-901/902, Ratnaakar Nine Square,
-                132 Feet Ring Rd, Opp. ITC Narmada,
-                Suryapooja Block B, Satellite,
-                Ahmedabad, Gujarat 380015
+  Contact details (single source of truth):
+    Phone:   098250 62515   (tel: 09825062515 | wa.me: 919825062515)
+    Email:   info@vjdesai.com
+    Address: B-901/902, Ratnaakar Nine Square, 132 Feet Ring Rd,
+             Opp. ITC Narmada, Suryapooja Block B, Satellite,
+             Ahmedabad, Gujarat 380015
   =================================================================
 -->
 
@@ -41,21 +35,19 @@
   <!-- Top accent gradient bar -->
   <div class="sft-accent"></div>
 
-  <!-- Main footer body -->
   <div class="sft-body">
-    <div class="sft-inner">
 
-      <!-- ── BRAND + CONTACT CARD ─────────────────────────────── -->
+    <!-- ════ TIER 1 : brand card + 3 link columns ════ -->
+    <div class="sft-top">
+
+      <!-- Brand / contact card -->
       <div class="sft-card">
-
-        <!-- LOGO (image) — same asset as nav, sized larger for the footer card -->
         <a class="sft-logo" href="index.html" aria-label="V J Desai & Co. LLP — Home">
           <img src="../assets/img/logo.jpg"
                alt="V J Desai & Co. LLP — Chartered Accountants"
-               style="height:64px;width:auto;display:block;object-fit:contain"/>
+               style="height:50px;width:auto;display:block;object-fit:contain"/>
         </a>
 
-        <!-- Contact rows -->
         <div class="sft-contacts">
           <a href="tel:09825062515" class="sft-cl" aria-label="Call us">
             <span class="sft-ci" aria-hidden="true">📞</span>
@@ -67,24 +59,10 @@
           </a>
           <div class="sft-cl">
             <span class="sft-ci" aria-hidden="true" style="margin-top:2px">📍</span>
-            <span>
-              B-901/902, Ratnaakar Nine Square,<br/>
-              132 Feet Ring Rd, Opp. ITC Narmada,<br/>
-              Suryapooja Block B, Satellite,<br/>
-              Ahmedabad, Gujarat 380015
-            </span>
+            <span>B-901/902, Ratnaakar Nine Square,<br/>Satellite, Ahmedabad 380015</span>
           </div>
         </div>
 
-        <!-- Office hours -->
-        <div class="sft-hrs">
-          <div class="sft-hrs-h">🕒 &nbsp;Office Hours</div>
-          <div class="sft-hr-row"><b>Mon – Fri</b><span>10:00 AM – 7:00 PM</span></div>
-          <div class="sft-hr-row"><b>Saturday</b><span>10:00 AM – 6:00 PM</span></div>
-          <div class="sft-hr-row"><b>Sunday</b><span class="sft-closed">Closed</span></div>
-        </div>
-
-        <!-- Social icons -->
         <div class="sft-social">
           <a class="sft-si" href="https://linkedin.com" target="_blank" rel="noopener"
              title="LinkedIn" style="font-family:Georgia,serif;font-size:.86rem">in</a>
@@ -92,14 +70,12 @@
              title="Google" style="font-weight:900;color:#4285F4;font-size:.76rem">G</a>
           <a class="sft-si" href="https://youtube.com" target="_blank" rel="noopener"
              title="YouTube" style="font-size:.64rem;color:#FF0000">▶</a>
-          <a class="sft-si" href="https://instagram.com" target="_blank" rel="noopener"
-             title="Instagram" style="font-size:.72rem">📸</a>
           <a class="sft-si" href="https://wa.me/919825062515" target="_blank" rel="noopener"
              title="WhatsApp" style="font-size:.72rem">💬</a>
         </div>
       </div>
 
-      <!-- ── QUICK LINKS ──────────────────────────────────────── -->
+      <!-- Quick Links -->
       <div class="sft-col">
         <h4>Quick Links</h4>
         <ul>
@@ -112,58 +88,22 @@
         </ul>
       </div>
 
-      <!-- ── GST / INDIRECT TAX ───────────────────────────────── -->
+      <!-- Industries -->
       <div class="sft-col">
-        <h4>GST / Indirect Tax</h4>
+        <h4>Industries</h4>
         <ul>
-          <li><a href="gst.html">GST</a></li>
-          <li><a href="gst-class.html">GST Classification</a></li>
-          <li><a href="gst-audit.html">GST Audit</a></li>
-          <li><a href="gst-dd.html">GST Due Diligence</a></li>
-          <li><a href="gst-lit.html">GST Litigation</a></li>
-          <li><a href="gst-opinion.html">GST Opinion</a></li>
-          <li><a href="gst-refund.html">GST Refund</a></li>
-          <li><a href="gst-search.html">GST Search Inquiry</a></li>
-          <li><a href="gst-ebill.html">GST E-Bill Consultancy</a></li>
+          <li><a href="index.html">Manufacturing</a></li>
+          <li><a href="index.html">Trading &amp; Retail</a></li>
+          <li><a href="index.html">Banking &amp; Finance</a></li>
+          <li><a href="index.html">Real Estate</a></li>
+          <li><a href="index.html">IT &amp; Technology</a></li>
+          <li><a href="index.html">NGOs &amp; Trusts</a></li>
+          <li><a href="index.html">Healthcare</a></li>
+          <li><a href="index.html">Import &amp; Export</a></li>
         </ul>
       </div>
 
-      <!-- ── DIRECT TAX + RERA ────────────────────────────────── -->
-      <div class="sft-col">
-        <h4>Direct Tax</h4>
-        <ul>
-          <li><a href="corp-tax.html">Corporate Tax</a></li>
-          <li><a href="income-tax-adv.html">Income Tax Advisory</a></li>
-          <li><a href="income-tax.html">Income Tax</a></li>
-          <li><a href="nri-tax.html">NRI Taxation</a></li>
-        </ul>
-        <h4 style="margin-top:1.4rem">RERA</h4>
-        <ul>
-          <li><a href="rera-reg.html">Project Registration</a></li>
-          <li><a href="rera-qud.html">Quarterly Updates</a></li>
-          <li><a href="rera-ext.html">Project Extension</a></li>
-          <li><a href="rera-disp.html">Dispute Response</a></li>
-        </ul>
-      </div>
-
-      <!-- ── AUDIT & ADVISORY ─────────────────────────────────── -->
-      <div class="sft-col">
-        <h4>Audit &amp; Advisory</h4>
-        <ul>
-          <li><a href="stat-audit.html">Statutory Audit</a></li>
-          <li><a href="tax-audit.html">Tax Audit</a></li>
-          <li><a href="int-audit.html">Internal Audit</a></li>
-          <li><a href="comp-audit.html">Compliance Audit</a></li>
-          <li><a href="biz-setup.html">Business Setup Services</a></li>
-          <li><a href="biz-val.html">Business Valuation</a></li>
-          <li><a href="company-law.html">Company Law</a></li>
-          <li><a href="exim.html">Exim Policy</a></li>
-          <li><a href="fema.html">FEMA &amp; RBI</a></li>
-          <li><a href="mgmt-cfo.html">CFO Services</a></li>
-        </ul>
-      </div>
-
-      <!-- ── KNOWLEDGE CENTER ─────────────────────────────────── -->
+      <!-- Knowledge Center -->
       <div class="sft-col">
         <h4>Knowledge Center</h4>
         <ul>
@@ -179,19 +119,59 @@
         </ul>
       </div>
 
-    </div><!-- /.sft-inner -->
+    </div><!-- /.sft-top -->
 
-    <!-- Trust strip -->
-    <div class="sft-trust">
-      <div class="sft-badges">
-        <span class="sft-bdg au">ICAI Registered</span>
-        <span class="sft-bdg">Est. 1993</span>
-        <span class="sft-bdg">2500+ Clients</span>
-        <span class="sft-bdg">35+ Industry Sectors</span>
-        <span class="sft-bdg">Ahmedabad, Gujarat</span>
+
+    <!-- ════ TIER 2 : full-width "Our Services" ════ -->
+    <div class="sft-services">
+      <h4 class="sft-services-h">Our Services</h4>
+      <div class="sft-services-grid">
+
+        <!-- GST / Indirect Tax -->
+        <ul>
+          <li><a href="gst.html">GST</a></li>
+          <li><a href="gst-class.html">GST Classification</a></li>
+          <li><a href="gst-audit.html">GST Audit</a></li>
+          <li><a href="gst-dd.html">GST Due Diligence</a></li>
+          <li><a href="gst-lit.html">GST Litigation</a></li>
+          <li><a href="gst-opinion.html">GST Opinion</a></li>
+          <li><a href="gst-refund.html">GST Refund</a></li>
+          <li><a href="gst-search.html">GST Search Inquiry</a></li>
+          <li><a href="gst-ebill.html">GST E-Bill Consultancy</a></li>
+        </ul>
+
+        <!-- Direct Tax + Audit -->
+        <ul>
+          <li><a href="corp-tax.html">Corporate Tax</a></li>
+          <li><a href="income-tax-adv.html">Income Tax Advisory</a></li>
+          <li><a href="income-tax.html">Income Tax</a></li>
+          <li><a href="nri-tax.html">NRI Taxation</a></li>
+          <li><a href="stat-audit.html">Statutory Audit</a></li>
+          <li><a href="tax-audit.html">Tax Audit</a></li>
+          <li><a href="int-audit.html">Internal Audit</a></li>
+          <li><a href="comp-audit.html">Compliance Audit</a></li>
+        </ul>
+
+        <!-- Corporate / Advisory -->
+        <ul>
+          <li><a href="biz-setup.html">Business Setup Services</a></li>
+          <li><a href="biz-val.html">Business Valuation</a></li>
+          <li><a href="company-law.html">Company Law</a></li>
+          <li><a href="exim.html">Exim Policy</a></li>
+          <li><a href="fema.html">FEMA &amp; RBI</a></li>
+          <li><a href="mgmt-cfo.html">CFO Services</a></li>
+        </ul>
+
+        <!-- RERA -->
+        <ul>
+          <li><a href="rera-reg.html">RERA Project Registration</a></li>
+          <li><a href="rera-qud.html">Quarterly Updates Disclosure</a></li>
+          <li><a href="rera-ext.html">Project Extension</a></li>
+          <li><a href="rera-disp.html">Dispute Response Support</a></li>
+        </ul>
+
       </div>
-      <div class="sft-motto">"Integrity &nbsp;·&nbsp; Reliability &nbsp;·&nbsp; Proficiency"</div>
-    </div>
+    </div><!-- /.sft-services -->
 
   </div><!-- /.sft-body -->
 
@@ -214,10 +194,7 @@
 
 </footer>
 
-<!--
-  Inline init — keeps the footer self-contained.
-  Auto-updates the copyright year so you never have to edit it manually.
--->
+<!-- Auto-update the copyright year -->
 <script>
 (function(){
   var y = document.getElementById('sft-year');

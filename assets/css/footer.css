@@ -63,24 +63,75 @@
   padding:52px 5vw 0;
   border-top:1px solid #D0DBE9;
 }
-.sft-inner{
+/* TIER 1 — brand card + 3 link columns */
+.sft-top{
   max-width:1440px;
   margin:0 auto;
   display:grid;
-  grid-template-columns:230px repeat(5, 1fr);
-  gap:1.8rem 1.6rem;
-  padding-bottom:48px;
+  grid-template-columns:240px repeat(3, 1fr);
+  gap:1.8rem 2.2rem;
+  padding-bottom:36px;
   align-items:start;
+}
+
+/* TIER 2 — full-width "Our Services" block */
+.sft-services{
+  max-width:1440px;
+  margin:0 auto;
+  padding:30px 0 44px;
+  border-top:1px solid #C0CFE0;
+}
+.sft-services-h{
+  font-size:1.05rem;
+  font-weight:700;
+  color:#1A202C;
+  margin:0 0 1.3rem 0;
+}
+.sft-services-h::after{
+  content:'';
+  display:block;
+  width:34px;
+  height:3px;
+  background:#1A202C;
+  border-radius:2px;
+  margin-top:.5rem;
+}
+.sft-services-grid{
+  display:grid;
+  grid-template-columns:repeat(4, 1fr);
+  gap:1.4rem 2.2rem;
+}
+.sft-services-grid ul{
+  list-style:none;
+  margin:0;
+  padding:0;
+  display:flex;
+  flex-direction:column;
+  gap:.5rem;
+}
+.sft-services-grid ul li a{
+  font-size:.81rem;
+  color:#4B5563;
+  text-decoration:none;
+  cursor:pointer;
+  transition:.15s;
+  display:block;
+  line-height:1.4;
+}
+.sft-services-grid ul li a:hover{
+  color:#B7770D;
+  padding-left:3px;
 }
 
 /* Brand card */
 .sft-card{
-  background:#ffffff;
+  background:linear-gradient(160deg,#F6FAFF 0%,#E9F1FB 100%);
   border:1.5px solid #C0CFE0;
   border-radius:14px;
   padding:1.7rem 1.6rem;
   display:flex;
   flex-direction:column;
+  gap:1.1rem;
   box-shadow:0 2px 14px rgba(0,0,0,.05);
 }
 .sft-logo{
@@ -318,16 +369,17 @@
 .sft-credit span{ color:#B7770D; font-weight:600; }
 
 /* ─── Footer responsive ──────────────────────────────────────────── */
-@media(max-width:1200px){
-  /* Brand spans the top; the 5 link columns flow into 3 below */
-  .sft-inner{
+@media(max-width:1100px){
+  /* Brand spans the top; the 3 link columns sit below it */
+  .sft-top{
     grid-template-columns:repeat(3, 1fr);
     gap:2rem 1.6rem;
   }
   .sft-card{ grid-column:1 / -1; }
+  .sft-services-grid{ grid-template-columns:repeat(2, 1fr); }
 }
 @media(max-width:768px){
-  .sft-inner{
+  .sft-top{
     grid-template-columns:repeat(2, 1fr);
     gap:1.8rem 1.4rem;
   }
@@ -335,11 +387,12 @@
 }
 @media(max-width:560px){
   .sft-body{ padding:36px 5vw 0; }
-  .sft-inner{
+  .sft-top{
     grid-template-columns:repeat(2, 1fr);
     gap:1.4rem;
   }
   .sft-card{ grid-column:1 / -1; }
+  .sft-services-grid{ grid-template-columns:1fr; }
   .sft-bar-in{
     flex-direction:column;
     text-align:center;
@@ -352,5 +405,5 @@
   }
 }
 @media(max-width:400px){
-  .sft-inner{ grid-template-columns:1fr; }
+  .sft-top{ grid-template-columns:1fr; }
 }
