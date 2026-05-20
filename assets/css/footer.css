@@ -67,8 +67,8 @@
   max-width:1440px;
   margin:0 auto;
   display:grid;
-  grid-template-columns:300px 1fr 1fr 1fr;
-  gap:3vw;
+  grid-template-columns:230px repeat(5, 1fr);
+  gap:1.8rem 1.6rem;
   padding-bottom:48px;
   align-items:start;
 }
@@ -318,24 +318,26 @@
 .sft-credit span{ color:#B7770D; font-weight:600; }
 
 /* ─── Footer responsive ──────────────────────────────────────────── */
-@media(max-width:1100px){
+@media(max-width:1200px){
+  /* Brand spans the top; the 5 link columns flow into 3 below */
   .sft-inner{
-    grid-template-columns:260px 1fr 1fr 1fr;
-    gap:2vw;
+    grid-template-columns:repeat(3, 1fr);
+    gap:2rem 1.6rem;
   }
+  .sft-card{ grid-column:1 / -1; }
 }
-@media(max-width:900px){
+@media(max-width:768px){
   .sft-inner{
-    grid-template-columns:1fr 1fr;
-    gap:2rem;
+    grid-template-columns:repeat(2, 1fr);
+    gap:1.8rem 1.4rem;
   }
   .sft-card{ grid-column:1 / -1; }
 }
 @media(max-width:560px){
   .sft-body{ padding:36px 5vw 0; }
   .sft-inner{
-    grid-template-columns:1fr 1fr;
-    gap:1.3rem;
+    grid-template-columns:repeat(2, 1fr);
+    gap:1.4rem;
   }
   .sft-card{ grid-column:1 / -1; }
   .sft-bar-in{
