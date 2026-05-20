@@ -137,12 +137,25 @@
 .sft-logo{
   cursor:pointer;
   line-height:0;
-  margin-bottom:.9rem;
+  display:inline-block;
+  align-self:flex-start;
+  background:#ffffff;
+  border:1px solid #DCE6F2;
+  border-radius:8px;
+  padding:.5rem .65rem;
+  box-shadow:0 1px 4px rgba(0,0,0,.05);
 }
 .sft-logo img{
-  height:62px;
+  height:38px;
   width:auto;
   display:block;
+}
+
+/* Plain (non-link) list — e.g. Industries served */
+.sft-col ul.sft-plain li{
+  font-size:.81rem;
+  color:#4B5563;
+  line-height:1.4;
 }
 .sft-est{
   font-size:.62rem;
