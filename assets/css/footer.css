@@ -98,8 +98,16 @@
 }
 .sft-services-grid{
   display:grid;
-  grid-template-columns:repeat(4, 1fr);
-  gap:1.4rem 2.2rem;
+  grid-template-columns:repeat(5, 1fr);
+  gap:1.6rem 2rem;
+}
+.sft-slabel{
+  font-size:.7rem;
+  font-weight:700;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  color:#1A202C;
+  margin-bottom:.7rem;
 }
 .sft-services-grid ul{
   list-style:none;
@@ -389,7 +397,7 @@
     gap:2rem 1.6rem;
   }
   .sft-card{ grid-column:1 / -1; }
-  .sft-services-grid{ grid-template-columns:repeat(2, 1fr); }
+  .sft-services-grid{ grid-template-columns:repeat(3, 1fr); }
 }
 @media(max-width:768px){
   .sft-top{
@@ -397,6 +405,7 @@
     gap:1.8rem 1.4rem;
   }
   .sft-card{ grid-column:1 / -1; }
+  .sft-services-grid{ grid-template-columns:repeat(2, 1fr); }
 }
 @media(max-width:560px){
   .sft-body{ padding:36px 5vw 0; }
