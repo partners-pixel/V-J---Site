@@ -61,16 +61,17 @@ nav{
 .navl{
   display:flex;
   align-items:center;
-  gap:.1rem;
+  gap:0;
+  flex-shrink:0;            /* never let the menu shrink + clip its items */
 }
 .ni{ position:relative; }
 
 .nl{
   display:flex;
   align-items:center;
-  gap:.25rem;
-  padding:.52rem .88rem;
-  font-size:.85rem;
+  gap:.18rem;
+  padding:.5rem .4rem;      /* tighter horizontal padding so all 9 items fit */
+  font-size:.78rem;
   font-weight:400;
   color:var(--tmid);
   cursor:pointer;
@@ -173,7 +174,7 @@ nav{
 .ncta{
   background:var(--gold);
   color:var(--white);
-  padding:.58rem 1.4rem;
+  padding:.55rem 1.1rem;
   border-radius:4px;
   font-size:.85rem;
   font-weight:600;
@@ -330,12 +331,15 @@ nav{
 .gsn.active        { color:var(--gold); font-weight:600; }
 .gsn.active::after { transform:scaleX(1); }
 
-/* ─── MOBILE NAV (≤ 768px) ───────────────────────────────────────── */
-@media(max-width:768px){
+/* ─── MOBILE NAV (≤ 1279px) ──────────────────────────────────────────
+   The 9-item horizontal menu + logo + CTA needs ~1280px to fit without
+   clipping right-side items off-screen. Below that we switch to the
+   hamburger menu so every item (incl. RERA) stays reachable. */
+@media(max-width:1279px){
   .navl{
     display:none;
     position:absolute;
-    top:68px;
+    top:88px;
     left:0;
     right:0;
     background:var(--white);

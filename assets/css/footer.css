@@ -68,7 +68,7 @@
   max-width:1440px;
   margin:0 auto;
   display:grid;
-  grid-template-columns:280px repeat(3, 1fr);
+  grid-template-columns:280px repeat(2, 1fr);
   gap:1.8rem 2.2rem;
   padding-bottom:36px;
   align-items:start;
@@ -98,7 +98,7 @@
 }
 .sft-services-grid{
   display:grid;
-  grid-template-columns:repeat(5, 1fr);
+  grid-template-columns:repeat(4, 1fr);
   gap:1.6rem 2rem;
 }
 .sft-slabel{
@@ -109,6 +109,16 @@
   color:#1A202C;
   margin-bottom:.7rem;
 }
+/* Sub-group heading inside a service column (e.g. Audit & Advisory → Audit / Corporate Services) */
+.sft-sublabel{
+  font-size:.64rem;
+  font-weight:700;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  color:#B7770D;
+  margin:.95rem 0 .5rem;
+}
+.sft-sublabel:first-of-type{ margin-top:.2rem; }
 .sft-services-grid ul{
   list-style:none;
   margin:0;

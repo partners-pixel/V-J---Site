@@ -31,7 +31,11 @@
     if (!url) return;
 
     try {
-      var res = await fetch(url, { cache: 'no-cache' });
+      // cache:'no-store' + a per-load cache-bust param guarantees the
+      // freshest partial. (Plain 'no-cache' only revalidates, so dev
+      // servers without proper validators can still serve a stale nav.)
+      var bust = (url.indexOf('?') === -1 ? '?' : '&') + '_cb=' + Date.now();
+      var res = await fetch(url + bust, { cache: 'no-store' });
       if (!res.ok) throw new Error('HTTP ' + res.status);
       var html = await res.text();
 

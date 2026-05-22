@@ -13,6 +13,10 @@ desktop.ini
 # ─── Claude Code local state ─────────────────────────────────────
 .claude/
 
+# ─── Secrets / env ───────────────────────────────────────────────
+.env
+.env.local
+
 # ─── Logs / temp ─────────────────────────────────────────────────
 *.log
 npm-debug.log*

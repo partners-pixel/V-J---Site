@@ -1,7 +1,10 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8"/>
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+  <meta http-equiv="Pragma" content="no-cache"/>
+  <meta http-equiv="Expires" content="0"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Contact Us | V J Desai &amp; Co. LLP</title>
 
@@ -12,16 +15,16 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
 
-  <link rel="stylesheet" href="../assets/css/variables.css"/>
-  <link rel="stylesheet" href="../assets/css/base.css"/>
-  <link rel="stylesheet" href="../assets/css/nav.css"/>
-  <link rel="stylesheet" href="../assets/css/footer.css"/>
-  <link rel="stylesheet" href="../assets/css/components.css"/>
+  <link rel="stylesheet" href="../assets/css/variables.css?v=2"/>
+  <link rel="stylesheet" href="../assets/css/base.css?v=2"/>
+  <link rel="stylesheet" href="../assets/css/nav.css?v=3"/>
+  <link rel="stylesheet" href="../assets/css/footer.css?v=3"/>
+  <link rel="stylesheet" href="../assets/css/components.css?v=2"/>
 </head>
 <body data-page="contact">
 
 <!-- SHARED NAV (loaded by include.js) -->
-<div data-include="../components/nav.html"></div>
+<div data-include="../components/nav.html?v=3"></div>
 
 <!-- PAGE CONTENT -->
 <main>
@@ -209,8 +212,8 @@
           <a href="tel:+919825062515" class="cou-btn-g">📞 &nbsp;+91 98250 62515</a>
           <a href="mailto:info@vjdesai.com" class="cou-btn-o">✉️ &nbsp;info@vjdesai.com</a>
         </div>
-        <div class="cou-meta-row">📍 B-901/902, Ratnaakar Nine Square, 132 Feet Ring Rd, Satellite, Ahmedabad 380015</div>
-        <div class="cou-meta-row">🕐 Monday – Saturday: 10:00 AM – 7:00 PM &nbsp;·&nbsp; Sunday: Closed</div>
+        <div class="cou-meta-row">📍 B-901/902, Ratnaakar Nine Square, 132 Feet Ring Rd, Opp. ITC Narmada, Suryapooja Block B, Satellite, Ahmedabad, Gujarat 380015</div>
+        <div class="cou-meta-row">🕐 Monday – Saturday: 10:30 AM – 7:30 PM &nbsp;·&nbsp; Sunday: Closed</div>
       </div>
       <div>
         <div style="font-size:.67rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.3);margin-bottom:.8rem">Our Track Record</div>
@@ -264,7 +267,7 @@
             <div>
               <div class="cou-ic-lbl">Phone</div>
               <a href="tel:+919825062515" class="cou-ic-val" style="color:#1E8449">+91 98250 62515</a>
-              <div class="cou-ic-note">Available Mon – Sat, 10:00 AM – 7:00 PM</div>
+              <div class="cou-ic-note">Available Mon – Sat, 10:30 AM – 7:30 PM</div>
             </div>
           </div>
 
@@ -287,8 +290,8 @@
 
           <div class="cou-hrs">
             <div class="cou-hrs-lbl">🕐 &nbsp;Office Hours</div>
-            <div class="cou-hrs-row"><span class="cou-hrs-day">Monday – Friday</span><span class="cou-hrs-time">10:00 AM – 7:00 PM</span></div>
-            <div class="cou-hrs-row"><span class="cou-hrs-day">Saturday</span><span class="cou-hrs-time">10:00 AM – 6:00 PM</span></div>
+            <div class="cou-hrs-row"><span class="cou-hrs-day">Monday – Friday</span><span class="cou-hrs-time">10:30 AM – 7:30 PM</span></div>
+            <div class="cou-hrs-row"><span class="cou-hrs-day">Saturday</span><span class="cou-hrs-time">10:30 AM – 7:30 PM</span></div>
             <div class="cou-hrs-row"><span class="cou-hrs-day">Sunday</span><span class="cou-hrs-closed">Closed</span></div>
             <p style="font-size:.76rem;color:#6B7280;margin-top:.7rem;line-height:1.6">For urgent compliance matters — GST notices, IT assessments, RERA deadlines — call us directly for same-day support.</p>
           </div>
@@ -315,18 +318,23 @@
             <span class="cou-tp">✓ Reply Within 24 hrs</span>
           </div>
 
+          <form id="consult-form" action="/api/contact" method="POST">
+          <input type="hidden" name="_subject" value="New Consultation Enquiry — V J Desai &amp; Co. website"/>
+          <!-- Honeypot: bots fill this; humans never see it -->
+          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off"/>
+
           <div class="cou-row">
-            <div class="cou-fg"><label>First Name *</label><input type="text" placeholder="Rajesh"/></div>
-            <div class="cou-fg"><label>Last Name *</label><input type="text" placeholder="Mehta"/></div>
+            <div class="cou-fg"><label>First Name *</label><input type="text" name="First Name" placeholder="Rajesh" required/></div>
+            <div class="cou-fg"><label>Last Name *</label><input type="text" name="Last Name" placeholder="Mehta" required/></div>
           </div>
           <div class="cou-row">
-            <div class="cou-fg"><label>Email Address *</label><input type="email" placeholder="you@company.com"/></div>
-            <div class="cou-fg"><label>Phone Number *</label><input type="tel" placeholder="+91 98765 43210"/></div>
+            <div class="cou-fg"><label>Email Address *</label><input type="email" name="email" placeholder="you@company.com" required/></div>
+            <div class="cou-fg"><label>Phone Number *</label><input type="tel" name="Phone" placeholder="+91 98765 43210" required/></div>
           </div>
           <div class="cou-row">
-            <div class="cou-fg"><label>Company / Organisation</label><input type="text" placeholder="Your Company Pvt. Ltd."/></div>
+            <div class="cou-fg"><label>Company / Organisation</label><input type="text" name="Company" placeholder="Your Company Pvt. Ltd."/></div>
             <div class="cou-fg"><label>Entity Type</label>
-              <select>
+              <select name="Entity Type">
                 <option value="">Select entity type</option>
                 <option>Private Limited Company</option>
                 <option>LLP / Partnership Firm</option>
@@ -340,7 +348,7 @@
             </div>
           </div>
           <div class="cou-fg"><label>Service Enquiry *</label>
-            <select>
+            <select name="Service Enquiry" required>
               <option value="">Select a service area</option>
               <optgroup label="GST / Indirect Tax">
                 <option>GST Registration &amp; Compliance</option>
@@ -376,10 +384,10 @@
             </select>
           </div>
           <div class="cou-fg"><label>How Can We Help You? *</label>
-            <textarea placeholder="Briefly describe your requirement or the compliance matter you need help with. The more detail you share, the better prepared we can be for your first consultation."></textarea>
+            <textarea name="Message" placeholder="Briefly describe your requirement or the compliance matter you need help with. The more detail you share, the better prepared we can be for your first consultation." required></textarea>
           </div>
           <div class="cou-fg"><label>Preferred Mode of Contact</label>
-            <select>
+            <select name="Preferred Mode of Contact">
               <option value="">Select preference</option>
               <option>Phone Call</option>
               <option>Email</option>
@@ -388,8 +396,10 @@
               <option>Video Call</option>
             </select>
           </div>
-          <button class="cou-sub" onclick="this.textContent='✓ Enquiry Received — We Will Respond Within 1 Business Day';this.style.background='#1E8449';this.disabled=true">Submit Enquiry →</button>
+          <button type="submit" class="cou-sub">Submit Enquiry →</button>
+          <p class="cou-msg" id="consult-msg" style="display:none;margin-top:.8rem;font-size:.85rem;font-weight:600"></p>
           <p class="cou-priv">🔒 &nbsp;All information shared is strictly confidential and governed by ICAI professional ethics. We do not share your data with third parties.</p>
+          </form>
         </div>
       </div>
     </div>
@@ -497,7 +507,7 @@
   <!-- BOTTOM STRIP -->
   <div class="cou-strp">
     <div class="cou-si2">
-      <div class="cou-sti"><div class="cou-stico" style="background:rgba(255,255,255,.07)">📍</div><div><div class="cou-stlbl">Office</div><div class="cou-stval2">Ratnaakar Nine Square, Satellite, Ahmedabad 380015</div></div></div>
+      <div class="cou-sti"><div class="cou-stico" style="background:rgba(255,255,255,.07)">📍</div><div><div class="cou-stlbl">Office</div><div class="cou-stval2">B-901/902, Ratnaakar Nine Square, 132 Feet Ring Rd, Opp. ITC Narmada, Suryapooja Block B, Satellite, Ahmedabad, Gujarat 380015</div></div></div>
       <div class="cou-div"></div>
       <div class="cou-sti"><div class="cou-stico" style="background:rgba(30,132,73,.2)">📞</div><div><div class="cou-stlbl">Call Us</div><a href="tel:+919825062515" class="cou-stval">+91 98250 62515</a></div></div>
       <div class="cou-div"></div>
@@ -510,13 +520,81 @@
 </main>
 
 <!-- SHARED FOOTER (loaded by include.js) -->
-<div data-include="../components/footer.html"></div>
+<div data-include="../components/footer.html?v=3"></div>
 
 <!-- SITE JS -->
-<script src="../assets/js/include.js"></script>
-<script src="../assets/js/nav.js"></script>
+<script src="../assets/js/include.js?v=2"></script>
+<script src="../assets/js/nav.js?v=2"></script>
 <script src="../assets/js/main.js"></script>
 <script src="../assets/js/lock.js"></script>
+
+<!-- Consultation form → /api/contact (AJAX SMTP, stays on page) -->
+<script>
+(function(){
+  var form = document.getElementById('consult-form');
+  if (!form) return;
+  var btn = form.querySelector('.cou-sub');
+  var msg = document.getElementById('consult-msg');
+
+  function showError(text){
+    btn.disabled = false;
+    msg.textContent = text;
+    msg.style.color = '#C0392B';
+    msg.style.display = 'block';
+  }
+
+  form.addEventListener('submit', function(e){
+    e.preventDefault();                       // keep the visitor on the page
+    if (!form.reportValidity()) return;       // honour required fields
+
+    var original = btn.textContent;
+    btn.disabled = true;
+    btn.textContent = 'Sending…';
+    msg.style.display = 'none';
+
+    // Posts to /api/contact, which delivers the enquiry over SMTP
+    fetch(form.action, {
+      method: 'POST',
+      headers: { 'Accept': 'application/json' },
+      body: new FormData(form)
+    })
+    .then(function(r){
+      // Read the body as text first so an empty / non-JSON response
+      // (e.g. a 404 when the site isn't served by the Node server)
+      // produces a clear message instead of a JSON-parse crash.
+      return r.text().then(function(text){
+        var data = null;
+        try { data = text ? JSON.parse(text) : null; } catch (_) {}
+        return { ok: r.ok, status: r.status, data: data };
+      });
+    })
+    .then(function(res){
+      btn.textContent = original;
+      if (res.data && res.data.success === true) {
+        form.reset();
+        btn.disabled = true;
+        btn.textContent = '✓ Enquiry Received';
+        btn.style.background = '#1E8449';
+        msg.textContent = 'Your data was sent successfully — we will respond within 1 business day.';
+        msg.style.color = '#1E8449';
+        msg.style.display = 'block';
+        return;
+      }
+      if (res.data && res.data.message) {
+        showError(res.data.message);          // server-supplied error
+      } else if (res.status === 404 || res.status === 0) {
+        showError('Form service not reachable. Please email info@vjdesai.com directly.');
+      } else {
+        showError('Sorry, something went wrong. Please email info@vjdesai.com directly.');
+      }
+    })
+    .catch(function(){
+      showError('Network error. Please check your connection or email info@vjdesai.com directly.');
+      btn.textContent = original;
+    });
+  });
+})();
+</script>
 
 </body>
 </html>
