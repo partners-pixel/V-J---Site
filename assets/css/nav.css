@@ -69,9 +69,9 @@ nav{
 .nl{
   display:flex;
   align-items:center;
-  gap:.18rem;
-  padding:.5rem .4rem;      /* tighter horizontal padding so all 9 items fit */
-  font-size:.78rem;
+  gap:.16rem;
+  padding:.5rem .34rem;     /* tighter horizontal padding so all 9 items fit */
+  font-size:.76rem;
   font-weight:400;
   color:var(--tmid);
   cursor:pointer;
@@ -174,12 +174,13 @@ nav{
 .ncta{
   background:var(--gold);
   color:var(--white);
-  padding:.55rem 1.1rem;
+  padding:.52rem .95rem;
   border-radius:4px;
-  font-size:.85rem;
+  font-size:.8rem;
   font-weight:600;
   letter-spacing:.02em;
   transition:var(--t);
+  white-space:nowrap;
 }
 .ncta:hover{
   background:var(--gold-lt);
