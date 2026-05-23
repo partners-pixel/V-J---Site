@@ -31,9 +31,12 @@ const {
   PORT = '3000',
 } = process.env;
 
-if (!SMTP_HOST || !SMTP_USER || !SMTP_PASS) {
+const smtpConfigured = Boolean(SMTP_HOST && SMTP_USER && SMTP_PASS);
+
+if (!smtpConfigured) {
   console.warn('⚠️  SMTP_HOST / SMTP_USER / SMTP_PASS are not set. ' +
-    'Copy .env.example to .env and fill them in, or the contact form will fail.');
+    'Running in DEV MODE: enquiries will be logged to the console instead ' +
+    'of emailed. Copy .env.example to .env and fill them in to send real email.');
 }
 
 // Reusable SMTP transport
@@ -98,6 +101,14 @@ app.post('/api/contact', async (req, res) => {
       <table style="border-collapse:collapse;width:100%;font-size:14px">${tableRows}</table>
       <p style="color:#6B7280;font-size:12px;margin-top:16px">Submitted via the contact form on vjdesai.com</p>
     </div>`;
+
+  // DEV fallback — no SMTP configured: log the enquiry and report success so
+  // the form is testable locally without mail credentials. (No email is sent.)
+  if (!smtpConfigured) {
+    console.log('\n📩  New enquiry (DEV MODE — not emailed):');
+    console.table(rows);
+    return res.json({ success: true, message: 'Enquiry received (dev mode — email not sent).' });
+  }
 
   try {
     await transporter.sendMail({
