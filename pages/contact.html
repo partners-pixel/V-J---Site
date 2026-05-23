@@ -551,11 +551,14 @@
     btn.textContent = 'Sending…';
     msg.style.display = 'none';
 
-    // Posts to /api/contact, which delivers the enquiry over SMTP
+    // Posts to /api/contact, which delivers the enquiry over SMTP.
+    // Send as application/x-www-form-urlencoded (not multipart FormData) so
+    // the server's express.urlencoded() parser populates req.body — fetch
+    // sets the correct Content-Type automatically for URLSearchParams.
     fetch(form.action, {
       method: 'POST',
       headers: { 'Accept': 'application/json' },
-      body: new FormData(form)
+      body: new URLSearchParams(new FormData(form))
     })
     .then(function(r){
       // Read the body as text first so an empty / non-JSON response
