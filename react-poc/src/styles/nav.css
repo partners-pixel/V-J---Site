@@ -1,0 +1,378 @@
+/* ====================================================================
+   NAVIGATION  —  V J Desai & Co. LLP
+   Logo, primary nav bar, dropdowns (incl. nested), CTA button,
+   mobile hamburger toggle, sticky sub-nav (.subnav) and GST sub-nav.
+   Depends on: variables.css
+   ==================================================================== */
+
+/* ─── LOGO ───────────────────────────────────────────────────────── */
+.logo{
+  display:flex;
+  flex-direction:column;
+  gap:2px;
+  cursor:pointer;
+  line-height:1;
+}
+.logo-name{
+  font-family:'EB Garamond',serif;
+  font-size:2.2rem;
+  font-weight:700;
+  color:var(--tdark);
+  letter-spacing:.01em;
+  display:flex;
+  align-items:baseline;
+  gap:.18em;
+}
+.logo-name .amp{
+  font-weight:400;
+  color:var(--gold);
+  font-style:italic;
+}
+.logo-sub{
+  font-family:'Inter',sans-serif;
+  font-size:.85rem;
+  font-weight:500;
+  letter-spacing:.22em;
+  text-transform:uppercase;
+  color:var(--tmute);
+}
+/* White-logo variant for dark backgrounds */
+.logo-dark .logo-name      { color:var(--white); }
+.logo-dark .logo-name .amp { color:var(--gold);  }
+.logo-dark .logo-sub       { color:rgba(255,255,255,.45); }
+
+/* ─── PRIMARY NAV BAR ────────────────────────────────────────────── */
+nav{
+  position:sticky;
+  top:0;
+  z-index:500;
+  background:var(--white);
+  box-shadow:0 1px 0 rgba(0,0,0,.08), 0 3px 14px rgba(0,0,0,.05);
+}
+.navi{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 5vw;
+  height:112px;
+  max-width:1440px;
+  margin:0 auto;
+}
+.navl{
+  display:flex;
+  align-items:center;
+  gap:0;
+  flex-shrink:0;            /* never let the menu shrink + clip its items */
+}
+.ni{ position:relative; }
+
+.nl{
+  display:flex;
+  align-items:center;
+  gap:.16rem;
+  padding:.5rem .34rem;     /* tighter horizontal padding so all 9 items fit */
+  font-size:.83rem;
+  font-weight:400;
+  color:var(--tmid);
+  cursor:pointer;
+  transition:var(--t);
+  white-space:nowrap;
+  border-bottom:2px solid transparent;
+}
+.nl:hover { color:var(--tdark); }
+.nl.active{
+  color:var(--tdark);
+  border-bottom-color:var(--gold);
+  font-weight:500;
+}
+.nl .ar{
+  width:9px;
+  height:9px;
+  opacity:.5;
+  transition:transform .2s;
+  flex-shrink:0;
+}
+.ni:hover>.nl .ar{ transform:rotate(180deg); }
+
+/* ─── DROPDOWN ───────────────────────────────────────────────────── */
+.dd{
+  position:absolute;
+  top:calc(100% + 2px);
+  left:0;
+  min-width:220px;
+  background:var(--white);
+  border:1px solid rgba(0,0,0,.08);
+  box-shadow:0 8px 30px rgba(0,0,0,.12);
+  border-radius:6px;
+  opacity:0;
+  visibility:hidden;
+  transform:translateY(6px);
+  transition:var(--t);
+  z-index:600;
+}
+.ni:hover>.dd{
+  opacity:1;
+  visibility:visible;
+  transform:translateY(0);
+}
+.dds{
+  padding:.45rem 0;
+  border-bottom:1px solid var(--light);
+}
+.dds:last-child{ border-bottom:none; }
+.ddl{
+  padding:.32rem 1.1rem;
+  font-size:.62rem;
+  letter-spacing:.15em;
+  text-transform:uppercase;
+  color:var(--gold);
+  font-weight:600;
+}
+.dda{
+  display:block;
+  padding:.46rem 1.1rem;
+  font-size:.85rem;
+  color:var(--tmid);
+  cursor:pointer;
+  transition:var(--t);
+}
+.dda:hover{
+  background:var(--gold-pale);
+  color:var(--tdark);
+  padding-left:1.5rem;
+}
+
+/* ─── NESTED DROPDOWN ────────────────────────────────────────────── */
+.dni{ position:relative; }
+.dni>.dda{ display:flex; justify-content:space-between; }
+.dni>.dda::after{
+  content:'›';
+  opacity:.5;
+}
+.dd2{
+  position:absolute;
+  left:100%;
+  top:0;
+  min-width:230px;
+  background:var(--white);
+  border:1px solid rgba(0,0,0,.08);
+  box-shadow:0 8px 30px rgba(0,0,0,.12);
+  border-radius:6px;
+  opacity:0;
+  visibility:hidden;
+  transform:translateX(6px);
+  transition:var(--t);
+  z-index:700;
+}
+.dni:hover>.dd2{
+  opacity:1;
+  visibility:visible;
+  transform:translateX(0);
+}
+
+/* ─── CTA BUTTON ─────────────────────────────────────────────────── */
+.ncta{
+  background:var(--gold);
+  color:var(--white);
+  padding:.52rem .95rem;
+  border-radius:4px;
+  font-size:.8rem;
+  font-weight:600;
+  letter-spacing:.02em;
+  transition:var(--t);
+  white-space:nowrap;
+}
+.ncta:hover{
+  background:var(--gold-lt);
+  transform:translateY(-1px);
+  box-shadow:0 4px 14px rgba(201,168,76,.35);
+}
+
+/* ─── MOBILE TOGGLE (hamburger) ──────────────────────────────────── */
+.ntog{
+  display:none;
+  flex-direction:column;
+  gap:5px;
+  padding:4px;
+  cursor:pointer;
+}
+.ntog span{
+  width:22px;
+  height:2px;
+  background:var(--tdark);
+  transition:var(--t);
+}
+
+/* ─── STICKY SUB-NAV (.subnav) ───────────────────────────────────── */
+.subnav{
+  background:var(--white);
+  border-bottom:1.5px solid var(--light);
+  position:sticky;
+  top:112px;
+  z-index:400;
+  box-shadow:0 1px 8px rgba(0,0,0,.04);
+}
+.subnav-inner{
+  max-width:1440px;
+  margin:0 auto;
+  padding:0 5vw;
+  display:flex;
+  align-items:center;
+  overflow-x:auto;
+  scrollbar-width:none;
+}
+.subnav .sn{
+  font-family:'Inter',sans-serif !important;
+  font-size:.85rem !important;
+  font-weight:500 !important;
+  color:var(--tmid) !important;
+  line-height:1 !important;
+  display:inline-flex;
+  align-items:center;
+  padding:.82rem 1.15rem;
+  border-bottom:2.5px solid transparent;
+  margin-bottom:-1.5px;
+  cursor:pointer;
+  transition:var(--t);
+  white-space:nowrap;
+  text-decoration:none;
+}
+.subnav .sn:hover{ color:var(--tdark) !important; }
+.subnav .sn.active{
+  color:var(--gold) !important;
+  border-bottom-color:var(--gold);
+  font-weight:600 !important;
+}
+
+.sn-btn{
+  display:inline-flex;
+  align-items:center;
+  gap:.5rem;
+  padding:.82rem 1.5rem;
+  font-size:.85rem;
+  font-weight:500;
+  letter-spacing:.02em;
+  color:var(--tmid);
+  cursor:pointer;
+  border-bottom:2.5px solid transparent;
+  margin-bottom:-1.5px;
+  transition:var(--t);
+  white-space:nowrap;
+  background:none;
+  border-top:none;
+  border-left:none;
+  border-right:none;
+  font-family:'Inter',sans-serif;
+}
+.sn-btn::before{
+  content:'·';
+  color:var(--gold);
+  font-size:1rem;
+  font-weight:700;
+  margin-right:.2rem;
+}
+.sn-btn:first-child::before{ display:none; }
+.sn-btn:hover{ color:var(--tdark); }
+.sn-btn.on{
+  color:var(--gold);
+  border-bottom-color:var(--gold);
+  font-weight:600;
+}
+
+/* Scroll offset so sticky nav + sub-nav don't cover headings */
+.sn-anchor{ scroll-margin-top:164px; }
+
+/* ─── GST SUB-NAV (.gst-subnav) ──────────────────────────────────── */
+.gst-subnav{
+  background:var(--white);
+  border-bottom:2px solid var(--light);
+  position:sticky;
+  top:112px;
+  z-index:400;
+  box-shadow:0 2px 12px rgba(0,0,0,.05);
+}
+.gst-subnav-inner{
+  max-width:1440px;
+  margin:0 auto;
+  padding:0 5vw;
+  display:flex;
+  gap:0;
+  overflow-x:auto;
+  scrollbar-width:none;
+}
+.gst-subnav-inner::-webkit-scrollbar{ display:none; }
+.gsn{
+  padding:.85rem 1.8rem;
+  font-size:.8rem;
+  font-weight:500;
+  color:var(--tmute);
+  cursor:pointer;
+  border-bottom:2px solid transparent;
+  margin-bottom:-2px;
+  transition:var(--t);
+  white-space:nowrap;
+  text-decoration:none;
+  display:inline-block;
+  font-family:'Inter',sans-serif;
+  position:relative;
+}
+.gsn::after{
+  content:'';
+  position:absolute;
+  bottom:-2px;
+  left:0;
+  right:0;
+  height:2px;
+  background:var(--gold);
+  transform:scaleX(0);
+  transition:transform .25s ease;
+}
+.gsn:hover         { color:var(--tdark); }
+.gsn:hover::after  { transform:scaleX(1); }
+.gsn.active        { color:var(--gold); font-weight:600; }
+.gsn.active::after { transform:scaleX(1); }
+
+/* ─── MOBILE NAV (≤ 1279px) ──────────────────────────────────────────
+   The 9-item horizontal menu + logo + CTA needs ~1280px to fit without
+   clipping right-side items off-screen. Below that we switch to the
+   hamburger menu so every item (incl. RERA) stays reachable. */
+@media(max-width:1279px){
+  .navl{
+    display:none;
+    position:absolute;
+    top:112px;
+    left:0;
+    right:0;
+    background:var(--white);
+    flex-direction:column;
+    align-items:stretch;
+    padding:1rem;
+    border-top:1px solid var(--light);
+    z-index:600;
+    max-height:80vh;
+    overflow-y:auto;
+  }
+  .navl.open{ display:flex; }
+
+  .ni{ position:static; }
+  .nl{
+    border-bottom:1px solid var(--light);
+    padding:.78rem 0;
+  }
+  .dd{
+    position:static;
+    opacity:1;
+    visibility:visible;
+    transform:none;
+    box-shadow:none;
+    border:none;
+    border-left:3px solid var(--gold);
+    margin-left:1rem;
+    display:none;
+    border-radius:0;
+  }
+  .ni.open>.dd{ display:block; }
+
+  .ntog{ display:flex; }
+  .ncta{ display:none; }
+}

@@ -1,0 +1,441 @@
+/* ====================================================================
+   FOOTER  —  V J Desai & Co. LLP
+   Floating WhatsApp button + site footer (.sft-*)
+   Depends on: variables.css
+   ==================================================================== */
+
+/* ─── WHATSAPP FLOAT BUTTON ──────────────────────────────────────── */
+.wa-float{
+  position:fixed;
+  bottom:28px;
+  right:28px;
+  z-index:9999;
+  display:flex;
+  align-items:center;
+  gap:.55rem;
+  background:#25D366;
+  color:#fff;
+  border:none;
+  border-radius:50px;
+  padding:.7rem 1.2rem .7rem .9rem;
+  box-shadow:0 4px 18px rgba(37,211,102,.45);
+  cursor:pointer;
+  font-family:'Inter',sans-serif;
+  font-size:.82rem;
+  font-weight:600;
+  text-decoration:none;
+  transition:.25s;
+  animation:wapulse 2.5s infinite;
+}
+.wa-float:hover{
+  background:#1ebe5d;
+  transform:translateY(-2px);
+  box-shadow:0 6px 24px rgba(37,211,102,.55);
+}
+.wa-float svg{
+  width:22px;
+  height:22px;
+  flex-shrink:0;
+}
+@keyframes wapulse{
+  0%,100% { box-shadow:0 4px 18px rgba(37,211,102,.45); }
+  50%     { box-shadow:0 4px 28px rgba(37,211,102,.7);  }
+}
+@media(max-width:768px){
+  .wa-float span{ display:none; }
+  .wa-float     { padding:.75rem; }
+  .wa-float svg { width:26px; height:26px; }
+}
+
+/* ====================================================================
+   SITE FOOTER  (.sft-*)
+   ==================================================================== */
+
+/* Top accent gradient bar */
+.sft-accent{
+  height:4px;
+  background:linear-gradient(90deg,#1C2437 0%,#1A5276 35%,#C9A84C 70%,#D9BC6E 100%);
+}
+
+/* Main footer body */
+.sft-body{
+  background:#EFF3F8;
+  padding:52px 5vw 0;
+  border-top:1px solid #D0DBE9;
+}
+/* TIER 1 — brand card + 4 service columns */
+.sft-top{
+  max-width:1440px;
+  margin:0 auto;
+  display:grid;
+  grid-template-columns:280px repeat(4, 1fr);
+  gap:1.8rem 2.2rem;
+  padding-bottom:36px;
+  align-items:start;
+}
+
+/* TIER 2 — full-width "Our Services" block */
+.sft-services{
+  max-width:1440px;
+  margin:0 auto;
+  padding:30px 0 44px;
+  border-top:1px solid #C0CFE0;
+}
+.sft-services-h{
+  font-size:1.05rem;
+  font-weight:700;
+  color:#1A202C;
+  margin:0 0 1.3rem 0;
+}
+.sft-services-h::after{
+  content:'';
+  display:block;
+  width:34px;
+  height:3px;
+  background:#1A202C;
+  border-radius:2px;
+  margin-top:.5rem;
+}
+.sft-services-grid{
+  display:grid;
+  grid-template-columns:repeat(3, 1fr);
+  gap:1.6rem 2rem;
+}
+.sft-slabel{
+  font-size:.7rem;
+  font-weight:700;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  color:#1A202C;
+  margin-bottom:.7rem;
+}
+/* Sub-group heading inside a service column (e.g. Audit & Advisory → Audit / Corporate Services) */
+.sft-sublabel{
+  font-size:.64rem;
+  font-weight:700;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  color:#B7770D;
+  margin:.95rem 0 .5rem;
+}
+.sft-sublabel:first-of-type{ margin-top:.2rem; }
+.sft-services-grid ul{
+  list-style:none;
+  margin:0;
+  padding:0;
+  display:flex;
+  flex-direction:column;
+  gap:.5rem;
+}
+.sft-services-grid ul li a{
+  font-size:.81rem;
+  color:#4B5563;
+  text-decoration:none;
+  cursor:pointer;
+  transition:.15s;
+  display:block;
+  line-height:1.4;
+}
+.sft-services-grid ul li a:hover{
+  color:#B7770D;
+  padding-left:3px;
+}
+
+/* Brand card */
+.sft-card{
+  background:linear-gradient(160deg,#F6FAFF 0%,#E9F1FB 100%);
+  border:1.5px solid #C0CFE0;
+  border-radius:12px;
+  padding:1rem 1.15rem 1.15rem;
+  display:flex;
+  flex-direction:column;
+  gap:.7rem;
+  box-shadow:0 2px 14px rgba(0,0,0,.05);
+}
+.sft-logo{
+  cursor:pointer;
+  line-height:0;
+  display:inline-block;
+  align-self:flex-start;
+  background:#ffffff;
+  border:1px solid #DCE6F2;
+  border-radius:8px;
+  padding:.5rem .65rem;
+  box-shadow:0 1px 4px rgba(0,0,0,.05);
+}
+.sft-logo img{
+  height:38px;
+  width:auto;
+  display:block;
+}
+
+/* Plain (non-link) list — e.g. Industries served */
+.sft-col ul.sft-plain li{
+  font-size:.81rem;
+  color:#4B5563;
+  line-height:1.4;
+}
+.sft-est{
+  font-size:.62rem;
+  font-weight:700;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:#C9A84C;
+  margin-bottom:.55rem;
+}
+.sft-desc{
+  font-size:.81rem;
+  color:#4B5563;
+  line-height:1.75;
+  margin-bottom:1.1rem;
+}
+
+/* Contact rows */
+.sft-contacts{
+  display:flex;
+  flex-direction:column;
+  gap:.5rem;
+  margin-bottom:.8rem;
+}
+.sft-cl{
+  display:flex;
+  align-items:flex-start;
+  gap:.6rem;
+  font-size:.81rem;
+  color:#374151;
+  text-decoration:none;
+  transition:.18s;
+  line-height:1.45;
+}
+.sft-cl:hover{ color:#B7770D; }
+.sft-ci{
+  width:24px;
+  height:24px;
+  border-radius:50%;
+  border:1.5px solid #BDD0E3;
+  background:#F2F6FB;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:.58rem;
+  color:#5B7FA6;
+  flex-shrink:0;
+  margin-top:1px;
+}
+
+/* Office hours */
+.sft-hrs{
+  background:#F2F6FB;
+  border:1px solid #D0DBE9;
+  border-radius:7px;
+  padding:.65rem .85rem;
+  margin-bottom:1rem;
+}
+.sft-hrs-h{
+  font-size:.58rem;
+  font-weight:700;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:#C9A84C;
+  margin-bottom:.38rem;
+}
+.sft-hr-row{
+  display:flex;
+  justify-content:space-between;
+  font-size:.74rem;
+  color:#6B7280;
+  padding:.1rem 0;
+  border-bottom:1px solid #E2ECF4;
+}
+.sft-hr-row:last-child{ border:none; }
+.sft-hr-row b{ font-weight:500; color:#374151; }
+.sft-closed{ color:#E74C3C !important; font-weight:600; }
+
+/* Social icons */
+.sft-social{
+  display:flex;
+  gap:.4rem;
+  flex-wrap:wrap;
+}
+.sft-si{
+  width:30px;
+  height:30px;
+  border-radius:50%;
+  border:1.5px solid #BDD0E3;
+  background:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:.7rem;
+  font-weight:700;
+  color:#5B7FA6;
+  text-decoration:none;
+  cursor:pointer;
+  transition:.2s;
+}
+.sft-si:hover{
+  background:#1C2437;
+  color:#C9A84C;
+  border-color:#1C2437;
+  transform:translateY(-1px);
+}
+
+/* Link columns */
+.sft-col h4{
+  font-size:.87rem;
+  font-weight:700;
+  color:#1A202C;
+  margin:0 0 .48rem 0;
+}
+.sft-col h4::after{
+  content:'';
+  display:block;
+  width:30px;
+  height:2.5px;
+  background:#1A202C;
+  border-radius:2px;
+  margin-top:.4rem;
+  margin-bottom:.85rem;
+}
+.sft-col ul{
+  list-style:none;
+  padding:0;
+  margin:0;
+  display:flex;
+  flex-direction:column;
+  gap:.46rem;
+}
+.sft-col ul li a{
+  font-size:.81rem;
+  color:#4B5563;
+  text-decoration:none;
+  cursor:pointer;
+  transition:.15s;
+  display:block;
+  line-height:1.4;
+}
+.sft-col ul li a:hover{
+  color:#B7770D;
+  padding-left:3px;
+}
+
+/* Trust strip */
+.sft-trust{
+  max-width:1440px;
+  margin:0 auto;
+  border-top:1px solid #C0CFE0;
+  padding:1.1rem 0 1.2rem;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  gap:.7rem;
+}
+.sft-badges{
+  display:flex;
+  gap:.38rem;
+  flex-wrap:wrap;
+}
+.sft-bdg{
+  font-size:.61rem;
+  font-weight:600;
+  letter-spacing:.07em;
+  text-transform:uppercase;
+  background:#fff;
+  color:#374151;
+  border:1px solid #C0CFE0;
+  border-radius:20px;
+  padding:.18rem .62rem;
+}
+.sft-bdg.au{
+  background:rgba(201,168,76,.1);
+  color:#B7770D;
+  border-color:rgba(201,168,76,.28);
+}
+.sft-motto{
+  font-family:'EB Garamond',serif;
+  font-size:.85rem;
+  font-style:italic;
+  color:#7A8BA0;
+}
+
+/* Bottom bar */
+.sft-bar{
+  background:#E2EAF2;
+  border-top:1px solid #C0CFE0;
+  padding:.9rem 5vw;
+}
+.sft-bar-in{
+  max-width:1440px;
+  margin:0 auto;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  gap:.55rem;
+}
+.sft-copy{ font-size:.72rem; color:#6B7280; }
+.sft-blinks{
+  display:flex;
+  align-items:center;
+  gap:.4rem;
+  flex-wrap:wrap;
+}
+.sft-blinks a{
+  font-size:.71rem;
+  color:#6B7280;
+  text-decoration:none;
+  transition:.15s;
+  cursor:pointer;
+}
+.sft-blinks a:hover{ color:#B7770D; }
+.sft-dot{
+  width:4px;
+  height:4px;
+  border-radius:50%;
+  background:#C9A84C;
+  flex-shrink:0;
+}
+.sft-credit{ font-size:.69rem; color:#9CA3AF; }
+.sft-credit span{ color:#B7770D; font-weight:600; }
+
+/* ─── Footer responsive ──────────────────────────────────────────── */
+@media(max-width:1100px){
+  /* Brand spans the top; the 4 service columns sit below it (2 per row) */
+  .sft-top{
+    grid-template-columns:repeat(2, 1fr);
+    gap:2rem 1.6rem;
+  }
+  .sft-card{ grid-column:1 / -1; }
+  .sft-services-grid{ grid-template-columns:repeat(3, 1fr); }
+}
+@media(max-width:768px){
+  .sft-top{
+    grid-template-columns:repeat(2, 1fr);
+    gap:1.8rem 1.4rem;
+  }
+  .sft-card{ grid-column:1 / -1; }
+  .sft-services-grid{ grid-template-columns:repeat(2, 1fr); }
+}
+@media(max-width:560px){
+  .sft-body{ padding:36px 5vw 0; }
+  .sft-top{
+    grid-template-columns:repeat(2, 1fr);
+    gap:1.4rem;
+  }
+  .sft-card{ grid-column:1 / -1; }
+  .sft-services-grid{ grid-template-columns:1fr; }
+  .sft-bar-in{
+    flex-direction:column;
+    text-align:center;
+    gap:.48rem;
+  }
+  .sft-blinks{ justify-content:center; }
+  .sft-trust{
+    flex-direction:column;
+    align-items:flex-start;
+  }
+}
+@media(max-width:400px){
+  .sft-top{ grid-template-columns:1fr; }
+}

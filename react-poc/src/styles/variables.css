@@ -1,0 +1,36 @@
+/* ====================================================================
+   CSS VARIABLES  —  V J Desai & Co. LLP
+   Global design tokens (colour system + transition timing)
+   Reference: exact colour system from Figma screenshot.
+   ==================================================================== */
+
+:root{
+  /* Navy palette */
+  --navy:       #1C2437;
+  --navy-deep:  #131B2B;
+  --navy-card:  #252F45;
+  --navy-hover: #2E3A52;
+
+  /* Gold palette */
+  --gold:       #C9A84C;
+  --gold-lt:    #D9BC6E;
+  --gold-dim:   #A88830;
+  --gold-pale:  #F8F0DC;
+  --gold-bg:    rgba(201,168,76,.10);
+
+  /* Neutrals */
+  --white:      #FFFFFF;
+  --off:        #F8F9FA;
+  --light:      #F1F4F8;
+
+  /* Text */
+  --tdark:      #1A202C;
+  --tmid:       #374151;
+  --tmute:      #6B7280;
+  --tlt:        rgba(255,255,255,.88);
+  --tdim:       rgba(255,255,255,.55);
+
+  /* Borders & transitions */
+  --bdr:        rgba(201,168,76,.18);
+  --t:          all .25s cubic-bezier(.4,0,.2,1);
+}
