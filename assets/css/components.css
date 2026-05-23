@@ -3875,3 +3875,165 @@ h2.ht.dk{ color:var(--white); }
 @media(max-width:580px){
   .hex2-wrap{ padding:60px 4vw 70px; }
 }
+
+/* ====================================================================
+   SITE-WIDE SPACING COMPRESSION
+   Keeps the existing visual system, but removes the repeated oversized
+   blank bands between sections across the static page set.
+   ==================================================================== */
+
+.hero{ min-height:68vh !important; }
+.hero-in{ padding:50px 5vw !important; }
+
+.s,
+.testi-sec,
+.gallery-sec,
+.abts,
+.hiw-sec,
+.eng-sec,
+.svc-sec,
+.ctab,
+.gst-services-wrap,
+.gst-process-wrap,
+.gst-eng-wrap,
+.gst-cta-wrap,
+.circle-chain-wrap,
+.zzag-wrap,
+.hex2-wrap{
+  padding-top:48px !important;
+  padding-bottom:48px !important;
+}
+
+.nl-sec{ padding-top:36px !important; padding-bottom:36px !important; }
+
+body[data-page="contact"] .cou-hero,
+body[data-page="career"] #page-career > div:first-of-type{
+  padding-top:52px !important;
+  padding-bottom:42px !important;
+}
+
+body[data-page="contact"] .cou-s-off,
+body[data-page="contact"] .cou-s-wh,
+body[data-page="contact"] .cou-s-lt,
+body[data-page="contact"] .cou-s-nv,
+body[data-page="career"] #page-career .car-sec,
+body[data-page="career"] #page-career .car-sec-alt,
+body[data-page="career"] #page-career .car-cta-sec{
+  padding-top:46px !important;
+  padding-bottom:46px !important;
+}
+
+main [style*="padding:88px 5vw"],
+main [style*="padding:80px 5vw"],
+main [style*="padding:90px 5vw"],
+main [style*="padding:72px 5vw"]{
+  padding-top:46px !important;
+  padding-bottom:42px !important;
+}
+
+.svch,
+.cou-sh,
+#page-career .car-sec-head,
+.circle-chain-header,
+.zzag-header,
+.hex2-header{
+  margin-bottom:1.8rem !important;
+}
+
+.testi-grid,
+.gallery-grid,
+.steps-grid,
+.eng-grid,
+.svc-cards-grid,
+.gst-svc-grid,
+.gst-process-track,
+.gst-eng-grid,
+.cou-wg,
+.cou-pg,
+.cou-ag,
+.cou-svg,
+.cou-fqg,
+.cou-tg,
+#page-career .car-why-grid,
+#page-career .car-jobs-wrap,
+#page-career .car-steps,
+#page-career .car-benefits-grid{
+  margin-top:1.6rem !important;
+}
+
+.hex2-track{ min-height:320px !important; }
+.zzag-row{ min-height:108px !important; margin-bottom:1.35rem !important; }
+.cc-label{ margin-top:1rem !important; }
+
+@media(max-width:900px){
+  .hero{ min-height:auto !important; }
+  .hero-in,
+  .s,
+  .testi-sec,
+  .gallery-sec,
+  .abts,
+  .hiw-sec,
+  .eng-sec,
+  .svc-sec,
+  .gst-services-wrap,
+  .gst-process-wrap,
+  .gst-eng-wrap,
+  .gst-cta-wrap,
+  .ctab,
+  .circle-chain-wrap,
+  .zzag-wrap,
+  .hex2-wrap,
+  body[data-page="contact"] .cou-s-off,
+  body[data-page="contact"] .cou-s-wh,
+  body[data-page="contact"] .cou-s-lt,
+  body[data-page="contact"] .cou-s-nv,
+  body[data-page="career"] #page-career .car-sec,
+  body[data-page="career"] #page-career .car-sec-alt,
+  body[data-page="career"] #page-career .car-cta-sec,
+  main [style*="padding:88px 5vw"],
+  main [style*="padding:80px 5vw"],
+  main [style*="padding:90px 5vw"],
+  main [style*="padding:72px 5vw"]{
+    padding-top:40px !important;
+    padding-bottom:40px !important;
+  }
+
+  body[data-page="contact"] .cou-hero,
+  body[data-page="career"] #page-career > div:first-of-type{
+    padding-top:46px !important;
+    padding-bottom:38px !important;
+  }
+}
+
+@media(max-width:580px){
+  .hero-in,
+  .s,
+  .testi-sec,
+  .gallery-sec,
+  .abts,
+  .hiw-sec,
+  .eng-sec,
+  .svc-sec,
+  .gst-services-wrap,
+  .gst-process-wrap,
+  .gst-eng-wrap,
+  .gst-cta-wrap,
+  .ctab,
+  .circle-chain-wrap,
+  .zzag-wrap,
+  .hex2-wrap,
+  body[data-page="contact"] .cou-s-off,
+  body[data-page="contact"] .cou-s-wh,
+  body[data-page="contact"] .cou-s-lt,
+  body[data-page="contact"] .cou-s-nv,
+  body[data-page="career"] #page-career .car-sec,
+  body[data-page="career"] #page-career .car-sec-alt,
+  body[data-page="career"] #page-career .car-cta-sec,
+  main [style*="padding:88px 5vw"],
+  main [style*="padding:80px 5vw"],
+  main [style*="padding:90px 5vw"],
+  main [style*="padding:72px 5vw"]{
+    padding-top:34px !important;
+    padding-bottom:34px !important;
+  }
+}

@@ -19,7 +19,7 @@
   <link rel="stylesheet" href="../assets/css/base.css?v=2"/>
   <link rel="stylesheet" href="../assets/css/nav.css?v=5"/>
   <link rel="stylesheet" href="../assets/css/footer.css?v=4"/>
-  <link rel="stylesheet" href="../assets/css/components.css?v=2"/>
+  <link rel="stylesheet" href="../assets/css/components.css?v=3"/>
 </head>
 <body data-page="contact">
 
@@ -317,7 +317,7 @@
             <span class="cou-tp">✓ Reply Within 24 hrs</span>
           </div>
 
-          <form id="consult-form" action="/api/contact" method="POST">
+          <form id="consult-form" action="/api/contact" data-fallback-action="../mailer.php" method="POST">
           <input type="hidden" name="_subject" value="New Consultation Enquiry — V J Desai &amp; Co. website"/>
           <!-- Honeypot: bots fill this; humans never see it -->
           <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off"/>
@@ -551,26 +551,28 @@
     btn.textContent = 'Sending…';
     msg.style.display = 'none';
 
-    // Posts to /api/contact, which delivers the enquiry over SMTP.
-    // Send as application/x-www-form-urlencoded (not multipart FormData) so
-    // the server's express.urlencoded() parser populates req.body — fetch
-    // sets the correct Content-Type automatically for URLSearchParams.
-    fetch(form.action, {
-      method: 'POST',
-      headers: { 'Accept': 'application/json' },
-      body: new URLSearchParams(new FormData(form))
-    })
-    .then(function(r){
-      // Read the body as text first so an empty / non-JSON response
-      // (e.g. a 404 when the site isn't served by the Node server)
-      // produces a clear message instead of a JSON-parse crash.
-      return r.text().then(function(text){
-        var data = null;
-        try { data = text ? JSON.parse(text) : null; } catch (_) {}
-        return { ok: r.ok, status: r.status, data: data };
+    function postForm(action){
+      // Send as application/x-www-form-urlencoded so both Node and PHP handlers
+      // receive the same fields and deliver the enquiry over SMTP.
+      return fetch(action, {
+        method: 'POST',
+        headers: { 'Accept': 'application/json' },
+        body: new URLSearchParams(new FormData(form))
+      })
+      .then(function(r){
+        return r.text().then(function(text){
+          var data = null;
+          try { data = text ? JSON.parse(text) : null; } catch (_) {}
+          return { ok: r.ok, status: r.status, data: data, action: action };
+        });
       });
-    })
-    .then(function(res){
+    }
+
+    function serviceMissing(res){
+      return res.status === 404 || res.status === 405 || !res.data;
+    }
+
+    function handleResponse(res){
       btn.textContent = original;
       if (res.data && res.data.success === true) {
         form.reset();
@@ -583,14 +585,32 @@
         return;
       }
       if (res.data && res.data.message) {
-        showError(res.data.message);          // server-supplied error
-      } else if (res.status === 404 || res.status === 0) {
+        showError(res.data.message);
+      } else if (serviceMissing(res)) {
         showError('Form service not reachable. Please email info@vjdesai.com directly.');
       } else {
         showError('Sorry, something went wrong. Please email info@vjdesai.com directly.');
       }
+    }
+
+    var fallbackAction = form.getAttribute('data-fallback-action');
+
+    postForm(form.action)
+    .then(function(res){
+      if (fallbackAction && serviceMissing(res)) {
+        return postForm(fallbackAction);
+      }
+      return res;
     })
+    .then(handleResponse)
     .catch(function(){
+      if (fallbackAction) {
+        postForm(fallbackAction).then(handleResponse).catch(function(){
+          showError('Network error. Please check your connection or email info@vjdesai.com directly.');
+          btn.textContent = original;
+        });
+        return;
+      }
       showError('Network error. Please check your connection or email info@vjdesai.com directly.');
       btn.textContent = original;
     });
