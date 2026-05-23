@@ -1,11 +1,11 @@
 <!--
   =================================================================
-  SHARED NAVIGATION COMPONENT  —  V J Desai & Co. LLP
+  SHARED NAVIGATION COMPONENT, V J Desai & Co. LLP
   Include via fetch() in every page (see assets/js/main.js loader).
   Depends on: assets/css/nav.css   +   assets/js/nav.js (mobile + dropdowns)
 
   Active-state highlight is handled by the small <script> at the end
-  of this file — it reads location.pathname and adds .active to the
+  of this file, it reads location.pathname and adds .active to the
   matching .nl (top-level nav link). This works for both top-level
   pages and sub-pages reached via the dropdown menus.
   =================================================================
@@ -13,10 +13,10 @@
 <nav>
   <div class="navi">
 
-    <!-- LOGO (image) — sourced from assets/img/logo.jpg via the page's relative path -->
-    <a class="logo" href="index.html" aria-label="V J Desai & Co. LLP — Home" style="line-height:0">
+    <!-- LOGO (image), sourced from assets/img/logo.jpg via the page's relative path -->
+    <a class="logo" href="index.html" aria-label="V J Desai & Co. LLP, Home" style="line-height:0">
       <img src="../assets/img/logo.jpg"
-           alt="V J Desai & Co. LLP — Chartered Accountants"
+           alt="V J Desai & Co. LLP, Chartered Accountants"
            style="height:100px;width:auto;display:block;object-fit:contain"/>
     </a>
 
@@ -156,7 +156,7 @@
 </nav>
 
 <!--
-  Inline init — keeps the nav self-contained.
+  Inline init, keeps the nav self-contained.
   Runs once per page load (or once after fetch include re-executes scripts).
   Two responsibilities:
     1. Mark the current page's top-level <a class="nl"> with .active
@@ -178,7 +178,7 @@
     'kc-gst':'kc','kc-rera':'kc','kc-dtax':'kc','kc-intl':'kc','kc-fema':'kc','kc-audit':'kc','kc-glossary':'kc','kc-checklist':'kc'
   };
 
-  // Current page slug — strip path + .html, treat empty / 'index' as 'index'
+  // Current page slug, strip path + .html, treat empty / 'index' as 'index'
   var file = (location.pathname.split('/').pop() || 'index.html').replace(/\.html?$/i, '');
   if (!file) file = 'index';
 
