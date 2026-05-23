@@ -63,12 +63,12 @@
   padding:52px 5vw 0;
   border-top:1px solid #D0DBE9;
 }
-/* TIER 1 — brand card + 3 link columns */
+/* TIER 1 — brand card + 4 service columns */
 .sft-top{
   max-width:1440px;
   margin:0 auto;
   display:grid;
-  grid-template-columns:280px repeat(3, 1fr);
+  grid-template-columns:280px repeat(4, 1fr);
   gap:1.8rem 2.2rem;
   padding-bottom:36px;
   align-items:start;
@@ -401,9 +401,9 @@
 
 /* ─── Footer responsive ──────────────────────────────────────────── */
 @media(max-width:1100px){
-  /* Brand spans the top; the 3 link columns sit below it */
+  /* Brand spans the top; the 4 service columns sit below it (2 per row) */
   .sft-top{
-    grid-template-columns:repeat(3, 1fr);
+    grid-template-columns:repeat(2, 1fr);
     gap:2rem 1.6rem;
   }
   .sft-card{ grid-column:1 / -1; }
