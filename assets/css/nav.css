@@ -54,7 +54,7 @@ nav{
   align-items:center;
   justify-content:space-between;
   padding:0 5vw;
-  height:88px;
+  height:112px;
   max-width:1440px;
   margin:0 auto;
 }
@@ -208,7 +208,7 @@ nav{
   background:var(--white);
   border-bottom:1.5px solid var(--light);
   position:sticky;
-  top:88px;
+  top:112px;
   z-index:400;
   box-shadow:0 1px 8px rgba(0,0,0,.04);
 }
@@ -280,14 +280,14 @@ nav{
 }
 
 /* Scroll offset so sticky nav + sub-nav don't cover headings */
-.sn-anchor{ scroll-margin-top:140px; }
+.sn-anchor{ scroll-margin-top:164px; }
 
 /* ─── GST SUB-NAV (.gst-subnav) ──────────────────────────────────── */
 .gst-subnav{
   background:var(--white);
   border-bottom:2px solid var(--light);
   position:sticky;
-  top:68px;
+  top:112px;
   z-index:400;
   box-shadow:0 2px 12px rgba(0,0,0,.05);
 }
@@ -340,7 +340,7 @@ nav{
   .navl{
     display:none;
     position:absolute;
-    top:88px;
+    top:112px;
     left:0;
     right:0;
     background:var(--white);
