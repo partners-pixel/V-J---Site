@@ -68,7 +68,7 @@
   max-width:1440px;
   margin:0 auto;
   display:grid;
-  grid-template-columns:280px repeat(2, 1fr);
+  grid-template-columns:280px repeat(3, 1fr);
   gap:1.8rem 2.2rem;
   padding-bottom:36px;
   align-items:start;
@@ -98,7 +98,7 @@
 }
 .sft-services-grid{
   display:grid;
-  grid-template-columns:repeat(4, 1fr);
+  grid-template-columns:repeat(3, 1fr);
   gap:1.6rem 2rem;
 }
 .sft-slabel{
