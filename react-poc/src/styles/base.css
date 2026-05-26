@@ -51,19 +51,12 @@ ul{ list-style:none; }
   to  { opacity:1; transform:translateY(0);   }
 }
 
-/* ─── Content lock  ──────────────────────────────────────────────── */
-/* Disable user text selection globally */
+/* ─── Text selection  ────────────────────────────────────────────── */
+/* All text is selectable site-wide */
 body{
-  -webkit-user-select:none;
-  -moz-user-select:none;
-  -ms-user-select:none;
-  user-select:none;
-}
-
-/* Allow selection only inside form inputs */
-input,textarea,select{
   -webkit-user-select:text;
   -moz-user-select:text;
+  -ms-user-select:text;
   user-select:text;
 }
 

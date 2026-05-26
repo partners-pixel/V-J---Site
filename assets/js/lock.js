@@ -42,14 +42,10 @@
     if (e.ctrlKey && k === 'u') { e.preventDefault(); return false; }
     // Ctrl+S — Save Page
     if (e.ctrlKey && k === 's') { e.preventDefault(); return false; }
-    // Ctrl+A — Select All
-    if (e.ctrlKey && k === 'a') { e.preventDefault(); return false; }
-    // Ctrl+C — Copy
-    if (e.ctrlKey && k === 'c') { e.preventDefault(); return false; }
-    // Ctrl+X — Cut
-    if (e.ctrlKey && k === 'x') { e.preventDefault(); return false; }
     // Ctrl+P — Print
     if (e.ctrlKey && k === 'p') { e.preventDefault(); return false; }
+    // Ctrl+A / Ctrl+C / Ctrl+X (Select All / Copy / Cut) are intentionally
+    // allowed so all text is selectable and copyable.
   });
 
   /* ─── 3. Disable drag-and-drop ─────────────────────────────────── */
@@ -58,15 +54,7 @@
     return false;
   });
 
-  /* ─── 4. Disable copy/cut event-based grabs ────────────────────── */
-  document.addEventListener('copy', function (e) {
-    e.preventDefault();
-    return false;
-  });
-  document.addEventListener('cut', function (e) {
-    e.preventDefault();
-    return false;
-  });
+  /* ─── 4. Copy / cut are allowed — all text is selectable & copyable ── */
 
   /* ─── 5. Print-screen wipe (best-effort; OS-level not blockable) */
   document.addEventListener('keyup', function (e) {
