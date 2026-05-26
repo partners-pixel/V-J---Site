@@ -19,6 +19,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import mountBlog from './blog-api.js';
 import mountAdmin, { saveEnquiry } from './admin-api.js';
+import mountContent from './content-api.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
@@ -144,6 +145,8 @@ app.post('/api/contact', async (req, res) => {
 mountBlog(app);
 // Admin API: login, enquiries, reviews (/api/admin/*, /api/reviews).
 mountAdmin(app);
+// Editable page-content overrides (/api/page-content/*).
+mountContent(app);
 
 // Serve the static site (index.html, pages/, assets/, components/ …)
 // React build is preferred when dist/index.html exists; legacy pages remain fallback.

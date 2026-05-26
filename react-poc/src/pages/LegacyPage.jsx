@@ -1,48 +1,37 @@
-import { useEffect, useMemo } from 'react';
-import { useParams, useNavigate, Link } from 'react-router-dom';
+import { useEffect, useMemo, useState } from 'react';
+import { useParams, Link } from 'react-router-dom';
 import { PAGES, getMain } from '../lib/legacy.js';
-
-// slug -> '/route' (mirrors the static site's window.go: 'home' -> index)
-const toPath = (slug) => (slug === 'home' || slug === 'index' ? '/' : '/' + slug);
+import RawHtml from '../components/RawHtml.jsx';
 
 export default function LegacyPage() {
   const { slug = '' } = useParams();
-  const navigate = useNavigate();
   const html = PAGES[slug];
-
   const { inner, title } = useMemo(() => (html ? getMain(slug) : { inner: null, title: null }), [html, slug]);
 
-  // Expose window.go for the inline onclick="go('x')" handlers in the markup.
+  // Admin content override (if any) takes precedence over the legacy markup.
+  const [override, setOverride] = useState(undefined);
   useEffect(() => {
-    const go = (s) => navigate(s === 'home' || s === 'index' ? '/' : '/' + s);
-    window.go = go;
-    if (title) document.title = title;
-    return () => { if (window.go === go) delete window.go; };
-  }, [navigate, title]);
+    let alive = true;
+    fetch(`/api/page-content/${slug}`).then((r) => r.json())
+      .then((d) => { if (alive) setOverride(d.html || null); })
+      .catch(() => { if (alive) setOverride(null); });
+    return () => { alive = false; };
+  }, [slug]);
 
-  // Intercept clicks on legacy "<a href='x.html'>" links → client-side route.
-  const onClick = (e) => {
-    const a = e.target.closest('a');
-    if (!a) return;
-    const href = a.getAttribute('href') || '';
-    if (/\.html(\?|#|$)/i.test(href)) {
-      e.preventDefault();
-      const file = href.split('/').pop().split(/[?#]/)[0].replace(/\.html$/i, '');
-      navigate(toPath(file));
-    }
-    // hash-only (#section) and external links fall through to default behaviour
-  };
+  useEffect(() => { if (title) document.title = title; }, [title]);
+
+  if (typeof override === 'string' && override.trim()) return <RawHtml html={override} />;
 
   if (!html) {
-    const title2 = slug.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase());
+    const t = slug.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase());
     return (
       <div className="ph"><div className="phi">
-        <div className="bc"><Link to="/">Home</Link><span>/</span><span>{title2 || 'Page'}</span></div>
+        <div className="bc"><Link to="/">Home</Link><span>/</span><span>{t || 'Page'}</span></div>
         <h1>Page <em>Not Found</em></h1>
         <p>No page exists for “{slug}”. <Link to="/" style={{ color: 'var(--gold)' }}>Return home →</Link></p>
       </div></div>
     );
   }
 
-  return <div onClickCapture={onClick} dangerouslySetInnerHTML={{ __html: inner }} />;
+  return <RawHtml html={inner} />;
 }
