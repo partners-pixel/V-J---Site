@@ -23,7 +23,6 @@ const MENU = [
       { label: 'GST Opinion', to: '/gst-opinion' },
       { label: 'GST – Refund', to: '/gst-refund' },
       { label: 'GST – Search Inquiry Support', to: '/gst-search' },
-      { label: 'GST E-Bill – Consultancy', to: '/gst-ebill' },
     ]],
   },
   {

@@ -17,7 +17,7 @@ const SLUGS = [
   'stat-audit', 'tax-audit', 'int-audit', 'comp-audit', 'biz-setup', 'biz-val',
   'company-law', 'exim', 'fema', // mgmt-cfo excluded: two service groups, stays on LegacyPage
 
-  'gst-class', 'gst-audit', 'gst-dd', 'gst-ebill', 'gst-lit', 'gst-opinion', 'gst-refund', 'gst-search',
+  'gst-class', 'gst-audit', 'gst-dd', 'gst-lit', 'gst-opinion', 'gst-refund', 'gst-search', // gst-ebill removed
   // corp-tax excluded: bespoke multi-section page (overview/cases/experts/faqs), stays on LegacyPage
   'income-tax', 'income-tax-adv', 'nri-tax',
 ];

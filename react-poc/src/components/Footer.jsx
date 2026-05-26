@@ -11,7 +11,7 @@ const COLS = [
   { h: 'GST / Indirect Tax', links: [
     ['GST', '/gst'], ['GST Classification', '/gst-class'], ['GST Audit', '/gst-audit'],
     ['GST Due Diligence', '/gst-dd'], ['GST Litigation', '/gst-lit'], ['GST Opinion', '/gst-opinion'],
-    ['GST – Refund', '/gst-refund'], ['GST – Search Inquiry Support', '/gst-search'], ['GST E-Bill – Consultancy', '/gst-ebill'],
+    ['GST – Refund', '/gst-refund'], ['GST – Search Inquiry Support', '/gst-search'],
   ] },
   { h: 'Direct Tax', links: [
     ['Corporate Tax', '/corp-tax'], ['Income Tax – Advisory', '/income-tax-adv'],
