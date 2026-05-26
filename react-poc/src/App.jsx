@@ -13,9 +13,10 @@ import reraData from './data/rera.js';
 import gstData from './data/gst.js';
 import kcData from './data/kc.js';
 import reraSub from './data/reraSub.js';
+import auto from './data/auto.js';
 
-// GST-template sub-pages keyed by slug (grows as families are ported)
-const gstPages = { ...reraSub };
+// GST-template sub-pages keyed by slug (RERA hand-built + auto-extracted families)
+const gstPages = { ...reraSub, ...auto };
 
 export default function App() {
   return (
