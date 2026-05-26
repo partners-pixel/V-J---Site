@@ -23,7 +23,7 @@ export default function Footer() {
   return (
     <>
       <a className="wa-float"
-         href="https://wa.me/919825062515?text=Hello%20V%20J%20Desai%20%26%20Co.%20LLP%2C%20I%20would%20like%20to%20book%20a%20consultation."
+         href="https://api.whatsapp.com/send?phone=919825062515&text=Hello%20V%20J%20Desai%20%26%20Co.%20LLP%2C%20I%20would%20like%20to%20book%20a%20consultation."
          target="_blank" rel="noopener" aria-label="Chat on WhatsApp with V J Desai & Co. LLP">
         <WaIcon /><span>Chat on WhatsApp</span>
       </a>
