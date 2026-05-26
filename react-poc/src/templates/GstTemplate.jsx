@@ -1,8 +1,12 @@
+import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { getSection } from '../lib/legacy.js';
 
 /* Reusable "GST premium" template — real JSX for every structural section.
-   Drive it with a data object (see src/data/*.js). The bespoke process
-   diagram differs per page, so it's passed through as raw SVG markup. */
+   Drive it with a data object (see src/data/*.js). Each page's bespoke
+   process diagram is pulled straight from the source markup (process.fromSlug
+   + selector) or supplied as a raw string (process.svg), so hand-built SVG
+   art is never re-encoded by hand. */
 
 // Renders a "Pre <em>Em</em> Post" heading from plain-string parts.
 function EmTitle({ parts, className, style }) {
@@ -13,11 +17,18 @@ function EmTitle({ parts, className, style }) {
 export default function GstTemplate({ data }) {
   const navigate = useNavigate();
   const go = (slug) => navigate(slug === 'home' || slug === 'index' ? '/' : '/' + slug);
+  // Inline onclick="go('x')" handlers inside pulled-in source sections need a global go().
+  useEffect(() => {
+    const fn = (s) => navigate(s === 'home' || s === 'index' ? '/' : '/' + s);
+    window.go = fn;
+    return () => { if (window.go === fn) delete window.go; };
+  }, [navigate]);
   const {
-    breadcrumb = [], eyebrow, heroTitle, heroLead, heroParas = [], heroBtn,
-    subnav = [], ids = {}, servicesTitle, services = [],
-    process, engagement = [], cta,
+    breadcrumb = [], eyebrow, heroTitle, heroTitleSize = 'clamp(2.4rem,3.8vw,3.4rem)', heroLead, heroParas = [], heroBtn, heroRight,
+    subnav = [], ids = {}, servicesTag = 'Core Services', servicesTitle, servicesSub, servicesCols, services = [],
+    process, engagement = [], cta, sections = [],
   } = data;
+  const twoCol = Array.isArray(heroRight) && heroRight.length > 0;
 
   return (
     <div>
@@ -37,16 +48,23 @@ export default function GstTemplate({ data }) {
 
       {/* Hero */}
       <section className="gst-hero">
-        <div className="gst-hero-inner" style={{ gridTemplateColumns: '1fr', maxWidth: 900 }}>
+        <div className="gst-hero-inner" style={twoCol ? { gridTemplateColumns: '1fr .9fr', gap: '5vw' } : { gridTemplateColumns: '1fr', maxWidth: 900 }}>
           <div>
             <div className="gst-hero-eyebrow">{eyebrow}</div>
-            <h1 style={{ fontSize: 'clamp(2.4rem,3.8vw,3.4rem)' }}>{heroTitle.first}<br /><em>{heroTitle.em}</em></h1>
+            <h1 style={{ fontSize: heroTitleSize }}>{heroTitle.first}<br /><em>{heroTitle.em}</em></h1>
             <p className="gst-hero-lead">{heroLead}</p>
             {heroParas.map((p, i) => (
-              <p key={i} style={{ fontSize: '.93rem', lineHeight: 1.88, color: 'var(--tdim)', marginBottom: i === heroParas.length - 1 ? '1.8rem' : '1.2rem' }}>{p}</p>
+              <p key={i} style={{ fontSize: '.93rem', lineHeight: 1.88, color: 'var(--tdim)', marginBottom: i === heroParas.length - 1 ? '1.8rem' : '.9rem' }}>{p}</p>
             ))}
             {heroBtn && <button className="bgs" onClick={() => go(heroBtn.to)}>{heroBtn.label}</button>}
           </div>
+          {twoCol && (
+            <div className="gst-hero-right">
+              {heroRight.map((s, i) => (
+                <div className="gst-stat" key={i}><div className="gst-stat-num">{s.n}</div><div className="gst-stat-lbl">{s.l}</div></div>
+              ))}
+            </div>
+          )}
         </div>
       </section>
 
@@ -62,9 +80,10 @@ export default function GstTemplate({ data }) {
       {/* Core services */}
       <section id={ids.services} className="gst-services-wrap gst-scroll">
         <div style={{ maxWidth: 1440, margin: '0 auto' }}>
-          <div className="stag">Core Services</div>
+          <div className="stag">{servicesTag}</div>
           <EmTitle parts={servicesTitle} className="ht" />
-          <div className="gst-svc-grid">
+          {servicesSub && <p className="ssub" style={{ marginBottom: '2.6rem' }}>{servicesSub}</p>}
+          <div className="gst-svc-grid" style={servicesCols ? { gridTemplateColumns: `repeat(${servicesCols},1fr)` } : undefined}>
             {services.map((s, i) => (
               <div className="gst-svc-item" key={i}>
                 <div className="gst-svc-ico">{s.icon}</div>
@@ -76,8 +95,17 @@ export default function GstTemplate({ data }) {
         </div>
       </section>
 
-      {/* Process (bespoke SVG passed as markup) */}
-      {process && (
+      {/* Bespoke lower sections (process / engagement / contact) pulled from
+          source markup, in order — keeps each page's hand-built designs exact. */}
+      {sections.map((s, i) => (
+        <div key={i} dangerouslySetInnerHTML={{ __html: getSection(s.fromSlug, s.selector) }} />
+      ))}
+
+      {/* Process — bespoke diagram pulled from source markup, or raw SVG */}
+      {process && process.fromSlug && (
+        <div dangerouslySetInnerHTML={{ __html: getSection(process.fromSlug, process.selector) }} />
+      )}
+      {process && process.svg && (
         <div id={ids.process} className="hex2-wrap gst-scroll">
           <div className="hex2-inner">
             <div className="hex2-header">

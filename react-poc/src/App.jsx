@@ -12,6 +12,10 @@ import auditData from './data/audit.js';
 import reraData from './data/rera.js';
 import gstData from './data/gst.js';
 import kcData from './data/kc.js';
+import reraSub from './data/reraSub.js';
+
+// GST-template sub-pages keyed by slug (grows as families are ported)
+const gstPages = { ...reraSub };
 
 export default function App() {
   return (
@@ -26,6 +30,11 @@ export default function App() {
         <Route path="/rera" element={<ServiceTemplate data={reraData} />} />
         <Route path="/gst" element={<GstTemplate data={gstData} />} />
         <Route path="/kc" element={<KcTemplate data={kcData} />} />
+
+        {/* Phase-5: sub-pages on the GST template (data-driven) */}
+        {Object.entries(gstPages).map(([slug, data]) => (
+          <Route key={slug} path={`/${slug}`} element={<GstTemplate data={data} />} />
+        ))}
 
         {/* Every other page renders from its original markup (phase-3) */}
         <Route path="/:slug" element={<LegacyPage />} />

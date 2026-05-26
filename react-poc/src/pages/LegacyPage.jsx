@@ -1,32 +1,16 @@
 import { useEffect, useMemo } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
-
-/* Eagerly import every static page's raw HTML (reused verbatim).
-   Keys look like '../legacy/gst.html'. */
-const RAW = import.meta.glob('../legacy/*.html', { query: '?raw', import: 'default', eager: true });
-
-// slug (filename without .html) -> raw HTML string
-const PAGES = Object.fromEntries(
-  Object.entries(RAW).map(([path, html]) => [path.split('/').pop().replace(/\.html$/, ''), html])
-);
+import { PAGES, getMain } from '../lib/legacy.js';
 
 // slug -> '/route' (mirrors the static site's window.go: 'home' -> index)
 const toPath = (slug) => (slug === 'home' || slug === 'index' ? '/' : '/' + slug);
-
-// Pull just the <main> content out of a full HTML document string.
-function extractMain(html) {
-  const doc = new DOMParser().parseFromString(html, 'text/html');
-  const main = doc.querySelector('main');
-  const title = doc.querySelector('title')?.textContent;
-  return { inner: main ? main.innerHTML : '<p style="padding:2rem">No content.</p>', title };
-}
 
 export default function LegacyPage() {
   const { slug = '' } = useParams();
   const navigate = useNavigate();
   const html = PAGES[slug];
 
-  const { inner, title } = useMemo(() => (html ? extractMain(html) : { inner: null, title: null }), [html]);
+  const { inner, title } = useMemo(() => (html ? getMain(slug) : { inner: null, title: null }), [html, slug]);
 
   // Expose window.go for the inline onclick="go('x')" handlers in the markup.
   useEffect(() => {
