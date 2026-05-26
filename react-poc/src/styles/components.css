@@ -309,11 +309,16 @@
   .gal-item:nth-child(1){ grid-column:span 1; }
 }
 
-/* ─── GST GRID FIX: trailing cards fill the row (no empty/grey cells) ──
+/* ─── GST GRID FIX: trailing card(s) fill the row (no empty/grey cells) ──
    .gst-svc-grid is a seamless white panel (1px gap over a dark bg), so any
-   empty trailing cell shows through as grey. Stretching the last card to the
-   final column line fills the row cleanly for any card/column count. */
-.gst-svc-grid > .gst-svc-item:last-child{ grid-column-end:-1; }
+   empty trailing cell shows through as grey. A lone/partial last row has its
+   final card stretch from its own column to the last line, filling the row.
+   Rules are scoped by the grid's inline column count. */
+.gst-svc-grid[style*="repeat(3"] > .gst-svc-item:last-child:nth-child(3n+1){ grid-column:1 / -1; }
+.gst-svc-grid[style*="repeat(3"] > .gst-svc-item:last-child:nth-child(3n+2){ grid-column:2 / -1; }
+.gst-svc-grid[style*="repeat(4"] > .gst-svc-item:last-child:nth-child(4n+1){ grid-column:1 / -1; }
+.gst-svc-grid[style*="repeat(4"] > .gst-svc-item:last-child:nth-child(4n+2){ grid-column:2 / -1; }
+.gst-svc-grid[style*="repeat(4"] > .gst-svc-item:last-child:nth-child(4n+3){ grid-column:3 / -1; }
 
 /* ─── HERO ───────────────────────────────────────────────────────── */
 .hero{
