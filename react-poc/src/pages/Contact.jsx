@@ -47,7 +47,6 @@ export default function Contact() {
         <div className="bc"><Link to="/">Home</Link><span>/</span><span>Contact Us</span></div>
         <div className="pgbadge">✉️ Contact V J Desai &amp; Co. LLP</div>
         <h1>Get in <em>Touch With Us</em></h1>
-        <p>Reach out for a no-obligation consultation with our Chartered Accountants. We respond to every enquiry within one business day.</p>
       </div></div>
 
       <section className="s" style={{ background: 'var(--off)' }}>

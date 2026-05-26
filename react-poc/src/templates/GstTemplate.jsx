@@ -53,11 +53,7 @@ export default function GstTemplate({ data }) {
         <div className="gst-hero-inner" style={twoCol ? { gridTemplateColumns: '1fr .9fr', gap: '5vw' } : { gridTemplateColumns: '1fr', maxWidth: 900 }}>
           <div>
             <div className="gst-hero-eyebrow">{eyebrow}</div>
-            <h1 style={{ fontSize: heroTitleSize }}>{heroTitle.first}<br /><em>{heroTitle.em}</em></h1>
-            <p className="gst-hero-lead">{heroLead}</p>
-            {heroParas.map((p, i) => (
-              <p key={i} style={{ fontSize: '.93rem', lineHeight: 1.88, color: 'var(--tdim)', marginBottom: i === heroParas.length - 1 ? '1.8rem' : '.9rem' }}>{p}</p>
-            ))}
+            <h1 style={{ fontSize: heroTitleSize, marginBottom: '1.8rem' }}>{heroTitle.first}<br /><em>{heroTitle.em}</em></h1>
             {heroBtn && <button className="bgs" onClick={() => go(heroBtn.to)}>{heroBtn.label}</button>}
           </div>
           {twoCol && (

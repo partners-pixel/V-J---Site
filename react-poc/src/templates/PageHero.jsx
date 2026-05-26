@@ -11,7 +11,6 @@ export default function PageHero({ current, badge, title, lead, tags = [], ctas 
           <div className="bc"><a onClick={() => go('home')} style={{ cursor: 'pointer' }}>Home</a><span>/</span><span>{current}</span></div>
           <div className="pgbadge">{badge}</div>
           <h1>{title.pre}<em>{title.em}</em>{title.post}</h1>
-          <p>{lead}</p>
           {tags.length > 0 && <div className="ph-tags">{tags.map((t) => <span className="ph-tag" key={t}>{t}</span>)}</div>}
           {ctas.length > 0 && (
             <div className="ph-ctas">

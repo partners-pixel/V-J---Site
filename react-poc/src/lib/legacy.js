@@ -16,8 +16,13 @@ function docFor(slug) {
 }
 
 export function getMain(slug) {
-  const main = docFor(slug).querySelector('main');
-  return { inner: main ? main.innerHTML : null, title: docFor(slug).querySelector('title')?.textContent };
+  const doc = docFor(slug);
+  const main = doc.querySelector('main');
+  if (main) {
+    // Strip hero descriptions only (keep every title/heading intact).
+    main.querySelectorAll('.hdesc, .gst-hero-lead, .gst-hero p, .ph-left > p, .cou-hero-desc').forEach((el) => el.remove());
+  }
+  return { inner: main ? main.innerHTML : null, title: doc.querySelector('title')?.textContent };
 }
 
 // Return the outerHTML of a single element (by CSS selector) from a page.
