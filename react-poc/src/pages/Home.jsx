@@ -47,7 +47,6 @@ export default function Home() {
         <div className="hero-in">
           <div>
             <h1 className="hh">Your Trusted Partner in<br /><span className="gline">Tax &amp; Financial<br />Advisory</span></h1>
-            <p className="hdesc">Navigate complex tax regulations with confidence. We provide comprehensive GST, direct tax, audit, and advisory services tailored to your business needs.</p>
             <div className="hbtns">
               <button className="bgs" onClick={() => navigate('/contact')}>Book a Consultation →</button>
               <button className="bdo" onClick={() => navigate('/why-choose-us')}>Learn More</button>
