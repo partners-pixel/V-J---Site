@@ -3,12 +3,14 @@ import useDocTitle from '../lib/useDocTitle.js';
 import { getKey, clearKey } from '../admin/api.js';
 import Login from '../admin/Login.jsx';
 import Dashboard from '../admin/Dashboard.jsx';
+import Pages from '../admin/Pages.jsx';
 import BlogManager from '../admin/BlogManager.jsx';
 import Enquiries from '../admin/Enquiries.jsx';
 import Reviews from '../admin/Reviews.jsx';
 
 const NAV = [
   { id: 'dashboard', label: 'Dashboard', icon: '▦' },
+  { id: 'pages', label: 'Pages', icon: '📄' },
   { id: 'blog', label: 'Blog', icon: '📝' },
   { id: 'enquiries', label: 'Enquiries', icon: '📨' },
   { id: 'reviews', label: 'Reviews', icon: '⭐' },
@@ -36,7 +38,7 @@ export default function Admin() {
   if (checking) return <div className="ph"><div className="phi"><p style={{ color: 'var(--tdim)' }}>Loading…</p></div></div>;
   if (!authed) return <div id="page-admin"><Login onAuth={() => setAuthed(true)} /></div>;
 
-  const Section = { dashboard: Dashboard, blog: BlogManager, enquiries: Enquiries, reviews: Reviews }[section];
+  const Section = { dashboard: Dashboard, pages: Pages, blog: BlogManager, enquiries: Enquiries, reviews: Reviews }[section];
 
   return (
     <div id="page-admin" style={{ display: 'flex', minHeight: '70vh', background: 'var(--off)' }}>

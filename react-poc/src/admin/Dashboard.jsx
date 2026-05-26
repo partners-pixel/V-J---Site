@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { authFetch } from './api.js';
+import { PAGE_COUNT } from './Pages.jsx';
 
 export default function Dashboard({ onAuthFail, go }) {
   const [counts, setCounts] = useState({ posts: '–', enquiries: '–', reviews: '–' });
@@ -18,6 +19,7 @@ export default function Dashboard({ onAuthFail, go }) {
   }, []);
 
   const cards = [
+    { k: 'pages', label: 'Pages', icon: '📄', to: 'pages', color: '#6C3483', value: PAGE_COUNT },
     { k: 'posts', label: 'Blog Posts', icon: '📝', to: 'blog', color: '#1A5276' },
     { k: 'enquiries', label: 'Enquiries', icon: '📨', to: 'enquiries', color: '#1E8449' },
     { k: 'reviews', label: 'Reviews', icon: '⭐', to: 'reviews', color: '#B7770D' },
@@ -27,11 +29,11 @@ export default function Dashboard({ onAuthFail, go }) {
     <div>
       <h2 style={{ fontFamily: "'EB Garamond',serif", fontSize: '1.5rem', color: 'var(--tdark)', marginBottom: '.4rem' }}>Dashboard</h2>
       <p style={{ color: 'var(--tmute)', fontSize: '.9rem', marginBottom: '1.6rem' }}>Manage your website content from here.</p>
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: '1.1rem' }}>
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4,1fr)', gap: '1.1rem' }}>
         {cards.map((c) => (
           <button key={c.k} onClick={() => go(c.to)} style={{ textAlign: 'left', background: 'var(--white)', border: '1px solid rgba(0,0,0,.08)', borderTop: `3px solid ${c.color}`, borderRadius: 10, padding: '1.5rem', cursor: 'pointer' }}>
             <div style={{ fontSize: '1.6rem', marginBottom: '.5rem' }}>{c.icon}</div>
-            <div style={{ fontFamily: "'EB Garamond',serif", fontSize: '2rem', fontWeight: 700, color: 'var(--tdark)', lineHeight: 1 }}>{counts[c.k]}</div>
+            <div style={{ fontFamily: "'EB Garamond',serif", fontSize: '2rem', fontWeight: 700, color: 'var(--tdark)', lineHeight: 1 }}>{c.value ?? counts[c.k]}</div>
             <div style={{ fontSize: '.8rem', color: 'var(--tmute)', marginTop: '.3rem' }}>{c.label}</div>
           </button>
         ))}
