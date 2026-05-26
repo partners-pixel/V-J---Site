@@ -101,13 +101,13 @@ export default function Footer() {
           <div className="sft-bar-in">
             <div className="sft-copy">&copy; {new Date().getFullYear()} V J Desai & Co. LLP. All Rights Reserved.</div>
             <div className="sft-blinks">
-              <Link to="/terms">Terms & Conditions</Link>
+              <span className="sft-blink">Terms & Conditions</span>
               <span className="sft-dot" aria-hidden="true"></span>
-              <Link to="/privacy">Privacy Policy</Link>
+              <span className="sft-blink">Privacy Policy</span>
               <span className="sft-dot" aria-hidden="true"></span>
-              <Link to="/sitemap">Sitemap</Link>
+              <span className="sft-blink">Sitemap</span>
               <span className="sft-dot" aria-hidden="true"></span>
-              <Link to="/disclaimer">Disclaimer</Link>
+              <span className="sft-blink">Disclaimer</span>
             </div>
             <div className="sft-credit">Designed & Developed by <span>vjdesai.com</span></div>
           </div>

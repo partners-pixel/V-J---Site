@@ -389,6 +389,8 @@
   cursor:pointer;
 }
 .sft-blinks a:hover{ color:#B7770D; }
+/* Unlinked legal items — plain text, same look as the links */
+.sft-blinks .sft-blink{ font-size:.71rem; color:#6B7280; }
 .sft-dot{
   width:4px;
   height:4px;
