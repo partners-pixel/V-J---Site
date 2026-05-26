@@ -1,4 +1,5 @@
 import { useNavigate } from 'react-router-dom';
+import useDocTitle from '../lib/useDocTitle.js';
 
 const TICKER = ['Statutory Audit', 'Tax Audit', 'GST Compliance', 'Income Tax', 'FEMA & RBI',
   'Internal Audit', 'Due Diligence', 'Business Setup', 'RERA', 'NRI Taxation', 'Transfer Pricing', 'CFO Services'];
@@ -38,6 +39,7 @@ const TESTIMONIALS = [
 
 export default function Home() {
   const navigate = useNavigate();
+  useDocTitle();
   return (
     <div id="page-home">
       {/* HERO */}

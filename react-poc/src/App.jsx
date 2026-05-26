@@ -3,6 +3,7 @@ import Layout from './components/Layout.jsx';
 import Home from './pages/Home.jsx';
 import Contact from './pages/Contact.jsx';
 import LegacyPage from './pages/LegacyPage.jsx';
+import NotFound from './pages/NotFound.jsx';
 
 // Phase-4: reusable real-JSX templates + per-page data
 import ServiceTemplate from './templates/ServiceTemplate.jsx';
@@ -39,6 +40,8 @@ export default function App() {
 
         {/* Every other page renders from its original markup (phase-3) */}
         <Route path="/:slug" element={<LegacyPage />} />
+        {/* Unmatched (multi-segment) paths */}
+        <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>
   );

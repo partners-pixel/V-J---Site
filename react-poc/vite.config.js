@@ -10,4 +10,16 @@ export default defineConfig({
     host: true, port: 4174, open: false, allowedHosts: true,
     proxy: { '/api': { target: 'http://localhost:3000', changeOrigin: true } },
   },
+  build: {
+    chunkSizeWarningLimit: 1200,
+    rollupOptions: {
+      output: {
+        manualChunks(id) {
+          // Keep the bundled legacy markup and vendor libs in their own chunks.
+          if (id.includes('/src/legacy/') || id.includes('/src/data/auto')) return 'legacy';
+          if (id.includes('node_modules')) return 'vendor';
+        },
+      },
+    },
+  },
 });

@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import useDocTitle from '../lib/useDocTitle.js';
 
 const INFO = [
   ['📞', 'Call Us', <a href="tel:+919825062515" key="t">+91 98250 62515</a>],
@@ -16,6 +17,7 @@ const EMPTY = {
 export default function Contact() {
   const [form, setForm] = useState(EMPTY);
   const [status, setStatus] = useState({ state: 'idle', msg: '' }); // idle | sending | ok | error
+  useDocTitle('Contact Us');
 
   const set = (k) => (e) => setForm((f) => ({ ...f, [k]: e.target.value }));
 

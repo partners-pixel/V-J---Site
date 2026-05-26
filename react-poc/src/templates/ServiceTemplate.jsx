@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import PageHero from './PageHero.jsx';
+import useDocTitle from '../lib/useDocTitle.js';
 
 /* Reusable service-page template: .ph hero + sticky sub-nav + one or two
    service-card groups + "How it works" steps + engagement cards + CTA band.
@@ -14,6 +15,7 @@ export default function ServiceTemplate({ data }) {
   const navigate = useNavigate();
   const go = (slug) => navigate(slug === 'home' || slug === 'index' ? '/' : '/' + slug);
   const { hero, subnav = [], ids = {}, serviceGroups = [], how, engagement, cta } = data;
+  useDocTitle(`${hero.title.pre}${hero.title.em}`.trim());
 
   return (
     <div>

@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import PageHero from './PageHero.jsx';
+import useDocTitle from '../lib/useDocTitle.js';
 
 /* Knowledge-center overview template: shared hero + topic grid + latest
    updates + a compliance-tools callout. */
@@ -13,6 +14,7 @@ export default function KcTemplate({ data }) {
   const navigate = useNavigate();
   const go = (slug) => navigate(slug === 'home' || slug === 'index' ? '/' : '/' + slug);
   const { hero, subnav = [], topics, updates, tools } = data;
+  useDocTitle(`${hero.title.pre}${hero.title.em}`.trim());
 
   return (
     <div>

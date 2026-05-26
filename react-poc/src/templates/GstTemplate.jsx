@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { getSection } from '../lib/legacy.js';
+import useDocTitle from '../lib/useDocTitle.js';
 
 /* Reusable "GST premium" template — real JSX for every structural section.
    Drive it with a data object (see src/data/*.js). Each page's bespoke
@@ -29,6 +30,7 @@ export default function GstTemplate({ data }) {
     process, engagement = [], cta, sections = [],
   } = data;
   const twoCol = Array.isArray(heroRight) && heroRight.length > 0;
+  useDocTitle(`${heroTitle.first} ${heroTitle.em}`.trim());
 
   return (
     <div>

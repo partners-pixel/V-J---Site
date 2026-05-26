@@ -1,0 +1,16 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+# SPA: serve index.html for client-side routes (so /gst, /audit, etc. work on refresh)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Proxy the contact API to your mail backend (set to your deployed server URL)
+[[redirects]]
+  from = "/api/*"
+  to = "https://YOUR-MAIL-BACKEND/api/:splat"
+  status = 200
+  force = true
