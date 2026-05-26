@@ -5,5 +5,9 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   plugins: [react()],
   // host:true binds to 0.0.0.0; allowedHosts:true lets tunnel domains through.
-  server: { host: true, port: 4174, open: false, allowedHosts: true },
+  // /api is proxied to the existing Express mail backend (server.js on :3000).
+  server: {
+    host: true, port: 4174, open: false, allowedHosts: true,
+    proxy: { '/api': { target: 'http://localhost:3000', changeOrigin: true } },
+  },
 });
