@@ -14,29 +14,30 @@
 import 'dotenv/config';
 import express from 'express';
 import nodemailer from 'nodemailer';
+import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const {
-  SMTP_HOST,
-  SMTP_PORT = '465',
-  SMTP_SECURE = 'true',
-  SMTP_USER,
+  SMTP_HOST = 'smtp.office365.com',
+  SMTP_PORT = '587',
+  SMTP_SECURE = 'false',
+  SMTP_USER = 'info@vjdesai.com',
   SMTP_PASS,
-  FROM_EMAIL = SMTP_USER,
+  FROM_EMAIL = 'info@vjdesai.com',
   FROM_NAME = 'V J Desai & Co. website',
-  TO_EMAIL = SMTP_USER,
+  TO_EMAIL = 'info@vjdesai.com',
   PORT = '3000',
 } = process.env;
 
 const smtpConfigured = Boolean(SMTP_HOST && SMTP_USER && SMTP_PASS);
 
 if (!smtpConfigured) {
-  console.warn('⚠️  SMTP_HOST / SMTP_USER / SMTP_PASS are not set. ' +
+  console.warn('⚠️  SMTP_PASS is not set. ' +
     'Running in DEV MODE: enquiries will be logged to the console instead ' +
-    'of emailed. Copy .env.example to .env and fill them in to send real email.');
+    'of emailed. Add the info@vjdesai.com mailbox password to .env to send real email.');
 }
 
 // Reusable SMTP transport
@@ -44,6 +45,7 @@ const transporter = nodemailer.createTransport({
   host: SMTP_HOST,
   port: Number(SMTP_PORT),
   secure: String(SMTP_SECURE) === 'true', // true for 465 (SSL), false for 587 (STARTTLS)
+  requireTLS: String(SMTP_PORT) === '587',
   auth: { user: SMTP_USER, pass: SMTP_PASS },
 });
 
@@ -120,7 +122,12 @@ app.post('/api/contact', async (req, res) => {
     });
     res.json({ success: true, message: 'Enquiry sent successfully.' });
   } catch (err) {
-    console.error('SMTP send failed:', err.message);
+    console.error('SMTP send failed:', {
+      code: err.code,
+      command: err.command,
+      responseCode: err.responseCode,
+      message: err.message,
+    });
     res.status(502).json({
       success: false,
       message: 'Could not send your enquiry. Please email info@vjdesai.com directly.',
@@ -129,7 +136,21 @@ app.post('/api/contact', async (req, res) => {
 });
 
 // Serve the static site (index.html, pages/, assets/, components/ …)
-app.use(express.static(__dirname));
+// React build is preferred when dist/index.html exists; legacy pages remain fallback.
+const distDir = path.join(__dirname, 'dist');
+const reactIndex = path.join(distDir, 'index.html');
+const hasReactBuild = fs.existsSync(reactIndex);
+
+if (hasReactBuild) {
+  app.use(express.static(distDir));
+  app.use('/assets', express.static(path.join(__dirname, 'assets')));
+  app.get('*', (_req, res) => res.sendFile(reactIndex));
+} else {
+  app.get(['/', '/index.html'], (_req, res) => {
+    res.sendFile(path.join(__dirname, 'pages', 'index.html'));
+  });
+  app.use(express.static(__dirname, { index: false }));
+}
 
 app.listen(Number(PORT), () => {
   console.log(`▶  V J Desai site running at http://localhost:${PORT}`);

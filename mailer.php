@@ -6,15 +6,16 @@
  * over authenticated SMTP. No external library or Composer required.
  *
  * ─────────────────────────────────────────────────────────────────────────
- *  SETUP: fill in the SMTP credentials below, then upload this file to the
- *  site root (same level as index.html). The form already posts to ../mailer.php
+ *  SETUP: fill in the SMTP password below, then upload this file to the
+ *  site root (same level as index.html). The contact form falls back to this
+ *  handler when /api/contact is not available.
  * ─────────────────────────────────────────────────────────────────────────
  */
 
 /* ===== SMTP CONFIGURATION — EDIT THESE ===================================== */
-$SMTP_HOST   = 'smtp.hostinger.com';   // your mail host, e.g. smtp.hostinger.com / smtp.gmail.com / mail.vjdesai.com
-$SMTP_PORT   = 465;                    // 465 = SSL (recommended) · 587 = STARTTLS
-$SMTP_SECURE = 'ssl';                  // 'ssl' for port 465, 'tls' for port 587
+$SMTP_HOST   = 'smtp.office365.com';   // Office 365 SMTP submission endpoint
+$SMTP_PORT   = 587;                    // 587 = STARTTLS
+$SMTP_SECURE = 'tls';                  // 'tls' for port 587, 'ssl' for port 465
 $SMTP_USER   = 'info@vjdesai.com';     // full mailbox login
 $SMTP_PASS   = 'CHANGE_ME';            // mailbox password / app password — DO NOT commit the real one to git
 

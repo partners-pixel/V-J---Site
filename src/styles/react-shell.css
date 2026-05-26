@@ -1,0 +1,34 @@
+.react-page-shell{
+  background:var(--off);
+}
+
+.react-route-hero{
+  min-height:calc(100vh - 112px);
+  display:flex;
+  align-items:center;
+}
+
+.react-route-meta{
+  display:flex;
+  flex-wrap:wrap;
+  gap:.55rem;
+  margin:1.2rem 0 0;
+}
+
+.react-route-meta span{
+  display:inline-flex;
+  align-items:center;
+  border:1px solid rgba(201,168,76,.24);
+  background:rgba(201,168,76,.09);
+  color:rgba(255,255,255,.72);
+  border-radius:4px;
+  padding:.28rem .65rem;
+  font-size:.72rem;
+  font-weight:600;
+}
+
+@media(max-width:768px){
+  .react-route-hero{
+    min-height:auto;
+  }
+}
