@@ -65,14 +65,8 @@ const MENU = [
   {
     key: 'kc', label: 'Knowledge Center', to: '/kc',
     groups: [[
-      { label: 'GST', to: '/kc-gst' },
-      { label: 'RERA', to: '/kc-rera' },
-      { label: 'Direct Tax', to: '/kc-dtax' },
-      { label: 'International Tax', to: '/kc-intl' },
-      { label: 'FEMA & EXIM', to: '/kc-fema' },
-      { label: 'Audit', to: '/kc-audit' },
-      { label: 'Glossary', to: '/kc-glossary' },
-      { label: 'Checklists', to: '/kc-checklist' },
+      { label: 'Blog', to: '/kc-blog' },
+      { label: 'Checklist', to: '/kc-checklist' },
     ]],
   },
   { key: 'career', label: 'Career', to: '/career' },

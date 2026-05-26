@@ -2,6 +2,7 @@ import { Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout.jsx';
 import Home from './pages/Home.jsx';
 import Contact from './pages/Contact.jsx';
+import Blog from './pages/Blog.jsx';
 import LegacyPage from './pages/LegacyPage.jsx';
 import NotFound from './pages/NotFound.jsx';
 
@@ -32,6 +33,7 @@ export default function App() {
         <Route path="/rera" element={<ServiceTemplate data={reraData} />} />
         <Route path="/gst" element={<GstTemplate data={gstData} />} />
         <Route path="/kc" element={<KcTemplate data={kcData} />} />
+        <Route path="/kc-blog" element={<Blog />} />
 
         {/* Phase-5: sub-pages on the GST template (data-driven) */}
         {Object.entries(gstPages).map(([slug, data]) => (
