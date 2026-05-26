@@ -309,18 +309,11 @@
   .gal-item:nth-child(1){ grid-column:span 1; }
 }
 
-/* ─── GST GRID FIX: lone cards in 3-col grids ────────────────────── */
-.gst-svc-grid > .gst-svc-item:last-child:nth-child(3n+1){
-  grid-column:1 / -1;
-  max-width:380px;
-  margin:0 auto;
-}
-.gst-svc-grid > .gst-svc-item:last-child:nth-child(3n+2){
-  grid-column:span 1;
-}
-.gst-svc-grid:has(> .gst-svc-item:nth-child(7):last-child) > .gst-svc-item:nth-child(7){
-  grid-column:2 / 3;
-}
+/* ─── GST GRID FIX: trailing cards fill the row (no empty/grey cells) ──
+   .gst-svc-grid is a seamless white panel (1px gap over a dark bg), so any
+   empty trailing cell shows through as grey. Stretching the last card to the
+   final column line fills the row cleanly for any card/column count. */
+.gst-svc-grid > .gst-svc-item:last-child{ grid-column-end:-1; }
 
 /* ─── HERO ───────────────────────────────────────────────────────── */
 .hero{
