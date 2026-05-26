@@ -42,3 +42,6 @@ build/
 
 # Blog runtime data (posts + uploaded images)
 blog-data/
+
+# Admin runtime data (enquiries + reviews)
+admin-data/

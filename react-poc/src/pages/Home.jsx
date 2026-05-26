@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import useDocTitle from '../lib/useDocTitle.js';
 
@@ -40,9 +41,23 @@ const TESTIMONIALS = [
   [`"This CA firm is exceptional in handling income tax, GST, matters. ITR filing was completed smoothly without any confusion. Very professional approach. Their GST return filing process is smooth and always on time. We never have to worry about deadlines anymore. Timely reminders and proper documentation support make GST filing stress-free."`, 'AS', '#1E8449', '#fff', 'Adnan Shaikh', 'Google Review · 2 months ago'],
 ];
 
+const REV_PALETTE = ['var(--gold)', '#1E8449', '#1A5276', '#6C3483', '#B7770D', '#0E6655', '#922B21', '#2471A3', '#117A65'];
+const initials = (n = '') => n.trim().split(/\s+/).slice(0, 2).map((w) => w[0] || '').join('').toUpperCase();
+
 export default function Home() {
   const navigate = useNavigate();
   useDocTitle();
+
+  // Testimonials come from the admin-managed reviews API (fallback to the built-in list).
+  const [reviews, setReviews] = useState(null);
+  useEffect(() => {
+    let alive = true;
+    fetch('/api/reviews').then((r) => r.json()).then((d) => { if (alive) setReviews(d.reviews || []); }).catch(() => { if (alive) setReviews([]); });
+    return () => { alive = false; };
+  }, []);
+  const cards = (reviews && reviews.length)
+    ? reviews.map((r, i) => ({ text: r.text, ini: initials(r.name), bg: REV_PALETTE[i % REV_PALETTE.length], color: i % REV_PALETTE.length === 0 ? '#1C2437' : '#fff', name: r.name, role: r.role, rating: r.rating || 5 }))
+    : TESTIMONIALS.map(([text, ini, bg, color, name, role]) => ({ text, ini, bg, color, name, role, rating: 5 }));
   return (
     <div id="page-home">
       {/* HERO */}
@@ -161,13 +176,13 @@ export default function Home() {
             <p style={{ fontSize: '.9rem', color: 'rgba(255,255,255,.5)', maxWidth: 560, margin: '.5rem auto 0', lineHeight: 1.75 }}>Trusted by 2500+ businesses and individuals across Gujarat and beyond since 1993.</p>
           </div>
           <div className="testi-grid">
-            {TESTIMONIALS.map(([text, ini, bg, color, name, role]) => (
-              <div className="tcard" key={name}>
-                <div className="tcard-stars">★★★★★</div>
-                <p className="tcard-text">{text}</p>
+            {cards.map((c, idx) => (
+              <div className="tcard" key={c.name + idx}>
+                <div className="tcard-stars">{'★'.repeat(c.rating)}</div>
+                <p className="tcard-text">{c.text}</p>
                 <div className="tcard-author">
-                  <div className="tcard-avatar" style={{ background: bg, color }}>{ini}</div>
-                  <div><div className="tcard-name">{name}</div><div className="tcard-role">{role}</div></div>
+                  <div className="tcard-avatar" style={{ background: c.bg, color: c.color }}>{c.ini}</div>
+                  <div><div className="tcard-name">{c.name}</div><div className="tcard-role">{c.role}</div></div>
                 </div>
               </div>
             ))}

@@ -18,6 +18,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import mountBlog from './blog-api.js';
+import mountAdmin, { saveEnquiry } from './admin-api.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
@@ -92,6 +93,9 @@ app.post('/api/contact', async (req, res) => {
     'Message': message,
   };
 
+  // Persist the enquiry so it shows in the admin panel (regardless of email).
+  try { saveEnquiry(rows); } catch (e) { console.warn('Could not save enquiry:', e.message); }
+
   const tableRows = Object.entries(rows).map(([label, value]) =>
     `<tr>
        <td style="padding:8px 12px;border:1px solid #e2e8f0;background:#f8f9fa;font-weight:600;color:#374151;white-space:nowrap;vertical-align:top">${esc(label)}</td>
@@ -138,6 +142,8 @@ app.post('/api/contact', async (req, res) => {
 
 // Blog API + uploaded-image serving (/api/blog, /uploads) — before static catch-all.
 mountBlog(app);
+// Admin API: login, enquiries, reviews (/api/admin/*, /api/reviews).
+mountAdmin(app);
 
 // Serve the static site (index.html, pages/, assets/, components/ …)
 // React build is preferred when dist/index.html exists; legacy pages remain fallback.
