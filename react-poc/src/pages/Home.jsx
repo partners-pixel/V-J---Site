@@ -125,9 +125,9 @@ export default function Home() {
             <p style={{ fontSize: '.9rem', color: 'var(--tmute)', maxWidth: 520, margin: '.4rem auto 0', lineHeight: 1.7 }}>Our Ahmedabad office at Ratnaakar Nine Square, Satellite, where expertise meets professionalism.</p>
           </div>
           <div className="gallery-grid">
-            <div className="gal-item" style={{ minHeight: 280 }}>
-              <div className="gal-inner-img" style={{ minHeight: 280, background: 'linear-gradient(135deg,#1C2437 0%,#2E3A52 100%)' }}>
-                <div style={{ textAlign: 'center', padding: '1.5rem' }}>
+            <div className="gal-item">
+              <div className="gal-inner-img" style={{ background: 'linear-gradient(135deg,#1C2437 0%,#2E3A52 100%)' }}>
+                <div style={{ textAlign: 'center', padding: '1rem' }}>
                   <div style={{ fontSize: '3.5rem', marginBottom: '.8rem' }}>🏛️</div>
                   <div style={{ fontFamily: "'EB Garamond',serif", fontSize: '1.1rem', fontWeight: 600, color: 'var(--gold)' }}>Our Office</div>
                   <div style={{ fontSize: '.78rem', color: 'rgba(255,255,255,.5)', marginTop: '.3rem' }}>B-901/902, Ratnaakar Nine Square, 132 Feet Ring Rd,<br />Opp. ITC Narmada,<br />Satellite, Ahmedabad, Gujarat 380015</div>
