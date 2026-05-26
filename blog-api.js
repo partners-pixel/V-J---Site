@@ -62,6 +62,13 @@ const requireAdmin = (req, res, next) => {
 
 const router = express.Router();
 
+// Login — verify the admin key (key via x-admin-key header or { adminKey } body)
+router.post('/login', (req, res) => {
+  const key = req.get('x-admin-key') || req.body?.adminKey;
+  if (key !== ADMIN_KEY) return res.status(401).json({ success: false, message: 'Invalid admin key.' });
+  res.json({ success: true });
+});
+
 // List
 router.get('/', (_req, res) => res.json({ success: true, posts: readPosts() }));
 

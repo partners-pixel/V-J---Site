@@ -4,9 +4,49 @@ import useDocTitle from '../lib/useDocTitle.js';
 const CATEGORIES = ['Blog', 'GST', 'Direct Tax', 'RERA', 'FEMA', 'Audit', 'Compliance'];
 const fmtDate = (iso) => { try { return new Date(iso).toLocaleDateString(undefined, { day: '2-digit', month: 'short', year: 'numeric' }); } catch { return ''; } };
 
-export default function Admin() {
-  useDocTitle('Blog Admin');
-  const [key, setKey] = useState(() => localStorage.getItem('vjd_admin_key') || '');
+/* ─── Login gate ─────────────────────────────────────────────────── */
+function Login({ onAuth }) {
+  const [key, setKey] = useState('');
+  const [err, setErr] = useState('');
+  const [busy, setBusy] = useState(false);
+
+  const submit = async (e) => {
+    e.preventDefault();
+    setBusy(true); setErr('');
+    try {
+      const r = await fetch('/api/blog/login', {
+        method: 'POST', headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ adminKey: key }),
+      });
+      if (r.ok) { localStorage.setItem('vjd_admin_key', key); onAuth(key); }
+      else { const d = await r.json().catch(() => ({})); setErr(d.message || 'Invalid admin key.'); }
+    } catch { setErr('Could not reach the server. Is server.js running on :3000?'); }
+    finally { setBusy(false); }
+  };
+
+  return (
+    <div className="ph" style={{ minHeight: '70vh', display: 'flex', alignItems: 'center' }}>
+      <div className="phi" style={{ width: '100%' }}>
+        <div className="cof" style={{ maxWidth: 420, margin: '0 auto' }}>
+          <div className="pgbadge" style={{ marginBottom: '1rem' }}>🔐 Admin Login</div>
+          <h3>Blog Admin</h3>
+          <p style={{ fontSize: '.86rem', color: 'var(--tmute)', margin: '0 0 1.4rem' }}>Enter the admin key to manage blog posts.</p>
+          <form onSubmit={submit}>
+            <div className="fg">
+              <label>Admin Key</label>
+              <input type="password" value={key} onChange={(e) => setKey(e.target.value)} placeholder="Enter admin key" autoFocus required />
+            </div>
+            {err && <p style={{ color: '#e74c3c', fontSize: '.83rem', marginBottom: '.7rem' }}>{err}</p>}
+            <button className="bgs" type="submit" disabled={busy}>{busy ? 'Signing in…' : 'Sign In →'}</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+/* ─── Management panel (after login) ─────────────────────────────── */
+function Panel({ adminKey, onLogout }) {
   const [form, setForm] = useState({ title: '', category: 'Blog', excerpt: '', content: '' });
   const [file, setFile] = useState(null);
   const [preview, setPreview] = useState('');
@@ -15,55 +55,41 @@ export default function Admin() {
   const fileRef = useRef(null);
 
   const set = (k) => (e) => setForm((f) => ({ ...f, [k]: e.target.value }));
-
   const loadPosts = async () => {
-    try {
-      const r = await fetch('/api/blog');
-      const d = await r.json();
-      setPosts(d.posts || []);
-    } catch { /* ignore */ }
+    try { const r = await fetch('/api/blog'); const d = await r.json(); setPosts(d.posts || []); } catch { /* ignore */ }
   };
   useEffect(() => { loadPosts(); }, []);
 
   const onFile = (e) => {
     const f = e.target.files?.[0] || null;
-    setFile(f);
-    setPreview(f ? URL.createObjectURL(f) : '');
+    setFile(f); setPreview(f ? URL.createObjectURL(f) : '');
   };
-
-  const rememberKey = (v) => { setKey(v); localStorage.setItem('vjd_admin_key', v); };
 
   const onSubmit = async (e) => {
     e.preventDefault();
-    if (!key) { setStatus({ state: 'error', msg: 'Enter the admin key first.' }); return; }
     setStatus({ state: 'saving', msg: '' });
     const fd = new FormData();
-    fd.append('title', form.title);
-    fd.append('category', form.category);
-    fd.append('excerpt', form.excerpt);
-    fd.append('content', form.content);
+    fd.append('title', form.title); fd.append('category', form.category);
+    fd.append('excerpt', form.excerpt); fd.append('content', form.content);
     if (file) fd.append('image', file);
     try {
-      const r = await fetch('/api/blog', { method: 'POST', headers: { 'x-admin-key': key }, body: fd });
+      const r = await fetch('/api/blog', { method: 'POST', headers: { 'x-admin-key': adminKey }, body: fd });
       const d = await r.json().catch(() => ({}));
       if (r.ok && d.success) {
         setStatus({ state: 'ok', msg: 'Post published.' });
         setForm({ title: '', category: 'Blog', excerpt: '', content: '' });
         setFile(null); setPreview(''); if (fileRef.current) fileRef.current.value = '';
         loadPosts();
-      } else {
-        setStatus({ state: 'error', msg: d.message || 'Could not publish.' });
-      }
-    } catch {
-      setStatus({ state: 'error', msg: 'Could not reach the server. Is server.js running on :3000?' });
-    }
+      } else if (r.status === 401) { onLogout(); }
+      else setStatus({ state: 'error', msg: d.message || 'Could not publish.' });
+    } catch { setStatus({ state: 'error', msg: 'Could not reach the server.' }); }
   };
 
   const onDelete = async (id) => {
-    if (!key) { setStatus({ state: 'error', msg: 'Enter the admin key first.' }); return; }
     if (!window.confirm('Delete this post?')) return;
     try {
-      const r = await fetch(`/api/blog/${id}`, { method: 'DELETE', headers: { 'x-admin-key': key } });
+      const r = await fetch(`/api/blog/${id}`, { method: 'DELETE', headers: { 'x-admin-key': adminKey } });
+      if (r.status === 401) { onLogout(); return; }
       const d = await r.json().catch(() => ({}));
       if (r.ok && d.success) loadPosts();
       else setStatus({ state: 'error', msg: d.message || 'Could not delete.' });
@@ -71,33 +97,29 @@ export default function Admin() {
   };
 
   return (
-    <div id="page-admin">
+    <>
       <div className="ph"><div className="phi">
-        <div className="pgbadge">🔐 Admin</div>
-        <h1>Blog <em>Admin Panel</em></h1>
-        <p>Publish a blog post with a cover image. Posts appear on the Knowledge Center → Blog page.</p>
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '1rem', flexWrap: 'wrap' }}>
+          <div>
+            <div className="pgbadge">🔐 Admin</div>
+            <h1>Blog <em>Admin Panel</em></h1>
+            <p>Publish a blog post with a cover image. Posts appear on the Knowledge Center → Blog page.</p>
+          </div>
+          <button className="ph-cta-outline" onClick={onLogout}>Log out</button>
+        </div>
       </div></div>
 
       <section className="s" style={{ background: 'var(--off)' }}>
         <div className="si">
           <div className="cog" style={{ gridTemplateColumns: '1.1fr 1fr' }}>
-            {/* New post form */}
             <div className="cof">
               <h3>New Post</h3>
-
-              <div className="fg">
-                <label>Admin Key *</label>
-                <input type="password" value={key} onChange={(e) => rememberKey(e.target.value)} placeholder="Enter admin key" />
-              </div>
-
               <form onSubmit={onSubmit}>
                 <div className="fg"><label>Title *</label><input type="text" value={form.title} onChange={set('title')} placeholder="Post title" required /></div>
                 <div className="fr">
                   <div className="fg">
                     <label>Category</label>
-                    <select value={form.category} onChange={set('category')}>
-                      {CATEGORIES.map((c) => <option key={c}>{c}</option>)}
-                    </select>
+                    <select value={form.category} onChange={set('category')}>{CATEGORIES.map((c) => <option key={c}>{c}</option>)}</select>
                   </div>
                   <div className="fg"><label>Cover Image</label><input ref={fileRef} type="file" accept="image/*" onChange={onFile} /></div>
                 </div>
@@ -110,11 +132,8 @@ export default function Admin() {
               </form>
             </div>
 
-            {/* Existing posts */}
             <div>
-              <h3 style={{ fontFamily: "'EB Garamond',serif", fontSize: '1.28rem', marginBottom: '1rem', color: 'var(--tdark)' }}>
-                Published Posts ({posts.length})
-              </h3>
+              <h3 style={{ fontFamily: "'EB Garamond',serif", fontSize: '1.28rem', marginBottom: '1rem', color: 'var(--tdark)' }}>Published Posts ({posts.length})</h3>
               {posts.length === 0 && <p style={{ fontSize: '.88rem', color: 'var(--tmute)' }}>No posts yet. Publish your first one.</p>}
               <div style={{ display: 'flex', flexDirection: 'column', gap: '.8rem' }}>
                 {posts.map((p) => (
@@ -134,6 +153,31 @@ export default function Admin() {
           </div>
         </div>
       </section>
+    </>
+  );
+}
+
+export default function Admin() {
+  useDocTitle('Blog Admin');
+  const [adminKey, setAdminKey] = useState(null); // null = not logged in
+  const [checking, setChecking] = useState(true);
+
+  // Re-validate any stored key on load (so refresh keeps you signed in).
+  useEffect(() => {
+    const stored = localStorage.getItem('vjd_admin_key');
+    if (!stored) { setChecking(false); return; }
+    fetch('/api/blog/login', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ adminKey: stored }) })
+      .then((r) => { if (r.ok) setAdminKey(stored); else localStorage.removeItem('vjd_admin_key'); })
+      .catch(() => {})
+      .finally(() => setChecking(false));
+  }, []);
+
+  const logout = () => { localStorage.removeItem('vjd_admin_key'); setAdminKey(null); };
+
+  if (checking) return <div className="ph"><div className="phi"><p style={{ color: 'var(--tdim)' }}>Loading…</p></div></div>;
+  return (
+    <div id="page-admin">
+      {adminKey ? <Panel adminKey={adminKey} onLogout={logout} /> : <Login onAuth={setAdminKey} />}
     </div>
   );
 }
