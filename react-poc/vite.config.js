@@ -8,7 +8,10 @@ export default defineConfig({
   // /api is proxied to the existing Express mail backend (server.js on :3000).
   server: {
     host: true, port: 4174, open: false, allowedHosts: true,
-    proxy: { '/api': { target: 'http://localhost:3000', changeOrigin: true } },
+    proxy: {
+      '/api': { target: 'http://localhost:3000', changeOrigin: true },
+      '/uploads': { target: 'http://localhost:3000', changeOrigin: true },
+    },
   },
   build: {
     chunkSizeWarningLimit: 1200,

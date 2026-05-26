@@ -17,6 +17,7 @@ import nodemailer from 'nodemailer';
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import mountBlog from './blog-api.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
@@ -134,6 +135,9 @@ app.post('/api/contact', async (req, res) => {
     });
   }
 });
+
+// Blog API + uploaded-image serving (/api/blog, /uploads) — before static catch-all.
+mountBlog(app);
 
 // Serve the static site (index.html, pages/, assets/, components/ …)
 // React build is preferred when dist/index.html exists; legacy pages remain fallback.

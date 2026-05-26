@@ -39,3 +39,6 @@ build/
 # don't want to publish it:
 # _source/
 # *_original.html
+
+# Blog runtime data (posts + uploaded images)
+blog-data/
