@@ -9,6 +9,7 @@ import './styles/base.css';
 import './styles/nav.css';
 import './styles/footer.css';
 import './styles/components.css';
+import './styles/poc.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

@@ -1,0 +1,8 @@
+/* React POC overrides (loaded last). */
+
+/* Sub-nav anchored sections should clear the sticky nav + sub-nav bars
+   when reached via in-page links / scroll-spy. */
+.gst-scroll,
+.scroll-sec {
+  scroll-margin-top: 160px;
+}
