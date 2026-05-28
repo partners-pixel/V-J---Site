@@ -14,9 +14,23 @@ function firstMatch(html, pattern) {
 }
 
 function normalizeMainHtml(html) {
-  return html
+  const normalized = html
     .replace(/\.\.\/assets\//g, '/assets/')
     .replace(/\.\.\/mailer\.php/g, '/mailer.php');
+
+  // Remove hero description copy site-wide while keeping all other content.
+  const doc = new DOMParser().parseFromString(`<div id="legacy-root">${normalized}</div>`, 'text/html');
+  const root = doc.getElementById('legacy-root');
+  if (!root) return normalized;
+
+  root.querySelectorAll('.ph .phi').forEach((heroInner) => {
+    const heading = heroInner.querySelector('h1');
+    if (!heading) return;
+    const description = heading.nextElementSibling;
+    if (description?.tagName === 'P') description.remove();
+  });
+
+  return root.innerHTML;
 }
 
 function parseLegacyPage(html) {

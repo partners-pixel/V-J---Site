@@ -46,6 +46,22 @@ function routePathForSlug(slug) {
   return routeBySlug[normalized]?.path || `/${normalized}`;
 }
 
+function contentSlugForRoute(route) {
+  return route.path === '/' || route.slug === 'index' ? 'home' : route.slug;
+}
+
+async function getContentOverride(route) {
+  try {
+    const response = await fetch(`/api/page-content/${contentSlugForRoute(route)}`);
+    if (!response.ok) return null;
+    const data = await response.json();
+    const html = typeof data.html === 'string' ? data.html : '';
+    return html.trim() ? html : null;
+  } catch {
+    return null;
+  }
+}
+
 function setMeta(name, content) {
   if (!content) return;
   let meta = document.querySelector(`meta[name="${name}"]`);
@@ -329,16 +345,19 @@ export default function MigratedHtmlPage({ route }) {
     let isCurrent = true;
     setPage(undefined);
 
-    getLegacyPage(route.legacyFile).then((loadedPage) => {
+    Promise.all([
+      getLegacyPage(route.legacyFile),
+      getContentOverride(route),
+    ]).then(([loadedPage, overrideHtml]) => {
       if (isCurrent) {
-        setPage(loadedPage);
+        setPage(overrideHtml ? { ...(loadedPage || {}), html: overrideHtml } : loadedPage);
       }
     });
 
     return () => {
       isCurrent = false;
     };
-  }, [route.legacyFile]);
+  }, [route.legacyFile, route.path, route.slug]);
 
   useLegacyBehaviors(rootRef, page, route, navigate);
 

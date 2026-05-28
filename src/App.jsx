@@ -2,6 +2,8 @@ import { Navigate, Route, Routes, useParams } from 'react-router-dom';
 import SiteLayout from './layouts/SiteLayout.jsx';
 import MigratedHtmlPage from './pages/MigratedHtmlPage.jsx';
 import RoutePlaceholder from './pages/RoutePlaceholder.jsx';
+import Admin from './pages/Admin.jsx';
+import Blog from './pages/Blog.jsx';
 import { routeMap } from './data/routes.js';
 
 function LegacyHtmlRedirect() {
@@ -15,6 +17,8 @@ export default function App() {
   return (
     <Routes>
       <Route element={<SiteLayout />}>
+        <Route path="/admin" element={<Admin />} />
+        <Route path="/kc-blog" element={<Blog />} />
         {routeMap.map((route) => (
           <Route
             key={route.path}
