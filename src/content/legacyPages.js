@@ -23,11 +23,15 @@ function normalizeMainHtml(html) {
   const root = doc.getElementById('legacy-root');
   if (!root) return normalized;
 
-  root.querySelectorAll('.ph .phi').forEach((heroInner) => {
-    const heading = heroInner.querySelector('h1');
+  root.querySelectorAll('.ph .phi, .hero, .gst-hero, .cou-hero').forEach((hero) => {
+    const heading = hero.querySelector('h1');
     if (!heading) return;
-    const description = heading.nextElementSibling;
-    if (description?.tagName === 'P') description.remove();
+    let sibling = heading.nextElementSibling;
+    while (sibling && sibling.tagName === 'P') {
+      const next = sibling.nextElementSibling;
+      sibling.remove();
+      sibling = next;
+    }
   });
 
   return root.innerHTML;
