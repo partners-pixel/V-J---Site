@@ -772,7 +772,7 @@ h2.ht.dk{ color:var(--white); }
 /* ─── PAGE HERO (inner pages) ────────────────────────────────────── */
 .ph{
   background:var(--navy);
-  padding:88px 5vw 70px;
+  padding:48px 5vw 42px;
   position:relative;
   overflow:hidden;
 }
@@ -1777,7 +1777,7 @@ h2.ht.dk{ color:var(--white); }
 
 .gst-hero{
   background:var(--navy);
-  padding:88px 5vw 70px;
+  padding:48px 5vw 42px;
   position:relative;
   overflow:hidden;
 }

@@ -30,6 +30,7 @@ export default function Blog() {
     return () => { alive = false; };
   }, []);
 
+  const isSample = posts !== null && posts.length === 0;
   const list = posts === null ? [] : (posts.length ? posts : SAMPLE);
 
   return (
@@ -78,21 +79,29 @@ export default function Blog() {
           <p style={{ color: 'var(--tmute)', fontSize: '.9rem' }}>Loading…</p>
         ) : (
           <div className="blog-grid">
-            {list.map((p) => (
-              <article className="bcard" key={p.id}>
-                <div className="bcard-img" style={{ background: 'linear-gradient(135deg,var(--navy-card),var(--navy-hover))', padding: 0 }}>
-                  {p.image
-                    ? <img src={p.image} alt={p.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-                    : <span style={{ fontSize: '2.4rem' }}>📝</span>}
-                  <span className="bcard-badge">{p.category || 'Blog'}</span>
-                </div>
-                <div className="bcard-body">
-                  <h3 className="bcard-title">{p.title}</h3>
-                  {p.excerpt && <p className="bcard-excerpt">{p.excerpt}</p>}
-                  <div className="bcard-meta"><span>{fmtDate(p.date)}</span></div>
-                </div>
-              </article>
-            ))}
+            {list.map((p) => {
+              const inner = (
+                <>
+                  <div className="bcard-img" style={{ background: 'linear-gradient(135deg,var(--navy-card),var(--navy-hover))', padding: 0 }}>
+                    {p.image
+                      ? <img src={p.image} alt={p.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                      : <span style={{ fontSize: '2.4rem' }}>📝</span>}
+                    <span className="bcard-badge">{p.category || 'Blog'}</span>
+                  </div>
+                  <div className="bcard-body">
+                    <h3 className="bcard-title">{p.title}</h3>
+                    {p.excerpt && <p className="bcard-excerpt">{p.excerpt}</p>}
+                    <div className="bcard-meta">
+                      <span>{fmtDate(p.date)}</span>
+                      {!isSample && <span style={{ color: 'var(--gold)', fontWeight: 600 }}>Read →</span>}
+                    </div>
+                  </div>
+                </>
+              );
+              return isSample
+                ? <article className="bcard" key={p.id}>{inner}</article>
+                : <Link className="bcard" to={`/kc-blog/${p.id}`} key={p.id} style={{ textDecoration: 'none' }}>{inner}</Link>;
+            })}
           </div>
         )}
       </div></section>

@@ -9,6 +9,7 @@
  *   GET    /            list posts (newest first)        — public
  *   GET    /:id         single post                      — public
  *   POST   /            create post (multipart, image)   — admin
+ *   PUT    /:id         update post (multipart, image)   — admin
  *   DELETE /:id         delete post (+ its image)        — admin
  *
  * Admin requests must send the admin key via the `x-admin-key` header or an
@@ -100,6 +101,44 @@ router.post('/', upload.single('image'), requireAdmin, (req, res) => {
   res.json({ success: true, post });
 });
 
+// Update (admin) — multipart; replaces the cover image only if a new one is sent
+router.put('/:id', upload.single('image'), requireAdmin, (req, res) => {
+  const posts = readPosts();
+  const idx = posts.findIndex((p) => p.id === req.params.id);
+  if (idx === -1) return res.status(404).json({ success: false, message: 'Not found.' });
+
+  const b = req.body || {};
+  const title = (b.title ?? posts[idx].title).trim();
+  if (!title) return res.status(422).json({ success: false, message: 'Title is required.' });
+
+  const prev = posts[idx];
+  let image = prev.image;
+  if (req.file) {
+    // New image uploaded — remove the old one.
+    if (prev.image) {
+      fs.rm(path.join(UPLOAD_DIR, path.basename(prev.image)), { force: true }, () => {});
+    }
+    image = `/uploads/${req.file.filename}`;
+  } else if (b.removeImage === 'true') {
+    if (prev.image) {
+      fs.rm(path.join(UPLOAD_DIR, path.basename(prev.image)), { force: true }, () => {});
+    }
+    image = null;
+  }
+
+  posts[idx] = {
+    ...prev,
+    title,
+    category: (b.category ?? prev.category).trim(),
+    excerpt: (b.excerpt ?? prev.excerpt).trim(),
+    content: (b.content ?? prev.content).trim(),
+    image,
+    updated: new Date().toISOString(),
+  };
+  writePosts(posts);
+  res.json({ success: true, post: posts[idx] });
+});
+
 // Delete (admin)
 router.delete('/:id', requireAdmin, (req, res) => {
   const posts = readPosts();
@@ -107,8 +146,7 @@ router.delete('/:id', requireAdmin, (req, res) => {
   if (idx === -1) return res.status(404).json({ success: false, message: 'Not found.' });
   const [removed] = posts.splice(idx, 1);
   if (removed.image) {
-    const f = path.join(__dirname, removed.image.replace(/^\//, ''));
-    fs.rm(f, { force: true }, () => {});
+    fs.rm(path.join(UPLOAD_DIR, path.basename(removed.image)), { force: true }, () => {});
   }
   writePosts(posts);
   res.json({ success: true });

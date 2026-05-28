@@ -20,6 +20,7 @@ import { fileURLToPath } from 'node:url';
 import mountBlog from './blog-api.js';
 import mountAdmin, { saveEnquiry } from './admin-api.js';
 import mountContent from './content-api.js';
+import mountChecklist from './checklist-api.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
@@ -147,6 +148,8 @@ mountBlog(app);
 mountAdmin(app);
 // Editable page-content overrides (/api/page-content/*).
 mountContent(app);
+// Downloadable compliance checklists (/api/checklist, /checklist-files).
+mountChecklist(app);
 
 // Serve the static site (index.html, pages/, assets/, components/ …)
 // React build is preferred when dist/index.html exists; legacy pages remain fallback.

@@ -45,3 +45,6 @@ blog-data/
 
 # Admin runtime data (enquiries + reviews)
 admin-data/
+
+# Checklist runtime data (uploaded files)
+checklist-data/
