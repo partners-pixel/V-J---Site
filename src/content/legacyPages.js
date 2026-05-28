@@ -34,6 +34,15 @@ function normalizeMainHtml(html) {
     }
   });
 
+  // Remove the "Engagement Model(s)" section and its sub-nav link site-wide.
+  root.querySelectorAll('.gst-eng-wrap, [id$="-engagement"]').forEach((el) => el.remove());
+  root.querySelectorAll('a').forEach((a) => {
+    const href = a.getAttribute('href') || '';
+    if (/-engagement$/i.test(href) || /^\s*engagement models?\s*$/i.test(a.textContent || '')) {
+      a.remove();
+    }
+  });
+
   return root.innerHTML;
 }
 
