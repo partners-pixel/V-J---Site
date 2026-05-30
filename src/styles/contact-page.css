@@ -1,0 +1,93 @@
+/* ====================================================================
+   Contact page  —  V J Desai & Co. LLP
+   Prefix .cou-  (ported from legacy pages/contact.html)
+   ==================================================================== */
+
+.cou-hero{background:#1C2437;padding:88px 5vw 72px;position:relative;overflow:hidden}
+.cou-hero::before{content:'';position:absolute;inset:0;background-image:radial-gradient(circle,rgba(201,168,76,.08) 1px,transparent 1px);background-size:48px 48px;pointer-events:none;z-index:0}
+.cou-hero::after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 70% at 85% 40%,rgba(201,168,76,.07) 0%,transparent 70%);pointer-events:none;z-index:0}
+.cou-hero-inner{max-width:1440px;margin:0 auto;position:relative;z-index:1}
+.cou-h1{font-family:'EB Garamond',serif;font-size:clamp(2.2rem,3.8vw,3.5rem);font-weight:700;color:#fff;line-height:1.12;max-width:620px;margin:0 0 1rem}
+.cou-h1 em{font-style:italic;color:#C9A84C}
+.cou-badge2{display:inline-flex;align-items:center;gap:.45rem;background:rgba(201,168,76,.14);border:1px solid rgba(201,168,76,.28);color:#C9A84C;padding:.3rem .9rem;border-radius:50px;font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:1.2rem}
+.cou-crumbs{display:flex;align-items:center;gap:.5rem;margin-bottom:1.4rem;flex-wrap:wrap}
+.cou-crumbs a,.cou-crumbs span{font-size:.7rem;letter-spacing:.09em;text-transform:uppercase;cursor:pointer;text-decoration:none}
+.cou-crumbs a{color:#C9A84C}
+.cou-crumbs .sep{color:rgba(255,255,255,.2);font-size:.8rem;letter-spacing:0}
+.cou-crumbs .now{color:rgba(255,255,255,.35);cursor:default}
+
+.cou-snav{background:#fff;border-bottom:1.5px solid #F1F4F8;position:sticky;top:112px;z-index:400;box-shadow:0 1px 8px rgba(0,0,0,.04)}
+.cou-snav-inner{max-width:1440px;margin:0 auto;padding:0 5vw;display:flex;align-items:center;overflow-x:auto;scrollbar-width:none}
+.cou-snav-inner::-webkit-scrollbar{display:none}
+.cou-sn{display:inline-flex;align-items:center;padding:.82rem 1.1rem;font-size:.84rem;font-weight:500;color:#374151;cursor:pointer;white-space:nowrap;border-bottom:2.5px solid transparent;margin-bottom:-1.5px;transition:.25s;background:none;border-top:none;border-left:none;border-right:none;font-family:'Inter',sans-serif}
+.cou-sn:hover{color:#1A202C}
+.cou-sn.on{color:#C9A84C;border-bottom-color:#C9A84C;font-weight:600}
+
+.cou-s-off{padding:80px 5vw;background:#F8F9FA}
+.cou-inn{max-width:1440px;margin:0 auto}
+.cou-stg{display:inline-flex;align-items:center;gap:.5rem;font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;font-weight:700;color:#C9A84C;margin-bottom:.7rem}
+.cou-stg::before{content:'';display:inline-block;width:18px;height:2px;background:#C9A84C;border-radius:1px}
+.cou-hd{font-family:'EB Garamond',serif;font-size:clamp(1.8rem,2.6vw,2.5rem);font-weight:700;line-height:1.2;color:#1A202C;margin:0 0 .7rem}
+.cou-hd em{font-style:italic;color:#C9A84C}
+.cou-intro{font-size:.9rem;color:#6B7280;margin:0 0 1.4rem;line-height:1.7}
+
+/* Main two-col layout */
+.cou-mg{display:grid;grid-template-columns:1fr 1.55fr;gap:3vw;align-items:start}
+
+/* Info cards */
+.cou-ic{display:flex;align-items:flex-start;gap:1.1rem;background:#fff;border-radius:10px;padding:1.3rem 1.5rem;border:1px solid rgba(0,0,0,.07);margin-bottom:1rem;transition:.25s}
+.cou-ic:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,0,0,.08)}
+.cou-ic-ico{width:42px;height:42px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0}
+.cou-ic-lbl{font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#6B7280;margin-bottom:.28rem}
+.cou-ic-val{font-size:.9rem;font-weight:600;text-decoration:none;transition:.25s;color:#1A202C;display:block;line-height:1.5}
+.cou-ic-val:hover{color:#C9A84C}
+.cou-ic-note{font-size:.76rem;color:#6B7280;margin-top:.22rem}
+
+/* Hours box */
+.cou-hrs{background:#fff;border-radius:10px;padding:1.4rem 1.5rem;border:1px solid rgba(0,0,0,.07);margin-bottom:1rem}
+.cou-hrs-lbl{font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#C9A84C;margin-bottom:.9rem}
+.cou-hrs-row{display:flex;justify-content:space-between;align-items:center;font-size:.84rem;padding:.32rem 0;border-bottom:1px solid #F1F4F8}
+.cou-hrs-row:last-child{border-bottom:none}
+.cou-hrs-day{font-weight:500;color:#1A202C}
+.cou-hrs-time{color:#6B7280}
+.cou-hrs-closed{color:#e74c3c;font-weight:600}
+.cou-hrs-note{font-size:.76rem;color:#6B7280;margin:.7rem 0 0;line-height:1.6}
+
+/* Quote */
+.cou-fq{background:#1C2437;border-left:4px solid #C9A84C;border-radius:10px;padding:1.8rem 2rem;margin-bottom:1.2rem}
+.cou-fq blockquote{font-family:'EB Garamond',serif;font-size:1.02rem;font-style:italic;color:rgba(255,255,255,.88);line-height:1.7;margin:0 0 .65rem}
+.cou-fq cite{font-size:.7rem;color:#C9A84C;font-style:normal;font-weight:600;letter-spacing:.08em;text-transform:uppercase}
+
+/* Map */
+.cou-map{border-radius:12px;overflow:hidden;border:1px solid rgba(0,0,0,.08);box-shadow:0 4px 20px rgba(0,0,0,.07);margin-top:1.2rem}
+.cou-map-lbl{font-size:.68rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#C9A84C;background:#1C2437;padding:.7rem 1rem}
+.cou-map iframe{width:100%;height:260px;border:none;display:block}
+
+/* Form box */
+.cou-fb{background:#fff;border-radius:12px;padding:2.4rem;border:1px solid rgba(0,0,0,.08);box-shadow:0 4px 24px rgba(0,0,0,.07)}
+.cou-fb-title{font-family:'EB Garamond',serif;font-size:1.45rem;font-weight:700;color:#1A202C;margin:0 0 .3rem}
+.cou-fb-desc{font-size:.86rem;color:#6B7280;margin:0 0 1.3rem;line-height:1.65}
+.cou-trust{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1.5rem}
+.cou-tp{display:inline-flex;align-items:center;gap:.35rem;font-size:.7rem;color:#374151;background:#F1F4F8;border:1px solid rgba(0,0,0,.07);border-radius:20px;padding:.22rem .78rem}
+.cou-priv{font-size:.72rem;color:#6B7280;text-align:center;margin:.8rem 0 0;line-height:1.6}
+
+/* Neutralise ContactForm's own card chrome so it nests cleanly inside .cou-fb */
+.cou-fb .cf-wrap{ max-width:none; }
+.cou-fb .cf-form{ background:transparent; border:none; padding:0; box-shadow:none; }
+
+/* Bottom strip */
+.cou-strp{background:#1C2437;padding:44px 5vw}
+.cou-si2{max-width:1440px;margin:0 auto;display:flex;justify-content:center;align-items:center;gap:3vw;flex-wrap:wrap}
+.cou-sti{display:flex;align-items:center;gap:.85rem}
+.cou-stico{width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0}
+.cou-stlbl{font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.4);margin-bottom:.2rem}
+.cou-stval{font-size:.84rem;font-weight:600;color:#C9A84C;text-decoration:none}
+.cou-stval2{font-size:.82rem;color:rgba(255,255,255,.8)}
+.cou-div{width:1px;height:40px;background:rgba(255,255,255,.1)}
+
+@media(max-width:768px){
+  .cou-mg{grid-template-columns:1fr}
+  .cou-fb{padding:1.5rem}
+  .cou-si2{flex-direction:column;gap:1.2rem}
+  .cou-div{display:none}
+}

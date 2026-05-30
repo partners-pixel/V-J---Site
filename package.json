@@ -17,6 +17,8 @@
     "test:react-routes": "node scripts/crawl-react-routes.mjs"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
+    "@uploadcare/file-uploader": "^1.30.1",
     "dotenv": "^16.4.5",
     "express": "^4.21.2",
     "multer": "^2.1.1",

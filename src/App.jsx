@@ -6,6 +6,8 @@ import Admin from './pages/Admin.jsx';
 import Blog from './pages/Blog.jsx';
 import BlogPost from './pages/BlogPost.jsx';
 import ChecklistPage from './pages/ChecklistPage.jsx';
+import ContactPage from './pages/ContactPage.jsx';
+import CareerPage from './pages/CareerPage.jsx';
 import { routeMap } from './data/routes.js';
 
 function LegacyHtmlRedirect() {
@@ -23,6 +25,8 @@ export default function App() {
         <Route path="/kc-blog" element={<Blog />} />
         <Route path="/kc-blog/:id" element={<BlogPost />} />
         <Route path="/kc-checklist" element={<ChecklistPage />} />
+        <Route path="/contact" element={<ContactPage />} />
+        <Route path="/career" element={<CareerPage />} />
         {routeMap.map((route) => (
           <Route
             key={route.path}

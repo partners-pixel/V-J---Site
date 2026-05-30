@@ -67,3 +67,302 @@
 .blog-article a{ color:var(--gold-dim,#A88830); text-decoration:underline; }
 .blog-article img{ max-width:100%; height:auto; border-radius:8px; margin:1rem 0; }
 .blog-article blockquote{ border-left:3px solid var(--gold); margin:1.2rem 0; padding:.4rem 0 .4rem 1.2rem; color:var(--tmute); font-style:italic; }
+
+/* Contact form (EmailJS) */
+.cf-wrap{ max-width:720px; margin:0 auto; }
+.cf-form{
+  background:#fff;
+  border:1px solid var(--bdr);
+  border-radius:10px;
+  padding:1.6rem 1.6rem 1.4rem;
+  box-shadow:0 4px 18px rgba(28,36,55,.05);
+}
+.cf-row{ display:grid; grid-template-columns:1fr 1fr; gap:1rem; }
+.cf-field{ display:flex; flex-direction:column; margin:0 0 1rem; }
+.cf-label{ font-size:.78rem; font-weight:600; color:var(--tmid); margin-bottom:.4rem; letter-spacing:.02em; text-transform:uppercase; }
+.cf-label em{ color:var(--gold-dim); font-style:normal; margin-left:2px; }
+.cf-form input,
+.cf-form select,
+.cf-form textarea{
+  width:100%;
+  padding:.7rem .85rem;
+  font:inherit;
+  color:var(--tdark);
+  background:var(--off);
+  border:1px solid rgba(28,36,55,.12);
+  border-radius:6px;
+  transition:var(--t);
+  font-family:'Inter',system-ui,sans-serif;
+  font-size:.95rem;
+}
+.cf-form select{
+  appearance:none;
+  -webkit-appearance:none;
+  padding-right:2.2rem;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'><path fill='%236B7280' d='M6 8 0 0h12z'/></svg>");
+  background-repeat:no-repeat;
+  background-position:right .9rem center;
+  cursor:pointer;
+}
+.cf-form textarea{ resize:vertical; min-height:140px; line-height:1.55; }
+.cf-form input:focus,
+.cf-form select:focus,
+.cf-form textarea:focus{
+  outline:none;
+  border-color:var(--gold);
+  background:#fff;
+  box-shadow:0 0 0 3px var(--gold-bg);
+}
+.cf-form input[aria-invalid="true"],
+.cf-form select[aria-invalid="true"],
+.cf-form textarea[aria-invalid="true"]{ border-color:#C0392B; background:#FDF3F2; }
+.cf-form input:disabled,
+.cf-form select:disabled,
+.cf-form textarea:disabled{ opacity:.65; cursor:not-allowed; }
+.cf-err{ color:#C0392B; font-size:.78rem; margin-top:.35rem; }
+.cf-submit{
+  width:100%;
+  padding:.95rem 1rem;
+  background:var(--navy);
+  color:#fff;
+  border:none;
+  border-radius:6px;
+  font-size:.95rem;
+  font-weight:700;
+  font-family:'Inter',sans-serif;
+  letter-spacing:.02em;
+  cursor:pointer;
+  transition:var(--t);
+  margin-top:.2rem;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+}
+.cf-submit:hover:not(:disabled){
+  background:var(--navy-hover);
+  transform:translateY(-1px);
+  box-shadow:0 6px 18px rgba(0,0,0,.18);
+}
+.cf-submit:disabled{ opacity:.7; cursor:wait; }
+.cf-feedback{
+  margin-top:1rem;
+  padding:.7rem .85rem;
+  border-radius:6px;
+  font-size:.88rem;
+  line-height:1.5;
+}
+.cf-feedback.is-success{ background:rgba(30,132,73,.08); color:#1E8449; border:1px solid rgba(30,132,73,.25); }
+.cf-feedback.is-error{ background:#FDF3F2; color:#C0392B; border:1px solid rgba(192,57,43,.25); }
+
+@media(max-width:640px){
+  .cf-row{ grid-template-columns:1fr; gap:0; }
+  .cf-form{ padding:1.2rem 1.1rem 1rem; }
+}
+
+/* ====================================================================
+   Career Apply Modal — dark theme to match Career page
+   ==================================================================== */
+.cam-backdrop{
+  position:fixed; inset:0; z-index:1200;
+  background:rgba(8,12,20,.78);
+  backdrop-filter:blur(4px);
+  -webkit-backdrop-filter:blur(4px);
+  display:flex; align-items:flex-start; justify-content:center;
+  padding:5vh 1rem 2rem;
+  overflow-y:auto;
+  animation:cam-fade .18s ease-out;
+}
+@keyframes cam-fade{ from{opacity:0} to{opacity:1} }
+@keyframes cam-rise{ from{opacity:0; transform:translateY(12px)} to{opacity:1; transform:translateY(0)} }
+@keyframes cam-spin{ to{ transform:rotate(360deg) } }
+
+.cam-dialog{
+  width:100%; max-width:640px;
+  background:linear-gradient(180deg,#1C2437 0%,#131B2B 100%);
+  border:1px solid rgba(201,168,76,.22);
+  border-radius:12px;
+  box-shadow:0 24px 70px rgba(0,0,0,.55);
+  color:rgba(255,255,255,.88);
+  animation:cam-rise .22s ease-out;
+}
+
+.cam-head{
+  display:flex; align-items:flex-start; justify-content:space-between;
+  gap:1rem;
+  padding:1.6rem 1.7rem 1rem;
+  border-bottom:1px solid rgba(201,168,76,.14);
+}
+.cam-eyebrow{
+  font-size:.66rem; font-weight:700; letter-spacing:.16em; text-transform:uppercase;
+  color:var(--gold); margin-bottom:.4rem;
+}
+.cam-title{
+  font-family:'EB Garamond',serif;
+  font-size:1.55rem; font-weight:700; line-height:1.2;
+  margin:0; color:#fff;
+}
+.cam-title em{ font-style:italic; color:var(--gold); }
+.cam-close{
+  width:32px; height:32px; border-radius:6px;
+  background:rgba(255,255,255,.06);
+  border:1px solid rgba(255,255,255,.1);
+  color:rgba(255,255,255,.7);
+  font-size:1.5rem; line-height:1; cursor:pointer;
+  display:flex; align-items:center; justify-content:center;
+  transition:var(--t);
+}
+.cam-close:hover{ background:rgba(201,168,76,.18); color:#fff; border-color:var(--gold); }
+
+.cam-form{ padding:1.4rem 1.7rem 1.7rem; }
+.cam-row{ display:grid; grid-template-columns:1fr 1fr; gap:1rem; }
+.cam-field{ display:flex; flex-direction:column; margin-bottom:1rem; }
+.cam-label{
+  font-size:.72rem; font-weight:600; letter-spacing:.04em; text-transform:uppercase;
+  color:rgba(255,255,255,.62); margin-bottom:.42rem;
+}
+.cam-label em{ color:var(--gold); font-style:normal; margin-left:2px; }
+
+.cam-form input,
+.cam-form select,
+.cam-form textarea{
+  width:100%;
+  padding:.7rem .9rem;
+  font:inherit; font-size:.92rem;
+  color:#fff;
+  background:rgba(255,255,255,.05);
+  border:1px solid rgba(255,255,255,.12);
+  border-radius:6px;
+  transition:var(--t);
+  font-family:'Inter',system-ui,sans-serif;
+}
+.cam-form textarea{ resize:vertical; min-height:96px; line-height:1.55; }
+.cam-form select{
+  appearance:none; -webkit-appearance:none;
+  padding-right:2.2rem;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'><path fill='%23C9A84C' d='M6 8 0 0h12z'/></svg>");
+  background-repeat:no-repeat;
+  background-position:right .9rem center;
+  cursor:pointer;
+}
+.cam-form select option{ background:#131B2B; color:#fff; }
+.cam-form input::placeholder,
+.cam-form textarea::placeholder{ color:rgba(255,255,255,.35); }
+.cam-form input:focus,
+.cam-form select:focus,
+.cam-form textarea:focus{
+  outline:none;
+  border-color:var(--gold);
+  background:rgba(201,168,76,.08);
+  box-shadow:0 0 0 3px rgba(201,168,76,.16);
+}
+.cam-form input[aria-invalid="true"],
+.cam-form select[aria-invalid="true"],
+.cam-form textarea[aria-invalid="true"]{
+  border-color:#E57373; background:rgba(229,115,115,.08);
+}
+.cam-form input:disabled,
+.cam-form select:disabled,
+.cam-form textarea:disabled{ opacity:.55; cursor:not-allowed; }
+
+.cam-err{ color:#FF8A80; font-size:.76rem; margin-top:.34rem; }
+
+/* File drop */
+.cam-drop{
+  position:relative;
+  border:1.5px dashed rgba(201,168,76,.32);
+  background:rgba(201,168,76,.05);
+  border-radius:8px;
+  padding:.85rem 1rem;
+  transition:var(--t);
+}
+.cam-drop:hover{ border-color:var(--gold); background:rgba(201,168,76,.1); }
+.cam-drop.has-file{ border-style:solid; border-color:rgba(46,204,113,.45); background:rgba(46,204,113,.06); }
+.cam-drop.has-err{ border-color:#E57373; background:rgba(229,115,115,.08); }
+.cam-drop input[type=file]{
+  position:absolute; inset:0;
+  width:100%; height:100%;
+  opacity:0; cursor:pointer;
+}
+.cam-drop input[type=file]:disabled{ cursor:not-allowed; }
+.cam-drop-body{
+  display:flex; align-items:center; gap:.85rem;
+  pointer-events:none;
+}
+.cam-drop-ico{
+  width:38px; height:38px; border-radius:8px;
+  background:rgba(201,168,76,.15);
+  display:flex; align-items:center; justify-content:center;
+  font-size:1.1rem; flex-shrink:0;
+}
+.cam-drop.has-file .cam-drop-ico{ background:rgba(46,204,113,.18); }
+.cam-drop-name{ font-size:.9rem; font-weight:600; color:#fff; word-break:break-all; }
+.cam-drop-meta{ font-size:.74rem; color:rgba(255,255,255,.5); margin-top:.15rem; }
+.cam-drop-clear{
+  margin-left:auto; pointer-events:auto;
+  background:none; border:none;
+  color:rgba(255,255,255,.65);
+  font-size:.78rem; font-weight:600;
+  cursor:pointer; padding:.3rem .55rem;
+  border-radius:4px;
+}
+.cam-drop-clear:hover{ color:#FF8A80; background:rgba(255,255,255,.05); }
+
+/* Upload progress bar */
+.cam-progress{
+  width:100%; height:6px;
+  background:rgba(255,255,255,.08);
+  border-radius:3px;
+  overflow:hidden;
+  margin-bottom:.85rem;
+}
+.cam-progress-bar{
+  height:100%;
+  background:linear-gradient(90deg,var(--gold) 0%,var(--gold-lt) 100%);
+  transition:width .2s ease-out;
+  box-shadow:0 0 8px rgba(201,168,76,.4);
+}
+
+/* Submit */
+.cam-submit{
+  width:100%; margin-top:.4rem;
+  padding:.95rem 1rem;
+  background:var(--gold);
+  color:#131B2B;
+  border:none; border-radius:6px;
+  font-size:.95rem; font-weight:700; letter-spacing:.02em;
+  font-family:'Inter',sans-serif; cursor:pointer;
+  transition:var(--t);
+  display:inline-flex; align-items:center; justify-content:center; gap:.55rem;
+}
+.cam-submit:hover:not(:disabled){
+  background:var(--gold-lt);
+  transform:translateY(-1px);
+  box-shadow:0 8px 22px rgba(201,168,76,.25);
+}
+.cam-submit:disabled{ opacity:.7; cursor:wait; }
+.cam-spinner{
+  display:inline-block;
+  width:14px; height:14px;
+  border:2px solid rgba(19,27,43,.3);
+  border-top-color:#131B2B;
+  border-radius:50%;
+  animation:cam-spin .7s linear infinite;
+}
+
+.cam-feedback{
+  margin-top:1rem;
+  padding:.7rem .9rem;
+  border-radius:6px;
+  font-size:.86rem; line-height:1.5;
+}
+.cam-feedback.is-success{ background:rgba(46,204,113,.12); color:#A5E5BE; border:1px solid rgba(46,204,113,.3); }
+.cam-feedback.is-error{ background:rgba(229,115,115,.12); color:#FFB4AA; border:1px solid rgba(229,115,115,.35); }
+
+@media(max-width:640px){
+  .cam-backdrop{ padding:2vh .6rem; }
+  .cam-dialog{ border-radius:10px; }
+  .cam-head{ padding:1.2rem 1.1rem .8rem; }
+  .cam-form{ padding:1rem 1.1rem 1.2rem; }
+  .cam-row{ grid-template-columns:1fr; gap:0; }
+  .cam-title{ font-size:1.3rem; }
+}
