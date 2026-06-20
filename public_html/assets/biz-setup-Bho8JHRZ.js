@@ -1,0 +1,365 @@
+const t=`\uFEFF<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+  <meta http-equiv="Pragma" content="no-cache"/>
+  <meta http-equiv="Expires" content="0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Business Setup Services | V J Desai &amp; Co. LLP</title>
+
+  <meta name="description" content="Business Setup Services services, V J Desai &amp; Co. LLP, Chartered Accountants. ICAI registered, est. 1993, Ahmedabad."/>
+  <meta name="robots" content="noindex, nofollow"/>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+
+  <link rel="stylesheet" href="../assets/css/variables.css?v=2"/>
+  <link rel="stylesheet" href="../assets/css/base.css?v=3"/>
+  <link rel="stylesheet" href="../assets/css/nav.css?v=6"/>
+  <link rel="stylesheet" href="../assets/css/footer.css?v=6"/>
+  <link rel="stylesheet" href="../assets/css/components.css?v=6"/>
+</head>
+<body data-page="biz-setup">
+
+<!-- SHARED NAV (loaded by include.js) -->
+<div data-include="../components/nav.html?v=7"></div>
+
+<!-- PAGE CONTENT -->
+<main>
+
+<div id="page-biz-setup">
+<!-- Breadcrumb -->
+  <div class="ph" style="padding:1.4rem 5vw;min-height:auto;background:var(--navy-deep)">
+    <div class="phi">
+      <div class="bc">
+        <a onclick="go('home')">Home</a><span>/</span>
+        <a onclick="go('audit')">Advisory</a><span>/</span>
+        <span>Business Setup Services</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <section class="gst-hero">
+    <div class="gst-hero-inner" style="grid-template-columns:1fr;max-width:900px">
+      <div>
+        <div class="gst-hero-eyebrow">Business Setup Services: Company Registration and Compliance</div>
+        <h1 style="font-size:clamp(2rem,3.4vw,3rem)">
+          Start Your Business<br/><em>with Confidence</em>
+        </h1>
+        <p class="gst-hero-lead">
+          From company formation to tax registration and licensing, our expert team manages every detail of the setup process.
+        </p>
+        <p style="font-size:.93rem;line-height:1.88;color:var(--tdim);margin-bottom:.9rem">
+          We simplify the process of launching your business. Our comprehensive setup services cover entity structuring, registrations, licensing, and initial compliance, all tailored to your needs. By handling the paperwork and regulatory steps, we ensure your new venture is built on a solid, compliant foundation so you can focus on growth.
+        </p>
+        <p style="font-size:.93rem;line-height:1.88;color:var(--tdim);margin-bottom:1.8rem">
+          We guide you through choosing the right legal structure, registering your company, obtaining essential permits, and setting up financial and HR systems. Partner with V J Desai and Co. to launch efficiently and compliantly.
+        </p>
+        <button class="bgs" onclick="go('contact')">Book a Consultation</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- STICKY SUB-NAV -->
+  <div class="gst-subnav">
+    <div class="gst-subnav-inner">
+      <a class="gsn active" href="#bs-services">Our Services</a>
+      <a class="gsn"        href="#bs-process">How It Works</a>
+      <a class="gsn"        href="#bs-engagement">Engagement</a>
+      <a class="gsn"        href="#bs-contact">Contact</a>
+    </div>
+  </div>
+
+  <!-- OUR SERVICES: 7 services from document -->
+  <section id="bs-services" class="gst-services-wrap gst-scroll">
+    <div style="max-width:1440px;margin:0 auto">
+      <div class="stag">Our Business Setup Services</div>
+      <h2 class="ht">End-to-End Business Setup <em>Services</em></h2>
+      <p class="ssub" style="margin-bottom:2.6rem">
+        We provide end-to-end business setup services to ensure your operations are legally compliant and strategically structured.
+      </p>
+
+      <div class="gst-svc-grid" style="grid-template-columns:repeat(3,1fr)">
+
+        <div class="gst-svc-item">
+          <div class="gst-svc-ico">🏢</div>
+          <h3>Entity Structuring and Incorporation</h3>
+          <p>We assist in choosing and forming the right business entity. Whether a Private Limited Company, Public Ltd Company, Partnership, or LLP, we handle name approval, drafting and filing of MoA/AoA/Partnership Deed, and secure your Certificate of Incorporation.</p>
+        </div>
+
+        <div class="gst-svc-item">
+          <div class="gst-svc-ico">📊</div>
+          <h3>Tax Registration and Compliance</h3>
+          <p>We set up your tax framework from day one. We handle GST registration, Income Tax registration (including PAN/TAN/IT registration), TDS obligations, and professional tax. We prepare and file initial returns and advise on ongoing tax compliance.</p>
+        </div>
+
+        <div class="gst-svc-item">
+          <div class="gst-svc-ico">📋</div>
+          <h3>Licenses and Permits</h3>
+          <p>We identify and secure all required licenses for your industry. This includes Shops and Establishment licenses, Import-Export Code (IEC) for traders, FSSAI registration for food businesses, trade licenses, and any sector-specific permits.</p>
+        </div>
+
+        <div class="gst-svc-item">
+          <div class="gst-svc-ico">🏦</div>
+          <h3>Financial and Banking Setup</h3>
+          <p>We help you separate personal and business finances from the outset. Our experts assist in opening business bank accounts, merchant accounts, and obtaining finance facilities. We also advise on accounting systems and initial bookkeeping practices.</p>
+        </div>
+
+        <div class="gst-svc-item">
+          <div class="gst-svc-ico">📈</div>
+          <h3>Business Planning and Advisory</h3>
+          <p>We work with you to craft detailed business plans and financial projections. This includes market analysis, revenue models, and budgeting, essential for attracting investors, securing loans, or guiding internal strategy.</p>
+        </div>
+
+        <div class="gst-svc-item">
+          <div class="gst-svc-ico">👥</div>
+          <h3>Legal and HR Framework</h3>
+          <p>We help draft employee contracts, set up payroll systems (including PF and ESI registration), and ensure compliance with labour laws. We also advise on protecting your intellectual property and handling legal agreements.</p>
+        </div>
+
+        <div class="gst-svc-item">
+          <div class="gst-svc-ico">🔄</div>
+          <h3>Ongoing Support and Advisory</h3>
+          <p>Our commitment does not end at incorporation. We offer continuous support for your growing business, from annual compliance filings and tax planning to advisory on expansion or restructuring.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS: 6 steps from document -->
+  
+  <div id="bs-process" class="gst-process-wrap gst-scroll" style="background:var(--light)">
+    <div class="gst-process-inner">
+      <div class="stag" style="color:var(--gold)">How It Works</div>
+      <h2 class="ht">Our Business Setup <em>Process</em></h2>
+      <p class="ssub on-dark" style="margin-bottom:1.2rem">A six-step process from initial consultation through to ongoing compliance monitoring.</p>
+      <div style="width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;padding:1.5rem 0 2.2rem;max-width:1060px;margin:0 auto">
+        <svg viewBox="0 0 990 277" style="width:100%;min-width:680px;display:block;" xmlns="http://www.w3.org/2000/svg">
+
+  <rect x="29" y="22" width="130" height="130" rx="6" fill="rgba(0,0,0,0.1)"/>
+  <rect x="25" y="18" width="130" height="130" rx="6" fill="#1A5276"/>
+  <rect x="36" y="29" width="108" height="108" rx="4" fill="white"/>
+  <rect x="42" y="35" width="96" height="96" rx="3" fill="#D6E4F0"/>
+  <rect x="25" y="18" width="8" height="8" rx="2" fill="#1A5276"/>
+  <rect x="147" y="18" width="8" height="8" rx="2" fill="#1A5276"/>
+  <rect x="25" y="140" width="8" height="8" rx="2" fill="#1A5276"/>
+  <rect x="147" y="140" width="8" height="8" rx="2" fill="#1A5276"/>
+  <text x="90" y="91" text-anchor="middle" font-family="Inter,sans-serif" font-size="28" font-weight="800" fill="#1A5276">01</text>
+  <text x="90" y="166" text-anchor="middle" font-family="Inter,sans-serif" font-size="11.5" font-weight="700" fill="#1A5276">Initial</text>
+  <text x="90" y="181" text-anchor="middle" font-family="Inter,sans-serif" font-size="11.5" font-weight="700" fill="#1A5276">Consultation</text>
+  <line x1="34" y1="200" x2="146" y2="200" stroke="#1A5276" stroke-width="0.8" opacity="0.25"/>
+  <text x="90" y="212" text-anchor="middle" font-family="Inter,sans-serif" font-size="8.8" fill="#4A5568">Discuss your business idea,</text>
+  <text x="90" y="225" text-anchor="middle" font-family="Inter,sans-serif" font-size="8.8" fill="#4A5568">goals and existing operations;</text>
+  <text x="90" y="238" text-anchor="middle" font-family="Inter,sans-serif" font-size="8.8" fill="#4A5568">select optimal structure.</text>
+
+  <rect x="191" y="22" width="130" height="130" rx="6" fill="rgba(0,0,0,0.1)"/>
+  <rect x="187" y="18" width="130" height="130" rx="6" fill="#6C3483"/>
+  <rect x="198" y="29" width="108" height="108" rx="4" fill="white"/>
+  <rect x="204" y="35" width="96" height="96" rx="3" fill="#EEE0F7"/>
+  <rect x="187" y="18" width="8" height="8" rx="2" fill="#6C3483"/>
+  <rect x="309" y="18" width="8" height="8" rx="2" fill="#6C3483"/>
+  <rect x="187" y="140" width="8" height="8" rx="2" fill="#6C3483"/>
+  <rect x="309" y="140" width="8" height="8" rx="2" fill="#6C3483"/>
+  <text x="252" y="91" text-anchor="middle" font-family="Inter,sans-serif" font-size="28" font-weight="800" fill="#6C3483">02</text>
+  <text x="252" y="166" text-anchor="middle" font-family="Inter,sans-serif" font-size="11.5" font-weight="700" fill="#6C3483">Documentation</text>
+  <text x="252" y="181" text-anchor="middle" font-family="Inter,sans-serif" font-size="11.5" font-weight="700" fill="#6C3483">& Registration</text>
+  <line x1="196" y1="200" x2="308" y2="200" stroke="#6C3483" stroke-width="0.8" opacity="0.25"/>
+  <text x="252" y="212" text-anchor="middle" font-family="Inter,sans-serif" font-size="8.8" fill="#4A5568">Prepare and file all necessary</text>
+  <text x="252" y="225" text-anchor="middle" font-family="Inter,sans-serif" font-size="8.8" fill="#4A5568">documents with the Registrar</text>
+  <text x="252" y="238" text-anchor="middle" font-family="Inter,sans-serif" font-size="8.8" fill="#4A5568">of Companies (ROC).</text>
+
+  <rect x="353" y="22" width="130" height="130" rx="6" fill="rgba(0,0,0,0.1)"/>
+  <rect x="349" y="18" width="130" height="130" rx="6" fill="#1E8449"/>
+  <rect x="360" y="29" width="108" height="108" rx="4" fill="white"/>
+  <rect x="366" y="35" width="96" height="96" rx="3" fill="#D5EAD9"/>
+  <rect x="349" y="18" width="8" height="8" rx="2" fill="#1E8449"/>
+  <rect x="471" y="18" width="8" height="8" rx="2" fill="#1E8449"/>
+  <rect x="349" y="140" width="8" height="8" rx="2" fill="#1E8449"/>
+  <rect x="471" y="140" width="8" height="8" rx="2" fill="#1E8449"/>
+  <text x="414" y="91" text-anchor="middle" font-family="Inter,sans-serif" font-size="28" font-weight="800" fill="#1E8449">03</text>
+  <text x="414" y="166" text-anchor="middle" font-family="Inter,sans-serif" font-size="11.5" font-weight="700" fill="#1E8449">Licenses &</text>
+  <text x="414" y="181" text-anchor="middle" font-family="Inter,sans-serif" font-size="11.5" font-weight="700" fill="#1E8449">Bank Setup</text>
+  <line x1="358" y1="200" x2="470" y2="200" stroke="#1E8449" stroke-width="0.8" opacity="0.25"/>
+  <text x="414" y="212" text-anchor="middle" font-family="Inter,sans-serif" font-size="8.8" fill="#4A5568">Secure required licenses, GST</text>
+  <text x="414" y="225" text-anchor="middle" font-family="Inter,sans-serif" font-size="8.8" fill="#4A5568">registration and set up your</text>
+  <text x="414" y="238" text-anchor="middle" font-family="Inter,sans-serif" font-size="8.8" fill="#4A5568">business bank account.</text>
+
+  <rect x="515" y="22" width="130" height="130" rx="6" fill="rgba(0,0,0,0.1)"/>
+  <rect x="511" y="18" width="130" height="130" rx="6" fill="#B7770D"/>
+  <rect x="522" y="29" width="108" height="108" rx="4" fill="white"/>
+  <rect x="528" y="35" width="96" height="96" rx="3" fill="#FAE5D3"/>
+  <rect x="511" y="18" width="8" height="8" rx="2" fill="#B7770D"/>
+  <rect x="633" y="18" width="8" height="8" rx="2" fill="#B7770D"/>
+  <rect x="511" y="140" width="8" height="8" rx="2" fill="#B7770D"/>
+  <rect x="633" y="140" width="8" height="8" rx="2" fill="#B7770D"/>
+  <text x="576" y="91" text-anchor="middle" font-family="Inter,sans-serif" font-size="28" font-weight="800" fill="#B7770D">04</text>
+  <text x="576" y="166" text-anchor="middle" font-family="Inter,sans-serif" font-size="11.5" font-weight="700" fill="#B7770D">Compliance</text>
+  <text x="576" y="181" text-anchor="middle" font-family="Inter,sans-serif" font-size="11.5" font-weight="700" fill="#B7770D">& Tax Setup</text>
+  <line x1="520" y1="200" x2="632" y2="200" stroke="#B7770D" stroke-width="0.8" opacity="0.25"/>
+  <text x="576" y="212" text-anchor="middle" font-family="Inter,sans-serif" font-size="8.8" fill="#4A5568">Register PAN/TAN, set up TDS,</text>
+  <text x="576" y="225" text-anchor="middle" font-family="Inter,sans-serif" font-size="8.8" fill="#4A5568">accounting and payroll</text>
+  <text x="576" y="238" text-anchor="middle" font-family="Inter,sans-serif" font-size="8.8" fill="#4A5568">processes.</text>
+
+  <rect x="677" y="22" width="130" height="130" rx="6" fill="rgba(0,0,0,0.1)"/>
+  <rect x="673" y="18" width="130" height="130" rx="6" fill="#922B21"/>
+  <rect x="684" y="29" width="108" height="108" rx="4" fill="white"/>
+  <rect x="690" y="35" width="96" height="96" rx="3" fill="#F5CEC8"/>
+  <rect x="673" y="18" width="8" height="8" rx="2" fill="#922B21"/>
+  <rect x="795" y="18" width="8" height="8" rx="2" fill="#922B21"/>
+  <rect x="673" y="140" width="8" height="8" rx="2" fill="#922B21"/>
+  <rect x="795" y="140" width="8" height="8" rx="2" fill="#922B21"/>
+  <text x="738" y="91" text-anchor="middle" font-family="Inter,sans-serif" font-size="28" font-weight="800" fill="#922B21">05</text>
+  <text x="738" y="166" text-anchor="middle" font-family="Inter,sans-serif" font-size="11.5" font-weight="700" fill="#922B21">Implementation</text>
+  <text x="738" y="181" text-anchor="middle" font-family="Inter,sans-serif" font-size="11.5" font-weight="700" fill="#922B21">& Handover</text>
+  <line x1="682" y1="200" x2="794" y2="200" stroke="#922B21" stroke-width="0.8" opacity="0.25"/>
+  <text x="738" y="212" text-anchor="middle" font-family="Inter,sans-serif" font-size="8.8" fill="#4A5568">Hand over compliance calendar</text>
+  <text x="738" y="225" text-anchor="middle" font-family="Inter,sans-serif" font-size="8.8" fill="#4A5568">and all registration</text>
+  <text x="738" y="238" text-anchor="middle" font-family="Inter,sans-serif" font-size="8.8" fill="#4A5568">documentation.</text>
+
+  <rect x="839" y="22" width="130" height="130" rx="6" fill="rgba(0,0,0,0.1)"/>
+  <rect x="835" y="18" width="130" height="130" rx="6" fill="#0E6655"/>
+  <rect x="846" y="29" width="108" height="108" rx="4" fill="white"/>
+  <rect x="852" y="35" width="96" height="96" rx="3" fill="#D0EDE8"/>
+  <rect x="835" y="18" width="8" height="8" rx="2" fill="#0E6655"/>
+  <rect x="957" y="18" width="8" height="8" rx="2" fill="#0E6655"/>
+  <rect x="835" y="140" width="8" height="8" rx="2" fill="#0E6655"/>
+  <rect x="957" y="140" width="8" height="8" rx="2" fill="#0E6655"/>
+  <text x="900" y="91" text-anchor="middle" font-family="Inter,sans-serif" font-size="28" font-weight="800" fill="#0E6655">06</text>
+  <text x="900" y="166" text-anchor="middle" font-family="Inter,sans-serif" font-size="11.5" font-weight="700" fill="#0E6655">Ongoing</text>
+  <text x="900" y="181" text-anchor="middle" font-family="Inter,sans-serif" font-size="11.5" font-weight="700" fill="#0E6655">Advisory</text>
+  <line x1="844" y1="200" x2="956" y2="200" stroke="#0E6655" stroke-width="0.8" opacity="0.25"/>
+  <text x="900" y="212" text-anchor="middle" font-family="Inter,sans-serif" font-size="8.8" fill="#4A5568">Monitor compliance deadlines,</text>
+  <text x="900" y="225" text-anchor="middle" font-family="Inter,sans-serif" font-size="8.8" fill="#4A5568">tax obligations and regulatory</text>
+  <text x="900" y="238" text-anchor="middle" font-family="Inter,sans-serif" font-size="8.8" fill="#4A5568">developments.</text>
+
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <!-- ENGAGEMENT MODELS: 3 from document -->
+  <div id="bs-engagement" class="gst-eng-wrap gst-scroll">
+    <div class="gst-eng-inner">
+      <div class="stag">Engagement</div>
+      <h2 class="ht">Choose Your <em>Engagement Model</em></h2>
+      <p class="ssub" style="margin-bottom:0">
+        Each model is designed to provide the right level of expertise when you need it, ensuring you are never alone in your business journey.
+      </p>
+
+      <div class="gst-eng-grid">
+
+        <div class="gst-eng-card">
+          <div class="gst-eng-top">
+            <div class="gst-eng-letter">A</div>
+            <div class="gst-eng-badge">Project-Based</div>
+            <h3>Project-Based</h3>
+            <p>For one-time needs like entity incorporation, license application, or business plan development. We deliver specific outcomes such as completed registration or customised business plan.</p>
+          </div>
+          <div class="gst-eng-divider"></div>
+          <div class="gst-eng-body">
+            <ul class="gst-eng-feat">
+              <li>Entity incorporation and registration</li>
+              <li>License application and procurement</li>
+              <li>Business plan development</li>
+              <li>Defined scope and deliverables</li>
+            </ul>
+          </div>
+          <button class="bgs" onclick="go('contact')" style="margin:0 1.8rem 1.8rem;width:calc(100% - 3.6rem)">Get a Proposal</button>
+        </div>
+
+        <div class="gst-eng-card" style="border-color:var(--gold);box-shadow:0 0 0 1px var(--gold)">
+          <div class="gst-eng-top" style="background:linear-gradient(135deg,var(--navy),rgba(201,168,76,.18))">
+            <div class="gst-eng-letter">B</div>
+            <div class="gst-eng-badge" style="background:var(--gold);color:var(--white);border-color:var(--gold)">Retainer</div>
+            <h3>Retainer Advisory</h3>
+            <p>Ongoing partnership offering continuous support for your startup. This includes regular compliance checks, monthly advisory sessions, and quick responses to any questions as your business grows.</p>
+          </div>
+          <div class="gst-eng-divider"></div>
+          <div class="gst-eng-body">
+            <ul class="gst-eng-feat">
+              <li>Regular compliance monitoring</li>
+              <li>Monthly advisory sessions</li>
+              <li>Annual filings and tax planning</li>
+              <li>Continuous growth advisory</li>
+            </ul>
+          </div>
+          <button class="bgs" onclick="go('contact')" style="margin:0 1.8rem 1.8rem;width:calc(100% - 3.6rem)">Start Retainer Advisory</button>
+        </div>
+
+        <div class="gst-eng-card">
+          <div class="gst-eng-top">
+            <div class="gst-eng-letter">C</div>
+            <div class="gst-eng-badge">Consultation</div>
+            <h3>Consultation Service</h3>
+            <p>Short-term guidance for targeted issues. Ideal if you need advice on a particular question such as choosing a new business structure or addressing a one-off compliance concern.</p>
+          </div>
+          <div class="gst-eng-divider"></div>
+          <div class="gst-eng-body">
+            <ul class="gst-eng-feat">
+              <li>Business structure advisory</li>
+              <li>One-off compliance queries</li>
+              <li>Targeted and focused guidance</li>
+              <li>Quick and time-efficient support</li>
+            </ul>
+          </div>
+          <button class="bgs" onclick="go('contact')" style="margin:0 1.8rem 1.8rem;width:calc(100% - 3.6rem)">Request Consultation</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTACT / FINAL CTA -->
+  <div id="bs-contact" class="gst-cta-wrap gst-scroll">
+    <div class="gst-cta-inner">
+
+      <div class="gst-cta-left">
+        <div class="stag" style="color:var(--gold)">Contact</div>
+        <h2>Launch Your Business<br/><em>with Expert Support</em></h2>
+        <p style="font-size:.93rem;line-height:1.82;color:var(--tdim);margin-bottom:1.6rem">
+          Launching a business is complex, but you do not have to do it alone. Our expert setup services ensure every regulatory detail is handled, so you can start operations smoothly. Contact V J Desai and Co. today to streamline your business launch and build a foundation for success.
+        </p>
+      </div>
+
+      <div class="gst-cta-right">
+        <h3>Book a Consultation</h3>
+        <p style="font-size:.86rem;line-height:1.8;color:rgba(255,255,255,.55);margin-bottom:1.8rem">
+          Our team will assess your requirements and guide you through every step of the business setup process, from entity formation to full compliance readiness.
+        </p>
+        <button class="bgs" onclick="go('contact')" style="width:100%;justify-content:center;padding:.95rem;margin-bottom:1.8rem">
+          Book a Consultation
+        </button>
+
+        <!-- Internal links from document -->
+        <div style="padding-top:1.5rem;border-top:1px solid rgba(255,255,255,.08)">
+          <div style="font-size:.68rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.35);margin-bottom:.85rem">Related Services</div>
+          <div style="display:flex;flex-direction:column;gap:.5rem">
+            <a onclick="go('biz-setup')" style="font-size:.82rem;color:rgba(201,168,76,.8);cursor:pointer">Company Registration Services</a>
+            <a onclick="go('gst')"       style="font-size:.82rem;color:rgba(201,168,76,.8);cursor:pointer">GST Compliance Services</a>
+            <a onclick="go('dtax')"      style="font-size:.82rem;color:rgba(201,168,76,.8);cursor:pointer">Tax Advisory Services</a>
+            <a onclick="go('audit')"     style="font-size:.82rem;color:rgba(201,168,76,.8);cursor:pointer">Labour Law Compliance</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+</main>
+
+<!-- SHARED FOOTER (loaded by include.js) -->
+<div data-include="../components/footer.html?v=8"></div>
+
+<!-- SITE JS -->
+<script src="../assets/js/include.js?v=2"><\/script>
+<script src="../assets/js/nav.js?v=3"><\/script>
+<script src="../assets/js/main.js"><\/script>
+<script src="../assets/js/lock.js?v=2"><\/script>
+
+</body>
+</html>`;export{t as default};

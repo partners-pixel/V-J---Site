@@ -1,0 +1,213 @@
+const n=`\uFEFF<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+  <meta http-equiv="Pragma" content="no-cache"/>
+  <meta http-equiv="Expires" content="0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sitemap | V J Desai &amp; Co. LLP</title>
+
+  <meta name="description" content="Sitemap, all pages of V J Desai &amp; Co. LLP, Chartered Accountants."/>
+  <meta name="robots" content="noindex, nofollow"/>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+
+  <link rel="stylesheet" href="../assets/css/variables.css?v=2"/>
+  <link rel="stylesheet" href="../assets/css/base.css?v=3"/>
+  <link rel="stylesheet" href="../assets/css/nav.css?v=6"/>
+  <link rel="stylesheet" href="../assets/css/footer.css?v=6"/>
+  <link rel="stylesheet" href="../assets/css/components.css?v=6"/>
+
+  <style>
+    .smp-grid{
+      display:grid;
+      grid-template-columns:repeat(3, 1fr);
+      gap:1.6rem;
+      margin-top:2.6rem;
+    }
+    .smp-card{
+      background:var(--white);
+      border:1px solid rgba(0,0,0,.07);
+      border-top:3px solid var(--gold);
+      border-radius:10px;
+      padding:1.6rem 1.7rem;
+    }
+    .smp-card > h3{
+      font-family:'EB Garamond',serif;
+      font-size:1.1rem;
+      font-weight:700;
+      color:var(--tdark);
+      margin-bottom:.9rem;
+    }
+    .smp-card > h3 a{ color:inherit; }
+    .smp-card > h3 a:hover{ color:var(--gold); }
+    .smp-sub{
+      font-size:.66rem;
+      font-weight:700;
+      letter-spacing:.12em;
+      text-transform:uppercase;
+      color:var(--gold);
+      margin:1rem 0 .45rem;
+    }
+    .smp-card ul{
+      list-style:none;
+      margin:0;
+      padding:0;
+      display:flex;
+      flex-direction:column;
+      gap:.42rem;
+    }
+    .smp-card ul li a{
+      font-size:.85rem;
+      color:var(--tmute);
+      text-decoration:none;
+      transition:var(--t);
+      display:inline-block;
+    }
+    .smp-card ul li a:hover{ color:var(--gold); padding-left:3px; }
+    @media(max-width:900px){ .smp-grid{ grid-template-columns:repeat(2, 1fr); } }
+    @media(max-width:560px){ .smp-grid{ grid-template-columns:1fr; } }
+  </style>
+</head>
+<body data-page="sitemap">
+
+<!-- SHARED NAV -->
+<div data-include="../components/nav.html?v=7"></div>
+
+<!-- PAGE CONTENT -->
+<main>
+
+  <section class="ph">
+    <div class="phi">
+      <div class="bc">
+        <a href="index.html">Home</a><span>/</span>
+        <span>Sitemap</span>
+      </div>
+      <div class="pgbadge">Sitemap</div>
+      <h1>Site <em>Map</em></h1>
+      <p>Every page on the V J Desai &amp; Co. LLP website, organised by section.</p>
+    </div>
+  </section>
+
+  <section class="s" style="background:var(--white)">
+    <div class="si">
+      <div class="stag">All Pages</div>
+      <h2 class="ht">Browse the <em>Full Site</em></h2>
+
+      <div class="smp-grid">
+
+        <!-- 1. Home  +  2. About Us -->
+        <div class="smp-card">
+          <h3><a href="index.html">1. Home</a></h3>
+          <div class="smp-sub">2. About Us</div>
+          <ul>
+            <li><a href="why-choose-us.html">2.1 Why Choose Us</a></li>
+            <li><a href="team.html">2.2 Team</a></li>
+          </ul>
+        </div>
+
+        <!-- 3. GST / Indirect Tax -->
+        <div class="smp-card">
+          <h3><a href="gst.html">3. GST / Indirect Tax</a></h3>
+          <ul>
+            <li><a href="gst.html">3.1 GST</a></li>
+            <li><a href="gst-class.html">3.2 GST Classification</a></li>
+            <li><a href="gst-audit.html">3.3 GST Audit</a></li>
+            <li><a href="gst-dd.html">3.4 GST Due Diligence</a></li>
+            <li><a href="gst-lit.html">3.5 GST Litigation</a></li>
+            <li><a href="gst-opinion.html">3.6 GST Opinion</a></li>
+            <li><a href="gst-refund.html">3.7 GST – Refund</a></li>
+            <li><a href="gst-search.html">3.8 GST – Search Inquiry Support</a></li>
+            <li><a href="gst-ebill.html">3.9 GST E-Bill – Consultancy</a></li>
+          </ul>
+        </div>
+
+        <!-- 4. Direct Tax -->
+        <div class="smp-card">
+          <h3><a href="corp-tax.html">4. Direct Tax</a></h3>
+          <ul>
+            <li><a href="corp-tax.html">4.1 Corporate Tax</a></li>
+            <li><a href="income-tax-adv.html">4.2 Income Tax – Advisory</a></li>
+            <li><a href="income-tax.html">4.3 Income Tax</a></li>
+            <li><a href="nri-tax.html">4.4 NRI – Taxation</a></li>
+          </ul>
+        </div>
+
+        <!-- 5. Audit & Advisory -->
+        <div class="smp-card">
+          <h3><a href="stat-audit.html">5. Audit &amp; Advisory</a></h3>
+          <div class="smp-sub">5.1 Audit</div>
+          <ul>
+            <li><a href="stat-audit.html">5.1.1 Statutory Audit</a></li>
+            <li><a href="tax-audit.html">5.1.2 Tax Audit</a></li>
+            <li><a href="int-audit.html">5.1.3 Internal Audit</a></li>
+            <li><a href="comp-audit.html">5.1.4 Compliance Audit</a></li>
+          </ul>
+          <div class="smp-sub">5.2 Corporate Services</div>
+          <ul>
+            <li><a href="biz-setup.html">5.2.1 Business Setup Services</a></li>
+            <li><a href="biz-val.html">5.2.2 Business Valuation &amp; Restructuring</a></li>
+            <li><a href="company-law.html">5.2.3 Company Law</a></li>
+            <li><a href="exim.html">5.2.4 Exim Policy</a></li>
+            <li><a href="fema.html">5.2.5 FEMA</a></li>
+            <li><a href="mgmt-cfo.html">5.2.6 Management Consultancy &amp; CFO Services</a></li>
+          </ul>
+        </div>
+
+        <!-- 6. RERA -->
+        <div class="smp-card">
+          <h3><a href="rera-reg.html">6. RERA</a></h3>
+          <ul>
+            <li><a href="rera-reg.html">6.1 Project Registration Compliance</a></li>
+            <li><a href="rera-qud.html">6.2 Quarterly Updates Disclosure</a></li>
+            <li><a href="rera-ext.html">6.3 Project Extension Regulations</a></li>
+            <li><a href="rera-disp.html">6.4 RERA Dispute Response Support</a></li>
+          </ul>
+        </div>
+
+        <!-- 7. Knowledge Center -->
+        <div class="smp-card">
+          <h3><a href="kc.html">7. Knowledge Center</a></h3>
+          <ul>
+            <li><a href="kc-gst.html">7.1 GST</a></li>
+            <li><a href="kc-rera.html">7.2 RERA</a></li>
+            <li><a href="kc-dtax.html">7.3 Direct Tax</a></li>
+            <li><a href="kc-intl.html">7.4 International Tax</a></li>
+            <li><a href="kc-fema.html">7.5 FEMA &amp; EXIM</a></li>
+            <li><a href="kc-audit.html">7.6 Audit</a></li>
+            <li><a href="kc-glossary.html">7.7 Glossary</a></li>
+            <li><a href="kc-checklist.html">7.8 Checklists</a></li>
+          </ul>
+        </div>
+
+        <!-- 8–10. Career / Contact / Book a Consultant -->
+        <div class="smp-card">
+          <h3><a href="career.html">8. Career</a></h3>
+          <div class="smp-sub">More</div>
+          <ul>
+            <li><a href="contact.html">9. Contact Us</a></li>
+            <li><a href="contact.html">10. Book a Consultant</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- SHARED FOOTER -->
+<div data-include="../components/footer.html?v=8"></div>
+
+<!-- SITE JS -->
+<script src="../assets/js/include.js?v=2"><\/script>
+<script src="../assets/js/nav.js?v=3"><\/script>
+<script src="../assets/js/main.js"><\/script>
+<script src="../assets/js/lock.js?v=2"><\/script>
+
+</body>
+</html>
+`;export{n as default};

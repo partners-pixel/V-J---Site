@@ -1,0 +1,143 @@
+const t=`\uFEFF<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+  <meta http-equiv="Pragma" content="no-cache"/>
+  <meta http-equiv="Expires" content="0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Knowledge Center, Direct Tax | V J Desai &amp; Co. LLP</title>
+
+  <meta name="description" content="Knowledge Center, Direct Tax services, V J Desai &amp; Co. LLP, Chartered Accountants. ICAI registered, est. 1993, Ahmedabad."/>
+  <meta name="robots" content="noindex, nofollow"/>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+
+  <link rel="stylesheet" href="../assets/css/variables.css?v=2"/>
+  <link rel="stylesheet" href="../assets/css/base.css?v=3"/>
+  <link rel="stylesheet" href="../assets/css/nav.css?v=6"/>
+  <link rel="stylesheet" href="../assets/css/footer.css?v=6"/>
+  <link rel="stylesheet" href="../assets/css/components.css?v=6"/>
+</head>
+<body data-page="kc-dtax">
+
+<!-- SHARED NAV (loaded by include.js) -->
+<div data-include="../components/nav.html?v=7"></div>
+
+<!-- PAGE CONTENT -->
+<main>
+
+<div id="page-kc-dtax">
+<div class="ph"><div class="phi">
+    <div class="bc"><a onclick="go('home')">Home</a><span>/</span><a onclick="go('kc')">Knowledge Center</a><span>/</span><span>Direct Tax</span></div>
+    <div class="pgbadge">📋 Direct Tax</div>
+    <h1>Direct Tax <em>Knowledge Guide</em></h1>
+    <p>Income tax slabs, TDS rates, advance tax, capital gains, deductions, and Budget 2025-26 highlights for individuals and corporates.</p>
+  </div></div>
+  <div class="subnav"><div class="subnav-inner">
+    <a class="sn" href="#kc-dtax-slabs">Tax Slabs</a>
+    <a class="sn" href="#kc-dtax-tds">TDS Rates</a>
+    <a class="sn" href="#kc-dtax-deductions">Deductions</a>
+    <a class="sn" href="#kc-dtax-cg">Capital Gains</a>
+  </div></div>
+
+  <section id="kc-dtax-slabs" class="s scroll-sec" style="background:var(--white)"><div class="si">
+    <div class="stag">Income Tax Slabs FY 2025-26</div>
+    <h2 class="ht">Tax Slabs <em>AY 2026-27</em></h2>
+    <div class="cgrid">
+      <div>
+        <p style="font-size:.82rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gold);margin-bottom:.6rem">New Tax Regime (Default)</p>
+        <table class="tbl">
+          <thead><tr><th>Income Slab</th><th>Tax Rate</th></tr></thead>
+          <tbody>
+            <tr><td>Up to ₹3,00,000</td><td>Nil</td></tr>
+            <tr><td>₹3,00,001 – ₹7,00,000</td><td>5%</td></tr>
+            <tr><td>₹7,00,001 – ₹10,00,000</td><td>10%</td></tr>
+            <tr><td>₹10,00,001 – ₹12,00,000</td><td>15%</td></tr>
+            <tr><td>₹12,00,001 – ₹15,00,000</td><td>20%</td></tr>
+            <tr><td>Above ₹15,00,000</td><td>30%</td></tr>
+          </tbody>
+        </table>
+        <p style="font-size:.75rem;color:var(--tmute);margin-top:.6rem">Rebate u/s 87A: Tax rebate up to ₹25,000 for income up to ₹7 lakh.</p>
+      </div>
+      <div>
+        <p style="font-size:.82rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gold);margin-bottom:.6rem">Old Tax Regime</p>
+        <table class="tbl">
+          <thead><tr><th>Income Slab</th><th>Tax Rate</th></tr></thead>
+          <tbody>
+            <tr><td>Up to ₹2,50,000</td><td>Nil</td></tr>
+            <tr><td>₹2,50,001 – ₹5,00,000</td><td>5%</td></tr>
+            <tr><td>₹5,00,001 – ₹10,00,000</td><td>20%</td></tr>
+            <tr><td>Above ₹10,00,000</td><td>30%</td></tr>
+          </tbody>
+        </table>
+        <p style="font-size:.75rem;color:var(--tmute);margin-top:.6rem">Senior Citizens: Basic exemption ₹3 lakh. Super Senior Citizens: ₹5 lakh. Surcharge and cess apply.</p>
+      </div>
+    </div>
+  </div></section>
+
+  <section id="kc-dtax-tds" class="s scroll-sec" style="background:var(--light)"><div class="si">
+    <div class="stag">TDS Reference</div>
+    <h2 class="ht">TDS Rate Chart <em>FY 2025-26</em></h2>
+    <table class="tbl" style="margin-top:1.8rem">
+      <thead><tr><th>Section</th><th>Nature of Payment</th><th>Threshold</th><th>TDS Rate (Non-PAN)</th></tr></thead>
+      <tbody>
+        <tr><td>192</td><td>Salary</td><td>Basic exemption</td><td>As per slab</td></tr>
+        <tr><td>194A</td><td>Interest (Banks)</td><td>₹40,000 / ₹50,000 (Sr. Citizen)</td><td>10%</td></tr>
+        <tr><td>194C</td><td>Contractor payments</td><td>₹30,000 / ₹1,00,000 p.a.</td><td>1% (Ind/HUF) / 2%</td></tr>
+        <tr><td>194H</td><td>Commission / Brokerage</td><td>₹15,000</td><td>5%</td></tr>
+        <tr><td>194I</td><td>Rent</td><td>₹2,40,000 p.a.</td><td>2% (P&amp;M) / 10% (Land/Building)</td></tr>
+        <tr><td>194J</td><td>Professional / Technical fees</td><td>₹30,000</td><td>10% (Prof) / 2% (Technical)</td></tr>
+        <tr><td>194Q</td><td>Purchase of goods</td><td>₹50,00,000 p.a.</td><td>0.1%</td></tr>
+        <tr><td>194T</td><td>Partner salary/interest</td><td>₹20,000</td><td>10%</td></tr>
+        <tr><td>195</td><td>Payments to non-residents</td><td>Any amount</td><td>As per DTAA / IT Act</td></tr>
+      </tbody>
+    </table>
+  </div></section>
+
+  <section id="kc-dtax-deductions" class="s scroll-sec" style="background:var(--white)"><div class="si">
+    <div class="stag">Key Deductions</div>
+    <h2 class="ht">Important <em>Deductions &amp; Exemptions</em></h2>
+    <div class="dg">
+      <div class="dc"><div class="dci">🏠</div><h3>Section 80C, ₹1.5 Lakh</h3><p>LIC premium, PPF, ELSS, NSC, home loan principal, children's tuition fees, EPF contribution. Only under old regime.</p></div>
+      <div class="dc"><div class="dci">🏥</div><h3>Section 80D, Medical Insurance</h3><p>₹25,000 for self/family; ₹50,000 for senior citizen parents. Additional ₹5,000 for preventive health check-ups.</p></div>
+      <div class="dc"><div class="dci">📚</div><h3>Section 80E, Education Loan</h3><p>Full deduction on interest paid on education loan for higher studies. Available for 8 years from year of first repayment.</p></div>
+      <div class="dc"><div class="dci">🏡</div><h3>Section 24(b), Home Loan Interest</h3><p>₹2 lakh deduction on interest for self-occupied property. No limit for let-out property (set off restrictions apply).</p></div>
+      <div class="dc"><div class="dci">💰</div><h3>Section 80G, Donations</h3><p>50% or 100% deduction on donations to approved funds/institutions. Donations must be made via banking channels.</p></div>
+      <div class="dc"><div class="dci">📊</div><h3>Standard Deduction</h3><p>₹75,000 standard deduction available under the new tax regime for salaried employees from FY 2024-25 onwards.</p></div>
+    </div>
+  </div></section>
+
+  <section id="kc-dtax-cg" class="s scroll-sec" style="background:var(--light)"><div class="si">
+    <div class="stag">Capital Gains</div>
+    <h2 class="ht">Capital Gains <em>Tax Rates</em></h2>
+    <table class="tbl" style="margin-top:1.8rem">
+      <thead><tr><th>Asset Type</th><th>Short Term (STCG)</th><th>Holding Period</th><th>Long Term (LTCG)</th><th>Holding Period</th></tr></thead>
+      <tbody>
+        <tr><td>Listed Equity / Equity MF</td><td>20% (Sec 111A)</td><td>&lt;12 months</td><td>12.5% above ₹1.25L (Sec 112A)</td><td>≥12 months</td></tr>
+        <tr><td>Immovable Property</td><td>As per slab</td><td>&lt;24 months</td><td>12.5% (no indexation)</td><td>≥24 months</td></tr>
+        <tr><td>Debt Mutual Funds</td><td>As per slab</td><td>Any period</td><td>As per slab</td><td>Any period</td></tr>
+        <tr><td>Unlisted Shares</td><td>As per slab</td><td>&lt;24 months</td><td>12.5%</td><td>≥24 months</td></tr>
+        <tr><td>Gold / Jewellery</td><td>As per slab</td><td>&lt;24 months</td><td>12.5% (no indexation)</td><td>≥24 months</td></tr>
+      </tbody>
+    </table>
+    <p style="font-size:.78rem;color:var(--tmute);margin-top:.8rem">Note: Surcharge and health &amp; education cess of 4% applicable. Rates as per Finance Act 2024 applicable from FY 2024-25.</p>
+  </div></section>
+  <div class="ctab scroll-sec"><div class="ctabi"><div><h2>Need <em>direct tax advisory?</em></h2><p>Our team handles ITR filing, tax planning, TDS compliance, and representation before tax authorities.</p></div><button class="bgs" onclick="go('corp-tax')">Explore Tax Services →</button></div></div>
+</div>
+
+</main>
+
+<!-- SHARED FOOTER (loaded by include.js) -->
+<div data-include="../components/footer.html?v=8"></div>
+
+<!-- SITE JS -->
+<script src="../assets/js/include.js?v=2"><\/script>
+<script src="../assets/js/nav.js?v=3"><\/script>
+<script src="../assets/js/main.js"><\/script>
+<script src="../assets/js/lock.js?v=2"><\/script>
+
+</body>
+</html>`;export{t as default};

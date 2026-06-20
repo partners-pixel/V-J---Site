@@ -1,0 +1,338 @@
+const e=`\uFEFF<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+  <meta http-equiv="Pragma" content="no-cache"/>
+  <meta http-equiv="Expires" content="0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RERA Project Registration | V J Desai &amp; Co. LLP</title>
+
+  <meta name="description" content="RERA Project Registration services, V J Desai &amp; Co. LLP, Chartered Accountants. ICAI registered, est. 1993, Ahmedabad."/>
+  <meta name="robots" content="noindex, nofollow"/>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+
+  <link rel="stylesheet" href="../assets/css/variables.css?v=2"/>
+  <link rel="stylesheet" href="../assets/css/base.css?v=3"/>
+  <link rel="stylesheet" href="../assets/css/nav.css?v=6"/>
+  <link rel="stylesheet" href="../assets/css/footer.css?v=6"/>
+  <link rel="stylesheet" href="../assets/css/components.css?v=6"/>
+</head>
+<body data-page="rera-reg">
+
+<!-- SHARED NAV (loaded by include.js) -->
+<div data-include="../components/nav.html?v=7"></div>
+
+<!-- PAGE CONTENT -->
+<main>
+
+<div id="page-rera-reg">
+<!-- Breadcrumb -->
+  <div class="ph" style="padding:1.4rem 5vw;min-height:auto;background:var(--navy-deep)">
+    <div class="phi">
+      <div class="bc">
+        <a onclick="go('home')">Home</a><span>/</span>
+        <a onclick="go('rera')">RERA</a><span>/</span>
+        <span>Project Registration Compliance</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <section class="gst-hero">
+    <div class="gst-hero-inner" style="grid-template-columns:1fr;max-width:900px">
+      <div>
+        <div class="gst-hero-eyebrow">Project Registration Compliance Service</div>
+        <h1 style="font-size:clamp(2rem,3.4vw,3rem)">
+          Streamline Your RERA<br/><em>Project Registration</em>
+        </h1>
+        <p class="gst-hero-lead">
+          Launching a real estate project? Our Chartered Accountant-led team guides you through mandatory RERA registration and compliance.
+        </p>
+        <p style="font-size:.93rem;line-height:1.88;color:var(--tdim);margin-bottom:.9rem">
+          We simplify project registration and compliance under RERA so you can focus on development. Our experts handle every detail: from preparing project documents and filling RERA Forms to liaising with authorities, setting up escrow accounts, and ensuring ongoing reporting.
+        </p>
+        <p style="font-size:.93rem;line-height:1.88;color:var(--tdim);margin-bottom:.9rem">
+          We assist with documentation, filing Forms, and securing approvals under state RERA rules. From escrow account setup to quarterly updates, we cover every compliance step.
+        </p>
+        <p style="font-size:.93rem;line-height:1.88;color:var(--tdim);margin-bottom:1.8rem">
+          With our guidance, promoters meet all state RERA regulations smoothly, avoiding delays and penalties. Partner with V J Desai and Co. to register your project efficiently and maintain full regulatory compliance.
+        </p>
+        <button class="bgs" onclick="go('contact')">Book a Consultation</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- STICKY SUB-NAV -->
+  <div class="gst-subnav">
+    <div class="gst-subnav-inner">
+      <a class="gsn active" href="#rreg-services">Our Services</a>
+      <a class="gsn"        href="#rreg-process">How It Works</a>
+      <a class="gsn"        href="#rreg-engagement">Engagement</a>
+      <a class="gsn"        href="#rreg-contact">Contact</a>
+    </div>
+  </div>
+
+  <!-- OUR SERVICES: 5 services from document -->
+  <section id="rreg-services" class="gst-services-wrap gst-scroll">
+    <div style="max-width:1440px;margin:0 auto">
+      <div class="stag">Our Services</div>
+      <h2 class="ht">Project Registration <em>Services We Provide</em></h2>
+      <p class="ssub" style="margin-bottom:2.6rem">
+        Each service is tailored to your project's scale and location. Whether it is one new project or a portfolio under RERA, we apply practical solutions reducing compliance burden and keeping your project on schedule.
+      </p>
+
+      <div class="gst-svc-grid" style="grid-template-columns:repeat(3,1fr)">
+
+        <div class="gst-svc-item">
+          <div class="gst-svc-ico">📋</div>
+          <h3>Project Registration Services</h3>
+          <p>We handle end-to-end RERA registration: creating promoter profiles, filling Form A with project details (land title, layouts, approvals, etc.), and obtaining the RERA registration number. We liaise with RERA authorities to secure approvals and fulfil any clarifications quickly.</p>
+        </div>
+
+        <div class="gst-svc-item">
+          <div class="gst-svc-ico">📂</div>
+          <h3>Document Management and Escrow Setup</h3>
+          <p>We organise all required documents (title deeds, approvals, architectural plans, financial statements, etc.) in the prescribed format. We also guide escrow account setup, ensuring 70% of buyer funds are deposited in a designated project account and withdrawals are certified per RERA rules.</p>
+        </div>
+
+        <div class="gst-svc-item">
+          <div class="gst-svc-ico">🔄</div>
+          <h3>Compliance and Reporting</h3>
+          <p>After registration, we manage ongoing compliance including quarterly progress reports, updates on approvals and changes, and annual filings. We ensure you meet RERA disclosure norms and prepare the periodic returns and handle communications with the RERA regulator.</p>
+        </div>
+
+        <div class="gst-svc-item">
+          <div class="gst-svc-ico">🔍</div>
+          <h3>Due Diligence and Risk Management</h3>
+          <p>We conduct thorough title and document audits before registration to pre-empt issues. Our CA review minimises legal or financial risks such as encumbrances and funding shortfalls. We advise on governance matters so your project remains RERA-compliant in structure and finance.</p>
+        </div>
+
+        <div class="gst-svc-item">
+          <div class="gst-svc-ico">🎓</div>
+          <h3>Advisory and Training</h3>
+          <p>We counsel you on RERA mandates including cap on advance payments, carpet-area calculations, and quality warranty obligations. We also train your team on compliance processes so everyone follows best practices.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS, DESIGN 9: TWO-COLUMN MILESTONE GRID ── -->
+  <div id="rreg-process" class="gst-process-wrap gst-scroll" style="background:var(--light)">
+    <div class="gst-process-inner">
+      <div class="stag">How It Works</div>
+      <h2 class="ht">Our Project Registration <em>Process</em></h2>
+      <p class="ssub" style="margin-bottom:1.2rem">
+        By following these steps, we ensure your project remains fully compliant at each stage. You benefit from a smooth approval journey and maintain trust with buyers and regulators alike.
+      </p>
+
+      <div class="pt-milestone">
+
+        <div class="pt-ms" style="border-left:4px solid #1A5276;border-top:2px solid rgba(26,82,118,0.12)">
+          <div class="pt-ms-corner" style="border-color:transparent rgba(26,82,118,0.18) transparent transparent"></div>
+          <div class="pt-ms-num" style="color:#1A5276">01</div>
+          <div class="pt-ms-body">
+            <div class="pt-ms-meta">
+              <div class="pt-ms-ico">🔎</div>
+              <div class="pt-ms-step" style="color:#1A5276">Step 01</div>
+            </div>
+            <h4>Initial Assessment</h4>
+            <p>We start by reviewing your project specifics and location to confirm RERA applicability. We discuss land status, approvals obtained, financing, and timelines. This helps us identify required actions such as SEZ clearance and licenses, and plan the registration work.</p>
+          </div>
+        </div>
+
+        <div class="pt-ms" style="border-left:4px solid #6C3483;border-top:2px solid rgba(108,52,131,0.12)">
+          <div class="pt-ms-corner" style="border-color:transparent rgba(108,52,131,0.18) transparent transparent"></div>
+          <div class="pt-ms-num" style="color:#6C3483">02</div>
+          <div class="pt-ms-body">
+            <div class="pt-ms-meta">
+              <div class="pt-ms-ico">📂</div>
+              <div class="pt-ms-step" style="color:#6C3483">Step 02</div>
+            </div>
+            <h4>Preparation and Approval</h4>
+            <p>Our team compiles your project documents including title deeds, sanctioned plan, land-use certificates, encumbrance certificates, agreement copies, detailed layouts, and specifications. We coordinate with civil and structural engineers and architects to certify plans.</p>
+          </div>
+        </div>
+
+        <div class="pt-ms" style="border-left:4px solid #1E8449;border-top:2px solid rgba(30,132,73,0.12)">
+          <div class="pt-ms-corner" style="border-color:transparent rgba(30,132,73,0.18) transparent transparent"></div>
+          <div class="pt-ms-num" style="color:#1E8449">03</div>
+          <div class="pt-ms-body">
+            <div class="pt-ms-meta">
+              <div class="pt-ms-ico">📝</div>
+              <div class="pt-ms-step" style="color:#1E8449">Step 03</div>
+            </div>
+            <h4>Form Filing and Submission</h4>
+            <p>We fill RERA Form A (project registration form) and Form B (promoter disclosures) with accurate project and promoter information. We calculate and submit the registration fee and upload all documents to the state RERA portal, double-checking entries to avoid queries or rejections.</p>
+          </div>
+        </div>
+
+        <div class="pt-ms" style="border-left:4px solid #B7770D;border-top:2px solid rgba(183,119,13,0.12)">
+          <div class="pt-ms-corner" style="border-color:transparent rgba(183,119,13,0.18) transparent transparent"></div>
+          <div class="pt-ms-num" style="color:#B7770D">04</div>
+          <div class="pt-ms-body">
+            <div class="pt-ms-meta">
+              <div class="pt-ms-ico">🤝</div>
+              <div class="pt-ms-step" style="color:#B7770D">Step 04</div>
+            </div>
+            <h4>Follow-Up and Approval</h4>
+            <p>We track the application on the RERA portal and promptly respond to any authority queries. We coordinate with you and RERA to resolve any physical verification or clarification requirements quickly, and obtain the RERA registration certificate and unique registration number.</p>
+          </div>
+        </div>
+
+        <div class="pt-ms" style="border-left:4px solid #922B21;border-top:2px solid rgba(146,43,33,0.12)">
+          <div class="pt-ms-corner" style="border-color:transparent rgba(146,43,33,0.18) transparent transparent"></div>
+          <div class="pt-ms-num" style="color:#922B21">05</div>
+          <div class="pt-ms-body">
+            <div class="pt-ms-meta">
+              <div class="pt-ms-ico">🏦</div>
+              <div class="pt-ms-step" style="color:#922B21">Step 05</div>
+            </div>
+            <h4>Escrow Setup and Disclosure</h4>
+            <p>After registration, we help set up the mandated escrow account for project funds. We ensure 70% of buyer payments go into this account and withdrawals comply with percentage completion rules. We also list the project online with all RERA disclosures for buyer access.</p>
+          </div>
+        </div>
+
+        <div class="pt-ms" style="border-left:4px solid #0E6655;border-top:2px solid rgba(14,102,85,0.12)">
+          <div class="pt-ms-corner" style="border-color:transparent rgba(14,102,85,0.18) transparent transparent"></div>
+          <div class="pt-ms-num" style="color:#0E6655">06</div>
+          <div class="pt-ms-body">
+            <div class="pt-ms-meta">
+              <div class="pt-ms-ico">🔄</div>
+              <div class="pt-ms-step" style="color:#0E6655">Step 06</div>
+            </div>
+            <h4>Ongoing Compliance</h4>
+            <p>We prepare quarterly and annual updates, posting project progress, revised timelines or budget, and any changed floor plans or permissions on the RERA portal. We remind you of deadlines, manage returns, and assist with submissions or dispute documentation under RERA.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ENGAGEMENT MODELS: 3 from document -->
+  <div id="rreg-engagement" class="gst-eng-wrap gst-scroll">
+    <div class="gst-eng-inner">
+      <div class="stag">Engagement</div>
+      <h2 class="ht">Choose Your <em>Engagement Model</em></h2>
+      <p class="ssub" style="margin-bottom:0">
+        Each model ensures you get the right level of expertise at the right time, helping you manage costs while staying fully compliant.
+      </p>
+
+      <div class="gst-eng-grid">
+
+        <div class="gst-eng-card">
+          <div class="gst-eng-top">
+            <div class="gst-eng-letter">A</div>
+            <div class="gst-eng-badge">Project-Based</div>
+            <h3>Project-Based</h3>
+            <p>For one-time registrations or compliance tasks. Ideal if you need to register a specific project or clear a backlog. We deliver defined outcomes within agreed timelines.</p>
+          </div>
+          <div class="gst-eng-divider"></div>
+          <div class="gst-eng-body">
+            <ul class="gst-eng-feat">
+              <li>Specific project RERA registration</li>
+              <li>Compliance backlog clearance</li>
+              <li>Completed registration certificate</li>
+              <li>Defined scope and timeline</li>
+            </ul>
+          </div>
+          <button class="bgs" onclick="go('contact')" style="margin:0 1.8rem 1.8rem;width:calc(100% - 3.6rem)">Get a Proposal</button>
+        </div>
+
+        <div class="gst-eng-card" style="border-color:var(--gold);box-shadow:0 0 0 1px var(--gold)">
+          <div class="gst-eng-top" style="background:linear-gradient(135deg,var(--navy),rgba(201,168,76,.18))">
+            <div class="gst-eng-letter">B</div>
+            <div class="gst-eng-badge" style="background:var(--gold);color:var(--white);border-color:var(--gold)">Retainer</div>
+            <h3>Retainer Advisory</h3>
+            <p>Ongoing partnership for continuous compliance. Best for developers with multiple projects who need regular support for quarterly and annual RERA filings and buyer query responses.</p>
+          </div>
+          <div class="gst-eng-divider"></div>
+          <div class="gst-eng-body">
+            <ul class="gst-eng-feat">
+              <li>Dedicated advisory team</li>
+              <li>Quarterly and annual RERA filings</li>
+              <li>Buyer query response support</li>
+              <li>Disclosure updates management</li>
+            </ul>
+          </div>
+          <button class="bgs" onclick="go('contact')" style="margin:0 1.8rem 1.8rem;width:calc(100% - 3.6rem)">Start Retainer Advisory</button>
+        </div>
+
+        <div class="gst-eng-card">
+          <div class="gst-eng-top">
+            <div class="gst-eng-letter">C</div>
+            <div class="gst-eng-badge">Consultation</div>
+            <h3>Consultation Service</h3>
+            <p>On-demand advisory for targeted questions or issues. Useful if you have a specific RERA compliance query such as escrow setup or a penalty notice without a full engagement.</p>
+          </div>
+          <div class="gst-eng-divider"></div>
+          <div class="gst-eng-body">
+            <ul class="gst-eng-feat">
+              <li>Escrow setup advisory</li>
+              <li>Penalty notice review</li>
+              <li>Specific compliance queries</li>
+              <li>No long-term commitment required</li>
+            </ul>
+          </div>
+          <button class="bgs" onclick="go('contact')" style="margin:0 1.8rem 1.8rem;width:calc(100% - 3.6rem)">Request Consultation</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTACT / FINAL CTA -->
+  <div id="rreg-contact" class="gst-cta-wrap gst-scroll">
+    <div class="gst-cta-inner">
+
+      <div class="gst-cta-left">
+        <div class="stag" style="color:var(--gold)">Contact</div>
+        <h2>Stay Compliant,<br/><em>Build with Confidence</em></h2>
+        <p style="font-size:.93rem;line-height:1.82;color:var(--tdim);margin-bottom:1.6rem">
+          Our Project Registration Compliance services make RERA simple, managing your filings, documentation, and reporting so you can focus on development. Contact V J Desai and Co. today to streamline your RERA registration and keep your projects on track for success.
+        </p>
+      </div>
+
+      <div class="gst-cta-right">
+        <h3>Book a Consultation</h3>
+        <p style="font-size:.86rem;line-height:1.8;color:rgba(255,255,255,.55);margin-bottom:1.8rem">
+          Our RERA compliance team will review your project requirements and manage the entire registration and compliance process on your behalf.
+        </p>
+        <button class="bgs" onclick="go('contact')" style="width:100%;justify-content:center;padding:.95rem;margin-bottom:1.8rem">
+          Book a Consultation
+        </button>
+
+        <!-- Internal links from document -->
+        <div style="padding-top:1.5rem;border-top:1px solid rgba(255,255,255,.08)">
+          <div style="font-size:.68rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.35);margin-bottom:.85rem">Related Services</div>
+          <div style="display:flex;flex-direction:column;gap:.5rem">
+            <a onclick="go('gst')"   style="font-size:.82rem;color:rgba(201,168,76,.8);cursor:pointer">GST Compliance Services</a>
+            <a onclick="go('rera')"  style="font-size:.82rem;color:rgba(201,168,76,.8);cursor:pointer">Real Estate Advisory Services</a>
+            <a onclick="go('audit')" style="font-size:.82rem;color:rgba(201,168,76,.8);cursor:pointer">FEMA Advisory Services</a>
+            <a onclick="go('audit')" style="font-size:.82rem;color:rgba(201,168,76,.8);cursor:pointer">Audit and Assurance Services</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+</main>
+
+<!-- SHARED FOOTER (loaded by include.js) -->
+<div data-include="../components/footer.html?v=8"></div>
+
+<!-- SITE JS -->
+<script src="../assets/js/include.js?v=2"><\/script>
+<script src="../assets/js/nav.js?v=3"><\/script>
+<script src="../assets/js/main.js"><\/script>
+<script src="../assets/js/lock.js?v=2"><\/script>
+
+</body>
+</html>`;export{e as default};

@@ -1,0 +1,523 @@
+const n=`\uFEFF<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+  <meta http-equiv="Pragma" content="no-cache"/>
+  <meta http-equiv="Expires" content="0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GST Due Diligence | V J Desai &amp; Co. LLP</title>
+
+  <meta name="description" content="GST Due Diligence services, V J Desai &amp; Co. LLP, Chartered Accountants. ICAI registered, est. 1993, Ahmedabad."/>
+  <meta name="robots" content="noindex, nofollow"/>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+
+  <link rel="stylesheet" href="../assets/css/variables.css?v=2"/>
+  <link rel="stylesheet" href="../assets/css/base.css?v=3"/>
+  <link rel="stylesheet" href="../assets/css/nav.css?v=6"/>
+  <link rel="stylesheet" href="../assets/css/footer.css?v=6"/>
+  <link rel="stylesheet" href="../assets/css/components.css?v=6"/>
+</head>
+<body data-page="gst-dd">
+
+<!-- SHARED NAV (loaded by include.js) -->
+<div data-include="../components/nav.html?v=7"></div>
+
+<!-- PAGE CONTENT -->
+<main>
+
+<div id="page-gst-dd">
+<!-- Breadcrumb -->
+  <div class="ph" style="padding:1.4rem 5vw;min-height:auto;background:var(--navy-deep)">
+    <div class="phi">
+      <div class="bc">
+        <a onclick="go('home')">Home</a><span>/</span>
+        <a onclick="go('gst')">GST / Indirect Tax</a><span>/</span>
+        <span>GST Due Diligence Services</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <section class="gst-hero">
+    <div class="gst-hero-inner" style="grid-template-columns:1fr;max-width:900px">
+      <div>
+        <div class="gst-hero-eyebrow">GST Due Diligence Services</div>
+        <h1 style="font-size:clamp(2.2rem,3.6vw,3.2rem)">
+          Strengthen Your GST Compliance<br/><em>with Due Diligence</em>
+        </h1>
+        <p class="gst-hero-lead">
+          Strengthen your GST compliance with a detailed due diligence review. We evaluate your filings, systems, and transaction-level data to identify risks and correct inconsistencies before they escalate.
+        </p>
+        <p style="font-size:.93rem;line-height:1.88;color:var(--tdim);margin-bottom:.9rem">
+          We conduct structured GST due diligence to identify gaps across returns, records, and transaction flows before they translate into tax exposure. Our approach focuses on validating return accuracy, reconciling filings, assessing input tax credit positions, and aligning systems with compliance requirements.
+        </p>
+        <p style="font-size:.93rem;line-height:1.88;color:var(--tdim);margin-bottom:1.8rem">
+          This ensures your GST framework is consistent, defensible, and operationally reliable. Work with V J Desai and Co. to establish clarity across your GST processes and maintain control over compliance outcomes.
+        </p>
+        <button class="bgs" onclick="go('contact')">Book a Consultation</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- STICKY SUB-NAV -->
+  <div class="gst-subnav">
+    <div class="gst-subnav-inner">
+      <a class="gsn active" href="#gdd-services">Our Services</a>
+      <a class="gsn"        href="#gdd-process">How It Works</a>
+      <a class="gsn"        href="#gdd-engagement">Engagement</a>
+      <a class="gsn"        href="#gdd-contact">Contact</a>
+    </div>
+  </div>
+
+  <!-- OUR SERVICES: 7 services from document -->
+  <section id="gdd-services" class="gst-services-wrap gst-scroll">
+    <div style="max-width:1440px;margin:0 auto">
+      <div class="stag">Our GST Due Diligence Services</div>
+      <h2 class="ht">Due Diligence <em>Services We Provide</em></h2>
+      <p class="ssub" style="margin-bottom:2.6rem">
+        We cover all critical areas impacting GST compliance and reporting accuracy.
+      </p>
+
+      <div class="gst-svc-grid" style="grid-template-columns:repeat(3,1fr)">
+
+        <div class="gst-svc-item">
+          <div class="gst-svc-ico">🔠</div>
+          <h3>HSN/SAC Code Validation</h3>
+          <p>Review of classification applied across transactions to ensure correct tax positioning and reporting.</p>
+        </div>
+
+        <div class="gst-svc-item">
+          <div class="gst-svc-ico">🔄</div>
+          <h3>Return Review and Reconciliation</h3>
+          <p>Detailed verification of GSTR-1 and GSTR-3B filings with books, including mismatch identification and correction strategy.</p>
+        </div>
+
+        <div class="gst-svc-item">
+          <div class="gst-svc-ico">📅</div>
+          <h3>Compliance Timeline Assessment</h3>
+          <p>Review of filing and payment patterns aligned with GST return due dates to identify exposure to delays.</p>
+        </div>
+
+        <div class="gst-svc-item">
+          <div class="gst-svc-ico">📍</div>
+          <h3>Place and Time of Supply Validation</h3>
+          <p>Evaluation of transaction structuring to ensure correct tax type and timing of liability recognition.</p>
+        </div>
+
+        <div class="gst-svc-item">
+          <div class="gst-svc-ico">💰</div>
+          <h3>Input Tax Credit Review</h3>
+          <p>Verification of eligibility, documentation, and reconciliation of credits across returns and books.</p>
+        </div>
+
+        <div class="gst-svc-item">
+          <div class="gst-svc-ico">🔁</div>
+          <h3>Reverse Charge Mechanism Review</h3>
+          <p>Assessment of inward supplies to ensure proper treatment under reverse charge provisions.</p>
+        </div>
+
+        <div class="gst-svc-item">
+          <div class="gst-svc-ico">💻</div>
+          <h3>GST System and Control Review</h3>
+          <p>Evaluation of ERP/accounting systems to ensure GST compliance is embedded within operational workflows.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS: 7 steps from document -->
+  
+  <div id="gdd-process" class="gst-process-wrap gst-scroll" style="background:var(--light)">
+    <div class="gst-process-inner">
+      <div class="stag" style="color:var(--gold)">How It Works</div>
+      <h2 class="ht">Our Due Diligence <em>Process</em></h2>
+      <p class="ssub" style="margin-bottom:1.2rem">Our due diligence process is structured to deliver actionable outcomes.</p>
+      
+        <div style="width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;padding:2.5rem 0 1.5rem;max-width:1220px;margin:0 auto">
+          <svg viewBox="0 0 1320 520" style="width:100%;min-width:740px;display:block;" xmlns="http://www.w3.org/2000/svg">
+        
+          <!-- Step 01 -->
+          <circle cx="103" cy="188" r="74" fill="none" stroke="#1A5276" stroke-width="5"/>
+  <circle cx="103" cy="188" r="57"  fill="none" stroke="#1A5276" stroke-width="2.8"/>
+  <text x="103" y="201" text-anchor="middle" font-family="Inter,sans-serif" font-size="32" font-weight="700" fill="#1A5276">01</text>
+  <text text-anchor="middle" font-family="Inter,sans-serif" font-size="12.5" font-weight="700" fill="#0D1B35"><tspan x="103" y="286">Business and</tspan><tspan x="103" dy="16">Process Understanding</tspan></text>
+  <text text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#5A6478">
+    <tspan x="103" y="319">We analyse your business model,</tspan>
+    <tspan x="103" dy="15">transaction flows, and compliance</tspan>
+    <tspan x="103" dy="15">structure to define scope.</tspan>
+  </text>
+          <line x1="181" y1="188" x2="209" y2="188" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="5 4" stroke-linecap="round"/>
+  <polygon points="218,188 209,183 209,193" fill="#CBD5E1"/>
+        
+          <!-- Step 02 -->
+          <circle cx="293" cy="188" r="74" fill="none" stroke="#C9A84C" stroke-width="5"/>
+  <circle cx="293" cy="188" r="57"  fill="none" stroke="#C9A84C" stroke-width="2.8"/>
+  <text x="293" y="201" text-anchor="middle" font-family="Inter,sans-serif" font-size="32" font-weight="700" fill="#C9A84C">02</text>
+  <text text-anchor="middle" font-family="Inter,sans-serif" font-size="12.5" font-weight="700" fill="#0D1B35"><tspan x="293" y="286">Data Collection</tspan><tspan x="293" dy="16">and Structuring</tspan></text>
+  <text text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#5A6478">
+    <tspan x="293" y="319">Financial records, GST returns,</tspan>
+    <tspan x="293" dy="15">and transactional data collected</tspan>
+    <tspan x="293" dy="15">and organised for analysis.</tspan>
+  </text>
+          <line x1="371" y1="188" x2="399" y2="188" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="5 4" stroke-linecap="round"/>
+  <polygon points="408,188 399,183 399,193" fill="#CBD5E1"/>
+        
+          <!-- Step 03 -->
+          <circle cx="483" cy="188" r="74" fill="none" stroke="#922B21" stroke-width="5"/>
+  <circle cx="483" cy="188" r="57"  fill="none" stroke="#922B21" stroke-width="2.8"/>
+  <text x="483" y="201" text-anchor="middle" font-family="Inter,sans-serif" font-size="32" font-weight="700" fill="#922B21">03</text>
+  <text text-anchor="middle" font-family="Inter,sans-serif" font-size="12.5" font-weight="700" fill="#0D1B35"><tspan x="483" y="286">Classification</tspan><tspan x="483" dy="16">and Code Review</tspan></text>
+  <text text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#5A6478">
+    <tspan x="483" y="319">HSN/SAC codes verified across</tspan>
+    <tspan x="483" dy="15">transactions; inconsistencies</tspan>
+    <tspan x="483" dy="15">affecting reporting identified.</tspan>
+  </text>
+          <line x1="561" y1="188" x2="589" y2="188" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="5 4" stroke-linecap="round"/>
+  <polygon points="598,188 589,183 589,193" fill="#CBD5E1"/>
+        
+          <!-- Step 04 -->
+          <circle cx="673" cy="188" r="74" fill="none" stroke="#6C3483" stroke-width="5"/>
+  <circle cx="673" cy="188" r="57"  fill="none" stroke="#6C3483" stroke-width="2.8"/>
+  <text x="673" y="201" text-anchor="middle" font-family="Inter,sans-serif" font-size="32" font-weight="700" fill="#6C3483">04</text>
+  <text text-anchor="middle" font-family="Inter,sans-serif" font-size="12.5" font-weight="700" fill="#0D1B35"><tspan x="673" y="286">Return</tspan><tspan x="673" dy="16">Reconciliation</tspan></text>
+  <text text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#5A6478">
+    <tspan x="673" y="319">GSTR-1, GSTR-3B and records</tspan>
+    <tspan x="673" dy="15">reconciled to identify mismatches</tspan>
+    <tspan x="673" dy="15">and reporting gaps.</tspan>
+  </text>
+          <line x1="751" y1="188" x2="779" y2="188" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="5 4" stroke-linecap="round"/>
+  <polygon points="788,188 779,183 779,193" fill="#CBD5E1"/>
+        
+          <!-- Step 05 -->
+          <circle cx="863" cy="188" r="74" fill="none" stroke="#0E6655" stroke-width="5"/>
+  <circle cx="863" cy="188" r="57"  fill="none" stroke="#0E6655" stroke-width="2.8"/>
+  <text x="863" y="201" text-anchor="middle" font-family="Inter,sans-serif" font-size="32" font-weight="700" fill="#0E6655">05</text>
+  <text text-anchor="middle" font-family="Inter,sans-serif" font-size="12.5" font-weight="700" fill="#0D1B35"><tspan x="863" y="286">Input Credit and</tspan><tspan x="863" dy="16">Liability Review</tspan></text>
+  <text text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#5A6478">
+    <tspan x="863" y="319">Input tax credit claims and</tspan>
+    <tspan x="863" dy="15">tax liabilities evaluated for</tspan>
+    <tspan x="863" dy="15">accurate treatment.</tspan>
+  </text>
+          <line x1="941" y1="188" x2="969" y2="188" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="5 4" stroke-linecap="round"/>
+  <polygon points="978,188 969,183 969,193" fill="#CBD5E1"/>
+        
+          <!-- Step 06 -->
+          <circle cx="1053" cy="188" r="74" fill="none" stroke="#B7770D" stroke-width="5"/>
+  <circle cx="1053" cy="188" r="57"  fill="none" stroke="#B7770D" stroke-width="2.8"/>
+  <text x="1053" y="201" text-anchor="middle" font-family="Inter,sans-serif" font-size="32" font-weight="700" fill="#B7770D">06</text>
+  <text text-anchor="middle" font-family="Inter,sans-serif" font-size="12.5" font-weight="700" fill="#0D1B35"><tspan x="1053" y="286">Supply Structuring</tspan><tspan x="1053" dy="16">Validation</tspan></text>
+  <text text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#5A6478">
+    <tspan x="1053" y="319">Transactions reviewed for correct</tspan>
+    <tspan x="1053" dy="15">place and time of supply to avoid</tspan>
+    <tspan x="1053" dy="15">incorrect tax treatment.</tspan>
+  </text>
+          <line x1="1131" y1="188" x2="1159" y2="188" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="5 4" stroke-linecap="round"/>
+  <polygon points="1168,188 1159,183 1159,193" fill="#CBD5E1"/>
+        
+          <!-- Step 07 -->
+          <circle cx="1243" cy="188" r="74" fill="none" stroke="#1C4E80" stroke-width="5"/>
+  <circle cx="1243" cy="188" r="57"  fill="none" stroke="#1C4E80" stroke-width="2.8"/>
+  <text x="1243" y="201" text-anchor="middle" font-family="Inter,sans-serif" font-size="32" font-weight="700" fill="#1C4E80">07</text>
+  <text text-anchor="middle" font-family="Inter,sans-serif" font-size="12.5" font-weight="700" fill="#0D1B35"><tspan x="1243" y="286">Reporting and</tspan><tspan x="1243" dy="16">Guidance</tspan></text>
+  <text text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#5A6478">
+    <tspan x="1243" y="319">Detailed report highlighting</tspan>
+    <tspan x="1243" dy="15">observations, risk areas, and</tspan>
+    <tspan x="1243" dy="15">recommended corrective actions.</tspan>
+  </text>
+        
+          </svg>
+        </div>
+    </div>
+  </div>
+
+  <!-- 4-QUADRANT GST COMPLIANCE MATRIX -->
+  <div style="background:var(--light);padding:4rem 5vw;">
+    <div style="max-width:1100px;margin:0 auto;">
+
+      <!-- Header -->
+      <div style="text-align:center;margin-bottom:2.6rem;">
+        <div style="display:inline-flex;align-items:center;gap:.6rem;font-size:.62rem;font-weight:800;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:.7rem;">
+          <span style="width:20px;height:1px;background:var(--gold);display:inline-block;"></span>
+          GST Compliance Assessment Matrix
+          <span style="width:20px;height:1px;background:var(--gold);display:inline-block;"></span>
+        </div>
+        <h3 style="font-family:'EB Garamond',serif;font-size:clamp(1.5rem,2.2vw,2rem);font-weight:600;color:var(--tdark);line-height:1.2;">How We <em style="color:var(--gold)">Classify Your Findings</em></h3>
+        <p style="font-size:.88rem;color:var(--tmute);margin-top:.6rem;max-width:540px;margin-left:auto;margin-right:auto;line-height:1.75;">Every GST due diligence engagement maps observations across two critical dimensions: documentation quality and financial exposure.</p>
+      </div>
+
+      <!-- Axis labels -->
+      <div style="display:grid;grid-template-columns:auto 1fr;gap:0;align-items:stretch;">
+
+        <!-- Y-axis label -->
+        <div style="display:flex;align-items:center;justify-content:center;padding-right:1rem;min-width:28px;">
+          <div style="writing-mode:vertical-rl;transform:rotate(180deg);font-size:.6rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:#94A3B8;">Financial Exposure</div>
+        </div>
+
+        <!-- Grid -->
+        <div>
+          <!-- Top axis label -->
+          <div style="display:grid;grid-template-columns:1fr 1fr;margin-bottom:.3rem;">
+            <div style="text-align:center;font-size:.6rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#94A3B8;">Weak Documentation</div>
+            <div style="text-align:center;font-size:.6rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#94A3B8;">Strong Documentation</div>
+          </div>
+
+          <!-- 4 Quadrants -->
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:3px;background:#E2E8F0;border:3px solid #E2E8F0;border-radius:4px;overflow:hidden;">
+
+            <!-- Q1: Top-left  -  High Exposure + Weak Docs = Critical -->
+            <div style="background:#FFF8F7;padding:2.2rem 2rem;position:relative;overflow:hidden;">
+              <div style="display:flex;align-items:center;gap:.5rem;font-size:.58rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#922B21;margin-bottom:1.1rem;">
+                <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><circle cx="6.5" cy="6.5" r="6" stroke="#922B21" stroke-width="1.4"/><line x1="6.5" y1="3.5" x2="6.5" y2="7.5" stroke="#922B21" stroke-width="1.5" stroke-linecap="round"/><circle cx="6.5" cy="9.5" r=".8" fill="#922B21"/></svg>
+                High Exposure &middot; Weak Documentation
+              </div>
+              <div style="font-family:'EB Garamond',serif;font-size:2.1rem;font-weight:700;color:#922B21;line-height:1.1;margin-bottom:1rem;">Critical<br/>Finding</div>
+              <p style="font-size:.82rem;line-height:1.8;color:#4A5568;">Unsubstantiated high-value transactions, missing invoices, and large ITC reversals pending  -  demands <strong style="color:#0D1B35;">immediate rectification</strong> before any transaction closes.</p>
+              <div style="position:absolute;bottom:-18px;right:-18px;width:80px;height:80px;border-radius:50%;background:rgba(146,43,33,.07);"></div>
+            </div>
+
+            <!-- Q2: Top-right  -  High Exposure + Strong Docs = Monitored -->
+            <div style="background:#FFFDF5;padding:2.2rem 2rem;position:relative;overflow:hidden;">
+              <div style="display:flex;align-items:center;gap:.5rem;font-size:.58rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#B7770D;margin-bottom:1.1rem;">
+                <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><polygon points="6.5,1 12,12 1,12" stroke="#B7770D" stroke-width="1.4" fill="none" stroke-linejoin="round"/><line x1="6.5" y1="5" x2="6.5" y2="8.5" stroke="#B7770D" stroke-width="1.5" stroke-linecap="round"/><circle cx="6.5" cy="10" r=".8" fill="#B7770D"/></svg>
+                High Exposure &middot; Strong Documentation
+              </div>
+              <div style="font-family:'EB Garamond',serif;font-size:2.1rem;font-weight:700;color:#B7770D;line-height:1.1;margin-bottom:1rem;">Monitored<br/>Risk</div>
+              <p style="font-size:.82rem;line-height:1.8;color:#4A5568;">Significant GST exposure is well-documented and defensible  -  <strong style="color:#0D1B35;">structured mitigation and indemnity clauses</strong> should be negotiated into the transaction.</p>
+              <div style="position:absolute;bottom:-18px;right:-18px;width:80px;height:80px;border-radius:50%;background:rgba(183,119,13,.06);"></div>
+            </div>
+
+            <!-- Q3: Bottom-left  -  Low Exposure + Weak Docs = Gap -->
+            <div style="background:#FAF8FF;padding:2.2rem 2rem;position:relative;overflow:hidden;">
+              <div style="display:flex;align-items:center;gap:.5rem;font-size:.58rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#6C3483;margin-bottom:1.1rem;">
+                <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><rect x="1.5" y="1.5" width="10" height="10" rx="1.5" stroke="#6C3483" stroke-width="1.4"/><line x1="4" y1="6.5" x2="9" y2="6.5" stroke="#6C3483" stroke-width="1.5" stroke-linecap="round"/></svg>
+                Low Exposure &middot; Weak Documentation
+              </div>
+              <div style="font-family:'EB Garamond',serif;font-size:2.1rem;font-weight:700;color:#6C3483;line-height:1.1;margin-bottom:1rem;">Administrative<br/>Gap</div>
+              <p style="font-size:.82rem;line-height:1.8;color:#4A5568;">Procedural non-compliance with limited financial impact  -  indicates <strong style="color:#0D1B35;">poor internal controls</strong> that, if unaddressed, create compounding risk over time.</p>
+              <div style="position:absolute;bottom:-18px;right:-18px;width:80px;height:80px;border-radius:50%;background:rgba(108,52,131,.06);"></div>
+            </div>
+
+            <!-- Q4: Bottom-right  -  Low Exposure + Strong Docs = Clean -->
+            <div style="background:#F4FDF9;padding:2.2rem 2rem;position:relative;overflow:hidden;">
+              <div style="display:flex;align-items:center;gap:.5rem;font-size:.58rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#0E6655;margin-bottom:1.1rem;">
+                <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><circle cx="6.5" cy="6.5" r="6" stroke="#0E6655" stroke-width="1.4"/><polyline points="3.5,6.5 5.5,8.5 9.5,4.5" stroke="#0E6655" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Low Exposure &middot; Strong Documentation
+              </div>
+              <div style="font-family:'EB Garamond',serif;font-size:2.1rem;font-weight:700;color:#0E6655;line-height:1.1;margin-bottom:1rem;">Clean<br/>Position</div>
+              <p style="font-size:.82rem;line-height:1.8;color:#4A5568;">Well-maintained records, minimal exposure, and strong compliance history  -  the target is <strong style="color:#0D1B35;">well-positioned</strong> with no material GST concerns to address.</p>
+              <div style="position:absolute;bottom:-18px;right:-18px;width:80px;height:80px;border-radius:50%;background:rgba(14,102,85,.06);"></div>
+            </div>
+
+          </div><!-- /4 quadrants -->
+
+          <!-- Bottom axis label -->
+          <div style="text-align:center;margin-top:.5rem;font-size:.6rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#94A3B8;">Documentation Quality</div>
+
+        </div><!-- /grid -->
+      </div><!-- /axis wrapper -->
+
+    </div>
+  </div>
+  <!-- END 4-QUADRANT MATRIX -->
+
+
+
+  <!-- RADIAL ENGAGEMENT INFOGRAPHIC -->
+  <div style="background:#F8FAFD;padding:3.5rem 5vw 3rem;">
+    <div style="max-width:1150px;margin:0 auto;">
+      <div style="text-align:center;margin-bottom:2.4rem;">
+        <div style="display:inline-flex;align-items:center;gap:.6rem;font-size:.62rem;font-weight:800;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:.5rem;">
+          <span style="width:20px;height:1px;background:var(--gold);display:inline-block;"></span>
+          Our Six-Phase Process
+          <span style="width:20px;height:1px;background:var(--gold);display:inline-block;"></span>
+        </div>
+        <h3 style="font-family:'EB Garamond',serif;font-size:clamp(1.5rem,2.2vw,2rem);font-weight:600;color:var(--tdark);line-height:1.2;">End-to-End <em style="color:var(--gold)">Due Diligence Journey</em></h3>
+        <p style="font-size:.88rem;color:var(--tmute);margin-top:.5rem;max-width:500px;margin-left:auto;margin-right:auto;line-height:1.75;">A six-phase GST due diligence process from initial scoping through to actionable reporting.</p>
+      </div>
+
+      <div style="width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;padding:1rem 0;">
+        <svg viewBox="0 0 1100 840" style="width:100%;min-width:680px;display:block;" xmlns="http://www.w3.org/2000/svg">
+
+          <!-- ── Subtle background ring ── -->
+          <circle cx="550" cy="420" r="266" fill="none" stroke="#E2E8F0" stroke-width="1"/>
+          <circle cx="550" cy="420" r="132"  fill="none" stroke="#E2E8F0" stroke-width="1"/>
+
+  <path d="M490.8,293.1L441.0,186.2A258,258,0,0,1,659.0,186.2L609.2,293.1A140,140,0,0,0,490.8,293.1Z" fill="#1A5276"/>
+  <path d="M490.8,293.1L484.9,280.4A154,154,0,0,1,615.1,280.4L609.2,293.1A140,140,0,0,0,490.8,293.1Z" fill="rgba(255,255,255,0.18)"/>
+  <text x="550.0" y="229.0" text-anchor="middle" font-family="Inter,sans-serif" font-size="22" font-weight="800" fill="white" opacity="0.95">01</text>
+  <text text-anchor="middle" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="#0D1B35"><tspan x="550.0" y="63.0">Business and Process</tspan><tspan x="550.0" dy="17">Understanding</tspan></text>
+  <text text-anchor="middle" font-family="Inter,sans-serif" font-size="11.5" fill="#5A6478"><tspan x="550.0" y="99.0">Analysing your business model,</tspan><tspan x="550.0" dy="15">transaction flows and GST</tspan><tspan x="550.0" dy="15">compliance structure.</tspan></text>
+
+  <path d="M630.3,305.3L698.0,208.7A258,258,0,0,1,807.0,397.5L689.5,407.8A140,140,0,0,0,630.3,305.3Z" fill="#C9A84C"/>
+  <path d="M630.3,305.3L638.3,293.9A154,154,0,0,1,703.4,406.6L689.5,407.8A140,140,0,0,0,630.3,305.3Z" fill="rgba(255,255,255,0.18)"/>
+  <text x="722.3" y="328.5" text-anchor="middle" font-family="Inter,sans-serif" font-size="22" font-weight="800" fill="white" opacity="0.95">02</text>
+  <text text-anchor="start" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="#0D1B35"><tspan x="828.9" y="224.0">Data Collection</tspan><tspan x="828.9" dy="17">and Structuring</tspan></text>
+  <text text-anchor="start" font-family="Inter,sans-serif" font-size="11.5" fill="#5A6478"><tspan x="828.9" y="260.0">Financial records, GST returns</tspan><tspan x="828.9" dy="15">and transactional data</tspan><tspan x="828.9" dy="15">organised for analysis.</tspan></text>
+
+  <path d="M689.5,432.2L807.0,442.5A258,258,0,0,1,698.0,631.3L630.3,534.7A140,140,0,0,0,689.5,432.2Z" fill="#0E6655"/>
+  <path d="M689.5,432.2L703.4,433.4A154,154,0,0,1,638.3,546.1L630.3,534.7A140,140,0,0,0,689.5,432.2Z" fill="rgba(255,255,255,0.18)"/>
+  <text x="722.3" y="527.5" text-anchor="middle" font-family="Inter,sans-serif" font-size="22" font-weight="800" fill="white" opacity="0.95">03</text>
+  <text text-anchor="start" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="#0D1B35"><tspan x="828.9" y="546.0">Classification</tspan><tspan x="828.9" dy="17">and Code Review</tspan></text>
+  <text text-anchor="start" font-family="Inter,sans-serif" font-size="11.5" fill="#5A6478"><tspan x="828.9" y="582.0">HSN/SAC codes verified across</tspan><tspan x="828.9" dy="15">transactions; inconsistencies</tspan><tspan x="828.9" dy="15">affecting reporting identified.</tspan></text>
+
+  <path d="M609.2,546.9L659.0,653.8A258,258,0,0,1,441.0,653.8L490.8,546.9A140,140,0,0,0,609.2,546.9Z" fill="#922B21"/>
+  <path d="M609.2,546.9L615.1,559.6A154,154,0,0,1,484.9,559.6L490.8,546.9A140,140,0,0,0,609.2,546.9Z" fill="rgba(255,255,255,0.18)"/>
+  <text x="550.0" y="627.0" text-anchor="middle" font-family="Inter,sans-serif" font-size="22" font-weight="800" fill="white" opacity="0.95">04</text>
+  <text text-anchor="middle" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="#0D1B35"><tspan x="550.0" y="707.0">Return</tspan><tspan x="550.0" dy="17">Reconciliation</tspan></text>
+  <text text-anchor="middle" font-family="Inter,sans-serif" font-size="11.5" fill="#5A6478"><tspan x="550.0" y="743.0">GSTR-1, GSTR-3B and records</tspan><tspan x="550.0" dy="15">reconciled to surface</tspan><tspan x="550.0" dy="15">reporting mismatches and gaps.</tspan></text>
+
+  <path d="M469.7,534.7L402.0,631.3A258,258,0,0,1,293.0,442.5L410.5,432.2A140,140,0,0,0,469.7,534.7Z" fill="#6C3483"/>
+  <path d="M469.7,534.7L461.7,546.1A154,154,0,0,1,396.6,433.4L410.5,432.2A140,140,0,0,0,469.7,534.7Z" fill="rgba(255,255,255,0.18)"/>
+  <text x="377.7" y="527.5" text-anchor="middle" font-family="Inter,sans-serif" font-size="22" font-weight="800" fill="white" opacity="0.95">05</text>
+  <text text-anchor="end" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="#0D1B35"><tspan x="271.1" y="546.0">Input Credit and</tspan><tspan x="271.1" dy="17">Liability Review</tspan></text>
+  <text text-anchor="end" font-family="Inter,sans-serif" font-size="11.5" fill="#5A6478"><tspan x="271.1" y="582.0">Input tax credit claims and</tspan><tspan x="271.1" dy="15">liabilities evaluated for</tspan><tspan x="271.1" dy="15">accurate treatment.</tspan></text>
+
+  <path d="M410.5,407.8L293.0,397.5A258,258,0,0,1,402.0,208.7L469.7,305.3A140,140,0,0,0,410.5,407.8Z" fill="#B7770D"/>
+  <path d="M410.5,407.8L396.6,406.6A154,154,0,0,1,461.7,293.9L469.7,305.3A140,140,0,0,0,410.5,407.8Z" fill="rgba(255,255,255,0.18)"/>
+  <text x="377.7" y="328.5" text-anchor="middle" font-family="Inter,sans-serif" font-size="22" font-weight="800" fill="white" opacity="0.95">06</text>
+  <text text-anchor="end" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="#0D1B35"><tspan x="271.1" y="224.0">Reporting and</tspan><tspan x="271.1" dy="17">Guidance</tspan></text>
+  <text text-anchor="end" font-family="Inter,sans-serif" font-size="11.5" fill="#5A6478"><tspan x="271.1" y="260.0">Detailed findings report</tspan><tspan x="271.1" dy="15">with risk areas and corrective</tspan><tspan x="271.1" dy="15">action recommendations.</tspan></text>
+
+          <!-- ── Central circle ── -->
+          <circle cx="550" cy="420" r="136" fill="#0D1B35"/>
+          <circle cx="550" cy="420" r="122" fill="none" stroke="rgba(201,168,76,0.4)" stroke-width="1.5"/>
+          <text text-anchor="middle" font-family="EB Garamond,serif" font-size="15" font-weight="600" fill="white">
+            <tspan x="550" y="398">GST</tspan>
+            <tspan x="550" dy="20">Due</tspan>
+            <tspan x="550" dy="20">Diligence</tspan>
+          </text>
+          <circle cx="550" cy="454" r="4" fill="#C9A84C"/>
+
+        </svg>
+      </div>
+    </div>
+  </div>
+  <!-- END RADIAL INFOGRAPHIC -->
+
+  <!-- ENGAGEMENT MODELS: 3 models from document -->
+  <div id="gdd-engagement" class="gst-eng-wrap gst-scroll">
+    <div class="gst-eng-inner">
+      <div class="stag">Engagement</div>
+      <h2 class="ht">Choose Your <em>Engagement Model</em></h2>
+      <p class="ssub" style="margin-bottom:0">
+        We structure engagements based on the scope and continuity required.
+      </p>
+
+      <div class="gst-eng-grid">
+
+        <div class="gst-eng-card">
+          <div class="gst-eng-top">
+            <div class="gst-eng-letter">A</div>
+            <div class="gst-eng-badge">Project-Based</div>
+            <h3>Project-Based Review</h3>
+            <p>Suitable for one-time due diligence exercises, including pre-audit or transaction-specific reviews.</p>
+          </div>
+          <div class="gst-eng-divider"></div>
+          <div class="gst-eng-body">
+            <ul class="gst-eng-feat">
+              <li>One-time due diligence exercise</li>
+              <li>Pre-audit compliance review</li>
+              <li>Transaction-specific assessment</li>
+              <li>Defined scope and deliverables</li>
+            </ul>
+          </div>
+          <button class="bgs" onclick="go('contact')" style="margin:0 1.8rem 1.8rem;width:calc(100% - 3.6rem)">Get a Proposal</button>
+        </div>
+
+        <div class="gst-eng-card" style="border-color:var(--gold);box-shadow:0 0 0 1px var(--gold)">
+          <div class="gst-eng-top" style="background:linear-gradient(135deg,var(--navy),rgba(201,168,76,.18))">
+            <div class="gst-eng-letter">B</div>
+            <div class="gst-eng-badge" style="background:var(--gold);color:var(--white);border-color:var(--gold)">Ongoing</div>
+            <h3>Ongoing Compliance Review</h3>
+            <p>Periodic due diligence support to monitor GST compliance and identify risks on a continuous basis.</p>
+          </div>
+          <div class="gst-eng-divider"></div>
+          <div class="gst-eng-body">
+            <ul class="gst-eng-feat">
+              <li>Periodic compliance monitoring</li>
+              <li>Continuous risk identification</li>
+              <li>Regular return reconciliation</li>
+              <li>Proactive advisory support</li>
+            </ul>
+          </div>
+          <button class="bgs" onclick="go('contact')" style="margin:0 1.8rem 1.8rem;width:calc(100% - 3.6rem)">Start Ongoing Review</button>
+        </div>
+
+        <div class="gst-eng-card">
+          <div class="gst-eng-top">
+            <div class="gst-eng-letter">C</div>
+            <div class="gst-eng-badge">Focused</div>
+            <h3>Focused Advisory Engagement</h3>
+            <p>Targeted support for specific issues such as return mismatches, notices, or transaction-level concerns.</p>
+          </div>
+          <div class="gst-eng-divider"></div>
+          <div class="gst-eng-body">
+            <ul class="gst-eng-feat">
+              <li>Return mismatch resolution</li>
+              <li>Notice response support</li>
+              <li>Transaction-level queries</li>
+              <li>Targeted and time-efficient</li>
+            </ul>
+          </div>
+          <button class="bgs" onclick="go('contact')" style="margin:0 1.8rem 1.8rem;width:calc(100% - 3.6rem)">Request Advisory</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTACT / FINAL CTA -->
+  <div id="gdd-contact" class="gst-cta-wrap gst-scroll">
+    <div class="gst-cta-inner">
+
+      <div class="gst-cta-left">
+        <div class="stag" style="color:var(--gold)">Contact</div>
+        <h2>Engage with <em>V J Desai and Co.</em></h2>
+        <p style="font-size:.93rem;line-height:1.82;color:var(--tdim);margin-bottom:1.6rem">
+          A structured GST due diligence review helps prevent compliance gaps from becoming financial exposure. Engage with V J Desai and Co. to review and strengthen your GST compliance framework.
+        </p>
+      </div>
+
+      <div class="gst-cta-right">
+        <h3>Book a Consultation</h3>
+        <p style="font-size:.86rem;line-height:1.8;color:rgba(255,255,255,.55);margin-bottom:1.8rem">
+          Our team will assess your GST due diligence requirements and design the right review framework for your business.
+        </p>
+        <button class="bgs" onclick="go('contact')" style="width:100%;justify-content:center;padding:.95rem;margin-bottom:1.8rem">
+          Book a Consultation
+        </button>
+
+        <!-- Internal links from document -->
+        <div style="padding-top:1.5rem;border-top:1px solid rgba(255,255,255,.08)">
+          <div style="font-size:.68rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.35);margin-bottom:.85rem">Related Services</div>
+          <div style="display:flex;flex-direction:column;gap:.5rem">
+            <a onclick="go('gst')"   style="font-size:.82rem;color:rgba(201,168,76,.8);cursor:pointer">GST Compliance Services</a>
+            <a onclick="go('audit')" style="font-size:.82rem;color:rgba(201,168,76,.8);cursor:pointer">GST Audit Support</a>
+            <a onclick="go('gst')"   style="font-size:.82rem;color:rgba(201,168,76,.8);cursor:pointer">GST Training and Advisory</a>
+            <a onclick="go('gst')"   style="font-size:.82rem;color:rgba(201,168,76,.8);cursor:pointer">GST Registration Assistance</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+</main>
+
+<!-- SHARED FOOTER (loaded by include.js) -->
+<div data-include="../components/footer.html?v=8"></div>
+
+<!-- SITE JS -->
+<script src="../assets/js/include.js?v=2"><\/script>
+<script src="../assets/js/nav.js?v=3"><\/script>
+<script src="../assets/js/main.js"><\/script>
+<script src="../assets/js/lock.js?v=2"><\/script>
+
+</body>
+</html>`;export{n as default};

@@ -1,0 +1,120 @@
+const e=`\uFEFF<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+  <meta http-equiv="Pragma" content="no-cache"/>
+  <meta http-equiv="Expires" content="0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Knowledge Center, International Tax | V J Desai &amp; Co. LLP</title>
+
+  <meta name="description" content="Knowledge Center, International Tax services, V J Desai &amp; Co. LLP, Chartered Accountants. ICAI registered, est. 1993, Ahmedabad."/>
+  <meta name="robots" content="noindex, nofollow"/>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+
+  <link rel="stylesheet" href="../assets/css/variables.css?v=2"/>
+  <link rel="stylesheet" href="../assets/css/base.css?v=3"/>
+  <link rel="stylesheet" href="../assets/css/nav.css?v=6"/>
+  <link rel="stylesheet" href="../assets/css/footer.css?v=6"/>
+  <link rel="stylesheet" href="../assets/css/components.css?v=6"/>
+</head>
+<body data-page="kc-intl">
+
+<!-- SHARED NAV (loaded by include.js) -->
+<div data-include="../components/nav.html?v=7"></div>
+
+<!-- PAGE CONTENT -->
+<main>
+
+<div id="page-kc-intl">
+<div class="ph"><div class="phi">
+    <div class="bc"><a onclick="go('home')">Home</a><span>/</span><a onclick="go('kc')">Knowledge Center</a><span>/</span><span>International Tax</span></div>
+    <div class="pgbadge">🌏 International Tax</div>
+    <h1>International Tax <em>Knowledge Guide</em></h1>
+    <p>DTAA benefits, transfer pricing, NRI taxation, withholding tax, and cross-border transaction structuring guidance.</p>
+  </div></div>
+  <div class="subnav"><div class="subnav-inner">
+    <a class="sn" href="#kc-intl-dtaa">DTAA</a>
+    <a class="sn" href="#kc-intl-tp">Transfer Pricing</a>
+    <a class="sn" href="#kc-intl-nri">NRI Taxation</a>
+    <a class="sn" href="#kc-intl-wht">Withholding Tax</a>
+  </div></div>
+
+  <section id="kc-intl-dtaa" class="s scroll-sec" style="background:var(--white)"><div class="si">
+    <div class="stag">Double Tax Avoidance</div>
+    <h2 class="ht">DTAA <em>Framework</em></h2>
+    <div class="cgrid">
+      <div>
+        <p style="font-size:.9rem;line-height:1.88;color:var(--tmute);margin-bottom:1.2rem">India has signed DTAA with 90+ countries to prevent double taxation of the same income. DTAA provides either exemption or reduced tax rates on specific income types.</p>
+        <div class="dg" style="grid-template-columns:1fr 1fr;margin-top:0">
+          <div class="dc"><div class="dci">📋</div><h3>Key DTAA Benefits</h3><p>Reduced withholding tax on dividends, royalties, interest, and fees for technical services. Capital gains exemption in certain treaties (e.g., Mauritius, Singapore, now restricted).</p></div>
+          <div class="dc"><div class="dci">📄</div><h3>Tax Residency Certificate</h3><p>TRC from the home country is mandatory to claim DTAA benefits. India also requires Form 10F and additional information per Section 90(5).</p></div>
+          <div class="dc"><div class="dci">🏢</div><h3>Permanent Establishment</h3><p>PE risk arises when a foreign company has a fixed place of business in India. PE triggers Indian tax liability on attributable profits.</p></div>
+          <div class="dc"><div class="dci">⚖️</div><h3>Principal Purpose Test</h3><p>MLI provisions now apply PPT to India's tax treaties. Arrangements designed primarily for tax benefits may be denied treaty protection.</p></div>
+        </div>
+      </div>
+      <div class="qb" style="align-self:start">
+        <p>"DTAA planning requires careful analysis of residency, PE risk, beneficial ownership, and the Principal Purpose Test, treaty shopping is no longer a viable strategy."</p>
+        <cite>V J Desai &amp; Co. LLP, International Tax</cite>
+      </div>
+    </div>
+  </div></section>
+
+  <section id="kc-intl-tp" class="s scroll-sec" style="background:var(--light)"><div class="si">
+    <div class="stag">Transfer Pricing</div>
+    <h2 class="ht">Transfer Pricing <em>Compliance</em></h2>
+    <div class="dg">
+      <div class="dc"><div class="dci">📊</div><h3>Arm's Length Price</h3><p>All transactions between associated enterprises must be at arm's length. Methods include CUP, RPM, CPM, TNMM, and Profit Split Method.</p></div>
+      <div class="dc"><div class="dci">📋</div><h3>Form 3CEB</h3><p>Mandatory CA certification in Form 3CEB for all international transactions with associated enterprises. Due date: 31st October of the assessment year.</p></div>
+      <div class="dc"><div class="dci">📁</div><h3>Master File &amp; CbCR</h3><p>MNEs with consolidated revenue &gt; ₹500 crore must maintain Master File. CbCR applies to Indian parent MNEs with consolidated revenue &gt; ₹5,500 crore.</p></div>
+      <div class="dc"><div class="dci">⚠️</div><h3>TP Penalties</h3><p>100-300% penalty on tax determined on TP adjustments. 2% penalty on transaction value for non-maintenance of documentation.</p></div>
+      <div class="dc"><div class="dci">🤝</div><h3>Advance Pricing Agreement</h3><p>APA provides certainty on TP methodology for 5 years (unilateral) or bilaterally with treaty partner countries to avoid future disputes.</p></div>
+      <div class="dc"><div class="dci">🌐</div><h3>Safe Harbour Rules</h3><p>Safe harbour rates available for specified transactions like software development, IT-enabled services, and intra-group loans to reduce TP litigation risk.</p></div>
+    </div>
+  </div></section>
+
+  <section id="kc-intl-nri" class="s scroll-sec" style="background:var(--white)"><div class="si">
+    <div class="stag">NRI Taxation</div>
+    <h2 class="ht">NRI <em>Tax Obligations</em></h2>
+    <table class="tbl" style="margin-top:1.8rem">
+      <thead><tr><th>Income Type</th><th>NRI Tax Treatment</th><th>TDS</th></tr></thead>
+      <tbody>
+        <tr><td>Salary earned in India</td><td>Taxable as per slabs</td><td>As per slab (Sec 192)</td></tr>
+        <tr><td>Interest on NRO account</td><td>Taxable in India</td><td>30% + surcharge + cess</td></tr>
+        <tr><td>Interest on NRE/FCNR account</td><td>Exempt</td><td>Nil</td></tr>
+        <tr><td>Property sale (India)</td><td>Capital gains taxable</td><td>20% LTCG / 30% STCG</td></tr>
+        <tr><td>Dividends from Indian companies</td><td>Taxable (DTAA may reduce)</td><td>20% or DTAA rate</td></tr>
+        <tr><td>Rental income (India property)</td><td>Taxable</td><td>30% (Sec 195)</td></tr>
+      </tbody>
+    </table>
+  </div></section>
+
+  <section id="kc-intl-wht" class="s scroll-sec" style="background:var(--light)"><div class="si">
+    <div class="stag">Withholding Tax</div>
+    <h2 class="ht">Withholding Tax on <em>Payments to Non-Residents</em></h2>
+    <div class="fl">
+      <div class="fi"><span class="fchk">✦</span><div><div class="fh">Royalties &amp; FTS (Section 115A)</div><div class="fp">10% WHT on royalties and fees for technical services to non-residents (plus surcharge and cess). DTAA may reduce to 10%, 15%, or as agreed.</div></div></div>
+      <div class="fi"><span class="fchk">✦</span><div><div class="fh">Dividends (Section 115O)</div><div class="fp">20% WHT on dividends paid to non-resident shareholders. DTAA can reduce to 5%-15% depending on the treaty.</div></div></div>
+      <div class="fi"><span class="fchk">✦</span><div><div class="fh">Interest (Section 115A)</div><div class="fp">20% WHT on interest paid to non-residents. Infrastructure bonds may qualify for 5% rate. ECB interest subject to specific provisions.</div></div></div>
+      <div class="fi"><span class="fchk">✦</span><div><div class="fh">Form 15CA/15CB</div><div class="fp">Online filing of Form 15CA (remitter) and CA certificate in Form 15CB required before remitting taxable amounts outside India under Section 195.</div></div></div>
+    </div>
+  </div></section>
+  <div class="ctab scroll-sec"><div class="ctabi"><div><h2>Need <em>international tax guidance?</em></h2><p>We advise on DTAA, transfer pricing, NRI compliance, and cross-border structuring.</p></div><button class="bgs" onclick="go('nri-tax')">Explore NRI Tax Services →</button></div></div>
+</div>
+
+</main>
+
+<!-- SHARED FOOTER (loaded by include.js) -->
+<div data-include="../components/footer.html?v=8"></div>
+
+<!-- SITE JS -->
+<script src="../assets/js/include.js?v=2"><\/script>
+<script src="../assets/js/nav.js?v=3"><\/script>
+<script src="../assets/js/main.js"><\/script>
+<script src="../assets/js/lock.js?v=2"><\/script>
+
+</body>
+</html>`;export{e as default};

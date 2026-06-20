@@ -1,0 +1,202 @@
+const s=`\uFEFF<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+  <meta http-equiv="Pragma" content="no-cache"/>
+  <meta http-equiv="Expires" content="0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Audit &amp; Advisory | V J Desai &amp; Co. LLP</title>
+
+  <meta name="description" content="Audit &amp; Advisory services, V J Desai &amp; Co. LLP, Chartered Accountants. ICAI registered, est. 1993, Ahmedabad."/>
+  <meta name="robots" content="noindex, nofollow"/>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+
+  <link rel="stylesheet" href="../assets/css/variables.css?v=2"/>
+  <link rel="stylesheet" href="../assets/css/base.css?v=3"/>
+  <link rel="stylesheet" href="../assets/css/nav.css?v=6"/>
+  <link rel="stylesheet" href="../assets/css/footer.css?v=6"/>
+  <link rel="stylesheet" href="../assets/css/components.css?v=6"/>
+</head>
+<body data-page="audit">
+
+<!-- SHARED NAV (loaded by include.js) -->
+<div data-include="../components/nav.html?v=7"></div>
+
+<!-- PAGE CONTENT -->
+<main>
+
+<div id="page-audit">
+<div class="ph"><div class="phi">
+  <div class="ph-grid">
+    <div class="ph-left">
+      <div class="bc"><a onclick="go('home')">Home</a><span>/</span><span>Audit &amp; Advisory</span></div>
+      <div class="pgbadge">⚖️ Audit &amp; Advisory Services</div>
+      <h1>Audit &amp; <em>Advisory Services</em></h1>
+      <p>Independent, objective, and thorough audit engagements, statutory audit, tax audit, internal audit, and compliance audit, combined with expert corporate advisory across business setup, valuation, FEMA, and CFO services.</p>
+      <div class="ph-tags">
+        <span class="ph-tag">Statutory Audit</span>
+        <span class="ph-tag">Tax Audit</span>
+        <span class="ph-tag">Internal Audit</span>
+        <span class="ph-tag">Business Setup</span>
+        <span class="ph-tag">FEMA</span>
+        <span class="ph-tag">CFO Services</span>
+      </div>
+      <div class="ph-ctas">
+        <button class="ph-cta" onclick="go('contact')">Discuss Your Audit →</button>
+        <button class="ph-cta-outline" onclick="go('stat-audit')">Statutory Audit</button>
+      </div>
+    </div>
+    <div class="ph-right">
+      <div class="ph-stat-grid">
+        <div class="ph-stat"><div class="ph-stat-n">4+</div><div class="ph-stat-l">Audit Types</div></div>
+        <div class="ph-stat"><div class="ph-stat-n">33+</div><div class="ph-stat-l">Years Experience</div></div>
+        <div class="ph-stat"><div class="ph-stat-n">35+</div><div class="ph-stat-l">Industry Sectors</div></div>
+        <div class="ph-stat"><div class="ph-stat-n">ICAI</div><div class="ph-stat-l">Registered Firm</div></div>
+      </div>
+      <div class="ph-hl">
+        <p>"An audit is not just a regulatory requirement, it is a powerful business tool that reveals risks, strengthens controls, and builds stakeholder trust."</p>
+        <cite>Audit &amp; Assurance · V J Desai &amp; Co. LLP</cite>
+      </div>
+    </div>
+  </div>
+</div></div>
+
+  <!-- Sticky Sub-Nav -->
+  <div class="subnav"><div class="subnav-inner">
+    <a class="sn active" href="#audit-services">Our Services</a>
+    <a class="sn" href="#audit-how">How It Works</a>
+    <a class="sn" href="#audit-engagement">Engagement</a>
+    <a class="sn" href="#audit-contact">Contact</a>
+  </div></div>
+
+  <!-- OUR SERVICES -->
+  <section id="audit-services" class="svc-sec scroll-sec">
+    <div class="svc-sec-inner">
+      <div class="stag">Audit Services</div>
+      <h2 class="ht">Audit &amp; <em>Assurance</em></h2>
+      <p class="ssub">Independent, risk-based audit engagements delivering assurance, compliance, and actionable insights across all major audit disciplines.</p>
+      <div class="svc-cards-grid">
+        <div class="svc-mini-card">
+          <div class="smc-icon">⚖️</div>
+          <h3>Statutory Audit</h3>
+          <p>Legally mandated audit under Companies Act, 2013. Risk-based planning, internal control review, CARO 2020 reporting, and management letter with actionable recommendations.</p>
+        </div>
+        <div class="svc-mini-card">
+          <div class="smc-icon">📋</div>
+          <h3>Tax Audit</h3>
+          <p>Section 44AB tax audit certification. Form 3CA/3CB/3CD preparation, turnover verification, disallowance review, and capital gains verification.</p>
+        </div>
+        <div class="svc-mini-card">
+          <div class="smc-icon">🔍</div>
+          <h3>Internal Audit</h3>
+          <p>Risk-based review of internal controls and operational processes, PSU and government audits, compliance verification, and detailed management reporting with prioritised findings.</p>
+        </div>
+        <div class="svc-mini-card">
+          <div class="smc-icon">✅</div>
+          <h3>Compliance Audit</h3>
+          <p>Multi-law compliance review across Companies Act, GST, Income Tax, Labour Laws, and FEMA. Secretarial audit, compliance calendar setup, and gap identification before regulators.</p>
+        </div>
+      </div>
+
+      <div class="stag" style="margin-top:2.2rem">Corporate Services</div>
+      <h2 class="ht">Corporate <em>Advisory Services</em></h2>
+      <p class="ssub" style="margin-bottom:0">Strategic advisory across entity formation, restructuring, FEMA, EXIM, and CFO services, guiding businesses at every stage of growth.</p>
+      <div class="svc-cards-grid">
+        <div class="svc-mini-card">
+          <div class="smc-icon">🏢</div>
+          <h3 style="cursor:pointer" onclick="go('biz-setup')">Business Setup Services</h3>
+          <p>End-to-end incorporation for Pvt Ltd companies, LLPs, and foreign entity offices (liaison/branch/project). DPIIT startup recognition and compliance framework setup.</p>
+        </div>
+        <div class="svc-mini-card">
+          <div class="smc-icon">📈</div>
+          <h3 style="cursor:pointer" onclick="go('biz-val')">Business Valuation &amp; Restructuring</h3>
+          <p>Independent business valuations, transaction advisory, corporate restructuring, joint ventures, cross-border structuring, and change management consulting.</p>
+        </div>
+        <div class="svc-mini-card">
+          <div class="smc-icon">⚖️</div>
+          <h3 style="cursor:pointer" onclick="go('company-law')">Company Law</h3>
+          <p>MCA/ROC filings, board and shareholder meeting secretarial support, entity conversion, restructuring advisory, and representation before RoC and NCLT.</p>
+        </div>
+        <div class="svc-mini-card">
+          <div class="smc-icon">🚢</div>
+          <h3 style="cursor:pointer" onclick="go('exim')">Exim Policy</h3>
+          <p>Export-import policy advisory, DGFT licensing, advance authorisation, EPCG scheme, and compliance support for international trade operations.</p>
+        </div>
+        <div class="svc-mini-card">
+          <div class="smc-icon">🌐</div>
+          <h3 style="cursor:pointer" onclick="go('fema')">FEMA &amp; RBI Compliance</h3>
+          <p>FDI approvals, ECB applications, remittance documentation, cross-border compliance advisory, and RBI reporting for businesses and NRIs.</p>
+        </div>
+        <div class="svc-mini-card">
+          <div class="smc-icon">💼</div>
+          <h3 style="cursor:pointer" onclick="go('mgmt-cfo')">Management Consultancy &amp; CFO Services</h3>
+          <p>Virtual CFO services, financial planning and analysis, MIS reporting, board advisory, and strategic management consulting for growing businesses.</p>
+        </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section id="audit-how" class="hiw-sec scroll-sec">
+    <div class="hiw-inner">
+      <div class="stag">How It Works</div>
+      <h2 class="ht">Our Audit <em>Methodology</em></h2>
+      <p class="ssub">A structured six-step audit approach, from risk assessment and planning through to reporting and post-engagement advisory.</p>
+      <div class="steps-grid">
+        <div class="step-card"><div class="step-num">01</div><h4>Planning &amp; Risk Assessment</h4><p>Understanding your business, industry risks, and control environment to design a targeted, risk-based audit strategy.</p></div>
+        <div class="step-card"><div class="step-num">02</div><h4>Internal Control Evaluation</h4><p>Testing the design and operating effectiveness of financial and operational controls to determine extent of substantive procedures.</p></div>
+        <div class="step-card"><div class="step-num">03</div><h4>Substantive Testing</h4><p>Detailed vouching, verification, analytical procedures, and third-party confirmations for all material account balances.</p></div>
+        <div class="step-card"><div class="step-num">04</div><h4>CARO &amp; Annexures</h4><p>Preparation of CARO 2020 report covering all 21 prescribed matters and related annexures for applicable companies.</p></div>
+        <div class="step-card"><div class="step-num">05</div><h4>Completion &amp; Reporting</h4><p>Auditor's Report issuance with opinion, unqualified, qualified, adverse, or disclaimer as the evidence supports.</p></div>
+        <div class="step-card"><div class="step-num">06</div><h4>Post-Audit Advisory</h4><p>Management letter with observations, root cause analysis, and prioritised recommendations to strengthen controls.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ENGAGEMENT -->
+  <section id="audit-engagement" class="eng-sec scroll-sec">
+    <div class="eng-inner">
+      <div class="stag">Engagement</div>
+      <h2 class="ht">Flexible <em>Engagement Models</em></h2>
+      <p class="ssub">We tailor our audit and advisory engagement to your organisation's size, complexity, and compliance requirements.</p>
+      <div class="eng-grid">
+        <div class="eng-card">
+          <h3>Annual Audit Engagement</h3>
+          <p>Defined-scope statutory, tax, or compliance audit, complete with planning, fieldwork, reporting, and management letter. Suitable for all company sizes.</p>
+        </div>
+        <div class="eng-card">
+          <h3>Ongoing Advisory Retainer</h3>
+          <p>Continuous internal audit cycles, management consulting, CFO services, or regulatory advisory, with regular reporting and direct access to our senior team.</p>
+        </div>
+        <div class="eng-card">
+          <h3>Project-Based Engagement</h3>
+          <p>Specific assignments such as due diligence, business valuation, FEMA compounding, company law filings, or one-time restructuring advisory with defined deliverables.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <div id="audit-contact" class="ctab scroll-sec"><div class="ctabi">
+    <div><h2>Need an audit or advisory <em>engagement?</em></h2><p>Our team will design a bespoke approach for your organisation.</p></div>
+    <button class="bgs" onclick="go('contact')">Request Proposal →</button>
+  </div></div>
+</div>
+</div>
+
+</main>
+
+<!-- SHARED FOOTER (loaded by include.js) -->
+<div data-include="../components/footer.html?v=8"></div>
+
+<!-- SITE JS -->
+<script src="../assets/js/include.js?v=2"><\/script>
+<script src="../assets/js/nav.js?v=3"><\/script>
+<script src="../assets/js/main.js"><\/script>
+<script src="../assets/js/lock.js?v=2"><\/script>
+
+</body>
+</html>`;export{s as default};
