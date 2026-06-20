@@ -1,0 +1,333 @@
+const n=`\uFEFF<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+  <meta http-equiv="Pragma" content="no-cache"/>
+  <meta http-equiv="Expires" content="0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GST Opinion | V J Desai &amp; Co. LLP</title>
+
+  <meta name="description" content="GST Opinion services, V J Desai &amp; Co. LLP, Chartered Accountants. ICAI registered, est. 1993, Ahmedabad."/>
+  <meta name="robots" content="noindex, nofollow"/>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+
+  <link rel="stylesheet" href="../assets/css/variables.css?v=2"/>
+  <link rel="stylesheet" href="../assets/css/base.css?v=3"/>
+  <link rel="stylesheet" href="../assets/css/nav.css?v=6"/>
+  <link rel="stylesheet" href="../assets/css/footer.css?v=6"/>
+  <link rel="stylesheet" href="../assets/css/components.css?v=6"/>
+</head>
+<body data-page="gst-opinion">
+
+<!-- SHARED NAV (loaded by include.js) -->
+<div data-include="../components/nav.html?v=7"></div>
+
+<!-- PAGE CONTENT -->
+<main>
+
+<div id="page-gst-opinion">
+<!-- Breadcrumb -->
+  <div class="ph" style="padding:1.4rem 5vw;min-height:auto;background:var(--navy-deep)">
+    <div class="phi">
+      <div class="bc">
+        <a onclick="go('home')">Home</a><span>/</span>
+        <a onclick="go('gst')">GST / Indirect Tax</a><span>/</span>
+        <span>GST Opinion</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <section class="gst-hero">
+    <div class="gst-hero-inner" style="grid-template-columns:1fr;max-width:900px">
+      <div>
+        <div class="gst-hero-eyebrow">GST Opinion Services</div>
+        <h1 style="font-size:clamp(2.2rem,3.6vw,3.2rem)">
+          Resolve GST Uncertainties<br/><em>with Structured Opinion</em>
+        </h1>
+        <p class="gst-hero-lead">
+          Resolve GST uncertainties with structured professional opinion. From transaction-level interpretation to pricing and credit positioning, we help you take decisions backed by clarity and documentation.
+        </p>
+        <p style="font-size:.93rem;line-height:1.88;color:var(--tdim);margin-bottom:.9rem">
+          We provide structured opinion on GST matters to help businesses take informed decisions on complex transactions, pricing, credit eligibility, and compliance positions. Our approach focuses on analysing your business context, evaluating tax implications, and delivering well-reasoned opinions that can be practically implemented across operations and reporting.
+        </p>
+        <p style="font-size:.93rem;line-height:1.88;color:var(--tdim);margin-bottom:1.8rem">
+          Work with V J Desai and Co. to obtain reliable GST opinions aligned with your business realities.
+        </p>
+        <button class="bgs" onclick="go('contact')">Book a Consultation</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- STICKY SUB-NAV -->
+  <div class="gst-subnav">
+    <div class="gst-subnav-inner">
+      <a class="gsn active" href="#gop-services">Our Services</a>
+      <a class="gsn"        href="#gop-process">How It Works</a>
+      <a class="gsn"        href="#gop-engagement">Engagement</a>
+      <a class="gsn"        href="#gop-contact">Contact</a>
+    </div>
+  </div>
+
+  <!-- OUR SERVICES: 7 services from document -->
+  <section id="gop-services" class="gst-services-wrap gst-scroll">
+    <div style="max-width:1440px;margin:0 auto">
+      <div class="stag">Our GST Opinion Services</div>
+      <h2 class="ht">GST Opinion <em>Services We Provide</em></h2>
+      <p class="ssub" style="margin-bottom:2.6rem">
+        We provide comprehensive opinion on GST across multiple business areas.
+      </p>
+
+      <div class="gst-svc-grid" style="grid-template-columns:repeat(3,1fr)">
+
+        <div class="gst-svc-item">
+          <div class="gst-svc-ico">🏭</div>
+          <h3>Business Function Analysis and Classification Opinion</h3>
+          <p>Evaluation of procurement, supply chain, production, and distribution functions with advisory on HSN/SAC classification, exemptions, and tax positioning.</p>
+        </div>
+
+        <div class="gst-svc-item">
+          <div class="gst-svc-ico">💲</div>
+          <h3>Pricing and Commercial Structuring Opinion</h3>
+          <p>Advisory on pricing mechanisms including MRP-based models, bundled supplies, promotional schemes, and their GST implications.</p>
+        </div>
+
+        <div class="gst-svc-item">
+          <div class="gst-svc-ico">💰</div>
+          <h3>Input Tax Credit and Cost Optimization Advisory</h3>
+          <p>Review of credit eligibility, restrictions, and structuring alternatives to optimise credit flow and reduce tax cost.</p>
+        </div>
+
+        <div class="gst-svc-item">
+          <div class="gst-svc-ico">🔁</div>
+          <h3>Alternative Business Model Structuring</h3>
+          <p>Advisory on restructuring transactions or contractual arrangements to improve tax efficiency and manage risk exposure.</p>
+        </div>
+
+        <div class="gst-svc-item">
+          <div class="gst-svc-ico">🏢</div>
+          <h3>Industry-Specific GST Opinion</h3>
+          <p>Sector-focused opinions addressing unique GST implications across industries such as manufacturing, real estate, e-commerce, logistics, financial services, and others.</p>
+        </div>
+
+        <div class="gst-svc-item">
+          <div class="gst-svc-ico">📋</div>
+          <h3>Special Transaction Advisory</h3>
+          <p>Clarification on complex matters such as CSR transactions, employee recoveries, cross-charges, exports, stock transfers, and other non-routine transactions.</p>
+        </div>
+
+        <div class="gst-svc-item">
+          <div class="gst-svc-ico">📂</div>
+          <h3>Records, Returns and Communication Review</h3>
+          <p>Review of reconciliations, audit documentation, returns, and departmental communications to ensure consistency with the adopted GST position.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS: 7 steps from document -->
+  
+  <div id="gop-process" class="gst-process-wrap gst-scroll" style="background:var(--light)">
+    <div class="gst-process-inner">
+      <div class="stag" style="color:var(--gold)">How It Works</div>
+      <h2 class="ht">Our GST Opinion <em>Process</em></h2>
+      <p class="ssub" style="margin-bottom:1.6rem">A structured seven-step process from initial issue identification through to implementation support.</p>
+
+      <div style="width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;padding:.5rem 0 1rem;max-width:900px;margin:0 auto">
+        <svg viewBox="0 0 860 696" style="width:100%;min-width:560px;display:block;" xmlns="http://www.w3.org/2000/svg">
+
+        <polygon points="84,35 764,35 796,75 764,115 84,115" fill="rgba(0,0,0,0.1)"/>
+        <polygon points="80,30 760,30 793,70 760,110 80,110" fill="#1A5276"/>
+        <polygon points="80,30 760,30 793,70 760,43 80,43" fill="rgba(255,255,255,0.1)"/>
+        <polygon points="483.0,73.0 458.0,116.3 408.0,116.3 383.0,73.0 408.0,29.7 458.0,29.7" fill="rgba(0,0,0,0.14)"/>
+        <polygon points="480.0,70.0 455.0,113.3 405.0,113.3 380.0,70.0 405.0,26.7 455.0,26.7" fill="white" stroke="#1A5276" stroke-width="2.5"/>
+        <text x="430" y="80" text-anchor="middle" font-family="Inter,sans-serif" font-size="26" font-weight="800" fill="#1A5276">01</text>
+        <text text-anchor="middle" font-family="Inter,sans-serif" font-size="11.5" font-weight="700" fill="white"><tspan x="215" y="59">Business Understanding</tspan><tspan x="215" dy="15">and Issue Identification</tspan></text>
+        <text text-anchor="start" font-family="Inter,sans-serif" font-size="10" fill="rgba(255,255,255,0.88)"><tspan x="482" y="56">Analyse your business model and</tspan><tspan x="482" dy="14">transaction structure to identify</tspan><tspan x="482" dy="14">the GST issue requiring opinion.</tspan></text>
+
+        <polygon points="104,126 784,126 784,206 104,206 72,166" fill="rgba(0,0,0,0.1)"/>
+        <polygon points="100,121 780,121 780,201 100,201 67,161" fill="#0E6655"/>
+        <polygon points="100,121 780,121 780,134 100,134 67,161" fill="rgba(255,255,255,0.1)"/>
+        <polygon points="483.0,164.0 458.0,207.3 408.0,207.3 383.0,164.0 408.0,120.7 458.0,120.7" fill="rgba(0,0,0,0.14)"/>
+        <polygon points="480.0,161.0 455.0,204.3 405.0,204.3 380.0,161.0 405.0,117.7 455.0,117.7" fill="white" stroke="#0E6655" stroke-width="2.5"/>
+        <text x="430" y="171" text-anchor="middle" font-family="Inter,sans-serif" font-size="26" font-weight="800" fill="#0E6655">02</text>
+        <text text-anchor="middle" font-family="Inter,sans-serif" font-size="11.5" font-weight="700" fill="white"><tspan x="645" y="150">Documentation</tspan><tspan x="645" dy="15">and Data Review</tspan></text>
+        <text text-anchor="end" font-family="Inter,sans-serif" font-size="10" fill="rgba(255,255,255,0.88)"><tspan x="378" y="147">Review contracts, invoices, returns</tspan><tspan x="378" dy="14">and internal records to establish</tspan><tspan x="378" dy="14">the factual base of the matter.</tspan></text>
+
+        <polygon points="84,217 764,217 796,257 764,297 84,297" fill="rgba(0,0,0,0.1)"/>
+        <polygon points="80,212 760,212 793,252 760,292 80,292" fill="#6C3483"/>
+        <polygon points="80,212 760,212 793,252 760,225 80,225" fill="rgba(255,255,255,0.1)"/>
+        <polygon points="483.0,255.0 458.0,298.3 408.0,298.3 383.0,255.0 408.0,211.7 458.0,211.7" fill="rgba(0,0,0,0.14)"/>
+        <polygon points="480.0,252.0 455.0,295.3 405.0,295.3 380.0,252.0 405.0,208.7 455.0,208.7" fill="white" stroke="#6C3483" stroke-width="2.5"/>
+        <text x="430" y="262" text-anchor="middle" font-family="Inter,sans-serif" font-size="26" font-weight="800" fill="#6C3483">03</text>
+        <text text-anchor="middle" font-family="Inter,sans-serif" font-size="11.5" font-weight="700" fill="white"><tspan x="215" y="241">Legal and Transactional</tspan><tspan x="215" dy="15">Analysis</tspan></text>
+        <text text-anchor="start" font-family="Inter,sans-serif" font-size="10" fill="rgba(255,255,255,0.88)"><tspan x="482" y="238">Evaluate the applicable GST law</tspan><tspan x="482" dy="14">and interpretational positions</tspan><tspan x="482" dy="14">in your specific business context.</tspan></text>
+
+        <polygon points="104,308 784,308 784,388 104,388 72,348" fill="rgba(0,0,0,0.1)"/>
+        <polygon points="100,303 780,303 780,383 100,383 67,343" fill="#922B21"/>
+        <polygon points="100,303 780,303 780,316 100,316 67,343" fill="rgba(255,255,255,0.1)"/>
+        <polygon points="483.0,346.0 458.0,389.3 408.0,389.3 383.0,346.0 408.0,302.7 458.0,302.7" fill="rgba(0,0,0,0.14)"/>
+        <polygon points="480.0,343.0 455.0,386.3 405.0,386.3 380.0,343.0 405.0,299.7 455.0,299.7" fill="white" stroke="#922B21" stroke-width="2.5"/>
+        <text x="430" y="353" text-anchor="middle" font-family="Inter,sans-serif" font-size="26" font-weight="800" fill="#922B21">04</text>
+        <text text-anchor="middle" font-family="Inter,sans-serif" font-size="11.5" font-weight="700" fill="white"><tspan x="645" y="332">Draft Opinion</tspan><tspan x="645" dy="15">Preparation</tspan></text>
+        <text text-anchor="end" font-family="Inter,sans-serif" font-size="10" fill="rgba(255,255,255,0.88)"><tspan x="378" y="329">A structured draft covering analysis,</tspan><tspan x="378" dy="14">interpretation and the recommended</tspan><tspan x="378" dy="14">GST position is prepared.</tspan></text>
+
+        <polygon points="84,399 764,399 796,439 764,479 84,479" fill="rgba(0,0,0,0.1)"/>
+        <polygon points="80,394 760,394 793,434 760,474 80,474" fill="#B7770D"/>
+        <polygon points="80,394 760,394 793,434 760,407 80,407" fill="rgba(255,255,255,0.1)"/>
+        <polygon points="483.0,437.0 458.0,480.3 408.0,480.3 383.0,437.0 408.0,393.7 458.0,393.7" fill="rgba(0,0,0,0.14)"/>
+        <polygon points="480.0,434.0 455.0,477.3 405.0,477.3 380.0,434.0 405.0,390.7 455.0,390.7" fill="white" stroke="#B7770D" stroke-width="2.5"/>
+        <text x="430" y="444" text-anchor="middle" font-family="Inter,sans-serif" font-size="26" font-weight="800" fill="#B7770D">05</text>
+        <text text-anchor="middle" font-family="Inter,sans-serif" font-size="11.5" font-weight="700" fill="white"><tspan x="215" y="423">Partner-Level</tspan><tspan x="215" dy="15">Review</tspan></text>
+        <text text-anchor="start" font-family="Inter,sans-serif" font-size="10" fill="rgba(255,255,255,0.88)"><tspan x="482" y="420">Draft reviewed and validated at</tspan><tspan x="482" dy="14">senior level to ensure</tspan><tspan x="482" dy="14">completeness and consistency.</tspan></text>
+
+        <polygon points="104,490 784,490 784,570 104,570 72,530" fill="rgba(0,0,0,0.1)"/>
+        <polygon points="100,485 780,485 780,565 100,565 67,525" fill="#1C4E80"/>
+        <polygon points="100,485 780,485 780,498 100,498 67,525" fill="rgba(255,255,255,0.1)"/>
+        <polygon points="483.0,528.0 458.0,571.3 408.0,571.3 383.0,528.0 408.0,484.7 458.0,484.7" fill="rgba(0,0,0,0.14)"/>
+        <polygon points="480.0,525.0 455.0,568.3 405.0,568.3 380.0,525.0 405.0,481.7 455.0,481.7" fill="white" stroke="#1C4E80" stroke-width="2.5"/>
+        <text x="430" y="535" text-anchor="middle" font-family="Inter,sans-serif" font-size="26" font-weight="800" fill="#1C4E80">06</text>
+        <text text-anchor="middle" font-family="Inter,sans-serif" font-size="11.5" font-weight="700" fill="white"><tspan x="645" y="514">Final Opinion</tspan><tspan x="645" dy="15">Delivery</tspan></text>
+        <text text-anchor="end" font-family="Inter,sans-serif" font-size="10" fill="rgba(255,255,255,0.88)"><tspan x="378" y="511">Opinion issued with clear position,</tspan><tspan x="378" dy="14">stated assumptions and implementation</tspan><tspan x="378" dy="14">considerations fully articulated.</tspan></text>
+
+        <polygon points="84,581 764,581 796,621 764,661 84,661" fill="rgba(0,0,0,0.1)"/>
+        <polygon points="80,576 760,576 793,616 760,656 80,656" fill="#285E61"/>
+        <polygon points="80,576 760,576 793,616 760,589 80,589" fill="rgba(255,255,255,0.1)"/>
+        <polygon points="483.0,619.0 458.0,662.3 408.0,662.3 383.0,619.0 408.0,575.7 458.0,575.7" fill="rgba(0,0,0,0.14)"/>
+        <polygon points="480.0,616.0 455.0,659.3 405.0,659.3 380.0,616.0 405.0,572.7 455.0,572.7" fill="white" stroke="#285E61" stroke-width="2.5"/>
+        <text x="430" y="626" text-anchor="middle" font-family="Inter,sans-serif" font-size="26" font-weight="800" fill="#285E61">07</text>
+        <text text-anchor="middle" font-family="Inter,sans-serif" font-size="11.5" font-weight="700" fill="white"><tspan x="215" y="605">Implementation</tspan><tspan x="215" dy="15">Support</tspan></text>
+        <text text-anchor="start" font-family="Inter,sans-serif" font-size="10" fill="rgba(255,255,255,0.88)"><tspan x="482" y="602">Assist in aligning your systems,</tspan><tspan x="482" dy="14">documentation and processes with</tspan><tspan x="482" dy="14">the adopted GST position.</tspan></text>
+
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <!-- ENGAGEMENT MODELS: 3 models from document -->
+  <div id="gop-engagement" class="gst-eng-wrap gst-scroll">
+    <div class="gst-eng-inner">
+      <div class="stag">Engagement</div>
+      <h2 class="ht">Choose Your <em>Engagement Model</em></h2>
+      <p class="ssub" style="margin-bottom:0">
+        We offer flexible engagement formats based on your advisory requirements.
+      </p>
+
+      <div class="gst-eng-grid">
+
+        <div class="gst-eng-card">
+          <div class="gst-eng-top">
+            <div class="gst-eng-letter">A</div>
+            <div class="gst-eng-badge">Transaction-Specific</div>
+            <h3>Transaction-Specific Opinion</h3>
+            <p>Suitable for evaluating a specific issue, contract, or transaction before execution.</p>
+          </div>
+          <div class="gst-eng-divider"></div>
+          <div class="gst-eng-body">
+            <ul class="gst-eng-feat">
+              <li>Single transaction or contract review</li>
+              <li>Pre-execution clarity and opinion</li>
+              <li>Focused scope and quick turnaround</li>
+              <li>Documented position and rationale</li>
+            </ul>
+          </div>
+          <button class="bgs" onclick="go('contact')" style="margin:0 1.8rem 1.8rem;width:calc(100% - 3.6rem)">Get a Proposal</button>
+        </div>
+
+        <div class="gst-eng-card" style="border-color:var(--gold);box-shadow:0 0 0 1px var(--gold)">
+          <div class="gst-eng-top" style="background:linear-gradient(135deg,var(--navy),rgba(201,168,76,.18))">
+            <div class="gst-eng-letter">B</div>
+            <div class="gst-eng-badge" style="background:var(--gold);color:var(--white);border-color:var(--gold)">Ongoing</div>
+            <h3>Ongoing Advisory Support</h3>
+            <p>Continuous involvement for businesses requiring regular GST opinion on operational decisions.</p>
+          </div>
+          <div class="gst-eng-divider"></div>
+          <div class="gst-eng-body">
+            <ul class="gst-eng-feat">
+              <li>Regular opinion on business decisions</li>
+              <li>Continuous operational GST advisory</li>
+              <li>Dedicated access to our expert team</li>
+              <li>Ongoing implementation support</li>
+            </ul>
+          </div>
+          <button class="bgs" onclick="go('contact')" style="margin:0 1.8rem 1.8rem;width:calc(100% - 3.6rem)">Start Ongoing Support</button>
+        </div>
+
+        <div class="gst-eng-card">
+          <div class="gst-eng-top">
+            <div class="gst-eng-letter">C</div>
+            <div class="gst-eng-badge">Retainer</div>
+            <h3>Retainer-Based Advisory</h3>
+            <p>Structured engagement ensuring access to expert opinion for ongoing business decisions and changes.</p>
+          </div>
+          <div class="gst-eng-divider"></div>
+          <div class="gst-eng-body">
+            <ul class="gst-eng-feat">
+              <li>Structured retainer arrangement</li>
+              <li>Expert opinion on business changes</li>
+              <li>Proactive advisory on new matters</li>
+              <li>Consistent and documented positions</li>
+            </ul>
+          </div>
+          <button class="bgs" onclick="go('contact')" style="margin:0 1.8rem 1.8rem;width:calc(100% - 3.6rem)">Start a Retainer</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTACT / FINAL CTA -->
+  <div id="gop-contact" class="gst-cta-wrap gst-scroll">
+    <div class="gst-cta-inner">
+
+      <div class="gst-cta-left">
+        <div class="stag" style="color:var(--gold)">Contact</div>
+        <h2>Connect with <em>V J Desai and Co.</em></h2>
+        <p style="font-size:.93rem;line-height:1.82;color:var(--tdim);margin-bottom:1.6rem">
+          Complex GST matters require clarity before execution, not correction after. Connect with V J Desai and Co. to obtain a structured opinion on GST tailored to your business decisions.
+        </p>
+      </div>
+
+      <div class="gst-cta-right">
+        <h3>Book a Consultation</h3>
+        <p style="font-size:.86rem;line-height:1.8;color:rgba(255,255,255,.55);margin-bottom:1.8rem">
+          Our team will review your GST matter and deliver a well-reasoned, practically implementable opinion for your business.
+        </p>
+        <button class="bgs" onclick="go('contact')" style="width:100%;justify-content:center;padding:.95rem;margin-bottom:1.8rem">
+          Book a Consultation
+        </button>
+
+        <!-- Internal links from document -->
+        <div style="padding-top:1.5rem;border-top:1px solid rgba(255,255,255,.08)">
+          <div style="font-size:.68rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.35);margin-bottom:.85rem">Related Services</div>
+          <div style="display:flex;flex-direction:column;gap:.5rem">
+            <a onclick="go('gst')"     style="font-size:.82rem;color:rgba(201,168,76,.8);cursor:pointer">GST Compliance Services</a>
+            <a onclick="go('audit')"   style="font-size:.82rem;color:rgba(201,168,76,.8);cursor:pointer">GST Audit Support</a>
+            <a onclick="go('gst')"     style="font-size:.82rem;color:rgba(201,168,76,.8);cursor:pointer">GST Advisory Services</a>
+            <a onclick="go('gst-lit')" style="font-size:.82rem;color:rgba(201,168,76,.8);cursor:pointer">GST Litigation Services</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+</main>
+
+<!-- SHARED FOOTER (loaded by include.js) -->
+<div data-include="../components/footer.html?v=8"></div>
+
+<!-- SITE JS -->
+<script src="../assets/js/include.js?v=2"><\/script>
+<script src="../assets/js/nav.js?v=3"><\/script>
+<script src="../assets/js/main.js"><\/script>
+<script src="../assets/js/lock.js?v=2"><\/script>
+
+</body>
+</html>`;export{n as default};

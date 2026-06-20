@@ -1,0 +1,346 @@
+const t=`\uFEFF<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+  <meta http-equiv="Pragma" content="no-cache"/>
+  <meta http-equiv="Expires" content="0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Internal Audit | V J Desai &amp; Co. LLP</title>
+
+  <meta name="description" content="Internal Audit services, V J Desai &amp; Co. LLP, Chartered Accountants. ICAI registered, est. 1993, Ahmedabad."/>
+  <meta name="robots" content="noindex, nofollow"/>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+
+  <link rel="stylesheet" href="../assets/css/variables.css?v=2"/>
+  <link rel="stylesheet" href="../assets/css/base.css?v=3"/>
+  <link rel="stylesheet" href="../assets/css/nav.css?v=6"/>
+  <link rel="stylesheet" href="../assets/css/footer.css?v=6"/>
+  <link rel="stylesheet" href="../assets/css/components.css?v=6"/>
+</head>
+<body data-page="int-audit">
+
+<!-- SHARED NAV (loaded by include.js) -->
+<div data-include="../components/nav.html?v=7"></div>
+
+<!-- PAGE CONTENT -->
+<main>
+
+<div id="page-int-audit">
+<!-- Breadcrumb -->
+  <div class="ph" style="padding:1.4rem 5vw;min-height:auto;background:var(--navy-deep)">
+    <div class="phi">
+      <div class="bc">
+        <a onclick="go('home')">Home</a><span>/</span>
+        <a onclick="go('audit')">Audit and Advisory</a><span>/</span>
+        <span>Internal Audit</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <section class="gst-hero">
+    <div class="gst-hero-inner" style="grid-template-columns:1fr;max-width:900px">
+      <div>
+        <div class="gst-hero-eyebrow">Internal Audit Service</div>
+        <h1 style="font-size:clamp(2rem,3.4vw,3rem)">
+          Internal Audit That Strengthens Control,<br/><em>Not Just Compliance</em>
+        </h1>
+        <p class="gst-hero-lead">
+          Internal audit today is not limited to verification. It directly impacts how your business manages risk, controls operations, and responds to regulatory scrutiny.
+        </p>
+        <p style="font-size:.93rem;line-height:1.88;color:var(--tdim);margin-bottom:.9rem">
+          Our Chartered Accountant-led team works closely with management to review processes, test controls, and identify gaps that can affect financial integrity or operational efficiency.
+        </p>
+        <p style="font-size:.93rem;line-height:1.88;color:var(--tdim);margin-bottom:.9rem">
+          We deliver internal audit services that go beyond checklist compliance. Our approach focuses on identifying control gaps, strengthening governance, and aligning your processes with regulatory expectations such as those under the Companies Act, 2013.
+        </p>
+        <p style="font-size:.93rem;line-height:1.88;color:var(--tdim);margin-bottom:1.8rem">
+          We structure each engagement around your risk areas and statutory expectations, including internal audit requirements under the Companies Act, 2013. Engage V J Desai and Co. to build a control environment that supports growth while reducing exposure.
+        </p>
+        <button class="bgs" onclick="go('contact')">Book a Consultation</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- STICKY SUB-NAV -->
+  <div class="gst-subnav">
+    <div class="gst-subnav-inner">
+      <a class="gsn active" href="#ia-services">Our Services</a>
+      <a class="gsn"        href="#ia-process">How It Works</a>
+      <a class="gsn"        href="#ia-engagement">Engagement</a>
+      <a class="gsn"        href="#ia-contact">Contact</a>
+    </div>
+  </div>
+
+  <!-- OUR SERVICES: 7 services from document -->
+  <section id="ia-services" class="gst-services-wrap gst-scroll">
+    <div style="max-width:1440px;margin:0 auto">
+      <div class="stag">Our Services</div>
+      <h2 class="ht">Internal Audit <em>Services We Provide</em></h2>
+      <p class="ssub" style="margin-bottom:2.6rem">
+        Each engagement is designed around your business model, ensuring practical and implementable outputs rather than theoretical observations.
+      </p>
+
+      <div class="gst-svc-grid" style="grid-template-columns:repeat(3,1fr)">
+
+        <div class="gst-svc-item">
+          <div class="gst-svc-ico">🗺️</div>
+          <h3>Risk Assessment and Audit Structuring</h3>
+          <p>We identify operational, financial, and compliance risks and structure the audit plan accordingly. This ensures audit efforts are directed toward critical exposure areas.</p>
+        </div>
+
+        <div class="gst-svc-item">
+          <div class="gst-svc-ico">✅</div>
+          <h3>Control Testing and Validation</h3>
+          <p>We test internal controls across finance, operations, and systems using walkthroughs, sampling, and data analysis to confirm actual effectiveness.</p>
+        </div>
+
+        <div class="gst-svc-item">
+          <div class="gst-svc-ico">🔍</div>
+          <h3>Process-Level Audit Reviews</h3>
+          <p>Key functions such as procurement, revenue cycles, payroll, and inventory are reviewed for inefficiencies, leakages, and compliance gaps.</p>
+        </div>
+
+        <div class="gst-svc-item">
+          <div class="gst-svc-ico">⚖️</div>
+          <h3>Regulatory Compliance Review</h3>
+          <p>We evaluate adherence to applicable laws, including internal audit applicability under the Companies Act, 2013, and other governance requirements.</p>
+        </div>
+
+        <div class="gst-svc-item">
+          <div class="gst-svc-ico">🚨</div>
+          <h3>Fraud Risk Identification</h3>
+          <p>We identify unusual patterns, override risks, and control bypass scenarios through analytical review and transaction testing.</p>
+        </div>
+
+        <div class="gst-svc-item">
+          <div class="gst-svc-ico">📋</div>
+          <h3>Internal Audit Report and Management Action Plan</h3>
+          <p>A structured internal audit report is issued with prioritised observations, risk classification, and implementable recommendations.</p>
+        </div>
+
+        <div class="gst-svc-item">
+          <div class="gst-svc-ico">🛠️</div>
+          <h3>Post-Audit Implementation Support</h3>
+          <p>We assist in tracking corrective actions and validating whether improvements are effectively implemented.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS: 5 steps from document -->
+  
+  <div id="ia-process" class="gst-process-wrap gst-scroll" style="background:var(--light)">
+    <div class="gst-process-inner">
+      <div class="stag" style="color:var(--gold)">How It Works</div>
+      <h2 class="ht">Our Internal Audit <em>Process</em></h2>
+      <p class="ssub on-dark" style="margin-bottom:1.2rem">A five-step process from scope definition through to final report and follow-up.</p>
+      <div style="width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;padding:1.5rem 0 2rem;max-width:1000px;margin:0 auto">
+        <svg viewBox="0 0 872 419" style="width:100%;min-width:640px;display:block;" xmlns="http://www.w3.org/2000/svg">
+  <line x1="99" y1="273" x2="99" y2="299" stroke="#1A5276" stroke-width="1.5" stroke-dasharray="4 3" opacity="0.55"/>
+  <circle cx="99" cy="299" r="4" fill="#1A5276"/>
+  <rect x="31" y="302" width="142" height="100" rx="5" fill="rgba(0,0,0,0.1)"/>
+  <rect x="28" y="299" width="142" height="100" rx="5" fill="#1A5276"/>
+  <rect x="28" y="299" width="142" height="25" rx="5" fill="rgba(255,255,255,0.1)"/>
+  <text x="99" y="314" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" font-weight="700" fill="rgba(255,255,255,0.75)" letter-spacing="1">STEP 01</text>
+  <text x="99" y="328" text-anchor="middle" font-family="Inter,sans-serif" font-size="10.5" font-weight="700" fill="white">Scope Definition</text>
+  <text x="99" y="342" text-anchor="middle" font-family="Inter,sans-serif" font-size="10.5" font-weight="700" fill="white">& Alignment</text>
+  <text x="99" y="357" text-anchor="middle" font-family="Inter,sans-serif" font-size="8.5" fill="rgba(255,255,255,0.9)">Understand business model,</text>
+  <text x="99" y="370" text-anchor="middle" font-family="Inter,sans-serif" font-size="8.5" fill="rgba(255,255,255,0.9)">governance structure</text>
+  <text x="99" y="383" text-anchor="middle" font-family="Inter,sans-serif" font-size="8.5" fill="rgba(255,255,255,0.9)">and audit expectations.</text>
+
+  <line x1="261" y1="165" x2="261" y2="139" stroke="#6C3483" stroke-width="1.5" stroke-dasharray="4 3" opacity="0.55"/>
+  <circle cx="261" cy="139" r="4" fill="#6C3483"/>
+  <rect x="193" y="42" width="142" height="100" rx="5" fill="rgba(0,0,0,0.1)"/>
+  <rect x="190" y="39" width="142" height="100" rx="5" fill="#6C3483"/>
+  <rect x="190" y="39" width="142" height="25" rx="5" fill="rgba(255,255,255,0.1)"/>
+  <text x="261" y="54" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" font-weight="700" fill="rgba(255,255,255,0.75)" letter-spacing="1">STEP 02</text>
+  <text x="261" y="68" text-anchor="middle" font-family="Inter,sans-serif" font-size="10.5" font-weight="700" fill="white">Risk Mapping</text>
+  <text x="261" y="82" text-anchor="middle" font-family="Inter,sans-serif" font-size="10.5" font-weight="700" fill="white">& Planning</text>
+  <text x="261" y="97" text-anchor="middle" font-family="Inter,sans-serif" font-size="8.5" fill="rgba(255,255,255,0.9)">Map key processes and risk</text>
+  <text x="261" y="110" text-anchor="middle" font-family="Inter,sans-serif" font-size="8.5" fill="rgba(255,255,255,0.9)">points; design audit</text>
+  <text x="261" y="123" text-anchor="middle" font-family="Inter,sans-serif" font-size="8.5" fill="rgba(255,255,255,0.9)">procedures accordingly.</text>
+
+  <line x1="423" y1="273" x2="423" y2="299" stroke="#1E8449" stroke-width="1.5" stroke-dasharray="4 3" opacity="0.55"/>
+  <circle cx="423" cy="299" r="4" fill="#1E8449"/>
+  <rect x="355" y="302" width="142" height="100" rx="5" fill="rgba(0,0,0,0.1)"/>
+  <rect x="352" y="299" width="142" height="100" rx="5" fill="#1E8449"/>
+  <rect x="352" y="299" width="142" height="25" rx="5" fill="rgba(255,255,255,0.1)"/>
+  <text x="423" y="314" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" font-weight="700" fill="rgba(255,255,255,0.75)" letter-spacing="1">STEP 03</text>
+  <text x="423" y="328" text-anchor="middle" font-family="Inter,sans-serif" font-size="10.5" font-weight="700" fill="white">Execution</text>
+  <text x="423" y="342" text-anchor="middle" font-family="Inter,sans-serif" font-size="10.5" font-weight="700" fill="white">& Fieldwork</text>
+  <text x="423" y="357" text-anchor="middle" font-family="Inter,sans-serif" font-size="8.5" fill="rgba(255,255,255,0.9)">Test transactions, validate</text>
+  <text x="423" y="370" text-anchor="middle" font-family="Inter,sans-serif" font-size="8.5" fill="rgba(255,255,255,0.9)">controls and perform</text>
+  <text x="423" y="383" text-anchor="middle" font-family="Inter,sans-serif" font-size="8.5" fill="rgba(255,255,255,0.9)">process walkthroughs.</text>
+
+  <line x1="585" y1="165" x2="585" y2="139" stroke="#B7770D" stroke-width="1.5" stroke-dasharray="4 3" opacity="0.55"/>
+  <circle cx="585" cy="139" r="4" fill="#B7770D"/>
+  <rect x="517" y="42" width="142" height="100" rx="5" fill="rgba(0,0,0,0.1)"/>
+  <rect x="514" y="39" width="142" height="100" rx="5" fill="#B7770D"/>
+  <rect x="514" y="39" width="142" height="25" rx="5" fill="rgba(255,255,255,0.1)"/>
+  <text x="585" y="54" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" font-weight="700" fill="rgba(255,255,255,0.75)" letter-spacing="1">STEP 04</text>
+  <text x="585" y="68" text-anchor="middle" font-family="Inter,sans-serif" font-size="10.5" font-weight="700" fill="white">Observation</text>
+  <text x="585" y="82" text-anchor="middle" font-family="Inter,sans-serif" font-size="10.5" font-weight="700" fill="white">& Discussion</text>
+  <text x="585" y="97" text-anchor="middle" font-family="Inter,sans-serif" font-size="8.5" fill="rgba(255,255,255,0.9)">Discuss findings with</text>
+  <text x="585" y="110" text-anchor="middle" font-family="Inter,sans-serif" font-size="8.5" fill="rgba(255,255,255,0.9)">management for clarity,</text>
+  <text x="585" y="123" text-anchor="middle" font-family="Inter,sans-serif" font-size="8.5" fill="rgba(255,255,255,0.9)">context and accuracy.</text>
+
+  <line x1="747" y1="273" x2="747" y2="299" stroke="#922B21" stroke-width="1.5" stroke-dasharray="4 3" opacity="0.55"/>
+  <circle cx="747" cy="299" r="4" fill="#922B21"/>
+  <rect x="679" y="302" width="142" height="100" rx="5" fill="rgba(0,0,0,0.1)"/>
+  <rect x="676" y="299" width="142" height="100" rx="5" fill="#922B21"/>
+  <rect x="676" y="299" width="142" height="25" rx="5" fill="rgba(255,255,255,0.1)"/>
+  <text x="747" y="314" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" font-weight="700" fill="rgba(255,255,255,0.75)" letter-spacing="1">STEP 05</text>
+  <text x="747" y="328" text-anchor="middle" font-family="Inter,sans-serif" font-size="10.5" font-weight="700" fill="white">Audit Report</text>
+  <text x="747" y="342" text-anchor="middle" font-family="Inter,sans-serif" font-size="10.5" font-weight="700" fill="white">& Follow-Up</text>
+  <text x="747" y="357" text-anchor="middle" font-family="Inter,sans-serif" font-size="8.5" fill="rgba(255,255,255,0.9)">Issue report with actionable</text>
+  <text x="747" y="370" text-anchor="middle" font-family="Inter,sans-serif" font-size="8.5" fill="rgba(255,255,255,0.9)">recommendations and support</text>
+  <text x="747" y="383" text-anchor="middle" font-family="Inter,sans-serif" font-size="8.5" fill="rgba(255,255,255,0.9)">implementation.</text>
+
+  <polygon points="666,165 828,165 854,219 828,273 666,273 640,219" fill="#922B21"/>
+  <polygon points="666,165 828,165 854,219 828,273 666,273 640,219" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"/>
+  <polygon points="504,165 666,165 692,219 666,273 504,273 478,219" fill="#B7770D"/>
+  <polygon points="504,165 666,165 692,219 666,273 504,273 478,219" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"/>
+  <polygon points="342,165 504,165 530,219 504,273 342,273 316,219" fill="#1E8449"/>
+  <polygon points="342,165 504,165 530,219 504,273 342,273 316,219" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"/>
+  <polygon points="180,165 342,165 368,219 342,273 180,273 154,219" fill="#6C3483"/>
+  <polygon points="180,165 342,165 368,219 342,273 180,273 154,219" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"/>
+  <polygon points="18,165 180,165 206,219 180,273 18,273" fill="#1A5276"/>
+  <polygon points="18,165 180,165 206,219 180,273 18,273" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"/>
+  <text x="99" y="234" text-anchor="middle" font-family="Inter,sans-serif" font-size="44" font-weight="800" fill="rgba(255,255,255,0.92)">01</text>
+  <text x="261" y="234" text-anchor="middle" font-family="Inter,sans-serif" font-size="44" font-weight="800" fill="rgba(255,255,255,0.92)">02</text>
+  <text x="423" y="234" text-anchor="middle" font-family="Inter,sans-serif" font-size="44" font-weight="800" fill="rgba(255,255,255,0.92)">03</text>
+  <text x="585" y="234" text-anchor="middle" font-family="Inter,sans-serif" font-size="44" font-weight="800" fill="rgba(255,255,255,0.92)">04</text>
+  <text x="747" y="234" text-anchor="middle" font-family="Inter,sans-serif" font-size="44" font-weight="800" fill="rgba(255,255,255,0.92)">05</text>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <!-- ENGAGEMENT MODELS: 3 from document -->
+  <div id="ia-engagement" class="gst-eng-wrap gst-scroll">
+    <div class="gst-eng-inner">
+      <div class="stag">Engagement</div>
+      <h2 class="ht">Choose Your <em>Engagement Model</em></h2>
+      <p class="ssub" style="margin-bottom:0">
+        Each model is structured to match the scale and complexity of your operations.
+      </p>
+
+      <div class="gst-eng-grid">
+
+        <div class="gst-eng-card">
+          <div class="gst-eng-top">
+            <div class="gst-eng-letter">A</div>
+            <div class="gst-eng-badge">Project-Based</div>
+            <h3>Project-Based Engagement</h3>
+            <p>Suitable for defined internal audit assignments or specific process reviews.</p>
+          </div>
+          <div class="gst-eng-divider"></div>
+          <div class="gst-eng-body">
+            <ul class="gst-eng-feat">
+              <li>Defined internal audit assignment</li>
+              <li>Specific process or function review</li>
+              <li>Risk assessment and control testing</li>
+              <li>Structured report with recommendations</li>
+            </ul>
+          </div>
+          <button class="bgs" onclick="go('contact')" style="margin:0 1.8rem 1.8rem;width:calc(100% - 3.6rem)">Get a Proposal</button>
+        </div>
+
+        <div class="gst-eng-card" style="border-color:var(--gold);box-shadow:0 0 0 1px var(--gold)">
+          <div class="gst-eng-top" style="background:linear-gradient(135deg,var(--navy),rgba(201,168,76,.18))">
+            <div class="gst-eng-letter">B</div>
+            <div class="gst-eng-badge" style="background:var(--gold);color:var(--white);border-color:var(--gold)">Retainer</div>
+            <h3>Retainer-Based Internal Audit Function</h3>
+            <p>We act as an extended internal audit arm, conducting periodic audits and reporting to management or audit committees.</p>
+          </div>
+          <div class="gst-eng-divider"></div>
+          <div class="gst-eng-body">
+            <ul class="gst-eng-feat">
+              <li>Ongoing internal audit function</li>
+              <li>Periodic audits and cycle reviews</li>
+              <li>Reporting to audit committees</li>
+              <li>Continuous control monitoring</li>
+            </ul>
+          </div>
+          <button class="bgs" onclick="go('contact')" style="margin:0 1.8rem 1.8rem;width:calc(100% - 3.6rem)">Start Retainer Function</button>
+        </div>
+
+        <div class="gst-eng-card">
+          <div class="gst-eng-top">
+            <div class="gst-eng-letter">C</div>
+            <div class="gst-eng-badge">Advisory</div>
+            <h3>Advisory and Review Support</h3>
+            <p>Focused review of internal audit reports, control frameworks, or specific risk areas.</p>
+          </div>
+          <div class="gst-eng-divider"></div>
+          <div class="gst-eng-body">
+            <ul class="gst-eng-feat">
+              <li>Internal audit report review</li>
+              <li>Control framework evaluation</li>
+              <li>Specific risk area advisory</li>
+              <li>Targeted and focused support</li>
+            </ul>
+          </div>
+          <button class="bgs" onclick="go('contact')" style="margin:0 1.8rem 1.8rem;width:calc(100% - 3.6rem)">Request Advisory</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTACT / FINAL CTA -->
+  <div id="ia-contact" class="gst-cta-wrap gst-scroll">
+    <div class="gst-cta-inner">
+
+      <div class="gst-cta-left">
+        <div class="stag" style="color:var(--gold)">Contact</div>
+        <h2>Connect with <em>V J Desai and Co.</em></h2>
+        <p style="font-size:.93rem;line-height:1.82;color:var(--tdim);margin-bottom:1.6rem">
+          Strengthen your control environment and reduce compliance exposure with a structured internal audit approach. Connect with V J Desai and Co. to initiate a focused internal audit engagement.
+        </p>
+      </div>
+
+      <div class="gst-cta-right">
+        <h3>Book a Consultation</h3>
+        <p style="font-size:.86rem;line-height:1.8;color:rgba(255,255,255,.55);margin-bottom:1.8rem">
+          Our CA-led internal audit team will assess your control environment and design a structured engagement aligned with your risk profile and statutory requirements.
+        </p>
+        <button class="bgs" onclick="go('contact')" style="width:100%;justify-content:center;padding:.95rem;margin-bottom:1.8rem">
+          Book a Consultation
+        </button>
+
+        <!-- Internal links from document -->
+        <div style="padding-top:1.5rem;border-top:1px solid rgba(255,255,255,.08)">
+          <div style="font-size:.68rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.35);margin-bottom:.85rem">Related Services</div>
+          <div style="display:flex;flex-direction:column;gap:.5rem">
+            <a onclick="go('audit')"      style="font-size:.82rem;color:rgba(201,168,76,.8);cursor:pointer">Audit and Assurance Services</a>
+            <a onclick="go('stat-audit')" style="font-size:.82rem;color:rgba(201,168,76,.8);cursor:pointer">Statutory Audit Services</a>
+            <a onclick="go('audit')"      style="font-size:.82rem;color:rgba(201,168,76,.8);cursor:pointer">Risk Management Advisory</a>
+            <a onclick="go('gst')"        style="font-size:.82rem;color:rgba(201,168,76,.8);cursor:pointer">GST Compliance Support</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+</main>
+
+<!-- SHARED FOOTER (loaded by include.js) -->
+<div data-include="../components/footer.html?v=8"></div>
+
+<!-- SITE JS -->
+<script src="../assets/js/include.js?v=2"><\/script>
+<script src="../assets/js/nav.js?v=3"><\/script>
+<script src="../assets/js/main.js"><\/script>
+<script src="../assets/js/lock.js?v=2"><\/script>
+
+</body>
+</html>`;export{t as default};

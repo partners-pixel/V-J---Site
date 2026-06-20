@@ -1,0 +1,326 @@
+const n=`\uFEFF<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+  <meta http-equiv="Pragma" content="no-cache"/>
+  <meta http-equiv="Expires" content="0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GST Litigation | V J Desai &amp; Co. LLP</title>
+
+  <meta name="description" content="GST Litigation services, V J Desai &amp; Co. LLP, Chartered Accountants. ICAI registered, est. 1993, Ahmedabad."/>
+  <meta name="robots" content="noindex, nofollow"/>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+
+  <link rel="stylesheet" href="../assets/css/variables.css?v=2"/>
+  <link rel="stylesheet" href="../assets/css/base.css?v=3"/>
+  <link rel="stylesheet" href="../assets/css/nav.css?v=6"/>
+  <link rel="stylesheet" href="../assets/css/footer.css?v=6"/>
+  <link rel="stylesheet" href="../assets/css/components.css?v=6"/>
+</head>
+<body data-page="gst-lit">
+
+<!-- SHARED NAV (loaded by include.js) -->
+<div data-include="../components/nav.html?v=7"></div>
+
+<!-- PAGE CONTENT -->
+<main>
+
+<div id="page-gst-lit">
+<!-- Breadcrumb -->
+  <div class="ph" style="padding:1.4rem 5vw;min-height:auto;background:var(--navy-deep)">
+    <div class="phi">
+      <div class="bc">
+        <a onclick="go('home')">Home</a><span>/</span>
+        <a onclick="go('gst')">GST / Indirect Tax</a><span>/</span>
+        <span>GST Litigation</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <section class="gst-hero">
+    <div class="gst-hero-inner" style="grid-template-columns:1fr;max-width:900px">
+      <div>
+        <div class="gst-hero-eyebrow">GST Litigation Services</div>
+        <h1 style="font-size:clamp(2.2rem,3.6vw,3.2rem)">
+          Manage GST Disputes<br/><em>with Clarity and Control</em>
+        </h1>
+        <p class="gst-hero-lead">
+          Manage GST disputes with a clear and structured litigation approach. From responding to notices to representing your case before appellate authorities, we ensure your position is articulated accurately and handled with procedural discipline.
+        </p>
+        <p style="font-size:.93rem;line-height:1.88;color:var(--tdim);margin-bottom:.9rem">
+          We provide structured GST litigation support covering notice responses, appeals, and representation across authorities. Our approach focuses on building defensible positions, managing documentation, and handling proceedings end-to-end.
+        </p>
+        <p style="font-size:.93rem;line-height:1.88;color:var(--tdim);margin-bottom:1.8rem">
+          This ensures your business is prepared at every stage of tax litigation. Work with V J Desai and Co. to manage GST litigation with clarity and control.
+        </p>
+        <button class="bgs" onclick="go('contact')">Book a Consultation</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- STICKY SUB-NAV -->
+  <div class="gst-subnav">
+    <div class="gst-subnav-inner">
+      <a class="gsn active" href="#glit-services">Our Services</a>
+      <a class="gsn"        href="#glit-process">How It Works</a>
+      <a class="gsn"        href="#glit-engagement">Engagement</a>
+      <a class="gsn"        href="#glit-contact">Contact</a>
+    </div>
+  </div>
+
+  <!-- OUR SERVICES: 7 services from document -->
+  <section id="glit-services" class="gst-services-wrap gst-scroll">
+    <div style="max-width:1440px;margin:0 auto">
+      <div class="stag">Our GST Litigation Services</div>
+      <h2 class="ht">Litigation Services <em>We Provide</em></h2>
+      <p class="ssub" style="margin-bottom:2.6rem">
+        We support businesses across all stages of GST dispute resolution.
+      </p>
+
+      <div class="gst-svc-grid" style="grid-template-columns:repeat(3,1fr)">
+
+        <div class="gst-svc-item">
+          <div class="gst-svc-ico">📩</div>
+          <h3>Show Cause Notice Response and Representation</h3>
+          <p>Drafting detailed replies, preparing supporting documentation, and representing before authorities during hearings.</p>
+        </div>
+
+        <div class="gst-svc-item">
+          <div class="gst-svc-ico">🏛️</div>
+          <h3>Appellate Authority Representation</h3>
+          <p>Preparation and filing of appeals before the Appellate Commissioner with structured legal arguments and evidence.</p>
+        </div>
+
+        <div class="gst-svc-item">
+          <div class="gst-svc-ico">⚖️</div>
+          <h3>Tribunal-Level Litigation Support</h3>
+          <p>Representation before GST Appellate Tribunal (GSTAT) / CESTAT, including drafting appeal memorandums and handling proceedings.</p>
+        </div>
+
+        <div class="gst-svc-item">
+          <div class="gst-svc-ico">📜</div>
+          <h3>AAR / AAAR Applications and Representation</h3>
+          <p>Structuring applications and representing before advance ruling authorities to obtain clarity on interpretational issues.</p>
+        </div>
+
+        <div class="gst-svc-item">
+          <div class="gst-svc-ico">📋</div>
+          <h3>Regulatory Clarifications and Submissions</h3>
+          <p>Filing representations with authorities for interpretational challenges and seeking clarification in complex matters.</p>
+        </div>
+
+        <div class="gst-svc-item">
+          <div class="gst-svc-ico">🔍</div>
+          <h3>GST Scrutiny and Assessment Handling</h3>
+          <p>Managing scrutiny proceedings, audit objections, and departmental queries with structured responses.</p>
+        </div>
+
+        <div class="gst-svc-item">
+          <div class="gst-svc-ico">🗂️</div>
+          <h3>Litigation Strategy and Documentation Advisory</h3>
+          <p>Guidance on evidence preparation, documentation consistency, and positioning across different stages of litigation.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS: 6 steps from document -->
+  
+  <div id="glit-process" class="gst-process-wrap gst-scroll" style="background:var(--light)">
+    <div class="gst-process-inner">
+      <div class="stag" style="color:var(--gold)">How It Works</div>
+      <h2 class="ht">Our GST Litigation <em>Process</em></h2>
+      <p class="ssub" style="margin-bottom:1.5rem">Our GST litigation process is structured to maintain consistency and control at every stage.</p>
+
+      <div style="width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;padding:1rem 0 1.5rem;max-width:920px;margin:0 auto">
+        <svg viewBox="0 0 860 740" style="width:100%;min-width:560px;display:block;" xmlns="http://www.w3.org/2000/svg">
+
+        <polygon points="435.0,76.0 512.9,121.0 512.9,211.0 435.0,256.0 357.1,211.0 357.1,121.0" fill="rgba(0,0,0,0.12)"/>
+        <polygon points="430.0,70.0 507.9,115.0 507.9,205.0 430.0,250.0 352.1,205.0 352.1,115.0" fill="#1A5276"/>
+        <polygon points="430.0,81.0 498.4,120.5 498.4,199.5 430.0,239.0 361.6,199.5 361.6,120.5" fill="none" stroke="rgba(255,255,255,0.22)" stroke-width="1.5"/>
+        <text x="430.0" y="128.0" text-anchor="middle" font-family="Inter,sans-serif" font-size="17" font-weight="800" fill="rgba(255,255,255,0.88)">01</text>
+        <text text-anchor="middle" font-family="Inter,sans-serif" font-size="11.5" font-weight="700" fill="white"><tspan x="430.0" y="147.0">Issue Evaluation</tspan><tspan x="430.0" dy="15">and Case Intake</tspan></text>
+        <text text-anchor="middle" font-family="Inter,sans-serif" font-size="9.5" fill="rgba(255,255,255,0.82)"><tspan x="430.0" y="176.0">Analyse notice or dispute</tspan><tspan x="430.0" dy="13">to understand the</tspan><tspan x="430.0" dy="13">factual and legal position.</tspan></text>
+
+        <polygon points="616.9,181.0 694.8,226.0 694.8,316.0 616.9,361.0 538.9,316.0 538.9,226.0" fill="rgba(0,0,0,0.12)"/>
+        <polygon points="611.9,175.0 689.8,220.0 689.8,310.0 611.9,355.0 533.9,310.0 533.9,220.0" fill="#0E6655"/>
+        <polygon points="611.9,186.0 680.3,225.5 680.3,304.5 611.9,344.0 543.4,304.5 543.4,225.5" fill="none" stroke="rgba(255,255,255,0.22)" stroke-width="1.5"/>
+        <text x="611.9" y="233.0" text-anchor="middle" font-family="Inter,sans-serif" font-size="17" font-weight="800" fill="rgba(255,255,255,0.88)">02</text>
+        <text text-anchor="middle" font-family="Inter,sans-serif" font-size="11.5" font-weight="700" fill="white"><tspan x="611.9" y="252.0">Litigation Strategy</tspan><tspan x="611.9" dy="15">Formulation</tspan></text>
+        <text text-anchor="middle" font-family="Inter,sans-serif" font-size="9.5" fill="rgba(255,255,255,0.82)"><tspan x="611.9" y="281.0">Develop response, appeal</tspan><tspan x="611.9" dy="13">or escalation strategy</tspan><tspan x="611.9" dy="13">based on matter stage.</tspan></text>
+
+        <polygon points="616.9,391.0 694.8,436.0 694.8,526.0 616.9,571.0 538.9,526.0 538.9,436.0" fill="rgba(0,0,0,0.12)"/>
+        <polygon points="611.9,385.0 689.8,430.0 689.8,520.0 611.9,565.0 533.9,520.0 533.9,430.0" fill="#6C3483"/>
+        <polygon points="611.9,396.0 680.3,435.5 680.3,514.5 611.9,554.0 543.4,514.5 543.4,435.5" fill="none" stroke="rgba(255,255,255,0.22)" stroke-width="1.5"/>
+        <text x="611.9" y="443.0" text-anchor="middle" font-family="Inter,sans-serif" font-size="17" font-weight="800" fill="rgba(255,255,255,0.88)">03</text>
+        <text text-anchor="middle" font-family="Inter,sans-serif" font-size="11.5" font-weight="700" fill="white"><tspan x="611.9" y="462.0">Documentation and</tspan><tspan x="611.9" dy="15">Evidence Preparation</tspan></text>
+        <text text-anchor="middle" font-family="Inter,sans-serif" font-size="9.5" fill="rgba(255,255,255,0.82)"><tspan x="611.9" y="491.0">Compile supporting docs,</tspan><tspan x="611.9" dy="13">transaction records</tspan><tspan x="611.9" dy="13">and internal data required.</tspan></text>
+
+        <polygon points="435.0,496.0 512.9,541.0 512.9,631.0 435.0,676.0 357.1,631.0 357.1,541.0" fill="rgba(0,0,0,0.12)"/>
+        <polygon points="430.0,490.0 507.9,535.0 507.9,625.0 430.0,670.0 352.1,625.0 352.1,535.0" fill="#922B21"/>
+        <polygon points="430.0,501.0 498.4,540.5 498.4,619.5 430.0,659.0 361.6,619.5 361.6,540.5" fill="none" stroke="rgba(255,255,255,0.22)" stroke-width="1.5"/>
+        <text x="430.0" y="548.0" text-anchor="middle" font-family="Inter,sans-serif" font-size="17" font-weight="800" fill="rgba(255,255,255,0.88)">04</text>
+        <text text-anchor="middle" font-family="Inter,sans-serif" font-size="11.5" font-weight="700" fill="white"><tspan x="430.0" y="567.0">Drafting</tspan><tspan x="430.0" dy="15">and Filing</tspan></text>
+        <text text-anchor="middle" font-family="Inter,sans-serif" font-size="9.5" fill="rgba(255,255,255,0.82)"><tspan x="430.0" y="596.0">Prepare and submit replies,</tspan><tspan x="430.0" dy="13">appeals or applications</tspan><tspan x="430.0" dy="13">per procedural requirements.</tspan></text>
+
+        <polygon points="253.1,391.0 331.1,436.0 331.1,526.0 253.1,571.0 175.2,526.0 175.2,436.0" fill="rgba(0,0,0,0.12)"/>
+        <polygon points="248.1,385.0 326.1,430.0 326.1,520.0 248.1,565.0 170.2,520.0 170.2,430.0" fill="#B7770D"/>
+        <polygon points="248.1,396.0 316.6,435.5 316.6,514.5 248.1,554.0 179.7,514.5 179.7,435.5" fill="none" stroke="rgba(255,255,255,0.22)" stroke-width="1.5"/>
+        <text x="248.1" y="443.0" text-anchor="middle" font-family="Inter,sans-serif" font-size="17" font-weight="800" fill="rgba(255,255,255,0.88)">05</text>
+        <text text-anchor="middle" font-family="Inter,sans-serif" font-size="11.5" font-weight="700" fill="white"><tspan x="248.1" y="462.0">Representation Before</tspan><tspan x="248.1" dy="15">Authorities</tspan></text>
+        <text text-anchor="middle" font-family="Inter,sans-serif" font-size="9.5" fill="rgba(255,255,255,0.82)"><tspan x="248.1" y="491.0">Represent your case at</tspan><tspan x="248.1" dy="13">hearings with clarity</tspan><tspan x="248.1" dy="13">and consistent arguments.</tspan></text>
+
+        <polygon points="253.1,181.0 331.1,226.0 331.1,316.0 253.1,361.0 175.2,316.0 175.2,226.0" fill="rgba(0,0,0,0.12)"/>
+        <polygon points="248.1,175.0 326.1,220.0 326.1,310.0 248.1,355.0 170.2,310.0 170.2,220.0" fill="#1C4E80"/>
+        <polygon points="248.1,186.0 316.6,225.5 316.6,304.5 248.1,344.0 179.7,304.5 179.7,225.5" fill="none" stroke="rgba(255,255,255,0.22)" stroke-width="1.5"/>
+        <text x="248.1" y="233.0" text-anchor="middle" font-family="Inter,sans-serif" font-size="17" font-weight="800" fill="rgba(255,255,255,0.88)">06</text>
+        <text text-anchor="middle" font-family="Inter,sans-serif" font-size="11.5" font-weight="700" fill="white"><tspan x="248.1" y="252.0">Post-Order Advisory</tspan><tspan x="248.1" dy="15">and Next Steps</tspan></text>
+        <text text-anchor="middle" font-family="Inter,sans-serif" font-size="9.5" fill="rgba(255,255,255,0.82)"><tspan x="248.1" y="281.0">Advise on implementation,</tspan><tspan x="248.1" dy="13">compliance impact or</tspan><tspan x="248.1" dy="13">further appeal strategy.</tspan></text>
+
+          <!-- Central shadow -->
+          <circle cx="434" cy="375" r="82" fill="rgba(0,0,0,0.12)"/>
+          <!-- Central circle -->
+          <circle cx="430" cy="370" r="82" fill="#0D1B35"/>
+          <!-- Gold ring -->
+          <circle cx="430" cy="370" r="68" fill="none" stroke="#C9A84C" stroke-width="1.8" stroke-dasharray="6 4"/>
+          <!-- Central text -->
+          <text text-anchor="middle" font-family="EB Garamond,serif" font-weight="600" fill="white">
+            <tspan x="430" y="352" font-size="13.5">GST</tspan>
+            <tspan x="430" dy="18" font-size="13.5">Litigation</tspan>
+            <tspan x="430" dy="18" font-size="13.5">Process</tspan>
+          </text>
+          <circle cx="430" cy="402" r="3.5" fill="#C9A84C"/>
+
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <!-- ENGAGEMENT MODELS: 3 models from document -->
+  <div id="glit-engagement" class="gst-eng-wrap gst-scroll">
+    <div class="gst-eng-inner">
+      <div class="stag">Engagement</div>
+      <h2 class="ht">Choose Your <em>Engagement Model</em></h2>
+      <p class="ssub" style="margin-bottom:0">
+        We offer flexible engagement structures based on the stage and complexity of litigation.
+      </p>
+
+      <div class="gst-eng-grid">
+
+        <div class="gst-eng-card">
+          <div class="gst-eng-top">
+            <div class="gst-eng-letter">A</div>
+            <div class="gst-eng-badge">Matter-Based</div>
+            <h3>Matter-Based Engagement</h3>
+            <p>Suitable for handling specific notices, appeals, or proceedings with defined scope.</p>
+          </div>
+          <div class="gst-eng-divider"></div>
+          <div class="gst-eng-body">
+            <ul class="gst-eng-feat">
+              <li>Specific notice response and drafting</li>
+              <li>Defined appeal or proceeding scope</li>
+              <li>Clear deliverables and timeline</li>
+              <li>End-to-end matter management</li>
+            </ul>
+          </div>
+          <button class="bgs" onclick="go('contact')" style="margin:0 1.8rem 1.8rem;width:calc(100% - 3.6rem)">Get a Proposal</button>
+        </div>
+
+        <div class="gst-eng-card" style="border-color:var(--gold);box-shadow:0 0 0 1px var(--gold)">
+          <div class="gst-eng-top" style="background:linear-gradient(135deg,var(--navy),rgba(201,168,76,.18))">
+            <div class="gst-eng-letter">B</div>
+            <div class="gst-eng-badge" style="background:var(--gold);color:var(--white);border-color:var(--gold)">Ongoing</div>
+            <h3>Ongoing Litigation Support</h3>
+            <p>Continuous involvement for businesses facing multiple or recurring GST disputes.</p>
+          </div>
+          <div class="gst-eng-divider"></div>
+          <div class="gst-eng-body">
+            <ul class="gst-eng-feat">
+              <li>Multiple dispute management</li>
+              <li>Recurring proceeding support</li>
+              <li>Consistent representation strategy</li>
+              <li>Continuous documentation oversight</li>
+            </ul>
+          </div>
+          <button class="bgs" onclick="go('contact')" style="margin:0 1.8rem 1.8rem;width:calc(100% - 3.6rem)">Start Ongoing Support</button>
+        </div>
+
+        <div class="gst-eng-card">
+          <div class="gst-eng-top">
+            <div class="gst-eng-letter">C</div>
+            <div class="gst-eng-badge">Advisory</div>
+            <h3>Advisory and Strategy Consultation</h3>
+            <p>Focused support for evaluating legal options, pre-litigation positioning, or escalation decisions.</p>
+          </div>
+          <div class="gst-eng-divider"></div>
+          <div class="gst-eng-body">
+            <ul class="gst-eng-feat">
+              <li>Legal options evaluation</li>
+              <li>Pre-litigation positioning</li>
+              <li>Escalation decision advisory</li>
+              <li>Focused and targeted support</li>
+            </ul>
+          </div>
+          <button class="bgs" onclick="go('contact')" style="margin:0 1.8rem 1.8rem;width:calc(100% - 3.6rem)">Request Advisory</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTACT / FINAL CTA -->
+  <div id="glit-contact" class="gst-cta-wrap gst-scroll">
+    <div class="gst-cta-inner">
+
+      <div class="gst-cta-left">
+        <div class="stag" style="color:var(--gold)">Contact</div>
+        <h2>Connect with <em>V J Desai and Co.</em></h2>
+        <p style="font-size:.93rem;line-height:1.82;color:var(--tdim);margin-bottom:1.6rem">
+          GST disputes require structured handling and consistent representation across stages. Connect with V J Desai and Co. to manage your GST litigation with clarity and discipline.
+        </p>
+      </div>
+
+      <div class="gst-cta-right">
+        <h3>Book a Consultation</h3>
+        <p style="font-size:.86rem;line-height:1.8;color:rgba(255,255,255,.55);margin-bottom:1.8rem">
+          Our litigation team will assess your matter and provide structured support at every stage of the proceedings.
+        </p>
+        <button class="bgs" onclick="go('contact')" style="width:100%;justify-content:center;padding:.95rem;margin-bottom:1.8rem">
+          Book a Consultation
+        </button>
+
+        <!-- Internal links from document -->
+        <div style="padding-top:1.5rem;border-top:1px solid rgba(255,255,255,.08)">
+          <div style="font-size:.68rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.35);margin-bottom:.85rem">Related Services</div>
+          <div style="display:flex;flex-direction:column;gap:.5rem">
+            <a onclick="go('gst')"   style="font-size:.82rem;color:rgba(201,168,76,.8);cursor:pointer">GST Compliance Services</a>
+            <a onclick="go('audit')" style="font-size:.82rem;color:rgba(201,168,76,.8);cursor:pointer">GST Audit Support</a>
+            <a onclick="go('gst')"   style="font-size:.82rem;color:rgba(201,168,76,.8);cursor:pointer">GST Advisory Services</a>
+            <a onclick="go('gst')"   style="font-size:.82rem;color:rgba(201,168,76,.8);cursor:pointer">GST Registration Assistance</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+</main>
+
+<!-- SHARED FOOTER (loaded by include.js) -->
+<div data-include="../components/footer.html?v=8"></div>
+
+<!-- SITE JS -->
+<script src="../assets/js/include.js?v=2"><\/script>
+<script src="../assets/js/nav.js?v=3"><\/script>
+<script src="../assets/js/main.js"><\/script>
+<script src="../assets/js/lock.js?v=2"><\/script>
+
+</body>
+</html>`;export{n as default};

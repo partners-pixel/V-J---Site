@@ -1,0 +1,120 @@
+const s=`\uFEFF<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+  <meta http-equiv="Pragma" content="no-cache"/>
+  <meta http-equiv="Expires" content="0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Knowledge Center, FEMA &amp; EXIM | V J Desai &amp; Co. LLP</title>
+
+  <meta name="description" content="Knowledge Center, FEMA &amp; EXIM services, V J Desai &amp; Co. LLP, Chartered Accountants. ICAI registered, est. 1993, Ahmedabad."/>
+  <meta name="robots" content="noindex, nofollow"/>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+
+  <link rel="stylesheet" href="../assets/css/variables.css?v=2"/>
+  <link rel="stylesheet" href="../assets/css/base.css?v=3"/>
+  <link rel="stylesheet" href="../assets/css/nav.css?v=6"/>
+  <link rel="stylesheet" href="../assets/css/footer.css?v=6"/>
+  <link rel="stylesheet" href="../assets/css/components.css?v=6"/>
+</head>
+<body data-page="kc-fema">
+
+<!-- SHARED NAV (loaded by include.js) -->
+<div data-include="../components/nav.html?v=7"></div>
+
+<!-- PAGE CONTENT -->
+<main>
+
+<div id="page-kc-fema">
+<div class="ph"><div class="phi">
+    <div class="bc"><a onclick="go('home')">Home</a><span>/</span><a onclick="go('kc')">Knowledge Center</a><span>/</span><span>FEMA &amp; EXIM</span></div>
+    <div class="pgbadge">🚢 FEMA &amp; EXIM</div>
+    <h1>FEMA &amp; EXIM <em>Knowledge Guide</em></h1>
+    <p>FDI reporting, ECB guidelines, DGFT licensing, export-import policy, and RBI compliance for cross-border transactions.</p>
+  </div></div>
+  <div class="subnav"><div class="subnav-inner">
+    <a class="sn" href="#kc-fema-fdi">FDI</a>
+    <a class="sn" href="#kc-fema-ecb">ECB</a>
+    <a class="sn" href="#kc-fema-exim">EXIM</a>
+    <a class="sn" href="#kc-fema-filing">Key Filings</a>
+  </div></div>
+
+  <section id="kc-fema-fdi" class="s scroll-sec" style="background:var(--white)"><div class="si">
+    <div class="stag">Foreign Direct Investment</div>
+    <h2 class="ht">FDI <em>Compliance Framework</em></h2>
+    <div class="dg">
+      <div class="dc"><div class="dci">📋</div><h3>Automatic Route</h3><p>Most sectors allow FDI up to 100% under automatic route without prior government approval. Industries include manufacturing, IT, infrastructure, and services.</p></div>
+      <div class="dc"><div class="dci">🏛️</div><h3>Approval Route</h3><p>Certain sectors like defence (&gt;74%), media, and multi-brand retail require prior FIPB/Government approval. Application through DPIIT.</p></div>
+      <div class="dc"><div class="dci">📄</div><h3>FC-GPR Filing</h3><p>Form FC-GPR must be filed on the RBI's FIRMS portal within 30 days of allotment of shares to foreign investors. Required for both equity and compulsorily convertible instruments.</p></div>
+      <div class="dc"><div class="dci">🔄</div><h3>FC-TRS Filing</h3><p>Required when shares are transferred between residents and non-residents. Filed by the transferee/transferor within 60 days of receipt of consideration.</p></div>
+      <div class="dc"><div class="dci">📊</div><h3>Valuation Requirements</h3><p>Shares issued to or transferred from non-residents must be at SEBI-registered merchant banker valuation (DCF or comparable method).</p></div>
+      <div class="dc"><div class="dci">⚠️</div><h3>FEMA Violations</h3><p>Contravention of FEMA provisions attracts penalty up to 3x the amount involved or ₹2 lakh (whichever is higher), plus compounding proceedings.</p></div>
+    </div>
+  </div></section>
+
+  <section id="kc-fema-ecb" class="s scroll-sec" style="background:var(--light)"><div class="si">
+    <div class="stag">External Commercial Borrowings</div>
+    <h2 class="ht">ECB <em>Guidelines</em></h2>
+    <div class="cgrid">
+      <div class="fl">
+        <div class="fi"><span class="fchk">✦</span><div><div class="fh">ECB Framework</div><div class="fp">RBI's ECB framework permits Indian companies to borrow from overseas lenders. Available under automatic and approval routes with end-use restrictions.</div></div></div>
+        <div class="fi"><span class="fchk">✦</span><div><div class="fh">Eligible Borrowers</div><div class="fp">Companies, LLPs, NBFCs, microfinance institutions, and other eligible entities as per RBI guidelines can raise ECB for permitted end-uses.</div></div></div>
+        <div class="fi"><span class="fchk">✦</span><div><div class="fh">Minimum Average Maturity</h3><div class="fp">3 years for ECB up to $50 million. 5 years for amounts above $50 million. Infrastructure projects may have different MAM requirements.</div></div></div>
+        <div class="fi"><span class="fchk">✦</span><div><div class="fh">LRN &amp; Reporting</div><div class="fp">Loan Registration Number (LRN) must be obtained before drawdown. Monthly ECB-2 returns filed with RBI through designated AD bank.</div></div></div>
+      </div>
+      <div class="qb" style="align-self:start">
+        <p>"ECB can be an effective low-cost funding source for Indian businesses, but requires careful structuring to comply with end-use restrictions, hedging requirements, and RBI reporting timelines."</p>
+        <cite>V J Desai &amp; Co. LLP, FEMA Advisory</cite>
+      </div>
+    </div>
+  </div></section>
+
+  <section id="kc-fema-exim" class="s scroll-sec" style="background:var(--white)"><div class="si">
+    <div class="stag">Export Import Policy</div>
+    <h2 class="ht">EXIM Policy <em>Key Schemes</em></h2>
+    <div class="dg">
+      <div class="dc"><div class="dci">📦</div><h3>Advance Authorisation</h3><p>Allows duty-free import of inputs used in manufacture of export products. Export obligation must be fulfilled within 18 months of issue.</p></div>
+      <div class="dc"><div class="dci">🏭</div><h3>EPCG Scheme</h3><p>Export Promotion Capital Goods scheme allows import of capital goods at zero customs duty. Export obligation is 6x of duty saved within 6 years.</p></div>
+      <div class="dc"><div class="dci">🔄</div><h3>Deemed Exports</h3><p>Supply to EOU, SEZ, or government projects qualifies as deemed exports. Benefits include advance authorisation and TED refund.</p></div>
+      <div class="dc"><div class="dci">🏢</div><h3>Export Oriented Units</h3><p>EOUs can import goods duty-free. Must export 100% of production (with domestic tariff area sales allowed up to 50% of turnover).</p></div>
+      <div class="dc"><div class="dci">🌐</div><h3>SEIS &amp; MEIS</h3><p>Service Export from India Scheme provides duty credit scrips for service exporters. Merchandise Exports replaced by RoDTEP scheme for goods exporters.</p></div>
+      <div class="dc"><div class="dci">📋</div><h3>DGFT IEC</h3><p>Importer Exporter Code (IEC) from DGFT is mandatory for any import/export transaction. Online application with PAN and bank details.</p></div>
+    </div>
+  </div></section>
+
+  <section id="kc-fema-filing" class="s scroll-sec" style="background:var(--light)"><div class="si">
+    <div class="stag">Key Filings</div>
+    <h2 class="ht">Important FEMA <em>Filing Reference</em></h2>
+    <table class="tbl" style="margin-top:1.8rem">
+      <thead><tr><th>Form / Return</th><th>Purpose</th><th>Timeline</th><th>Filed With</th></tr></thead>
+      <tbody>
+        <tr><td>FC-GPR</td><td>FDI share allotment reporting</td><td>Within 30 days of allotment</td><td>RBI (FIRMS portal)</td></tr>
+        <tr><td>FC-TRS</td><td>Transfer of shares to/from NR</td><td>Within 60 days</td><td>RBI (FIRMS portal)</td></tr>
+        <tr><td>FLA Return</td><td>Annual FDI/ODI position</td><td>15th July every year</td><td>RBI</td></tr>
+        <tr><td>ECB-2 (Monthly)</td><td>ECB drawdown/repayment status</td><td>7th of following month</td><td>RBI via AD Bank</td></tr>
+        <tr><td>Form 15CA/15CB</td><td>Overseas remittances</td><td>Before remittance</td><td>Income Tax Department</td></tr>
+        <tr><td>ODI Forms</td><td>Overseas direct investment</td><td>Prior approval/30-day reporting</td><td>RBI via AD Bank</td></tr>
+      </tbody>
+    </table>
+  </div></section>
+  <div class="ctab scroll-sec"><div class="ctabi"><div><h2>Need <em>FEMA or EXIM advisory?</em></h2><p>We handle FDI reporting, ECB structuring, DGFT licensing, and cross-border compliance.</p></div><button class="bgs" onclick="go('fema')">Explore FEMA Services →</button></div></div>
+</div>
+</div>
+
+</main>
+
+<!-- SHARED FOOTER (loaded by include.js) -->
+<div data-include="../components/footer.html?v=8"></div>
+
+<!-- SITE JS -->
+<script src="../assets/js/include.js?v=2"><\/script>
+<script src="../assets/js/nav.js?v=3"><\/script>
+<script src="../assets/js/main.js"><\/script>
+<script src="../assets/js/lock.js?v=2"><\/script>
+
+</body>
+</html>`;export{s as default};

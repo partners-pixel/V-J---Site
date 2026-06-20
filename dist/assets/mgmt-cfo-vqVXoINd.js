@@ -1,0 +1,376 @@
+const n=`\uFEFF<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+  <meta http-equiv="Pragma" content="no-cache"/>
+  <meta http-equiv="Expires" content="0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Management Consultancy &amp; CFO Services | V J Desai &amp; Co. LLP</title>
+
+  <meta name="description" content="Management Consultancy &amp; CFO Services services, V J Desai &amp; Co. LLP, Chartered Accountants. ICAI registered, est. 1993, Ahmedabad."/>
+  <meta name="robots" content="noindex, nofollow"/>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+
+  <link rel="stylesheet" href="../assets/css/variables.css?v=2"/>
+  <link rel="stylesheet" href="../assets/css/base.css?v=3"/>
+  <link rel="stylesheet" href="../assets/css/nav.css?v=6"/>
+  <link rel="stylesheet" href="../assets/css/footer.css?v=6"/>
+  <link rel="stylesheet" href="../assets/css/components.css?v=6"/>
+</head>
+<body data-page="mgmt-cfo">
+
+<!-- SHARED NAV (loaded by include.js) -->
+<div data-include="../components/nav.html?v=7"></div>
+
+<!-- PAGE CONTENT -->
+<main>
+
+<div id="page-mgmt-cfo">
+<!-- Breadcrumb -->
+  <div class="ph" style="padding:1.4rem 5vw;min-height:auto;background:var(--navy-deep)">
+    <div class="phi">
+      <div class="bc">
+        <a onclick="go('home')">Home</a><span>/</span>
+        <a onclick="go('audit')">Advisory</a><span>/</span>
+        <span>Management Consultancy and CFO Services</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <section class="gst-hero">
+    <div class="gst-hero-inner" style="grid-template-columns:1fr;max-width:900px">
+      <div>
+        <div class="gst-hero-eyebrow">Management Consultancy and CFO Services</div>
+        <h1 style="font-size:clamp(2rem,3.4vw,3rem)">
+          Drive Growth with Expert<br/><em>Management and CFO Guidance</em>
+        </h1>
+        <p class="gst-hero-lead">
+          Every business needs strong strategy and finance leadership. Our Chartered Accountant-led team provides end-to-end management consulting and CFO support, from strategic planning and process optimisation to financial planning, cash flow management, and virtual CFO services.
+        </p>
+        <p style="font-size:.93rem;line-height:1.88;color:var(--tdim);margin-bottom:.9rem">
+          We help businesses strengthen management practices and financial leadership for sustainable growth. Our combined Management Consultancy and CFO Services optimise operations, improve financial performance, and guide strategic decisions.
+        </p>
+        <p style="font-size:.93rem;line-height:1.88;color:var(--tdim);margin-bottom:1.8rem">
+          From streamlining processes and managing risk to budgeting, cash flow planning, and virtual CFO support, our expert team delivers tailored solutions so you can focus on your core business and achieve long-term goals. We handle the details of compliance, performance tracking, and reporting so you can make confident decisions and steer your company toward lasting success.
+        </p>
+        <button class="bgs" onclick="go('contact')">Book a Consultation</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- STICKY SUB-NAV -->
+  <div class="gst-subnav">
+    <div class="gst-subnav-inner">
+      <a class="gsn active" href="#mc-services">Our Services</a>
+      <a class="gsn"        href="#mc-process">How It Works</a>
+      <a class="gsn"        href="#mc-engagement">Engagement</a>
+      <a class="gsn"        href="#mc-contact">Contact</a>
+    </div>
+  </div>
+
+  <!-- OUR SERVICES: 5 Management + 5 CFO = 10 total -->
+  <section id="mc-services" class="gst-services-wrap gst-scroll">
+    <div style="max-width:1440px;margin:0 auto">
+
+      <!-- Management Consultancy Services -->
+      <div class="stag">Management Consultancy Services</div>
+      <h2 class="ht">Management Consultancy <em>Services</em></h2>
+      <p class="ssub" style="margin-bottom:2.4rem">
+        We enhance your business operations and strategy with the following advisory services. Each service is customised to fit your industry and stage of growth.
+      </p>
+
+      <div class="gst-svc-grid" style="grid-template-columns:repeat(3,1fr)">
+
+        <div class="gst-svc-item">
+          <div class="gst-svc-ico">🎯</div>
+          <h3>Strategic Planning and Business Advisory</h3>
+          <p>We guide you in setting clear objectives and practical growth strategies. By evaluating market opportunities and aligning resources, we help you anticipate challenges and make informed decisions aligned with long-term success.</p>
+        </div>
+
+        <div class="gst-svc-item">
+          <div class="gst-svc-ico">⚙️</div>
+          <h3>Process Optimisation and Operational Improvement</h3>
+          <p>We analyse your workflows to identify inefficiencies and bottlenecks. Using data-driven insights, we introduce solutions such as streamlined procedures, automation, or outsourcing that cut costs and boost productivity.</p>
+        </div>
+
+        <div class="gst-svc-item">
+          <div class="gst-svc-ico">🛡️</div>
+          <h3>Risk Management and Internal Controls</h3>
+          <p>We help protect your business by establishing robust controls. Our experts review your current processes to identify risks and design practical control frameworks, safeguarding assets and ensuring regulatory compliance.</p>
+        </div>
+
+        <div class="gst-svc-item">
+          <div class="gst-svc-ico">🔁</div>
+          <h3>Business Restructuring and Turnaround Advisory</h3>
+          <p>If you face financial or operational challenges, we provide clear guidance. We assess your situation and develop actionable turnaround plans, from refinancing strategies to operational reorganisation, aimed at stabilising performance.</p>
+        </div>
+
+        <div class="gst-svc-item">
+          <div class="gst-svc-ico">📊</div>
+          <h3>Performance Management and KPI Development</h3>
+          <p>We help you track what matters. By defining relevant key performance indicators aligned with your goals, we set targets and implement monitoring systems that cultivate a culture of accountability and continuous improvement.</p>
+        </div>
+
+      </div>
+
+      <!-- CFO Services -->
+      <div class="stag" style="margin-top:2.2rem">CFO Services</div>
+      <h2 class="ht">CFO <em>Services</em></h2>
+      <p class="ssub" style="margin-bottom:2.4rem">
+        Get the financial expertise of a CFO without the full-time cost. Our CFO Services cover core financial leadership tasks so you can make confident, well-informed decisions.
+      </p>
+
+      <div class="gst-svc-grid" style="grid-template-columns:repeat(3,1fr)">
+
+        <div class="gst-svc-item">
+          <div class="gst-svc-ico">📈</div>
+          <h3>Financial Planning and Budgeting</h3>
+          <p>We turn your vision into numbers. Collaborating with you, we craft realistic budgets and financial forecasts aligned with your strategy, giving you a clear roadmap for allocating resources and preparing for growth.</p>
+        </div>
+
+        <div class="gst-svc-item">
+          <div class="gst-svc-ico">💰</div>
+          <h3>Cash Flow and Treasury Management</h3>
+          <p>We ensure you always have the liquidity you need. By closely monitoring cash inflows and outflows, optimising working capital, and implementing treasury best practices, we help prevent shortfalls and capitalise on opportunities.</p>
+        </div>
+
+        <div class="gst-svc-item">
+          <div class="gst-svc-ico">📊</div>
+          <h3>Management Reporting and Analytics</h3>
+          <p>We translate data into insight. Our team designs easy-to-understand dashboards and reports that track your key metrics including sales, margins, and cash position so you can spot trends and make strategic adjustments.</p>
+        </div>
+
+        <div class="gst-svc-item">
+          <div class="gst-svc-ico">🤝</div>
+          <h3>Mergers, Acquisitions and Valuation Advisory</h3>
+          <p>Considering a major deal? We provide thorough financial analysis and valuations to support mergers, acquisitions, or divestitures. We guide you through negotiations and due diligence to maximise your value in every transaction.</p>
+        </div>
+
+        <div class="gst-svc-item">
+          <div class="gst-svc-ico">💼</div>
+          <h3>Virtual CFO Services</h3>
+          <p>We act as your fractional CFO, offering senior financial leadership on a flexible basis. As your trusted partner, we oversee financial planning, budgeting, cash management, and performance tracking, without the full-time overhead.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS: 5 steps from document -->
+  
+  <div id="mc-process" class="gst-process-wrap gst-scroll" style="background:var(--off)">
+    <div class="gst-process-inner">
+      <div class="stag" style="color:var(--gold)">How It Works</div>
+      <h2 class="ht ">Our Management and CFO <em>Process</em></h2>
+      <p class="ssub" style="margin-bottom:1.2rem">This structured, collaborative process ensures your operations and finances are managed efficiently from day one.</p>
+      <div style="width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;padding:1.5rem 0 2.2rem;max-width:1040px;margin:0 auto">
+        <svg viewBox="0 0 838 408" style="width:100%;min-width:680px;display:block;" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrowhead" markerWidth="8" markerHeight="6" refX="6" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#B7770D"/>
+    </marker>
+  </defs>
+  
+  <line x1="213" y1="204" x2="351" y2="204" stroke="#B7770D" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+  <line x1="487" y1="204" x2="625" y2="204" stroke="#B7770D" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+  
+  <rect x="19" y="17" width="258" height="108" rx="8" fill="rgba(0,0,0,0.07)"/>
+  <rect x="16" y="14" width="258" height="108" rx="8" fill="#F1F4F8"/>
+  <circle cx="254" cy="34" r="13" fill="#922B21" opacity="0.15"/>
+  <text x="254" y="39" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" font-weight="700" fill="#922B21">01</text>
+  <text x="32" y="46" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="#922B21">Initial Assessment</text>
+  <text x="32" y="66" font-family="Inter,sans-serif" font-size="9.2" fill="#6B7280">Understand business needs, financial goals,</text>
+  <text x="32" y="80" font-family="Inter,sans-serif" font-size="9.2" fill="#6B7280">operational challenges and growth objectives.</text>
+  
+  <rect x="293" y="17" width="258" height="108" rx="8" fill="rgba(0,0,0,0.07)"/>
+  <rect x="290" y="14" width="258" height="108" rx="8" fill="#F1F4F8"/>
+  <circle cx="528" cy="34" r="13" fill="#0E6655" opacity="0.15"/>
+  <text x="528" y="39" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" font-weight="700" fill="#0E6655">03</text>
+  <text x="306" y="46" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="#0E6655">Implementation</text>
+  <text x="306" y="66" font-family="Inter,sans-serif" font-size="9.2" fill="#6B7280">Map processes, design control frameworks</text>
+  <text x="306" y="80" font-family="Inter,sans-serif" font-size="9.2" fill="#6B7280">and prepare budgets and financial models.</text>
+  
+  <rect x="567" y="17" width="258" height="108" rx="8" fill="rgba(0,0,0,0.07)"/>
+  <rect x="564" y="14" width="258" height="108" rx="8" fill="#F1F4F8"/>
+  <circle cx="802" cy="34" r="13" fill="#4A5568" opacity="0.15"/>
+  <text x="802" y="39" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" font-weight="700" fill="#4A5568">05</text>
+  <text x="580" y="46" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="#4A5568">Review and Adjust</text>
+  <text x="580" y="66" font-family="Inter,sans-serif" font-size="9.2" fill="#6B7280">Continually refine strategies and revisit financial</text>
+  <text x="580" y="80" font-family="Inter,sans-serif" font-size="9.2" fill="#6B7280">plans as business conditions evolve.</text>
+  
+  <polygon points="149,146 211,208 149,270 87,208" fill="rgba(0,0,0,0.12)"/>
+  <polygon points="145,142 207,204 145,266 83,204" fill="#1A5276"/>
+  <polygon points="145,152 197,204 145,256 93,204" fill="none" stroke="rgba(255,255,255,0.25)" stroke-width="1.5"/>
+  <text x="145" y="188" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" font-weight="600" fill="rgba(255,255,255,0.8)" letter-spacing="1.5">PHASE</text>
+  <text x="145" y="212" text-anchor="middle" font-family="Inter,sans-serif" font-size="30" font-weight="800" fill="white">01</text>
+  <text x="145" y="230" text-anchor="middle" font-family="Inter,sans-serif" font-size="8.5" font-weight="700" fill="rgba(255,255,255,0.85)" letter-spacing="1.5">ASSESS</text>
+  
+  <polygon points="423,146 485,208 423,270 361,208" fill="rgba(0,0,0,0.12)"/>
+  <polygon points="419,142 481,204 419,266 357,204" fill="#6C3483"/>
+  <polygon points="419,152 471,204 419,256 367,204" fill="none" stroke="rgba(255,255,255,0.25)" stroke-width="1.5"/>
+  <text x="419" y="188" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" font-weight="600" fill="rgba(255,255,255,0.8)" letter-spacing="1.5">PHASE</text>
+  <text x="419" y="212" text-anchor="middle" font-family="Inter,sans-serif" font-size="30" font-weight="800" fill="white">02</text>
+  <text x="419" y="230" text-anchor="middle" font-family="Inter,sans-serif" font-size="8.5" font-weight="700" fill="rgba(255,255,255,0.85)" letter-spacing="1.5">EXECUTE</text>
+  
+  <polygon points="697,146 759,208 697,270 635,208" fill="rgba(0,0,0,0.12)"/>
+  <polygon points="693,142 755,204 693,266 631,204" fill="#1E8449"/>
+  <polygon points="693,152 745,204 693,256 641,204" fill="none" stroke="rgba(255,255,255,0.25)" stroke-width="1.5"/>
+  <text x="693" y="188" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" font-weight="600" fill="rgba(255,255,255,0.8)" letter-spacing="1.5">PHASE</text>
+  <text x="693" y="212" text-anchor="middle" font-family="Inter,sans-serif" font-size="30" font-weight="800" fill="white">03</text>
+  <text x="693" y="230" text-anchor="middle" font-family="Inter,sans-serif" font-size="8.5" font-weight="700" fill="rgba(255,255,255,0.85)" letter-spacing="1.5">REVIEW</text>
+  
+  <rect x="19" y="289" width="258" height="108" rx="8" fill="rgba(0,0,0,0.07)"/>
+  <rect x="16" y="286" width="258" height="108" rx="8" fill="#F1F4F8"/>
+  <circle cx="254" cy="306" r="13" fill="#922B21" opacity="0.15"/>
+  <text x="254" y="311" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" font-weight="700" fill="#922B21">02</text>
+  <text x="32" y="318" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="#922B21">Strategic Planning</text>
+  <text x="32" y="338" font-family="Inter,sans-serif" font-size="9.2" fill="#6B7280">Define strategic objectives and build a tailored</text>
+  <text x="32" y="352" font-family="Inter,sans-serif" font-size="9.2" fill="#6B7280">roadmap with your leadership team.</text>
+  
+  <rect x="293" y="289" width="258" height="108" rx="8" fill="rgba(0,0,0,0.07)"/>
+  <rect x="290" y="286" width="258" height="108" rx="8" fill="#F1F4F8"/>
+  <circle cx="528" cy="306" r="13" fill="#0E6655" opacity="0.15"/>
+  <text x="528" y="311" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" font-weight="700" fill="#0E6655">04</text>
+  <text x="306" y="318" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="#0E6655">Monitoring and Reporting</text>
+  <text x="306" y="338" font-family="Inter,sans-serif" font-size="9.2" fill="#6B7280">Set up regular reporting and review mechanisms</text>
+  <text x="306" y="352" font-family="Inter,sans-serif" font-size="9.2" fill="#6B7280">tracking performance against targets.</text>
+  
+  <rect x="567" y="289" width="258" height="108" rx="8" fill="rgba(0,0,0,0.07)"/>
+  <rect x="564" y="286" width="258" height="108" rx="8" fill="#F1F4F8"/>
+  <circle cx="802" cy="306" r="13" fill="#4A5568" opacity="0.15"/>
+  <text x="802" y="311" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" font-weight="700" fill="#4A5568">06</text>
+  <text x="580" y="318" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="#4A5568">Ongoing CFO Advisory</text>
+  <text x="580" y="338" font-family="Inter,sans-serif" font-size="9.2" fill="#6B7280">Sustained support on compliance, governance</text>
+  <text x="580" y="352" font-family="Inter,sans-serif" font-size="9.2" fill="#6B7280">and strategic financial decisions.</text>
+  
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <!-- ENGAGEMENT MODELS: 3 from document -->
+  <div id="mc-engagement" class="gst-eng-wrap gst-scroll">
+    <div class="gst-eng-inner">
+      <div class="stag">Engagement</div>
+      <h2 class="ht">Choose Your <em>Engagement Model</em></h2>
+      <p class="ssub" style="margin-bottom:0">
+        Each model is structured to give you the right level of support and expertise when needed, so you can efficiently manage costs while accessing senior-level advice.
+      </p>
+
+      <div class="gst-eng-grid">
+
+        <div class="gst-eng-card">
+          <div class="gst-eng-top">
+            <div class="gst-eng-letter">A</div>
+            <div class="gst-eng-badge">Project-Based</div>
+            <h3>Project-Based</h3>
+            <p>For specific, one-off needs such as developing a strategic plan, conducting a financial audit, or implementing a new reporting system. We deliver tangible outcomes with a fixed scope over a set timeframe.</p>
+          </div>
+          <div class="gst-eng-divider"></div>
+          <div class="gst-eng-body">
+            <ul class="gst-eng-feat">
+              <li>Strategic plan development</li>
+              <li>Financial audit and reporting system</li>
+              <li>Turnaround plan or financial model</li>
+              <li>Fixed scope and defined timeframe</li>
+            </ul>
+          </div>
+          <button class="bgs" onclick="go('contact')" style="margin:0 1.8rem 1.8rem;width:calc(100% - 3.6rem)">Get a Proposal</button>
+        </div>
+
+        <div class="gst-eng-card" style="border-color:var(--gold);box-shadow:0 0 0 1px var(--gold)">
+          <div class="gst-eng-top" style="background:linear-gradient(135deg,var(--navy),rgba(201,168,76,.18))">
+            <div class="gst-eng-letter">B</div>
+            <div class="gst-eng-badge" style="background:var(--gold);color:var(--white);border-color:var(--gold)">Retainer</div>
+            <h3>Retainer Advisory</h3>
+            <p>Ongoing partnership for continuous support. Ideal for businesses that need regular guidance or have evolving challenges. We provide a dedicated advisory team, monthly finance reviews, and proactive recommendations.</p>
+          </div>
+          <div class="gst-eng-divider"></div>
+          <div class="gst-eng-body">
+            <ul class="gst-eng-feat">
+              <li>Dedicated advisory team access</li>
+              <li>Monthly finance reviews</li>
+              <li>Regulatory update monitoring</li>
+              <li>Proactive recommendations and support</li>
+            </ul>
+          </div>
+          <button class="bgs" onclick="go('contact')" style="margin:0 1.8rem 1.8rem;width:calc(100% - 3.6rem)">Start Retainer Advisory</button>
+        </div>
+
+        <div class="gst-eng-card">
+          <div class="gst-eng-top">
+            <div class="gst-eng-letter">C</div>
+            <div class="gst-eng-badge">Consultation</div>
+            <h3>Consultation Service</h3>
+            <p>Flexible, short-term advice. Perfect if you have a targeted question such as optimising your cash flow, evaluating a potential acquisition, or troubleshooting a financial issue without a long-term commitment.</p>
+          </div>
+          <div class="gst-eng-divider"></div>
+          <div class="gst-eng-body">
+            <ul class="gst-eng-feat">
+              <li>Cash flow optimisation queries</li>
+              <li>Acquisition evaluation support</li>
+              <li>Financial issue troubleshooting</li>
+              <li>No long-term commitment required</li>
+            </ul>
+          </div>
+          <button class="bgs" onclick="go('contact')" style="margin:0 1.8rem 1.8rem;width:calc(100% - 3.6rem)">Request Consultation</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTACT / FINAL CTA -->
+  <div id="mc-contact" class="gst-cta-wrap gst-scroll">
+    <div class="gst-cta-inner">
+
+      <div class="gst-cta-left">
+        <div class="stag" style="color:var(--gold)">Contact</div>
+        <h2>Make Confident Decisions with<br/><em>Expert Management and Financial Guidance</em></h2>
+        <p style="font-size:.93rem;line-height:1.82;color:var(--tdim);margin-bottom:1.6rem">
+          Our Management Consultancy and CFO Services bring clarity and accountability to your business, supporting sustainable growth. Contact V J Desai and Co. today to discuss how we can tailor our advisory services to your needs and help you achieve your goals.
+        </p>
+      </div>
+
+      <div class="gst-cta-right">
+        <h3>Book a Consultation</h3>
+        <p style="font-size:.86rem;line-height:1.8;color:rgba(255,255,255,.55);margin-bottom:1.8rem">
+          Our management consultancy and CFO team will assess your requirements and design a tailored advisory engagement aligned with your business goals and growth stage.
+        </p>
+        <button class="bgs" onclick="go('contact')" style="width:100%;justify-content:center;padding:.95rem;margin-bottom:1.8rem">
+          Book a Consultation
+        </button>
+
+        <!-- Internal links from document -->
+        <div style="padding-top:1.5rem;border-top:1px solid rgba(255,255,255,.08)">
+          <div style="font-size:.68rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.35);margin-bottom:.85rem">Related Services</div>
+          <div style="display:flex;flex-direction:column;gap:.5rem">
+            <a onclick="go('audit')"      style="font-size:.82rem;color:rgba(201,168,76,.8);cursor:pointer">Corporate Advisory Services</a>
+            <a onclick="go('dtax')"       style="font-size:.82rem;color:rgba(201,168,76,.8);cursor:pointer">Tax Advisory</a>
+            <a onclick="go('gst')"        style="font-size:.82rem;color:rgba(201,168,76,.8);cursor:pointer">GST Compliance Services</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+</main>
+
+<!-- SHARED FOOTER (loaded by include.js) -->
+<div data-include="../components/footer.html?v=8"></div>
+
+<!-- SITE JS -->
+<script src="../assets/js/include.js?v=2"><\/script>
+<script src="../assets/js/nav.js?v=3"><\/script>
+<script src="../assets/js/main.js"><\/script>
+<script src="../assets/js/lock.js?v=2"><\/script>
+
+</body>
+</html>`;export{n as default};

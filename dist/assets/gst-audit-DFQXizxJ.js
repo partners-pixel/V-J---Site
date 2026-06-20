@@ -1,0 +1,362 @@
+const n=`\uFEFF<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+  <meta http-equiv="Pragma" content="no-cache"/>
+  <meta http-equiv="Expires" content="0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GST Audit | V J Desai &amp; Co. LLP</title>
+
+  <meta name="description" content="GST Audit services, V J Desai &amp; Co. LLP, Chartered Accountants. ICAI registered, est. 1993, Ahmedabad."/>
+  <meta name="robots" content="noindex, nofollow"/>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+
+  <link rel="stylesheet" href="../assets/css/variables.css?v=2"/>
+  <link rel="stylesheet" href="../assets/css/base.css?v=3"/>
+  <link rel="stylesheet" href="../assets/css/nav.css?v=6"/>
+  <link rel="stylesheet" href="../assets/css/footer.css?v=6"/>
+  <link rel="stylesheet" href="../assets/css/components.css?v=6"/>
+</head>
+<body data-page="gst-audit">
+
+<!-- SHARED NAV (loaded by include.js) -->
+<div data-include="../components/nav.html?v=7"></div>
+
+<!-- PAGE CONTENT -->
+<main>
+
+<div id="page-gst-audit">
+<!-- Breadcrumb -->
+  <div class="ph" style="padding:1.4rem 5vw;min-height:auto;background:var(--navy-deep)">
+    <div class="phi">
+      <div class="bc">
+        <a onclick="go('home')">Home</a><span>/</span>
+        <a onclick="go('gst')">GST / Indirect Tax</a><span>/</span>
+        <span>GST Audit Service</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <section class="gst-hero">
+    <div class="gst-hero-inner" style="grid-template-columns:1fr;max-width:900px">
+      <div>
+        <div class="gst-hero-eyebrow">GST Audit Service</div>
+        <h1 style="font-size:clamp(2.2rem,3.6vw,3.2rem)">
+          Navigate GST Audits<br/><em>with Confidence</em>
+        </h1>
+        <p class="gst-hero-lead">
+          Navigate GST audits with confidence. From pre-audit readiness reviews to on-site support, our experts handle every detail so you can focus on running your business.
+        </p>
+        <p style="font-size:.93rem;line-height:1.88;color:var(--tdim);margin-bottom:.9rem">
+          We guide businesses through GST audits, ensuring your records and returns are audit-ready. Our services include proactive compliance checks, support during departmental audits, and preparation of audit reports.
+        </p>
+        <p style="font-size:.93rem;line-height:1.88;color:var(--tdim);margin-bottom:1.8rem">
+          By partnering with our team, you reduce errors and disputes while demonstrating your commitment to GST compliance. Trust V J Desai and Co. to ensure your audit processes are efficient, accurate, and compliant.
+        </p>
+        <button class="bgs" onclick="go('contact')">Book a Consultation</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- STICKY SUB-NAV: Our Services | How It Works | Engagement | Contact -->
+  <div class="gst-subnav">
+    <div class="gst-subnav-inner">
+      <a class="gsn active" href="#ga-services">Our Services</a>
+      <a class="gsn"        href="#ga-process">How It Works</a>
+      <a class="gsn"        href="#ga-engagement">Engagement</a>
+      <a class="gsn"        href="#ga-contact">Contact</a>
+    </div>
+  </div>
+
+  <!-- OUR SERVICES: 7 services from document -->
+  <section id="ga-services" class="gst-services-wrap gst-scroll">
+    <div style="max-width:1440px;margin:0 auto">
+      <div class="stag">Our GST Audit Services</div>
+      <h2 class="ht">GST Audit <em>Services We Provide</em></h2>
+
+      <div class="gst-svc-grid" style="grid-template-columns:repeat(3,1fr)">
+
+        <div class="gst-svc-item">
+          <div class="gst-svc-ico">📋</div>
+          <h3>Pre-Audit Readiness Review</h3>
+          <p>We examine your books, returns, and reconciliations (including GSTR-9/9C) to identify areas needing attention before any formal audit.</p>
+        </div>
+
+        <div class="gst-svc-item">
+          <div class="gst-svc-ico">🏛️</div>
+          <h3>Departmental Audit Support</h3>
+          <p>Assistance during audits by tax authorities, including document preparation, on-site coordination, and response drafting.</p>
+        </div>
+
+        <div class="gst-svc-item">
+          <div class="gst-svc-ico">📊</div>
+          <h3>Statutory Audit Assistance</h3>
+          <p>Support in preparing audit reports and reconciliations as required by law, even if CA certification is no longer mandatory, to ensure accuracy.</p>
+        </div>
+
+        <div class="gst-svc-item">
+          <div class="gst-svc-ico">🔬</div>
+          <h3>Special Audit Advisory</h3>
+          <p>Guidance when a special audit is ordered, collaborating with appointed auditors and providing clarifications on complex issues.</p>
+        </div>
+
+        <div class="gst-svc-item">
+          <div class="gst-svc-ico">🔍</div>
+          <h3>Limited Scrutiny Handling</h3>
+          <p>Helping with targeted compliance checks by the department, responding to notices and supplying requested information.</p>
+        </div>
+
+        <div class="gst-svc-item">
+          <div class="gst-svc-ico">✅</div>
+          <h3>Voluntary Compliance Audit</h3>
+          <p>Internal review of compliance on your request to uncover issues in advance and mitigate risk.</p>
+        </div>
+
+        <div class="gst-svc-item">
+          <div class="gst-svc-ico">⚖️</div>
+          <h3>Post-Audit Resolution</h3>
+          <p>Support in resolving audit findings, preparing replies to notices under Section 73/74, and implementing corrective measures.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS: 6 steps from document -->
+  <div id="ga-process" class="zzag-wrap gst-scroll">
+    <div class="zzag-inner">
+      <div class="zzag-header">
+        <div class="stag" style="display:inline-flex;align-items:center;gap:.5rem;color:var(--gold);font-size:.62rem;font-weight:800;letter-spacing:.22em;text-transform:uppercase;margin-bottom:.8rem">How It Works</div>
+        <h2 class="ht" style="text-align:center">How We <em>Engage With You</em></h2>
+        <p class="ssub" style="text-align:center;margin:.6rem auto 0;max-width:560px">A structured six-step audit process from initial assessment through to post-audit compliance follow-up.</p>
+      </div>
+
+      <!-- Process Timeline Infographic -->
+            <div style="width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;padding:2.5rem 0 1.5rem;max-width:1200px;margin:0 auto">
+        <svg viewBox="0 0 1320 530" style="width:100%;min-width:720px;display:block;" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Step 01 -->
+  <circle cx="118" cy="190" r="88" fill="none" stroke="#1A5276" stroke-width="5.5"/>
+  <circle cx="118" cy="190" r="69"  fill="none" stroke="#1A5276" stroke-width="3"/>
+  <text x="118" y="202" text-anchor="middle" font-family="Inter,sans-serif" font-size="36" font-weight="700" fill="#1A5276">01</text>
+  <text x="118" y="304" text-anchor="middle" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="#0D1B35">Initial Assessment</text>
+  <text text-anchor="middle" font-family="Inter,sans-serif" font-size="11.5" fill="#5A6478">
+    <tspan x="118" y="324">Review of accounts and filings</tspan>
+    <tspan x="118" dy="16">to gauge potential audit triggers</tspan>
+    <tspan x="118" dy="16">and required documentation.</tspan>
+  </text>
+  <!-- Arrow 1 to 2 -->
+  <line x1="210" y1="190" x2="235" y2="190" stroke="#CBD5E1" stroke-width="2.2" stroke-dasharray="6 4" stroke-linecap="round"/>
+  <polygon points="243,190 235,184 235,196" fill="#CBD5E1"/>
+
+  <!-- Step 02 -->
+  <circle cx="333" cy="190" r="88" fill="none" stroke="#C9A84C" stroke-width="5.5"/>
+  <circle cx="333" cy="190" r="69"  fill="none" stroke="#C9A84C" stroke-width="3"/>
+  <text x="333" y="202" text-anchor="middle" font-family="Inter,sans-serif" font-size="36" font-weight="700" fill="#C9A84C">02</text>
+  <text text-anchor="middle" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="#0D1B35">
+    <tspan x="333" y="304">Health Check and</tspan>
+    <tspan x="333" dy="17">Reconciliation</tspan>
+  </text>
+  <text text-anchor="middle" font-family="Inter,sans-serif" font-size="11.5" fill="#5A6478">
+    <tspan x="333" y="338">Pre-audit reconciliation of input</tspan>
+    <tspan x="333" dy="16">credits, turnover, and liabilities</tspan>
+    <tspan x="333" dy="16">with discrepancy rectification.</tspan>
+  </text>
+  <!-- Arrow 2 to 3 -->
+  <line x1="425" y1="190" x2="450" y2="190" stroke="#CBD5E1" stroke-width="2.2" stroke-dasharray="6 4" stroke-linecap="round"/>
+  <polygon points="458,190 450,184 450,196" fill="#CBD5E1"/>
+
+  <!-- Step 03 -->
+  <circle cx="548" cy="190" r="88" fill="none" stroke="#922B21" stroke-width="5.5"/>
+  <circle cx="548" cy="190" r="69"  fill="none" stroke="#922B21" stroke-width="3"/>
+  <text x="548" y="202" text-anchor="middle" font-family="Inter,sans-serif" font-size="36" font-weight="700" fill="#922B21">03</text>
+  <text x="548" y="304" text-anchor="middle" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="#0D1B35">Document Preparation</text>
+  <text text-anchor="middle" font-family="Inter,sans-serif" font-size="11.5" fill="#5A6478">
+    <tspan x="548" y="324">Gather and organise audit working</tspan>
+    <tspan x="548" dy="16">papers, invoices and schedules</tspan>
+    <tspan x="548" dy="16">for audit queries.</tspan>
+  </text>
+  <!-- Arrow 3 to 4 -->
+  <line x1="640" y1="190" x2="665" y2="190" stroke="#CBD5E1" stroke-width="2.2" stroke-dasharray="6 4" stroke-linecap="round"/>
+  <polygon points="673,190 665,184 665,196" fill="#CBD5E1"/>
+
+  <!-- Step 04 -->
+  <circle cx="763" cy="190" r="88" fill="none" stroke="#6C3483" stroke-width="5.5"/>
+  <circle cx="763" cy="190" r="69"  fill="none" stroke="#6C3483" stroke-width="3"/>
+  <text x="763" y="202" text-anchor="middle" font-family="Inter,sans-serif" font-size="36" font-weight="700" fill="#6C3483">04</text>
+  <text text-anchor="middle" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="#0D1B35">
+    <tspan x="763" y="304">Field Audit</tspan>
+    <tspan x="763" dy="17">Coordination</tspan>
+  </text>
+  <text text-anchor="middle" font-family="Inter,sans-serif" font-size="11.5" fill="#5A6478">
+    <tspan x="763" y="338">On-site support during authority</tspan>
+    <tspan x="763" dy="16">audits, clarifying records and</tspan>
+    <tspan x="763" dy="16">answering audit questions.</tspan>
+  </text>
+  <!-- Arrow 4 to 5 -->
+  <line x1="855" y1="190" x2="880" y2="190" stroke="#CBD5E1" stroke-width="2.2" stroke-dasharray="6 4" stroke-linecap="round"/>
+  <polygon points="888,190 880,184 880,196" fill="#CBD5E1"/>
+
+  <!-- Step 05 -->
+  <circle cx="978" cy="190" r="88" fill="none" stroke="#0E6655" stroke-width="5.5"/>
+  <circle cx="978" cy="190" r="69"  fill="none" stroke="#0E6655" stroke-width="3"/>
+  <text x="978" y="202" text-anchor="middle" font-family="Inter,sans-serif" font-size="36" font-weight="700" fill="#0E6655">05</text>
+  <text text-anchor="middle" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="#0D1B35">
+    <tspan x="978" y="304">Response and</tspan>
+    <tspan x="978" dy="17">Reporting</tspan>
+  </text>
+  <text text-anchor="middle" font-family="Inter,sans-serif" font-size="11.5" fill="#5A6478">
+    <tspan x="978" y="338">Detailed responses and reconciliation</tspan>
+    <tspan x="978" dy="16">reports to address</tspan>
+    <tspan x="978" dy="16">post-audit discrepancies.</tspan>
+  </text>
+  <!-- Arrow 5 to 6 -->
+  <line x1="1070" y1="190" x2="1095" y2="190" stroke="#CBD5E1" stroke-width="2.2" stroke-dasharray="6 4" stroke-linecap="round"/>
+  <polygon points="1103,190 1095,184 1095,196" fill="#CBD5E1"/>
+
+  <!-- Step 06 -->
+  <circle cx="1193" cy="190" r="88" fill="none" stroke="#B7770D" stroke-width="5.5"/>
+  <circle cx="1193" cy="190" r="69"  fill="none" stroke="#B7770D" stroke-width="3"/>
+  <text x="1193" y="202" text-anchor="middle" font-family="Inter,sans-serif" font-size="36" font-weight="700" fill="#B7770D">06</text>
+  <text x="1193" y="304" text-anchor="middle" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="#0D1B35">Compliance Follow-up</text>
+  <text text-anchor="middle" font-family="Inter,sans-serif" font-size="11.5" fill="#5A6478">
+    <tspan x="1193" y="324">Advise on corrections and</tspan>
+    <tspan x="1193" dy="16">strengthen internal controls to</tspan>
+    <tspan x="1193" dy="16">prevent future audit issues.</tspan>
+  </text>
+
+        </svg>
+      </div>
+
+    </div>
+  </div>
+
+  <div id="ga-engagement" class="gst-eng-wrap gst-scroll">
+    <div class="gst-eng-inner">
+      <div class="stag">Engagement</div>
+      <h2 class="ht">Choose Your <em>Engagement Model</em></h2>
+      <p class="ssub" style="margin-bottom:0">
+        Each model provides you with expert guidance and peace of mind tailored to your needs.
+      </p>
+
+      <div class="gst-eng-grid">
+
+        <!-- Model A: Project Engagement -->
+        <div class="gst-eng-card">
+          <div class="gst-eng-top">
+            <div class="gst-eng-letter">A</div>
+            <div class="gst-eng-badge">Project</div>
+            <h3>Project Engagement</h3>
+            <p>Ideal for specific audit tasks such as preparing for a known audit, or handling a one-time review.</p>
+          </div>
+          <div class="gst-eng-divider"></div>
+          <div class="gst-eng-body">
+            <ul class="gst-eng-feat">
+              <li>Pre-audit readiness preparation</li>
+              <li>One-time audit review support</li>
+              <li>Defined scope and deliverables</li>
+              <li>Document preparation and filing</li>
+            </ul>
+          </div>
+          <button class="bgs" onclick="go('contact')" style="margin:0 1.8rem 1.8rem;width:calc(100% - 3.6rem)">Get a Proposal</button>
+        </div>
+
+        <!-- Model B: Retainer Advisory -->
+        <div class="gst-eng-card" style="border-color:var(--gold);box-shadow:0 0 0 1px var(--gold)">
+          <div class="gst-eng-top" style="background:linear-gradient(135deg,var(--navy),rgba(201,168,76,.18))">
+            <div class="gst-eng-letter">B</div>
+            <div class="gst-eng-badge" style="background:var(--gold);color:var(--white);border-color:var(--gold)">Retainer</div>
+            <h3>Retainer Advisory</h3>
+            <p>Ongoing partnership for continuous audit support, compliance updates, and advisory services.</p>
+          </div>
+          <div class="gst-eng-divider"></div>
+          <div class="gst-eng-body">
+            <ul class="gst-eng-feat">
+              <li>Continuous audit readiness support</li>
+              <li>Regular compliance updates</li>
+              <li>Ongoing advisory access</li>
+              <li>Proactive risk identification</li>
+            </ul>
+          </div>
+          <button class="bgs" onclick="go('contact')" style="margin:0 1.8rem 1.8rem;width:calc(100% - 3.6rem)">Start Retainer Advisory</button>
+        </div>
+
+        <!-- Model C: Consultation Service -->
+        <div class="gst-eng-card">
+          <div class="gst-eng-top">
+            <div class="gst-eng-letter">C</div>
+            <div class="gst-eng-badge">Consultation</div>
+            <h3>Consultation Service</h3>
+            <p>Targeted advice on GST audit issues such as after receiving an audit notice or for complex transaction reviews.</p>
+          </div>
+          <div class="gst-eng-divider"></div>
+          <div class="gst-eng-body">
+            <ul class="gst-eng-feat">
+              <li>Audit notice response support</li>
+              <li>Complex transaction queries</li>
+              <li>Focused, time-efficient advisory</li>
+              <li>Immediate expert guidance</li>
+            </ul>
+          </div>
+          <button class="bgs" onclick="go('contact')" style="margin:0 1.8rem 1.8rem;width:calc(100% - 3.6rem)">Request a Consultation</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTACT / FINAL CTA -->
+  <div id="ga-contact" class="gst-cta-wrap gst-scroll">
+    <div class="gst-cta-inner">
+
+      <div class="gst-cta-left">
+        <div class="stag" style="color:var(--gold)">Contact</div>
+        <h2>Minimise GST Audit Risks and<br/><em>Focus on Your Business</em></h2>
+        <p style="font-size:.93rem;line-height:1.82;color:var(--tdim);margin-bottom:1.6rem">
+          Contact V J Desai and Co. for professional GST audit support and compliance assurance.
+        </p>
+      </div>
+
+      <div class="gst-cta-right">
+        <h3>Book a Consultation</h3>
+        <p style="font-size:.86rem;line-height:1.8;color:rgba(255,255,255,.55);margin-bottom:1.8rem">
+          Our team will assess your audit requirements and provide the right level of support for your business.
+        </p>
+        <button class="bgs" onclick="go('contact')" style="width:100%;justify-content:center;padding:.95rem;margin-bottom:1.8rem">
+          Book a Consultation
+        </button>
+
+        <!-- Internal links from document -->
+        <div style="padding-top:1.5rem;border-top:1px solid rgba(255,255,255,.08)">
+          <div style="font-size:.68rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.35);margin-bottom:.85rem">Related Services</div>
+          <div style="display:flex;flex-direction:column;gap:.5rem">
+            <a onclick="go('gst')"   style="font-size:.82rem;color:rgba(201,168,76,.8);cursor:pointer">GST Compliance Services</a>
+            <a onclick="go('gst')"   style="font-size:.82rem;color:rgba(201,168,76,.8);cursor:pointer">GST Advisory Services</a>
+            <a onclick="go('gst')"   style="font-size:.82rem;color:rgba(201,168,76,.8);cursor:pointer">GST Registration Help</a>
+            <a onclick="go('audit')" style="font-size:.82rem;color:rgba(201,168,76,.8);cursor:pointer">GST Audit Support</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+</main>
+
+<!-- SHARED FOOTER (loaded by include.js) -->
+<div data-include="../components/footer.html?v=8"></div>
+
+<!-- SITE JS -->
+<script src="../assets/js/include.js?v=2"><\/script>
+<script src="../assets/js/nav.js?v=3"><\/script>
+<script src="../assets/js/main.js"><\/script>
+<script src="../assets/js/lock.js?v=2"><\/script>
+
+</body>
+</html>`;export{n as default};

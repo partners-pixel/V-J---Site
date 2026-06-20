@@ -26,7 +26,6 @@ yarn-error.log
 
 # ─── Node / front-end build artefacts (if added later) ───────────
 node_modules/
-dist/
 build/
 .cache/
 .parcel-cache/
