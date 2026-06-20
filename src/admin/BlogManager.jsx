@@ -84,11 +84,27 @@ export default function BlogManager({ onAuthFail }) {
             <div className="fg"><label>Title *</label><input type="text" value={form.title} onChange={set('title')} placeholder="Post title" required /></div>
             <div className="fr">
               <div className="fg"><label>Category</label><select value={form.category} onChange={set('category')}>{CATEGORIES.map((c) => <option key={c}>{c}</option>)}</select></div>
-              <div className="fg"><label>Cover Image</label><input ref={fileRef} type="file" accept="image/*" onChange={onFile} /></div>
+              <div className="fg">
+                <label>Preview / Feature Image</label>
+                <input ref={fileRef} type="file" accept="image/*" onChange={onFile} />
+                <div style={{ fontSize: '.72rem', color: 'var(--tmute)', marginTop: '.3rem', lineHeight: 1.5 }}>
+                  Used as the thumbnail on the blog list <em>and</em> the hero image at the top of the post.
+                </div>
+              </div>
             </div>
-            {preview && <img src={preview} alt="preview" style={{ width: '100%', maxHeight: 180, objectFit: 'cover', borderRadius: 8, margin: '0 0 .9rem' }} />}
+            {preview && (
+              <div style={{ margin: '0 0 .9rem' }}>
+                <div style={{ fontSize: '.72rem', fontWeight: 600, letterSpacing: '.04em', textTransform: 'uppercase', color: 'var(--gold-dim,#A88830)', marginBottom: '.35rem' }}>
+                  ✓ Preview / feature image
+                </div>
+                <img src={preview} alt="preview" style={{ width: '100%', maxHeight: 180, objectFit: 'cover', borderRadius: 8 }} />
+              </div>
+            )}
             {showCurrentImage && (
               <div style={{ margin: '0 0 .9rem' }}>
+                <div style={{ fontSize: '.72rem', fontWeight: 600, letterSpacing: '.04em', textTransform: 'uppercase', color: 'var(--gold-dim,#A88830)', marginBottom: '.35rem' }}>
+                  Current preview / feature image
+                </div>
                 <img src={existingImage} alt="current cover" style={{ width: '100%', maxHeight: 180, objectFit: 'cover', borderRadius: 8 }} />
                 <label style={{ display: 'flex', alignItems: 'center', gap: '.4rem', fontSize: '.8rem', color: 'var(--tmute)', marginTop: '.4rem' }}>
                   <input type="checkbox" checked={removeImage} onChange={(e) => setRemoveImage(e.target.checked)} /> Remove current image
