@@ -1,0 +1,36 @@
+# Repo-root .htaccess
+# Hostinger Git auto-deploy copies the whole repo into ~/public_html on the server,
+# so the built site (which lives in this repo's public_html/ subfolder) ends up at
+# ~/public_html/public_html/. This file remaps every request to the built site.
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # Avoid a rewrite loop once we've already redirected into /public_html/
+  RewriteCond %{REQUEST_URI} ^/public_html/
+  RewriteRule . - [L]
+
+  # If a real file or directory exists at /public_html/<requested>, serve it
+  RewriteCond %{DOCUMENT_ROOT}/public_html%{REQUEST_URI} -f [OR]
+  RewriteCond %{DOCUMENT_ROOT}/public_html%{REQUEST_URI} -d
+  RewriteRule ^(.*)$ /public_html/$1 [L]
+
+  # Otherwise SPA fallback to the built index.html
+  RewriteRule ^ /public_html/index.html [L]
+</IfModule>
+
+# Cache hashed assets aggressively; never cache index.html
+<IfModule mod_headers.c>
+  <FilesMatch "\.(js|css|jpg|jpeg|png|gif|svg|woff2?)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+  <FilesMatch "index\.html$">
+    Header set Cache-Control "no-cache, must-revalidate"
+  </FilesMatch>
+</IfModule>
+
+# Block direct access to dev artefacts that end up on the server
+<FilesMatch "^(package(-lock)?\.json|vite\.config\.js|server\.js|admin-api\.js|blog-api\.js|checklist-api\.js|content-api\.js|\.env(\..*)?)$">
+  Require all denied
+</FilesMatch>
