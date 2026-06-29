@@ -1,0 +1,499 @@
+const n=`\uFEFF<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+  <meta http-equiv="Pragma" content="no-cache"/>
+  <meta http-equiv="Expires" content="0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us | V J Desai &amp; Co. LLP</title>
+
+  <meta name="description" content="Contact Us services, V J Desai &amp; Co. LLP, Chartered Accountants. ICAI registered, est. 1993, Ahmedabad."/>
+  <meta name="robots" content="noindex, nofollow"/>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+
+  <link rel="stylesheet" href="../assets/css/variables.css?v=2"/>
+  <link rel="stylesheet" href="../assets/css/base.css?v=3"/>
+  <link rel="stylesheet" href="../assets/css/nav.css?v=6"/>
+  <link rel="stylesheet" href="../assets/css/footer.css?v=6"/>
+  <link rel="stylesheet" href="../assets/css/components.css?v=6"/>
+</head>
+<body data-page="contact">
+
+<!-- SHARED NAV (loaded by include.js) -->
+<div data-include="../components/nav.html?v=7"></div>
+
+<!-- PAGE CONTENT -->
+<main>
+
+<div id="page-contact">
+<style>
+/* Contact page, prefix cou- guaranteed unique */
+.cou-hero{background:#1C2437;padding:88px 5vw 72px;position:relative;overflow:hidden}
+.cou-hero::before{content:'';position:absolute;inset:0;background-image:radial-gradient(circle,rgba(201,168,76,.08) 1px,transparent 1px);background-size:48px 48px;pointer-events:none;z-index:0}
+.cou-hero::after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 70% at 85% 40%,rgba(201,168,76,.07) 0%,transparent 70%);pointer-events:none;z-index:0}
+.cou-hero-inner{max-width:1440px;margin:0 auto;position:relative;z-index:1;display:grid;grid-template-columns:1.1fr 0.9fr;gap:5vw;align-items:center}
+.cou-h1{font-family:'EB Garamond',serif;font-size:clamp(2.2rem,3.8vw,3.5rem);font-weight:700;color:#fff;line-height:1.12;max-width:620px;margin-bottom:1rem}
+.cou-h1 em{font-style:italic;color:#C9A84C}
+.cou-badge2{display:inline-flex;align-items:center;gap:.45rem;background:rgba(201,168,76,.14);border:1px solid rgba(201,168,76,.28);color:#C9A84C;padding:.3rem .9rem;border-radius:50px;font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:1.2rem}
+.cou-hero-desc{font-size:.95rem;line-height:1.85;color:rgba(255,255,255,.6);max-width:520px;margin-bottom:1.8rem}
+.cou-hero-btns{display:flex;flex-wrap:wrap;gap:.85rem;align-items:center;margin-bottom:1.4rem}
+.cou-btn-g{display:inline-flex;align-items:center;gap:.5rem;background:#C9A84C;color:#131B2B;font-size:.88rem;font-weight:700;padding:.72rem 1.5rem;border-radius:5px;text-decoration:none;transition:.25s}
+.cou-btn-g:hover{background:#D9BC6E;transform:translateY(-1px)}
+.cou-btn-o{display:inline-flex;align-items:center;gap:.5rem;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.2);color:rgba(255,255,255,.85);font-size:.88rem;font-weight:500;padding:.72rem 1.5rem;border-radius:5px;text-decoration:none;transition:.25s}
+.cou-btn-o:hover{border-color:#C9A84C;color:#C9A84C}
+.cou-meta-row{display:flex;align-items:center;gap:.6rem;font-size:.8rem;color:rgba(255,255,255,.42);margin-bottom:.4rem}
+.cou-stats-g{display:grid;grid-template-columns:repeat(2,1fr);gap:.85rem}
+.cou-stat{background:rgba(255,255,255,.06);border:1px solid rgba(201,168,76,.15);border-radius:8px;padding:1.2rem;text-align:center}
+.cou-stat-n{font-family:'EB Garamond',serif;font-size:1.8rem;font-weight:700;color:#C9A84C;line-height:1}
+.cou-stat-l{font-size:.7rem;color:rgba(255,255,255,.45);margin-top:.25rem;letter-spacing:.05em}
+.cou-qbox{background:rgba(201,168,76,.08);border:1px dashed rgba(201,168,76,.25);border-radius:8px;padding:1.1rem 1.3rem;margin-top:.8rem}
+.cou-qbox p{font-family:'EB Garamond',serif;font-size:.98rem;font-style:italic;color:rgba(255,255,255,.7);line-height:1.65;margin-bottom:.4rem}
+.cou-qbox cite{font-size:.65rem;letter-spacing:.12em;text-transform:uppercase;color:#C9A84C;font-style:normal;font-weight:600}
+
+.cou-snav{background:#fff;border-bottom:1.5px solid #F1F4F8;position:sticky;top:72px;z-index:400;box-shadow:0 1px 8px rgba(0,0,0,.04)}
+.cou-snav-inner{max-width:1440px;margin:0 auto;padding:0 5vw;display:flex;align-items:center;overflow-x:auto;scrollbar-width:none}
+.cou-snav-inner::-webkit-scrollbar{display:none}
+.cou-sn{display:inline-flex;align-items:center;padding:.82rem 1.1rem;font-size:.84rem;font-weight:500;color:#374151;cursor:pointer;white-space:nowrap;border-bottom:2.5px solid transparent;margin-bottom:-1.5px;transition:.25s;background:none;border-top:none;border-left:none;border-right:none;font-family:'Inter',sans-serif}
+.cou-sn:hover{color:#1A202C}
+.cou-sn.on{color:#C9A84C;border-bottom-color:#C9A84C;font-weight:600}
+
+.cou-s-off{padding:80px 5vw;background:#F8F9FA}
+.cou-s-wh{padding:80px 5vw;background:#fff}
+.cou-s-lt{padding:80px 5vw;background:#F1F4F8}
+.cou-s-nv{padding:80px 5vw;background:#1C2437}
+.cou-inn{max-width:1440px;margin:0 auto}
+.cou-sh{text-align:center;margin-bottom:2.8rem}
+.cou-stg{display:inline-flex;align-items:center;gap:.5rem;font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;font-weight:700;color:#C9A84C;margin-bottom:.7rem}
+.cou-stg::before{content:'';display:inline-block;width:18px;height:2px;background:#C9A84C;border-radius:1px}
+.cou-hd{font-family:'EB Garamond',serif;font-size:clamp(1.8rem,2.6vw,2.5rem);font-weight:700;line-height:1.2;color:#1A202C;margin-bottom:.7rem}
+.cou-hd em{font-style:italic;color:#C9A84C}
+.cou-hd-w{color:#fff}
+.cou-sub2{font-size:.93rem;color:#6B7280;line-height:1.75;max-width:580px;margin:0 auto}
+
+/* Main two-col layout */
+.cou-mg{display:grid;grid-template-columns:1fr 1.55fr;gap:3vw;align-items:start}
+
+/* Info cards */
+.cou-ic{display:flex;align-items:flex-start;gap:1.1rem;background:#fff;border-radius:10px;padding:1.3rem 1.5rem;border:1px solid rgba(0,0,0,.07);margin-bottom:1rem;transition:.25s}
+.cou-ic:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,0,0,.08)}
+.cou-ic-ico{width:42px;height:42px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0}
+.cou-ic-lbl{font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#6B7280;margin-bottom:.28rem}
+.cou-ic-val{font-size:.9rem;font-weight:600;text-decoration:none;transition:.25s;color:#1A202C;display:block;line-height:1.5}
+.cou-ic-val:hover{color:#C9A84C}
+.cou-ic-note{font-size:.76rem;color:#6B7280;margin-top:.22rem}
+
+/* Hours box */
+.cou-hrs{background:#fff;border-radius:10px;padding:1.4rem 1.5rem;border:1px solid rgba(0,0,0,.07);margin-bottom:1rem}
+.cou-hrs-lbl{font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#C9A84C;margin-bottom:.9rem}
+.cou-hrs-row{display:flex;justify-content:space-between;align-items:center;font-size:.84rem;padding:.32rem 0;border-bottom:1px solid #F1F4F8}
+.cou-hrs-row:last-child{border-bottom:none}
+.cou-hrs-day{font-weight:500;color:#1A202C}
+.cou-hrs-time{color:#6B7280}
+.cou-hrs-closed{color:#e74c3c;font-weight:600}
+
+/* Quote */
+.cou-fq{background:#1C2437;border-left:4px solid #C9A84C;border-radius:10px;padding:1.8rem 2rem;margin-bottom:1.2rem}
+.cou-fq blockquote{font-family:'EB Garamond',serif;font-size:1.02rem;font-style:italic;color:rgba(255,255,255,.88);line-height:1.7;margin-bottom:.65rem}
+.cou-fq cite{font-size:.7rem;color:#C9A84C;font-style:normal;font-weight:600;letter-spacing:.08em;text-transform:uppercase}
+
+/* Map */
+.cou-map{border-radius:12px;overflow:hidden;border:1px solid rgba(0,0,0,.08);box-shadow:0 4px 20px rgba(0,0,0,.07);margin-top:1.2rem}
+.cou-map-lbl{font-size:.68rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#C9A84C;background:#1C2437;padding:.7rem 1rem}
+.cou-map iframe{width:100%;height:260px;border:none;display:block}
+
+/* Form box */
+.cou-fb{background:#fff;border-radius:12px;padding:2.4rem;border:1px solid rgba(0,0,0,.08);box-shadow:0 4px 24px rgba(0,0,0,.07)}
+.cou-fb-title{font-family:'EB Garamond',serif;font-size:1.45rem;font-weight:700;color:#1A202C;margin-bottom:.3rem}
+.cou-fb-desc{font-size:.86rem;color:#6B7280;margin-bottom:1.3rem;line-height:1.65}
+.cou-trust{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1.5rem}
+.cou-tp{display:inline-flex;align-items:center;gap:.35rem;font-size:.7rem;color:#374151;background:#F1F4F8;border:1px solid rgba(0,0,0,.07);border-radius:20px;padding:.22rem .78rem}
+.cou-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1rem}
+.cou-fg{display:flex;flex-direction:column;gap:.35rem;margin-bottom:1rem}
+.cou-fg label{font-size:.71rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:#374151}
+.cou-fg input,.cou-fg select,.cou-fg textarea{width:100%;padding:.72rem 1rem;border:1.5px solid #e2e8f0;border-radius:6px;font-size:.88rem;font-family:'Inter',sans-serif;color:#1A202C;background:#F8F9FA;outline:none;transition:.25s}
+.cou-fg input:focus,.cou-fg select:focus,.cou-fg textarea:focus{border-color:#C9A84C;background:#fff;box-shadow:0 0 0 3px rgba(201,168,76,.1)}
+.cou-fg textarea{min-height:120px;resize:vertical}
+.cou-sub{width:100%;padding:1rem;background:#1C2437;color:#fff;border:none;border-radius:6px;font-size:.92rem;font-weight:700;font-family:'Inter',sans-serif;cursor:pointer;transition:.25s;margin-top:.4rem}
+.cou-sub:hover{background:#2E3A52;transform:translateY(-1px);box-shadow:0 6px 20px rgba(0,0,0,.2)}
+.cou-priv{font-size:.72rem;color:#6B7280;text-align:center;margin-top:.8rem;line-height:1.6}
+
+/* Why us */
+.cou-wg{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem;margin-top:2rem}
+.cou-wc{background:#fff;border-radius:10px;padding:2rem 1.7rem;border:1px solid rgba(0,0,0,.07);border-top:3px solid #C9A84C;transition:.25s}
+.cou-wc:hover{transform:translateY(-3px);box-shadow:0 10px 30px rgba(0,0,0,.09)}
+.cou-wi{width:48px;height:48px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.3rem;margin-bottom:1rem}
+.cou-wc h4{font-family:'EB Garamond',serif;font-size:1.05rem;font-weight:700;color:#1A202C;margin-bottom:.5rem}
+.cou-wc p{font-size:.85rem;color:#6B7280;line-height:1.7}
+
+/* Process */
+.cou-pg{display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem;margin-top:2rem}
+.cou-pc{text-align:center;padding:2rem 1.4rem;background:rgba(255,255,255,.04);border-radius:10px;border:1px solid rgba(255,255,255,.08)}
+.cou-pn{width:54px;height:54px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'EB Garamond',serif;font-size:1.4rem;font-weight:700;color:#fff;margin:0 auto 1rem}
+.cou-pc h4{font-size:.92rem;font-weight:600;color:rgba(255,255,255,.9);margin-bottom:.4rem}
+.cou-pc p{font-size:.8rem;color:rgba(255,255,255,.45);line-height:1.65}
+.cou-ag{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;margin-top:2.5rem}
+.cou-ac{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:8px;padding:1.4rem 1.5rem;text-align:center}
+.cou-ac h5{font-size:.8rem;font-weight:600;color:rgba(255,255,255,.88);margin-bottom:.3rem}
+.cou-ac p{font-size:.76rem;color:rgba(255,255,255,.42);line-height:1.6}
+
+/* Services */
+.cou-svg{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-top:2rem}
+.cou-sc{background:#fff;border-radius:8px;padding:1.4rem;border:1px solid rgba(0,0,0,.06);cursor:pointer;transition:.25s}
+.cou-sc:hover{transform:translateY(-3px);box-shadow:0 8px 24px rgba(0,0,0,.09)}
+.cou-si{font-size:1.3rem;margin-bottom:.55rem}
+.cou-sc h4{font-size:.88rem;font-weight:700;margin-bottom:.3rem}
+.cou-sc p{font-size:.75rem;color:#6B7280;line-height:1.55}
+
+/* FAQ */
+.cou-fqg{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin-top:2rem}
+.cou-fqi{background:#fff;border-radius:8px;padding:1.5rem 1.6rem;border:1px solid rgba(0,0,0,.07);border-left:3px solid #C9A84C}
+.cou-fqi h4{font-size:.9rem;font-weight:600;color:#1A202C;margin-bottom:.5rem;display:flex;align-items:flex-start;gap:.5rem}
+.cou-fqi h4::before{content:'Q';font-size:.62rem;font-weight:800;background:#C9A84C;color:#131B2B;border-radius:3px;padding:.1rem .38rem;flex-shrink:0;margin-top:.1rem}
+.cou-fqi p{font-size:.84rem;color:#6B7280;line-height:1.72}
+
+/* Strip */
+.cou-strp{background:#1C2437;padding:44px 5vw}
+.cou-si2{max-width:1440px;margin:0 auto;display:flex;justify-content:center;align-items:center;gap:3vw;flex-wrap:wrap}
+.cou-sti{display:flex;align-items:center;gap:.85rem}
+.cou-stico{width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0}
+.cou-stlbl{font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.4);margin-bottom:.2rem}
+.cou-stval{font-size:.84rem;font-weight:600;color:#C9A84C;text-decoration:none}
+.cou-stval2{font-size:.82rem;color:rgba(255,255,255,.8)}
+.cou-div{width:1px;height:40px;background:rgba(255,255,255,.1)}
+
+/* Testimonials strip */
+.cou-tg{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem;margin-top:2rem}
+.cou-tc{background:#fff;border-radius:10px;padding:1.8rem;border:1px solid rgba(0,0,0,.07);border-top:3px solid #C9A84C;transition:.25s}
+.cou-tc:hover{transform:translateY(-3px);box-shadow:0 10px 30px rgba(0,0,0,.09)}
+.cou-ts{color:#C9A84C;font-size:.95rem;letter-spacing:.12em;margin-bottom:.8rem}
+.cou-tt{font-family:'EB Garamond',serif;font-size:.97rem;font-style:italic;line-height:1.72;color:#374151;margin-bottom:1.1rem}
+.cou-ta{display:flex;align-items:center;gap:.8rem}
+.cou-tav{width:38px;height:38px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'EB Garamond',serif;font-size:.9rem;font-weight:700;flex-shrink:0}
+.cou-tn{font-size:.84rem;font-weight:600;color:#1A202C}
+.cou-tr{font-size:.74rem;color:#6B7280;margin-top:.1rem}
+
+@media(max-width:1024px){
+  .cou-wg{grid-template-columns:repeat(2,1fr)}
+  .cou-svg{grid-template-columns:repeat(3,1fr)}
+  .cou-pg{grid-template-columns:repeat(2,1fr)}
+  .cou-ag{grid-template-columns:repeat(2,1fr)}
+  .cou-tg{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:768px){
+  .cou-hero-inner{grid-template-columns:1fr}
+  .cou-hero-inner>div:last-child{display:none}
+  .cou-mg{grid-template-columns:1fr}
+  .cou-row{grid-template-columns:1fr}
+  .cou-wg,.cou-fqg,.cou-pg,.cou-ag,.cou-tg{grid-template-columns:1fr}
+  .cou-svg{grid-template-columns:repeat(2,1fr)}
+  .cou-fb{padding:1.5rem}
+  .cou-si2{flex-direction:column;gap:1.2rem}
+  .cou-div{display:none}
+}
+</style>
+
+  <!-- HERO -->
+  <div class="cou-hero">
+    <div class="cou-hero-inner" style="grid-template-columns:1fr;max-width:900px">
+      <div>
+        <div style="display:flex;align-items:center;gap:.5rem;margin-bottom:1.4rem;flex-wrap:wrap">
+          <a onclick="go('home')" style="font-size:.7rem;letter-spacing:.09em;text-transform:uppercase;color:#C9A84C;cursor:pointer">Home</a>
+          <span style="color:rgba(255,255,255,.2);font-size:.8rem">/</span>
+          <span style="font-size:.7rem;letter-spacing:.09em;text-transform:uppercase;color:rgba(255,255,255,.35)">Contact Us</span>
+        </div>
+        <div class="cou-badge2">✉️ &nbsp;Contact V J Desai &amp; Co. LLP</div>
+        <h1 class="cou-h1">Get in <em>Touch With Us</em></h1>
+      </div>
+    </div>
+  </div>
+
+  <!-- SUB-NAV -->
+  <div class="cou-snav">
+    <div class="cou-snav-inner">
+      <button class="cou-sn on"  onclick="document.getElementById('cou-d').scrollIntoView({behavior:'smooth'})">Contact Details</button>
+      <button class="cou-sn"     onclick="document.getElementById('cou-f').scrollIntoView({behavior:'smooth'})">Book Consultation</button>
+    </div>
+  </div>
+
+  <!-- SECTION 1: CONTACT DETAILS + FORM -->
+  <div id="cou-d" class="cou-s-off">
+    <div class="cou-inn">
+      <div class="cou-mg">
+        <!-- LEFT -->
+        <div>
+          <div class="cou-stg">Our Details</div>
+          <h2 class="cou-hd">Reach <em>Our Office</em></h2>
+          <p style="font-size:.9rem;color:#6B7280;margin-bottom:1.4rem;line-height:1.7">Visit us at our Satellite, Ahmedabad office or reach out by phone, email, or the consultation form. We reply to every enquiry within one business day.</p>
+
+          <div class="cou-ic" style="border-left:3px solid #1A5276">
+            <div class="cou-ic-ico" style="background:rgba(26,82,118,.12)">📍</div>
+            <div>
+              <div class="cou-ic-lbl">Office Address</div>
+              <div class="cou-ic-val">B-901/902, Ratnaakar Nine Square,<br/>132 Feet Ring Rd, Opp. ITC Narmada,<br/>Satellite,<br/>Ahmedabad, Gujarat, 380015</div>
+            </div>
+          </div>
+
+          <div class="cou-ic" style="border-left:3px solid #1E8449">
+            <div class="cou-ic-ico" style="background:rgba(30,132,73,.12)">📞</div>
+            <div>
+              <div class="cou-ic-lbl">Phone</div>
+              <a href="tel:+919825062515" class="cou-ic-val" style="color:#1E8449">+91 98250 62515</a>
+              <div class="cou-ic-note">Available Mon – Sat, 10:30 AM – 7:30 PM</div>
+            </div>
+          </div>
+
+          <div class="cou-ic" style="border-left:3px solid #6C3483">
+            <div class="cou-ic-ico" style="background:rgba(108,52,131,.12)">✉️</div>
+            <div>
+              <div class="cou-ic-lbl">Email</div>
+              <a href="mailto:info@vjdesai.com" class="cou-ic-val" style="color:#6C3483">info@vjdesai.com</a>
+              <div class="cou-ic-note">We reply within 1 business day</div>
+            </div>
+          </div>
+
+          <div class="cou-ic" style="border-left:3px solid #B7770D">
+            <div class="cou-ic-ico" style="background:rgba(183,119,13,.12)">🌐</div>
+            <div>
+              <div class="cou-ic-lbl">Website</div>
+              <a href="https://vjdesai.com" target="_blank" class="cou-ic-val" style="color:#B7770D">www.vjdesai.com</a>
+            </div>
+          </div>
+
+          <div class="cou-hrs">
+            <div class="cou-hrs-lbl">🕐 &nbsp;Office Hours</div>
+            <div class="cou-hrs-row"><span class="cou-hrs-day">Monday – Saturday</span><span class="cou-hrs-time">10:30 AM – 7:30 PM</span></div>
+            <div class="cou-hrs-row"><span class="cou-hrs-day">Sunday</span><span class="cou-hrs-closed">Closed</span></div>
+            <p style="font-size:.76rem;color:#6B7280;margin-top:.7rem;line-height:1.6">For urgent compliance matters, GST notices, IT assessments, RERA deadlines, call us directly for same-day support.</p>
+          </div>
+
+          <div class="cou-fq">
+            <blockquote>"We create a unique process for each client to ensure business objectives are met, with integrity, reliability, and proficiency."</blockquote>
+            <cite>V J Desai &amp; Co. LLP · Chartered Accountants since 1993</cite>
+          </div>
+
+          <div class="cou-map">
+            <div class="cou-map-lbl">📍 &nbsp;Our Office Location, Ratnaakar Nine Square, Satellite</div>
+            <iframe src="https://www.google.com/maps?q=Ratnaakar+Nine+Square,+132+Feet+Ring+Road,+Vastrapur,+Ahmedabad,+Gujarat+380015&z=16&output=embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="V J Desai and Co LLP Office Location, Ratnaakar Nine Square, 132 Feet Ring Road, Ahmedabad"></iframe>
+          </div>
+        </div>
+
+        <!-- RIGHT: FORM -->
+        <div id="cou-f" class="cou-fb">
+          <div class="cou-fb-title">Book a Free Consultation</div>
+          <div class="cou-fb-desc">Fill in the form and we will respond within one business day. Your first consultation is always free and without obligation.</div>
+          <div class="cou-trust">
+            <span class="cou-tp">✓ Free First Consultation</span>
+            <span class="cou-tp">✓ No Obligation</span>
+            <span class="cou-tp">✓ Confidential</span>
+            <span class="cou-tp">✓ Reply Within 24 hrs</span>
+          </div>
+
+          <form id="consult-form" action="/api/contact" data-fallback-action="../mailer.php" method="POST">
+          <input type="hidden" name="_subject" value="New Consultation Enquiry, V J Desai &amp; Co. website"/>
+          <!-- Honeypot: bots fill this; humans never see it -->
+          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off"/>
+
+          <div class="cou-row">
+            <div class="cou-fg"><label>First Name *</label><input type="text" name="First Name" placeholder="Rajesh" required/></div>
+            <div class="cou-fg"><label>Last Name *</label><input type="text" name="Last Name" placeholder="Mehta" required/></div>
+          </div>
+          <div class="cou-row">
+            <div class="cou-fg"><label>Email Address *</label><input type="email" name="email" placeholder="you@company.com" required/></div>
+            <div class="cou-fg"><label>Phone Number *</label><input type="tel" name="Phone" placeholder="+91 98765 43210" required/></div>
+          </div>
+          <div class="cou-row">
+            <div class="cou-fg"><label>Company / Organisation</label><input type="text" name="Company" placeholder="Your Company Pvt. Ltd."/></div>
+            <div class="cou-fg"><label>Entity Type</label>
+              <select name="Entity Type">
+                <option value="">Select entity type</option>
+                <option>Private Limited Company</option>
+                <option>LLP / Partnership Firm</option>
+                <option>Proprietorship</option>
+                <option>HUF</option>
+                <option>Trust / NGO / Section 8</option>
+                <option>Individual / Salaried</option>
+                <option>NRI / Foreign Entity</option>
+                <option>Real Estate Developer (RERA)</option>
+              </select>
+            </div>
+          </div>
+          <div class="cou-fg"><label>Service Enquiry *</label>
+            <select name="Service Enquiry" required>
+              <option value="">Select a service area</option>
+              <optgroup label="GST / Indirect Tax">
+                <option>GST Registration &amp; Compliance</option>
+                <option>GST Audit</option>
+                <option>GST Litigation &amp; Appeals</option>
+                <option>GST Refund</option>
+                <option>E-Way Bill / E-Invoice Consultancy</option>
+              </optgroup>
+              <optgroup label="Direct Tax">
+                <option>Corporate Income Tax</option>
+                <option>Income Tax Returns</option>
+                <option>NRI Taxation &amp; DTAA</option>
+                <option>TDS Compliance</option>
+                <option>Capital Gains Advisory</option>
+              </optgroup>
+              <optgroup label="Audit &amp; Assurance">
+                <option>Statutory Audit</option>
+                <option>Tax Audit (3CD)</option>
+                <option>Internal Audit</option>
+              </optgroup>
+              <optgroup label="Corporate &amp; Advisory">
+                <option>Business Setup / Incorporation</option>
+                <option>Business Valuation</option>
+                <option>FEMA &amp; RBI Compliance</option>
+                <option>CFO / Management Consultancy</option>
+              </optgroup>
+              <optgroup label="RERA">
+                <option>RERA Project Registration</option>
+                <option>RERA Quarterly Disclosure</option>
+                <option>RERA Dispute Support</option>
+              </optgroup>
+              <option>Other / Not Sure</option>
+            </select>
+          </div>
+          <div class="cou-fg"><label>How Can We Help You? *</label>
+            <textarea name="Message" placeholder="Briefly describe your requirement or the compliance matter you need help with. The more detail you share, the better prepared we can be for your first consultation." required></textarea>
+          </div>
+          <div class="cou-fg"><label>Preferred Mode of Contact</label>
+            <select name="Preferred Mode of Contact">
+              <option value="">Select preference</option>
+              <option>Phone Call</option>
+              <option>Email</option>
+              <option>WhatsApp</option>
+              <option>In-Person Meeting at Office</option>
+              <option>Video Call</option>
+            </select>
+          </div>
+          <button type="submit" class="cou-sub">Submit Enquiry →</button>
+          <p class="cou-msg" id="consult-msg" style="display:none;margin-top:.8rem;font-size:.85rem;font-weight:600"></p>
+          <p class="cou-priv">🔒 &nbsp;All information shared is strictly confidential and governed by ICAI professional ethics. We do not share your data with third parties.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- BOTTOM STRIP -->
+  <div class="cou-strp">
+    <div class="cou-si2">
+      <div class="cou-sti"><div class="cou-stico" style="background:rgba(255,255,255,.07)">📍</div><div><div class="cou-stlbl">Office</div><div class="cou-stval2">B-901/902, Ratnaakar Nine Square, 132 Feet Ring Rd, Opp. ITC Narmada, Satellite, Ahmedabad, Gujarat 380015</div></div></div>
+      <div class="cou-div"></div>
+      <div class="cou-sti"><div class="cou-stico" style="background:rgba(30,132,73,.2)">📞</div><div><div class="cou-stlbl">Call Us</div><a href="tel:+919825062515" class="cou-stval">+91 98250 62515</a></div></div>
+      <div class="cou-div"></div>
+      <div class="cou-sti"><div class="cou-stico" style="background:rgba(108,52,131,.2)">✉️</div><div><div class="cou-stlbl">Email Us</div><a href="mailto:info@vjdesai.com" class="cou-stval">info@vjdesai.com</a></div></div>
+      <div class="cou-div"></div>
+      <div class="cou-sti"><div class="cou-stico" style="background:rgba(201,168,76,.15)">🕐</div><div><div class="cou-stlbl">Hours</div><div class="cou-stval2">Mon – Sat: 10:30 AM – 7:30 PM</div></div></div>
+    </div>
+</div>
+
+</main>
+
+<!-- SHARED FOOTER (loaded by include.js) -->
+<div data-include="../components/footer.html?v=8"></div>
+
+<!-- SITE JS -->
+<script src="../assets/js/include.js?v=2"><\/script>
+<script src="../assets/js/nav.js?v=3"><\/script>
+<script src="../assets/js/main.js"><\/script>
+<script src="../assets/js/lock.js?v=2"><\/script>
+
+<!-- Consultation form → /api/contact (AJAX SMTP, stays on page) -->
+<script>
+(function(){
+  var form = document.getElementById('consult-form');
+  if (!form) return;
+  var btn = form.querySelector('.cou-sub');
+  var msg = document.getElementById('consult-msg');
+
+  function showError(text){
+    btn.disabled = false;
+    msg.textContent = text;
+    msg.style.color = '#C0392B';
+    msg.style.display = 'block';
+  }
+
+  form.addEventListener('submit', function(e){
+    e.preventDefault();                       // keep the visitor on the page
+    if (!form.reportValidity()) return;       // honour required fields
+
+    var original = btn.textContent;
+    btn.disabled = true;
+    btn.textContent = 'Sending…';
+    msg.style.display = 'none';
+
+    function postForm(action){
+      // Send as application/x-www-form-urlencoded so both Node and PHP handlers
+      // receive the same fields and deliver the enquiry over SMTP.
+      return fetch(action, {
+        method: 'POST',
+        headers: { 'Accept': 'application/json' },
+        body: new URLSearchParams(new FormData(form))
+      })
+      .then(function(r){
+        return r.text().then(function(text){
+          var data = null;
+          try { data = text ? JSON.parse(text) : null; } catch (_) {}
+          return { ok: r.ok, status: r.status, data: data, action: action };
+        });
+      });
+    }
+
+    function serviceMissing(res){
+      return res.status === 404 || res.status === 405 || !res.data;
+    }
+
+    function handleResponse(res){
+      btn.textContent = original;
+      if (res.data && res.data.success === true) {
+        form.reset();
+        btn.disabled = true;
+        btn.textContent = '✓ Enquiry Received';
+        btn.style.background = '#1E8449';
+        msg.textContent = 'Your data was sent successfully, we will respond within 1 business day.';
+        msg.style.color = '#1E8449';
+        msg.style.display = 'block';
+        return;
+      }
+      if (res.data && res.data.message) {
+        showError(res.data.message);
+      } else if (serviceMissing(res)) {
+        showError('Form service not reachable. Please email info@vjdesai.com directly.');
+      } else {
+        showError('Sorry, something went wrong. Please email info@vjdesai.com directly.');
+      }
+    }
+
+    var fallbackAction = form.getAttribute('data-fallback-action');
+
+    postForm(form.action)
+    .then(function(res){
+      if (fallbackAction && serviceMissing(res)) {
+        return postForm(fallbackAction);
+      }
+      return res;
+    })
+    .then(handleResponse)
+    .catch(function(){
+      if (fallbackAction) {
+        postForm(fallbackAction).then(handleResponse).catch(function(){
+          showError('Network error. Please check your connection or email info@vjdesai.com directly.');
+          btn.textContent = original;
+        });
+        return;
+      }
+      showError('Network error. Please check your connection or email info@vjdesai.com directly.');
+      btn.textContent = original;
+    });
+  });
+})();
+<\/script>
+
+</body>
+</html>
+`;export{n as default};
