@@ -215,7 +215,7 @@ if ($smtpErr === true) {
     echo json_encode(['ok' => true, 'attached' => $attachedOk]);
 } else {
     error_log('career-mailer SMTP error: ' . $smtpErr);
-    fail(502, 'Could not send your application. Please try again, or email info@vjdesai.com directly.');
+    $debug = isset($_GET["debug"]) || isset($_POST["debug"]); fail(502, $debug ? ("SMTP: " . $smtpErr) : "Could not send your application. Please try again, or email info@vjdesai.com directly.");
 }
 
 /* ================================================================== */
