@@ -1,4 +1,4 @@
-const e=`\uFEFF<!DOCTYPE html>
+const u=`\uFEFF<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8"/>
@@ -236,7 +236,6 @@ const e=`\uFEFF<!DOCTYPE html>
           <p>Permanent role in bookkeeping, GST filing, TDS compliance and accounts finalization for multiple clients.</p>
           <div class="cqcard-meta">
             <span class="cqctag">B.Com / M.Com</span>
-            <span class="cqctag">₹18K–₹30K/mo</span>
             <span class="cqctag">1–3 Yrs Exp</span>
           </div>
           <button class="cqapply" onclick="openCareerApply()">Apply Now →</button>
@@ -255,7 +254,6 @@ const e=`\uFEFF<!DOCTYPE html>
   <div class="car-subnav">
     <div class="car-subnav-inner">
       <a class="csn csn-active" onclick="document.getElementById('car-why').scrollIntoView({behavior:'smooth'})">Why Join Us</a>
-      <a class="csn" onclick="document.getElementById('car-culture').scrollIntoView({behavior:'smooth'})">Our Culture</a>
       <a class="csn" onclick="document.getElementById('car-roles').scrollIntoView({behavior:'smooth'})">Open Positions</a>
       <a class="csn" onclick="document.getElementById('car-process').scrollIntoView({behavior:'smooth'})">How to Apply</a>
       <a class="csn" onclick="document.getElementById('car-benefits').scrollIntoView({behavior:'smooth'})">What We Offer</a>
@@ -278,49 +276,6 @@ const e=`\uFEFF<!DOCTYPE html>
         <div class="cwcard"><div class="cwicon">🏆</div><h3>Real Client Responsibility</h3><p>From early in your career, you handle real client files, not just supporting work. This hands-on approach accelerates learning and builds confidence fast.</p></div>
         <div class="cwcard"><div class="cwicon">⚖️</div><h3>Integrity-First Culture</h3><p>Founded on integrity, reliability, and proficiency. Every team member upholds these values, ethical practice is non-negotiable at every level of the firm.</p></div>
         <div class="cwcard"><div class="cwicon">📍</div><h3>Prime Ahmedabad Office</h3><p>Our office at Ratnaakar Nine Square, Satellite, a modern, well-connected workspace with professional infrastructure and a collaborative, energetic team.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ══ SECTION 2: OUR CULTURE ══ -->
-  <section id="car-culture" class="car-sec-alt">
-    <div class="car-sec-inner">
-      <div class="stag">Our Culture</div>
-      <h2 class="ht">A Culture Built on <em>Learning &amp; Excellence</em></h2>
-      <div class="car-culture-grid">
-        <div>
-          <p style="font-size:.93rem;line-height:1.88;color:var(--tmid);margin-bottom:.4rem">V J Desai &amp; Co. LLP was established in 1993 by Senior Partner CA Vinod J. Desai. Over three decades, we have built a firm culture where every professional, whether an Article Trainee or a qualified CA, is treated as a valued contributor, not just an executor.</p>
-          <p style="font-size:.93rem;line-height:1.88;color:var(--tmid);margin-bottom:1.2rem">Our team works on live client assignments from day one, gaining practical exposure to GST, income tax, audit, RERA, company law and more across diverse industries.</p>
-          <div class="ccitem"><div class="ccicon">🤝</div><div><h4>Collaborative Team Environment</h4><p>Seniors guide juniors; every team member is encouraged to contribute ideas and take ownership of their work.</p></div></div>
-          <div class="ccitem"><div class="ccicon">📖</div><div><h4>Continuous Professional Development</h4><p>Regular internal sessions, ICAI updates, and exposure to complex multi-law compliance engagements.</p></div></div>
-          <div class="ccitem"><div class="ccicon">⚖️</div><div><h4>Work-Life Balance &amp; Study Support</h4><p>Structured schedules, professional growth without compromising CA exam commitments.</p></div></div>
-          <div class="ccitem"><div class="ccicon">📈</div><div><h4>Performance-Based Recognition</h4><p>High performers advance quickly, take on larger portfolios, and receive clear opportunities for career advancement.</p></div></div>
-        </div>
-        <div>
-          <div class="car-quote">
-            <blockquote>"We do not just hire professionals, we develop them. Every person who joins our firm is given the tools, exposure, and mentorship to build a career they can be proud of."</blockquote>
-            <cite>CA Vinod J. Desai, Founding &amp; Senior Partner</cite>
-          </div>
-          <div class="car-metrics">
-            <div class="cmetric"><div class="cmet-num">1993</div><div class="cmet-label">Year Founded</div></div>
-            <div class="cmetric"><div class="cmet-num">33+</div><div class="cmet-label">Years of Practice</div></div>
-            <div class="cmetric"><div class="cmet-num">2500+</div><div class="cmet-label">Clients Served</div></div>
-            <div class="cmetric"><div class="cmet-num">35+</div><div class="cmet-label">Industry Sectors</div></div>
-          </div>
-          <div class="car-domains">
-            <div class="car-domain-title">Practice Areas You Will Work In</div>
-            <div class="car-domain-tags">
-              <span class="cdtag">GST &amp; Indirect Tax</span>
-              <span class="cdtag">Direct Tax</span>
-              <span class="cdtag">Statutory Audit</span>
-              <span class="cdtag">Tax Audit</span>
-              <span class="cdtag">RERA Compliance</span>
-              <span class="cdtag">FEMA &amp; RBI</span>
-              <span class="cdtag">Company Law</span>
-              <span class="cdtag">CFO Services</span>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   </section>
@@ -356,73 +311,33 @@ const e=`\uFEFF<!DOCTYPE html>
           </div>
           <div class="jc2-body">
             <div class="jc2-full">
-              <div class="jc2-label">📋 Position Overview</div>
-              <p>V J Desai &amp; Co. LLP is an ICAI-registered CA firm established in 1993, offering Articleship to CA students who have cleared CA Foundation or CA Intermediate. Article Trainees gain hands-on exposure across six core practice areas, GST, Income Tax, Statutory Audit, RERA, FEMA, and Company Law, under the direct supervision of our senior partners. This is not just a training contract, it is the foundation of a distinguished professional career in Chartered Accountancy.</p>
+              <div class="jc2-label">📋 Overview</div>
+              <p>3-year ICAI Articleship with hands-on exposure across GST, Income Tax, Audit, RERA &amp; Company Law under direct partner supervision.</p>
             </div>
             <div>
-              <div class="jc2-label">💼 Key Responsibilities</div>
+              <div class="jc2-label">💼 Responsibilities</div>
               <ul class="jlist">
-                <li>Prepare and file GST returns (GSTR-1, GSTR-3B, GSTR-9/9C) for clients across diverse industries</li>
-                <li>Support statutory, tax, and internal audit, ledger scrutiny, vouching, working paper preparation</li>
-                <li>Assist in Income Tax Returns (ITR-1 to ITR-6) for individuals, firms, companies, and trusts</li>
-                <li>Conduct TDS reconciliations, prepare Form 16/16A, and support TDS compliance processes</li>
-                <li>Perform Tally ERP data entry, bank reconciliation, and account finalization under supervision</li>
-                <li>Assist in RERA compliance, promoter registrations, quarterly progress reports, project filings</li>
-                <li>Support FEMA advisory and company law filings (ROC compliance, board resolutions)</li>
-                <li>Prepare client MIS reports and draft replies to notices and correspondences</li>
+                <li>GST returns, ITR filing and TDS compliance</li>
+                <li>Statutory / tax audit, ledger scrutiny and working papers</li>
+                <li>Tally entries, bank reconciliation and accounts finalization</li>
               </ul>
             </div>
             <div>
-              <div class="jc2-label">📚 Training Exposure, All 6 Areas</div>
+              <div class="jc2-label">✅ Eligibility</div>
               <ul class="jlist">
-                <li><strong>GST &amp; Indirect Tax:</strong> Registration, returns, reconciliation, audit, refund, litigation</li>
-                <li><strong>Direct Tax:</strong> ITR filing, advance tax, TDS compliance, and tax planning</li>
-                <li><strong>Statutory Audit:</strong> Balance sheet verification, vouching, working paper preparation</li>
-                <li><strong>Tax Audit (3CA/3CD):</strong> Clause-wise reporting and Form 3CA/3CB/3CD preparation</li>
-                <li><strong>RERA Compliance:</strong> Project registration, QPR, and compliance monitoring</li>
-                <li><strong>Company Law:</strong> ROC filings, board resolutions, and annual compliance</li>
-                <li><strong>FEMA / RBI:</strong> FC-GPR, FC-TRS filings and FEMA advisory basics</li>
-                <li><strong>Accounts Finalization:</strong> P&amp;L, Balance Sheet, schedules, notes to accounts</li>
-              </ul>
-            </div>
-            <div>
-              <div class="jc2-label">✅ Eligibility &amp; Requirements</div>
-              <ul class="jlist">
-                <li>Cleared CA Foundation or CA Intermediate (Group I or both groups) from ICAI, mandatory</li>
-                <li>Valid ICAI student registration and Articleship eligibility as per current ICAI regulations</li>
-                <li>Basic proficiency in MS Office (Excel, Word); willingness to learn Tally ERP / Tally Prime</li>
-                <li>Strong command of English for client communication, report writing, and notice drafting</li>
-                <li>Ability to manage multiple client files simultaneously with accuracy and attention to detail</li>
-                <li>Ahmedabad-based or willing to relocate; regular in-office attendance is expected</li>
-                <li>Disciplined study approach alongside article work, CA exam support is fully provided</li>
-              </ul>
-            </div>
-            <div>
-              <div class="jc2-label">🌟 What You Will Gain</div>
-              <ul class="jlist">
-                <li>3 years of ICAI-compliant article training with signed Form 102 and 103 from a registered partner</li>
-                <li>Direct mentorship from CA partners with 30+ years of taxation and audit experience</li>
-                <li>Real client files from Day 1, across 35+ sectors including real estate, manufacturing, and trading</li>
-                <li>Rotation across all service areas, building a well-rounded profile for CA Final exams</li>
-                <li>Study leave as per ICAI norms; CA exam commitments are fully respected and supported</li>
-                <li>ICAI-compliant monthly stipend as per the current prescribed scale</li>
-                <li>Structured performance feedback and clear progression guidance throughout your articleship</li>
-                <li>Reference letter and ICAI completion certificate on successful completion</li>
+                <li>Cleared CA Foundation or Intermediate with valid ICAI registration</li>
+                <li>Ahmedabad-based or willing to relocate for in-office work</li>
               </ul>
             </div>
             <div class="jc2-full">
-              <div class="jc2-label">🧠 Skills You Will Develop</div>
               <div class="jskills">
-                <span class="jskill">GST Return Filing</span><span class="jskill">Income Tax Returns</span><span class="jskill">TDS Compliance</span>
-                <span class="jskill">Statutory Audit</span><span class="jskill">Tax Audit (3CD)</span><span class="jskill">Tally ERP / Prime</span>
-                <span class="jskill">Bank Reconciliation</span><span class="jskill">Accounts Finalization</span><span class="jskill">RERA Filings</span>
-                <span class="jskill">ROC Compliance</span><span class="jskill">FEMA Basics</span><span class="jskill">Client Communication</span>
-                <span class="jskill">Working Paper Prep</span><span class="jskill">MS Excel</span><span class="jskill">Ledger Scrutiny</span><span class="jskill">Notice Drafting</span>
+                <span class="jskill">GST Returns</span><span class="jskill">Income Tax</span><span class="jskill">TDS</span>
+                <span class="jskill">Audit</span><span class="jskill">Tally ERP / Prime</span><span class="jskill">RERA Filings</span>
               </div>
             </div>
           </div>
           <div class="jc2-foot">
-            <span class="jc2-foot-note">📌 ICAI Registered · Est. 1993 · Satellite, Ahmedabad · Stipend as per ICAI norms</span>
+            <span class="jc2-foot-note">📌 ICAI Registered · Est. 1993 · Satellite, Ahmedabad</span>
             <button class="jc2-apply ja-navy" onclick="openCareerApply()">Send Your Application →</button>
           </div>
         </div>
@@ -440,7 +355,6 @@ const e=`\uFEFF<!DOCTYPE html>
                   <span class="jc2-pill">🕐 Full-Time · Permanent</span>
                   <span class="jc2-pill">🎓 B.Com / M.Com / CA Inter</span>
                   <span class="jc2-pill">💼 1–3 Years Experience</span>
-                  <span class="jc2-pill">💰 ₹18,000–₹30,000 / Month</span>
                   <span class="jc2-pill">🟢 Currently Accepting</span>
                 </div>
               </div>
@@ -449,70 +363,33 @@ const e=`\uFEFF<!DOCTYPE html>
           </div>
           <div class="jc2-body">
             <div class="jc2-full">
-              <div class="jc2-label">📋 Position Overview</div>
-              <p>We are looking for a detail-oriented and motivated Accounts Executive / Junior Accountant to join our growing team at V J Desai &amp; Co. LLP. The ideal candidate is a B.Com / M.Com graduate or CA Intermediate student with 1–3 years of hands-on accounting or CA firm experience. You will work across client bookkeeping, GST compliance, TDS workings, and accounts finalization, under the direct guidance of our CA partners. This is an excellent opportunity to build deep practical expertise in a high-quality, structured professional environment serving 35+ industry sectors.</p>
+              <div class="jc2-label">📋 Overview</div>
+              <p>Full-time accounts &amp; tax compliance role for B.Com / M.Com / CA Inter candidates with 1–3 years of experience.</p>
             </div>
             <div>
-              <div class="jc2-label">💼 Key Responsibilities</div>
+              <div class="jc2-label">💼 Responsibilities</div>
               <ul class="jlist">
-                <li>Maintain and manage day-to-day bookkeeping for multiple clients using Tally ERP / Tally Prime</li>
-                <li>Prepare and file monthly GST returns (GSTR-1, GSTR-3B) and annual returns (GSTR-9 / 9C)</li>
-                <li>Perform bank reconciliation, debtor/creditor reconciliation, and detailed ledger scrutiny</li>
-                <li>Process TDS deductions, prepare quarterly returns (Form 24Q / 26Q), and generate Form 16 / 16A</li>
-                <li>Assist in finalization of accounts, trial balance, profit &amp; loss, balance sheet, and schedules</li>
-                <li>Prepare client MIS reports, cash flow statements, and profitability summaries</li>
-                <li>Support senior CAs in statutory and tax audit, vouching, ledger checking, working papers</li>
-                <li>Handle client correspondence, drafting letters and replying to GST/IT notices under CA supervision</li>
+                <li>Bookkeeping in Tally ERP / Prime and bank reconciliation</li>
+                <li>GST returns (GSTR-1, 3B, 9 / 9C) and ITC reconciliation</li>
+                <li>TDS quarterly returns, accounts finalization and audit support</li>
               </ul>
             </div>
             <div>
-              <div class="jc2-label">🧩 Required Skills &amp; Knowledge</div>
+              <div class="jc2-label">🎓 Qualifications</div>
               <ul class="jlist">
-                <li><strong>Tally ERP / Prime:</strong> Data entry, ledger creation, voucher posting, and report generation</li>
-                <li><strong>GST Compliance:</strong> GST returns, ITC reconciliation (GSTR-2A/2B), annual return filing</li>
-                <li><strong>TDS &amp; Income Tax:</strong> TDS sections (194C, 194J, 194I), return filing on TRACES/TIN portal</li>
-                <li><strong>MS Excel:</strong> Pivot tables, VLOOKUP-based reports, and reconciliation sheets</li>
-                <li><strong>Accounts Finalization:</strong> Final accounts with schedule-wise reporting</li>
-                <li><strong>Communication:</strong> Professional email drafting, client coordination in English and Gujarati</li>
-              </ul>
-            </div>
-            <div>
-              <div class="jc2-label">🎓 Qualifications &amp; Experience</div>
-              <ul class="jlist">
-                <li>Bachelor's degree in Commerce (B.Com) from a recognised university, mandatory</li>
-                <li>M.Com, MBA (Finance), or CA Intermediate is an added advantage</li>
-                <li>1–3 years of practical experience in a CA firm, accounting firm, or accounts department</li>
-                <li>Prior experience with GST return filing and Tally ERP is strongly preferred</li>
-                <li>Freshers with strong Tally / Excel skills and excellent academic record may also apply</li>
-                <li>Fluency in Gujarati preferred; English proficiency is mandatory for all candidates</li>
-                <li>Ahmedabad-based candidates preferred; willing-to-relocate candidates welcome</li>
-              </ul>
-            </div>
-            <div>
-              <div class="jc2-label">💰 Compensation &amp; Benefits</div>
-              <ul class="jlist">
-                <li>Monthly salary of ₹18,000–₹30,000 depending on qualification and experience level</li>
-                <li>Annual performance-based increment reviewed directly by senior partners</li>
-                <li>Exposure to 35+ industry sectors, manufacturing, real estate, trading, services, and NGOs</li>
-                <li>Direct access to CA partners, learn from professionals with 30+ years of experience</li>
-                <li>Structured growth path: Accounts Executive → Senior Accountant → Team Lead</li>
-                <li>CA study support, candidates pursuing CA Inter/Final are encouraged and supported</li>
-                <li>Professional reference letter and experience certificate on successful tenure completion</li>
+                <li>B.Com / M.Com / CA Intermediate from a recognised university</li>
+                <li>1–3 years in a CA firm or accounts department</li>
               </ul>
             </div>
             <div class="jc2-full">
-              <div class="jc2-label">🧠 Key Skills Required</div>
               <div class="jskills">
-                <span class="jskill">Tally ERP / Tally Prime</span><span class="jskill">GST Return Filing</span><span class="jskill">TDS Compliance</span>
-                <span class="jskill">Bank Reconciliation</span><span class="jskill">Accounts Finalization</span><span class="jskill">MS Excel (Advanced)</span>
-                <span class="jskill">Ledger Scrutiny</span><span class="jskill">GSTR-9 / 9C</span><span class="jskill">Form 26Q / 24Q</span>
-                <span class="jskill">MIS Reporting</span><span class="jskill">Audit Support</span><span class="jskill">Client Coordination</span>
-                <span class="jskill">Notice Drafting</span><span class="jskill">Cash Flow Statements</span><span class="jskill">Debtors / Creditors Ageing</span>
+                <span class="jskill">Tally ERP / Prime</span><span class="jskill">GST Returns</span><span class="jskill">TDS</span>
+                <span class="jskill">Bank Reconciliation</span><span class="jskill">Accounts Finalization</span><span class="jskill">MS Excel</span>
               </div>
             </div>
           </div>
           <div class="jc2-foot">
-            <span class="jc2-foot-note">📌 Full-Time Permanent · Satellite, Ahmedabad · ₹18,000–₹30,000/month · Growth-Oriented</span>
+            <span class="jc2-foot-note">📌 Full-Time Permanent · Satellite, Ahmedabad · Growth-Oriented</span>
             <button class="jc2-apply ja-gold" onclick="openCareerApply()">Send Your Application →</button>
           </div>
         </div>
@@ -565,7 +442,6 @@ const e=`\uFEFF<!DOCTYPE html>
           <div class="cben-icon">💼</div>
           <h3>Full-Time Professionals</h3>
           <ul>
-            <li>Competitive salary of ₹18,000–₹30,000 per month</li>
             <li>Annual performance-based increment</li>
             <li>Growing client responsibility and portfolio ownership</li>
             <li>Knowledge-sharing culture with regular internal sessions</li>
@@ -639,4 +515,4 @@ const e=`\uFEFF<!DOCTYPE html>
 <script src="../assets/js/lock.js?v=2"><\/script>
 
 </body>
-</html>`;export{e as default};
+</html>\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0`;export{u as default};
