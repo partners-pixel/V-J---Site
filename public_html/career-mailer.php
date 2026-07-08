@@ -1,44 +1,35 @@
 <?php
 /**
- * career-mailer.php — Career application handler for V J Desai & Co. LLP
+ * career-mailer.php — Career application handler (v2)
  *
- * Always-deliverable design:
- *   1. Save the CV to /uploads/career/YYYY-MM/ on this server with an
- *      unguessable filename, so the file is permanently stored on
- *      vjdesai.com regardless of email delivery.
- *   2. Send a notification email via PHP mail() with the file attached
- *      AND a server-hosted download URL. Even if the email lands in spam
- *      or never delivers, the CV is safe and inspectable in the Hostinger
- *      File Manager under public_html/public_html/uploads/career/.
+ * Delivery strategy:
+ *   1. Save the CV to /uploads/career/YYYY-MM/ on the vjdesai.com server
+ *      with an unguessable filename. THIS IS THE PRIMARY DELIVERY.
+ *   2. Send an email notification that features a large "Download Resume"
+ *      button linking to that server-hosted file. The email ALSO tries to
+ *      attach the file, but Hostinger's mail() → Office 365 pipeline is
+ *      known to strip binary attachments in transit. The prominent
+ *      download button ensures the recipient can always get the CV even
+ *      if the attachment doesn't survive.
  *
  * Endpoint:  POST  /career-mailer.php
  * Body (multipart/form-data):
- *   fullName, email, phone, position, coverNote
- *   cv          (the file)
- *   cv_link     (optional fallback Uploadcare URL)
+ *   fullName, email, phone, position, coverNote, cv (file), cv_link
  * Response:  JSON { ok, attached, saved, url?, message? }
  */
 
 header('Content-Type: application/json; charset=utf-8');
 header('X-Content-Type-Options: nosniff');
 
-/* ------------------------------------------------------------------ */
-/*  CONFIG                                                            */
-/* ------------------------------------------------------------------ */
 const TO_EMAIL    = 'info@vjdesai.com';
-const TO_BCC      = 'partners@crownglobe.com';   // Hostinger-hosted backup inbox, more likely to deliver via PHP mail()
+const TO_BCC      = 'partners@crownglobe.com';
 const FROM_EMAIL  = 'noreply@vjdesai.com';
 const FROM_NAME   = 'V J Desai & Co. Career Form';
 const MAX_BYTES   = 6 * 1024 * 1024;
 const ALLOWED_EXT = ['pdf', 'doc', 'docx'];
-// Folder (relative to this script) where uploaded CVs are permanently stored.
-const STORAGE_REL = 'uploads/career';
-// Public URL where stored files can be downloaded.
+const STORAGE_REL      = 'uploads/career';
 const STORAGE_URL_BASE = 'https://vjdesai.com/uploads/career';
 
-/* ------------------------------------------------------------------ */
-/*  HELPERS                                                           */
-/* ------------------------------------------------------------------ */
 function fail($code, $message) {
     http_response_code($code);
     echo json_encode(['ok' => false, 'message' => $message]);
@@ -51,7 +42,6 @@ function html_escape($s) {
     return htmlspecialchars((string) $s, ENT_QUOTES, 'UTF-8');
 }
 function safe_basename($name) {
-    // Strip any path components, keep ASCII-safe chars only.
     $name = basename($name);
     $name = preg_replace('/[^A-Za-z0-9._\- ]+/u', '_', $name);
     if ($name === '' || $name === null) $name = 'cv.pdf';
@@ -59,18 +49,11 @@ function safe_basename($name) {
     return $name;
 }
 function random_token($n = 12) {
-    if (function_exists('random_bytes')) {
-        return bin2hex(random_bytes($n));
-    }
+    if (function_exists('random_bytes')) return bin2hex(random_bytes($n));
     return substr(md5(uniqid((string) mt_rand(), true)), 0, $n * 2);
 }
 
-/* ------------------------------------------------------------------ */
-/*  REQUEST                                                           */
-/* ------------------------------------------------------------------ */
-if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
-    fail(405, 'Method not allowed.');
-}
+if ($_SERVER['REQUEST_METHOD'] !== 'POST') fail(405, 'Method not allowed.');
 
 $fullName  = field('fullName');
 $email     = field('email');
@@ -86,34 +69,22 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
     fail(422, 'Please enter a valid email address.');
 }
 
-/* ------------------------------------------------------------------ */
-/*  FILE                                                              */
-/* ------------------------------------------------------------------ */
+/* ---- Read uploaded CV ---- */
 $attachedOk = false;
-$cvBytes    = null;
-$cvName     = '';
-$cvMime     = 'application/octet-stream';
-
+$cvBytes = null; $cvName = ''; $cvMime = 'application/octet-stream';
 if (isset($_FILES['cv']) && $_FILES['cv']['error'] === UPLOAD_ERR_OK) {
-    $tmp  = $_FILES['cv']['tmp_name'];
+    $tmp = $_FILES['cv']['tmp_name'];
     $size = (int) $_FILES['cv']['size'];
     $name = safe_basename($_FILES['cv']['name']);
     $ext  = strtolower(pathinfo($name, PATHINFO_EXTENSION));
-
-    if ($size <= 0 || $size > MAX_BYTES) {
-        fail(413, 'File is empty or larger than 6 MB.');
-    }
-    if (!in_array($ext, ALLOWED_EXT, true)) {
-        fail(415, 'Only .pdf, .doc, or .docx files are allowed.');
-    }
+    if ($size <= 0 || $size > MAX_BYTES) fail(413, 'File is empty or larger than 6 MB.');
+    if (!in_array($ext, ALLOWED_EXT, true)) fail(415, 'Only .pdf, .doc, or .docx files are allowed.');
     $cvBytes = @file_get_contents($tmp);
-    if ($cvBytes === false) {
-        fail(500, 'Could not read uploaded file.');
-    }
+    if ($cvBytes === false) fail(500, 'Could not read uploaded file.');
     $cvName = $name;
     if (function_exists('mime_content_type')) {
-        $detected = @mime_content_type($tmp);
-        if (is_string($detected) && $detected !== '') $cvMime = $detected;
+        $d = @mime_content_type($tmp);
+        if (is_string($d) && $d !== '') $cvMime = $d;
     }
     if ($cvMime === 'application/octet-stream') {
         if ($ext === 'pdf')  $cvMime = 'application/pdf';
@@ -123,17 +94,12 @@ if (isset($_FILES['cv']) && $_FILES['cv']['error'] === UPLOAD_ERR_OK) {
     $attachedOk = true;
 }
 
-/* ------------------------------------------------------------------ */
-/*  STAGE 1: SAVE TO SERVER (always-on, primary delivery channel)     */
-/* ------------------------------------------------------------------ */
-$savedUrl = '';
-$savedPath = '';
+/* ---- PRIMARY: save to server ---- */
+$savedUrl = ''; $savedPath = '';
 if ($attachedOk) {
     $month = date('Y-m');
     $dir = __DIR__ . '/' . STORAGE_REL . '/' . $month;
-    if (!is_dir($dir)) {
-        @mkdir($dir, 0755, true);
-    }
+    if (!is_dir($dir)) @mkdir($dir, 0755, true);
     if (is_dir($dir) && is_writable($dir)) {
         $ts = date('Ymd-His');
         $token = random_token(8);
@@ -141,44 +107,31 @@ if ($attachedOk) {
         $savedPath = $dir . '/' . $stored;
         if (@file_put_contents($savedPath, $cvBytes) !== false) {
             $savedUrl = STORAGE_URL_BASE . '/' . $month . '/' . rawurlencode($stored);
-            // Optional: also drop a sidecar JSON with the form fields so the
-            // user can browse uploads/career/ in File Manager and see context.
             $sidecar = $dir . '/' . $ts . '-' . $token . '-' . pathinfo($cvName, PATHINFO_FILENAME) . '.json';
             @file_put_contents($sidecar, json_encode([
-                'fullName' => $fullName,
-                'email'    => $email,
-                'phone'    => $phone,
-                'position' => $position,
-                'coverNote'=> $coverNote,
-                'cv'       => $stored,
-                'submittedAt' => date('c'),
-                'ip'       => $_SERVER['REMOTE_ADDR'] ?? '',
-                'ua'       => substr($_SERVER['HTTP_USER_AGENT'] ?? '', 0, 200),
+                'fullName' => $fullName, 'email' => $email, 'phone' => $phone,
+                'position' => $position, 'coverNote' => $coverNote, 'cv' => $stored,
+                'submittedAt' => date('c'), 'ip' => $_SERVER['REMOTE_ADDR'] ?? '',
+                'ua' => substr($_SERVER['HTTP_USER_AGENT'] ?? '', 0, 200),
             ], JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES));
         }
     }
 }
 
-/* ------------------------------------------------------------------ */
-/*  STAGE 2: EMAIL NOTIFICATION (best-effort via PHP mail())          */
-/* ------------------------------------------------------------------ */
+/* ---- Email content (HTML) ---- */
 $timezone = new DateTimeZone('Asia/Kolkata');
-$now      = new DateTime('now', $timezone);
-$submittedAt = $now->format('l, j F Y \a\t g:i a');
+$submittedAt = (new DateTime('now', $timezone))->format('l, j F Y \a\t g:i a');
 
 $rows = [
-    'Full Name'             => $fullName,
-    'Email'                 => $email,
-    'Phone'                 => $phone,
-    'Position'              => $position,
-    'Cover Note / Message'  => $coverNote !== '' ? $coverNote : 'No cover note provided.',
-    'CV File Name'          => $cvName !== '' ? $cvName : '(no file attached)',
-    'Submission Date'       => $submittedAt,
-    'Source'                => 'vjdesai.com/career',
+    'Full Name'            => $fullName,
+    'Email'                => $email,
+    'Phone'                => $phone,
+    'Position'             => $position,
+    'Cover Note / Message' => $coverNote !== '' ? $coverNote : 'No cover note provided.',
+    'CV File Name'         => $cvName !== '' ? $cvName : '(no file attached)',
+    'Submission Date'      => $submittedAt,
+    'Source'               => 'vjdesai.com/career',
 ];
-if ($savedUrl !== '') $rows['CV Download (server)']     = $savedUrl;
-if ($cvLink   !== '') $rows['CV Download (Uploadcare)'] = $cvLink;
-
 $tableRows = '';
 foreach ($rows as $label => $value) {
     $tableRows .= '<tr>'
@@ -189,28 +142,38 @@ foreach ($rows as $label => $value) {
         . '</tr>';
 }
 
-$htmlBody = '<div style="font-family:Arial,sans-serif;max-width:640px;margin:0 auto">'
-    . '<h2 style="color:#1C2437;border-bottom:3px solid #C9A84C;padding-bottom:8px">New Career Application</h2>'
-    . ($attachedOk
-        ? '<p style="color:#1A5276;font-size:13px;margin:0 0 12px">📎 Resume attached: <strong>' . html_escape($cvName) . '</strong>'
-            . ($savedUrl !== '' ? '<br>💾 Also saved on server: <a href="' . html_escape($savedUrl) . '">' . html_escape($savedUrl) . '</a>' : '')
-            . '</p>'
-        : '<p style="color:#9F2D2D;font-size:13px;margin:0 0 12px">⚠ No resume file received.</p>'
-      )
+// PROMINENT download button — this is the primary way to get the CV.
+$downloadBlock = '';
+if ($savedUrl !== '') {
+    $downloadBlock = '<div style="background:#F5F0E1;border:2px solid #C9A84C;border-radius:10px;padding:20px;margin:20px 0;text-align:center">'
+        . '<p style="margin:0 0 12px;font-size:15px;color:#1C2437;font-weight:600">📄 Resume: ' . html_escape($cvName) . '</p>'
+        . '<a href="' . html_escape($savedUrl) . '" '
+        . 'style="display:inline-block;background:#1C2437;color:#ffffff;text-decoration:none;padding:14px 32px;'
+        . 'border-radius:6px;font-size:16px;font-weight:700;letter-spacing:.02em">⬇ &nbsp;Download Resume</a>'
+        . '<p style="margin:12px 0 0;font-size:12px;color:#6B7280">Or copy the link:<br>'
+        . '<a href="' . html_escape($savedUrl) . '" style="color:#1A5276;word-break:break-all">' . html_escape($savedUrl) . '</a></p>'
+        . '</div>';
+}
+
+$htmlBody = '<div style="font-family:Arial,sans-serif;max-width:640px;margin:0 auto;padding:20px">'
+    . '<h2 style="color:#1C2437;border-bottom:3px solid #C9A84C;padding-bottom:8px;margin-top:0">New Career Application</h2>'
+    . $downloadBlock
     . '<table style="border-collapse:collapse;width:100%;font-size:14px">' . $tableRows . '</table>'
-    . '<p style="color:#6B7280;font-size:12px;margin-top:16px">Submitted via the career form on vjdesai.com</p>'
+    . '<p style="color:#6B7280;font-size:12px;margin-top:16px">Submitted via the career form on vjdesai.com. '
+    . 'If a resume is expected but the download button is not visible above, check the sender permissions or the /uploads/career/ folder on the server.</p>'
     . '</div>';
 
 $plain = "New Career Application\r\n\r\n";
+if ($savedUrl !== '') $plain .= "📄 DOWNLOAD RESUME: " . $savedUrl . "\r\n\r\n";
 foreach ($rows as $l => $v) $plain .= $l . ': ' . $v . "\r\n";
 
-/* ---- MIME multipart with attachment ---- */
-$mixedBoundary = 'mixed_' . md5(uniqid((string) mt_rand(), true));
-$altBoundary   = 'alt_'   . md5(uniqid((string) mt_rand(), true));
-
+/* ---- Send via mail() with attachment (best-effort) ---- */
 $encSubject   = '=?UTF-8?B?' . base64_encode('New Application: ' . $position . ' — ' . $fullName) . '?=';
 $encFromName  = '=?UTF-8?B?' . base64_encode(FROM_NAME) . '?=';
 $encReplyName = '=?UTF-8?B?' . base64_encode($fullName) . '?=';
+
+$mixedBoundary = 'mixed_' . md5(uniqid((string) mt_rand(), true));
+$altBoundary   = 'alt_'   . md5(uniqid((string) mt_rand(), true));
 
 $headers = [
     'From: ' . $encFromName . ' <' . FROM_EMAIL . '>',
@@ -218,7 +181,7 @@ $headers = [
     'Bcc: ' . TO_BCC,
     'MIME-Version: 1.0',
     'Content-Type: multipart/mixed; boundary="' . $mixedBoundary . '"',
-    'X-Mailer: vjdesai-career-mailer',
+    'X-Mailer: vjdesai-career-mailer-v2',
 ];
 
 $body = [];
@@ -250,15 +213,8 @@ $body[] = '--' . $mixedBoundary . '--';
 $rawBody = implode("\r\n", $body);
 $mailOk = @mail(TO_EMAIL, $encSubject, $rawBody, implode("\r\n", $headers));
 
-/* ------------------------------------------------------------------ */
-/*  RESPONSE                                                          */
-/* ------------------------------------------------------------------ */
-// Success if we EITHER stored the file OR sent the email — at least one
-// delivery channel landed.
 $ok = ($savedUrl !== '') || $mailOk;
-if (!$ok) {
-    fail(502, 'Could not save or send your application. Please email info@vjdesai.com directly.');
-}
+if (!$ok) fail(502, 'Could not save or send your application. Please email info@vjdesai.com directly.');
 
 echo json_encode([
     'ok'       => true,
